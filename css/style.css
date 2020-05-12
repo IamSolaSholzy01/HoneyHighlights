@@ -239,7 +239,7 @@ button {
 
 .honey-site-menu {
     display: block;
-    background-image: linear-gradient(90deg, #d6d4da, #c2bccf,#b2a5ce );
+    background-image: linear-gradient(90deg, #d1cdda, #c2bccf,#b2a5ce );
     right: 0;
     z-index: 101;
     position: fixed;
