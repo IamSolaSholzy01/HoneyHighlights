@@ -37,7 +37,7 @@
 }
 
 body {
-    background-color: #ff69b4;
+    background-color: #fff;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 16px;
     line-height: 1.5em;
@@ -181,6 +181,12 @@ button {
 
 .bg-black {
     background: #1b1b1b;
+}
+.bg-pink {
+    background: #ff69b4;
+}
+.bg-purple{
+    background: #b19bd9;
 }
 
 .bg-light {
@@ -592,7 +598,7 @@ button {
 
 .honey-profile-info h2 {
     font-size: 60px;
-    color: #FFF;
+    color: #ff69b4;
     display: block;
     line-height: 1.5em;
     font-weight: 600;
@@ -606,7 +612,7 @@ button {
     font-size: 18px;
     letter-spacing: 8px;
     text-transform: uppercase;
-    color: #fff;
+    color: #b19bd9;
     line-height: 1.5em;
 }
 
@@ -659,7 +665,6 @@ button {
 
 .honey-about-section-home {
     position: relative;
-    background: #1b1b1b;
     padding: 80px 0;
 }
 
@@ -706,7 +711,10 @@ button {
 .honey-about-info h3 {
     font-size: 16px;
     font-weight: 400;
-    color: #c56765;
+    color: #fff;
+}
+.honey-about-info p {
+    color: #fff;
 }
 
 .honey-profile {
