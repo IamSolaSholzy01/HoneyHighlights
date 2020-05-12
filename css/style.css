@@ -37,6 +37,8 @@
 }
 
 body {
+    width: 100%;
+    height: 100%;
     background-color: #fff;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 16px;
@@ -793,24 +795,24 @@ button {
     padding: 160px 0 80px 0;
 }
 
-.honey-portfolio-page-section {
+.honey-catalogue-page-section {
     padding: 160px 0 80px 0;
 }
 
-.honey-portfolio-gallery-section {
+.honey-catalogue-gallery-section {
     padding-top: 80px;
     }
 
-.honey-portfolio-items .col-md-6:nth-child(2) {
+.honey-catalogue-items .col-md-6:nth-child(2) {
     margin-top: 75px;
 }
 
-.honey-portfolio-filter {
+.honey-catalogue-filter {
     width: 100%;
     padding-bottom: 40px;
 }
 
-.honey-portfolio-filter li {
+.honey-catalogue-filter li {
     margin-right: 40px;
     display: inline-block;
     font-size: 18px;
@@ -820,11 +822,11 @@ button {
     color: #1b1b1b;
 }
 
-.honey-portfolio-filter li:last-child {
+.honey-catalogue-filter li:last-child {
     margin-right: 0;
 }
 
-.honey-portfolio-filter li.active {
+.honey-catalogue-filter li.active {
     color: #c56765;
     content: "";
     left: 0;
@@ -835,18 +837,18 @@ button {
     transition: 700ms cubic-bezier(0.17, 0.67, 0, 1.01);
 }
 
-.honey-portfolio-filter li:hover {
+.honey-catalogue-filter li:hover {
     color: #c56765;
 }
 
-.honey-portfolio-wrap {
+.honey-catalogue-wrap {
     padding-bottom: 80px;
     padding-right: 0;
     padding-left: 80px;
     position: relative;
 }
 
-.honey-portfolio-wrap:hover img {
+.honey-catalogue-wrap:hover img {
     -ms-transform: scale(0.95, 0.95);
     /* IE 9 */
     -webkit-transform: scale(0.95, 0.95);
@@ -854,14 +856,14 @@ button {
     transform: scale(0.95, 0.95);
 }
 
-.honey-portfolio-wrap h3 {
+.honey-catalogue-wrap h3 {
     font-size: 24px;
     line-height: 1.5em;
     color: #1b1b1b;
     font-weight: 700;
 }
 
-.honey-portfolio-wrap p {
+.honey-catalogue-wrap p {
     font-size: 18px;
     margin-bottom: 0px;
     line-height: 1.5em;
@@ -871,13 +873,13 @@ button {
     -moz-osx-font-smoothing: grayscale;
 }
 
-.honey-portfolio-content {
+.honey-catalogue-content {
     position: absolute;
     left: 40px;
     top: 80px;
 }
 
-.honey-portfolio-link {
+.honey-catalogue-link {
     color: #c56765;
     font-size: 16px;
     font-weight: 400;
@@ -889,7 +891,7 @@ button {
     padding-left: 80px;
 }
 
-.honey-portfolio-link:before {
+.honey-catalogue-link:before {
     content: '';
     display: inline-block;
     width: 80px;
@@ -901,13 +903,13 @@ button {
     transition: all 0.3s ease-in-out;
 }
 
-.honey-portfolio-link:before:hover {
+.honey-catalogue-link:before:hover {
     padding-left: 5px;
     color: #c56765;
     transition: all 0.3s ease-in-out;
 }
 
-.honey-portfolio-link i {
+.honey-catalogue-link i {
     position: absolute;
     right: 0;
     top: 0;
@@ -918,13 +920,13 @@ button {
     transition: all 0.3s ease-in-out;
 }
 
-.honey-portfolio-link:hover i {
+.honey-catalogue-link:hover i {
     padding-left: 5px;
     color: #c56765;
     transition: all 0.3s ease-in-out;
 }
 
-.honey-portfolio-link:hover {
+.honey-catalogue-link:hover {
     color: #c56765;
 }
 
@@ -1782,13 +1784,13 @@ span.user {
 /*** 16. Media Query ***/
 
 @media (max-width: 1024px) {
-    .honey-portfolio-wrap {
+    .honey-catalogue-wrap {
         padding-left: 20px;
     }
-    .honey-portfolio-wrap h3 {
+    .honey-catalogue-wrap h3 {
         font-size: 22px;
     }
-    .honey-portfolio-content {
+    .honey-catalogue-content {
         top: 40px;
     }
     .honey-background-wrap .background-img-item {
@@ -1884,7 +1886,7 @@ span.user {
         font-size: 16px;
         margin: 20px 0;
     }
-    .honey-portfolio-items .col-md-6:nth-child(2) {
+    .honey-catalogue-items .col-md-6:nth-child(2) {
         margin-top: 0;
     }
     .honey-about-section {
@@ -1927,7 +1929,7 @@ span.user {
         margin-top: 0px;
     }
     
-    .honey-portfolio-page-section {
+    .honey-catalogue-page-section {
     padding-bottom: 60px;
     }
     
@@ -1943,11 +1945,11 @@ span.user {
     .promo-content {
         text-align: center;
     }
-    .honey-portfolio-filter li {
+    .honey-catalogue-filter li {
         margin-right: 10px;
         font-size: 16px;
     }
-    .honey-portfolio-filter li:last-child {
+    .honey-catalogue-filter li:last-child {
         margin-right: 0;
     }
     .subscribe-form {
@@ -1973,8 +1975,8 @@ span.user {
         margin-right: 5px;
         margin-bottom: 5px;
     }
-    .honey-portfolio-items .single-item {}
-    .honey-portfolio-wrap {
+    .honey-catalogue-items .single-item {}
+    .honey-catalogue-wrap {
         padding: 0 0 15px 0;
     }
 }
