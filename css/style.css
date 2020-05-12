@@ -199,6 +199,9 @@ button {
 .bg-light {
     background: #fff;
 }
+.bg-purples {
+    background: #d6d4da;
+}
 
 .text-white {
     color: #ffffff;
@@ -236,7 +239,7 @@ button {
 
 .honey-site-menu {
     display: block;
-    background-image: linear-gradient(0, #fff 65%, #ff69b4 );
+    background-image: linear-gradient(90deg, #d6d4da, #c2bccf,#b2a5ce );
     right: 0;
     z-index: 101;
     position: fixed;
