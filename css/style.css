@@ -27,7 +27,7 @@
 /* *** 01. Fonts *** */
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,600,700|Source+Sans+Pro:400,600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800&display=swap');
 
 /* *** 01. General settings *** */
 
@@ -57,7 +57,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Martel Sans', sans-serif;
     color: #1B1B1B;
     line-height: 1.5em;
     margin: 0 0 20px;
@@ -611,10 +611,10 @@ button {
     color: #ff69b4;
     display: block;
     line-height: 1.5em;
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 20px;
     position: relative;
-    letter-spacing: 4px;
+    letter-spacing: 1px;
 }
 
 .honey-profile-info h2 span {
@@ -701,7 +701,7 @@ button {
 }
 
 .honey-about-info h1 {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Martel Sans', sans-serif;
     color: #fff;
     font-size: 32px;
     line-height: 1.5em;
@@ -710,7 +710,7 @@ button {
 }
 
 .honey-about-info h2 {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Martel Sans', sans-serif;
     color: #1b1b1b;
     font-size: 32px;
     line-height: 1.5em;
@@ -724,6 +724,7 @@ button {
     color: #fff;
 }
 .honey-about-info p {
+    font-family: 'Martel Sans', sans-serif;
     color: #fff;
 }
 
