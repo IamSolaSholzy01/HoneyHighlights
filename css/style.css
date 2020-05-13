@@ -28,6 +28,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,600,700|Source+Sans+Pro:400,600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
 
 /* *** 01. General settings *** */
 
@@ -57,7 +58,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Martel Sans', sans-serif;
+    font-family: 'Martel sans', sans-serif;
     color: #1B1B1B;
     line-height: 1.5em;
     margin: 0 0 20px;
