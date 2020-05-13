@@ -1586,7 +1586,7 @@ span.user {
 }
 
 .honey-footer-section .brand img {
-    width: 90px;
+    width: 200px;
     color: #fff;
 }
 
@@ -1604,8 +1604,8 @@ span.user {
 
 .honey-social-link li {
     display: inline-block;
-    width: 40px;
-    height: 40px;
+    width: 100px;
+    height: 100px;
     line-height: 40px;
     text-align: center;
     border-radius: 10%;
@@ -1618,7 +1618,6 @@ span.user {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    background: #222;
 }
 
 .honey-social-link li:hover {
