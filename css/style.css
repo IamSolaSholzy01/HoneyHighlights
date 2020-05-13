@@ -1588,6 +1588,7 @@ span.user {
 .honey-footer-section .brand img {
     width: 200px;
     color: #fff;
+    filter: brightness(85%) contrast(120%);
 }
 
 .honey-footer-section .brand b {
