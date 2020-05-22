@@ -6,7 +6,7 @@ if($_POST && isset($_POST['name'], $_POST['email'], $_POST['message'])) {
     $email = $_POST['email'];
     $message = $_POST['message'];
 
-    echo "gotten name = .$name";
+    //echo "gotten name = .$name";
 
     $servername = "localhost";
     $username = "root";

@@ -14,7 +14,7 @@ if($_POST && isset($_POST['name'], $_POST['email'], $_POST['message'])) {
     $dbasename = "honeyhighlights";
 
     // Create connection
-    $conn = mysqli_connect($servername, $username, $password, $dbasename);
+    $conn = new mysql_connect($servername, $username, $password, $dbasename);
     
     echo "connection successful";
 
