@@ -811,16 +811,20 @@ button {
 .honey-about-inner {
     display: flex;
     align-items: center;
+    border: #1DCAFF 1px solid;
 }
 
 .honey-about-inner .honey-about-img {
-    width: 100%;
+    border: #000 1px solid;
+    max-width: 1000px; 
+    height: 40vh;
 }
 
 .honey-about-inner img:hover,
 .honey-about-img img:hover {
     transform: scale(0.95);
 }
+
 
 .honey-signature-dark {
     font-family: 'Poppins', sans-serif;
