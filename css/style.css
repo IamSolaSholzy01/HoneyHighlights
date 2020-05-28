@@ -772,11 +772,11 @@ button {
 .honey-about-info h3 {
     font-size: 16px;
     font-weight: 400;
-    color: #fff;
+    color: #000000;
 }
 .honey-about-info p {
     font-family: 'Martel Sans', sans-serif;
-    color: #fff;
+    color: #000000;
 }
 
 .honey-profile {
@@ -817,7 +817,7 @@ button {
 .honey-about-inner .honey-about-img {
     border: #000 1px solid;
     max-width: 1000px; 
-    height: 40vh;
+    width: 40vw;
 }
 
 .honey-about-inner img:hover,
