@@ -118,6 +118,7 @@ loader();
             $(".js-modal-image").attr("src", imageSrc);
         });
     })();
+    
     /* *** Isotope Active *** */
     $('.gallery-items').imagesLoaded(function () {
         // Add isotope click function
