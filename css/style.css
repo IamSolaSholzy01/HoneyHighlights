@@ -599,6 +599,10 @@ button {
     font-size: 40px;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
 }
 
 .honey-site-header.scrolled .honey-site-nav-toggle {
