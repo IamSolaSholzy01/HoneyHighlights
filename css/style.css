@@ -196,11 +196,6 @@ textarea:-ms-input-placeholder {
     color: #888 !important;
 }
 
-.giddy{
-    box-shadow: black;
-    font-weight: 700;
-    background-color: white;
-}
 
 button {
     border: none;
@@ -288,13 +283,193 @@ button {
 
 /* *** 03. Navigation *** */
 
+@media (max-width: 900px) {
+    .honey-menu-burger-wrap {
+        float: right;
+    }
+    .honey-site-menu {
+        display: block;
+        background-image: linear-gradient(90deg, #d1cdda, #c2bccf,#b2a5ce );
+        right: 0;
+        z-index: 101;
+        position: fixed;
+        width: 20vw;
+        min-width: 200px;
+        -webkit-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+        transform: translateX(100%);
+        -webkit-transition: .3s all ease;
+        -o-transition: .3s all ease;
+        transition: .3s all ease;
+        bottom: 0;
+        top: 0;
+        -webkit-box-shadow: 0 -20px 20px -5px rgba(0, 0, 0, 0.05);
+        box-shadow: 0 -20px 20px -5px rgba(0, 0, 0, 0.05);
+        min-height: 300px;
+        overflow: auto;
+    }
+    
+    .honey-site-menu ul {
+        position: relative;
+        margin-top: 150px;
+        margin-bottom: 50px;
+    }
+    
+    .honey-site-menu ul > li {
+        list-style: none;
+        visibility: hidden;
+        opacity: 0;
+        top: -20px;
+        position: relative;
+        text-align: center;
+        -webkit-transition: .3s all ease;
+        -o-transition: .3s all ease;
+        transition: .3s all ease;
+        margin: 0 40px;
+        padding: 15px;
+        border-bottom: 1px solid #ececec;
+    }
+    
+    .honey-site-menu ul > li.is-show {
+        visibility: visible;
+        opacity: 1;
+        top: 0px;
+    }
+    
+    .honey-site-menu ul > li a {
+        color: #1b1b1b;
+        font-size: 16px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+    }
+    
+    .honey-site-menu ul > li a:hover {
+        color: #c56765;
+    }
+    
+    .honey-site-menu.honey-site-menu-show {
+        -webkit-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+        transform: translateX(0%);
+    }
+    
+    .honey-site-logo-wrap {
+        position: relative;
+        z-index: 1021;
+    }
+}
+@media (min-width: 900px){
+    @import url(http://fonts.googleapis.com/css?family=Raleway);
+    .honey-menu-burger-wrap {
+        display: none;
+    }
+    #honey-navbar-spy,
+    #honey-navbar-spy #honey-navbar,
+    #honey-navbar-spy #honey-navbar ul,
+    #honey-navbar-spy #honey-navbar ul li,
+    #honey-navbar-spy #honey-navbar ul li a {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        list-style: none;
+        line-height: 1;
+        display: block;
+        position: relative;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        }
+        #honey-navbar-spy:after,
+        #honey-navbar-spy > #honey-navbar > ul:after {
+        content: ".";
+        display: block;
+        clear: both;
+        visibility: hidden;
+        line-height: 0;
+        height: 0;
+        }
+        #honey-navbar-spy {
+        width: auto;
+        border-bottom: 3px solid #faf;
+        font-family: Martel Sans, sans-serif;
+        line-height: 1;
+        }
+        #honey-navbar-spy #honey-navbar ul {}
+        
+        #honey-navbar-spy > #honey-navbar > ul > li {
+        float: right;
+        }
+        #honey-navbar-spy.align-center > #honey-navbar > ul {
+        font-size: 0;
+        text-align: center;
+        }
+        #honey-navbar-spy.align-center > #honey-navbar > ul > li {
+        display: inline-block;
+        float: none;
+        }
+        #honey-navbar-spy.align-right > #honey-navbar > ul > li {
+        float: right;
+        }
+        #honey-navbar-spy.align-right > #honey-navbar > ul > li > a {
+        margin-right: 0;
+        margin-left: -4px;
+        }
+        #honey-navbar-spy > #honey-navbar > ul > li > a {
+        z-index: 2;
+        padding: 18px 25px 12px 25px;
+        font-size: 15px;
+        font-weight: 400;
+        text-decoration: none;
+        color: #faf;
+        -webkit-transition: all .2s ease;
+        -moz-transition: all .2s ease;
+        -ms-transition: all .2s ease;
+        -o-transition: all .2s ease;
+        transition: all .2s ease;
+        margin-right: -4px;
+        }
+        #honey-navbar-spy > #honey-navbar > ul > li.giddy > a,
+        #honey-navbar-spy > #honey-navbar > ul > li:hover > a,
+        #honey-navbar-spy > #honey-navbar > ul > li > a:hover {
+        color: #ffffff;
+        }
+        #honey-navbar-spy > #honey-navbar > ul > li > a:after {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+        width: 100%;
+        height: 120%;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        content: "";
+        -webkit-transition: all .2s ease;
+        -o-transition: all .2s ease;
+        transition: all .2s ease;
+        -webkit-transform: perspective(5px) rotateX(2deg);
+        -webkit-transform-origin: bottom;
+        -moz-transform: perspective(5px) rotateX(2deg);
+        -moz-transform-origin: bottom;
+        transform: perspective(5px) rotateX(2deg);
+        transform-origin: bottom;
+        }
+        #honey-navbar-spy > #honey-navbar > ul > li.giddy > a:after,
+        #honey-navbar-spy > #honey-navbar > ul > li:hover > a:after,
+        #honey-navbar-spy > #honey-navbar > ul > li > a:hover:after {
+        background: #dad;
+    }
+
+}
+/*
 .honey-site-menu {
     display: block;
     background-image: linear-gradient(90deg, #d1cdda, #c2bccf,#b2a5ce );
     right: 0;
     z-index: 101;
     position: fixed;
-    width: 340px;
+    width: 20vw;
+    min-width: 200px;
     -webkit-transform: translateX(100%);
     -ms-transform: translateX(100%);
     transform: translateX(100%);
@@ -357,7 +532,7 @@ button {
     position: relative;
     z-index: 1021;
 }
-
+*/
 
 /* *** 04. Header style *** */
 
