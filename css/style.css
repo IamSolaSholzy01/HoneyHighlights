@@ -396,8 +396,11 @@ button {
         }
         #honey-navbar-spy #honey-navbar ul {}
         
+        .honey-site-header > .container > ul > li{
+            float: right;
+        }
         #honey-navbar-spy > #honey-navbar > ul > li {
-        float: right;
+            float: right;
         }
         #honey-navbar-spy.align-center > #honey-navbar > ul {
         font-size: 0;
@@ -952,6 +955,9 @@ button {
 .honey-about-info p {
     font-family: 'Martel Sans', sans-serif;
     color: #fff;
+}
+.also p{
+    color: #000;
 }
 
 .honey-profile {
