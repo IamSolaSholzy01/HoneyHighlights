@@ -2116,6 +2116,9 @@ span.user {
 }
 
 @media all and (max-width: 767px) {
+    .intel{
+        padding-top: 20px;
+    }
     h2 {
         font-size: 24px;
     }
