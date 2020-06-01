@@ -2209,6 +2209,9 @@ span.user {
     .honey-page-section {
         padding: 120px 0 40px;
     }
+    .honey-about-img, .too {
+        min-width: 70vw;
+    }
 }
 
 @media all and (max-width: 575px) {
