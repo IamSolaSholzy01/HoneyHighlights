@@ -287,14 +287,21 @@ button {
     .honey-menu-burger-wrap {
         float: right;
     }
-    .honey-site-menu {
+    .honey-site-header.scrolled > .container > ul > li > .honey-site-menu.honey-site-menu-show{
+        transform: translateX(-10%) !important;
+    }
+    .honey-site-menu.honey-site-menu-show{
+        width: 20vw;
+        min-width: 200px;
+        min-height: 100vh;
         display: block;
+    }
+    .honey-site-menu {
+        display: none;
         background-image: linear-gradient(90deg, #d1cdda, #c2bccf,#b2a5ce );
         right: 0;
         z-index: 101;
         position: fixed;
-        width: 20vw;
-        min-width: 200px;
         -webkit-transform: translateX(100%);
         -ms-transform: translateX(100%);
         transform: translateX(100%);
@@ -305,10 +312,11 @@ button {
         top: 0;
         -webkit-box-shadow: 0 -20px 20px -5px rgba(0, 0, 0, 0.05);
         box-shadow: 0 -20px 20px -5px rgba(0, 0, 0, 0.05);
-        min-height: 100vh;
         overflow: auto;
     }
-    
+    .honey-site-header.scrolled{
+        box-sizing: unset;
+    }
     .honey-site-menu ul {
         position: relative;
         margin-top: 150px;
