@@ -399,6 +399,13 @@ button {
         .honey-site-header > .container > ul > li{
             float: right;
         }
+        .honey-site-header.scrolled > .container > ul >li, .honey-site-header.awake > .container > ul > li{
+            float: right;
+        }
+        .honey-site-header.scrolled > .container > ul > a, .honey-site-header.awake > .container > ul > a{
+            width: fit-content;
+            float: left;
+        }
         #honey-navbar-spy > #honey-navbar > ul > li {
             float: right;
         }
@@ -2093,6 +2100,19 @@ span.user {
     .honey-contact-wrap {
         padding: 30px 0 0 0;
     }
+    .too{
+        max-width: 50vw !important;
+        padding-left: 5vw;
+    }
+    .container {
+        align-items: center;
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+    .honey-about-inner {
+        min-width: 80vw;
+    }
+
 }
 
 @media all and (max-width: 767px) {
