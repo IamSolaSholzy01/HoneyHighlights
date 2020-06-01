@@ -284,6 +284,15 @@ button {
 /* *** 03. Navigation *** */
 
 @media (max-width: 900px) {
+    .owl-stage-outer *{
+        width: 70vw;
+    }
+    #testimonial{
+        width: 100vw;
+    }
+    .honey-site-header > .container > ul {
+        float: left;
+    }
     .honey-menu-burger-wrap {
         float: right;
     }
