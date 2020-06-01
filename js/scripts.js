@@ -161,3 +161,12 @@ loader();
         });
     }
 })(jQuery);
+   /* console.log('I am here oooo');
+    var today = new Date();
+    var year = today.getFullYear();
+    console.log(year);
+    //var copyYear = document.getElementById("copyrightyear");
+    var some = document.getElementById("footertext");
+    console.log(some.innerHTML);
+    copyYear.innerHTML = year;
+*/    
