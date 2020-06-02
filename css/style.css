@@ -284,17 +284,33 @@ button {
 /* *** 03. Navigation *** */
 
 @media (max-width: 900px) {
+    .owl-stage-outer *{
+        width: 70vw;
+    }
+    #testimonial{
+        width: 100vw;
+    }
+    .honey-site-header > .container > ul {
+        float: left;
+    }
     .honey-menu-burger-wrap {
         float: right;
     }
-    .honey-site-menu {
+    .honey-site-header.scrolled > .container > ul > li > .honey-site-menu.honey-site-menu-show{
+        transform: translateX(-10%) !important;
+    }
+    .honey-site-menu.honey-site-menu-show{
+        width: 20vw;
+        min-width: 200px;
+        min-height: 100vh;
         display: block;
+    }
+    .honey-site-menu {
+        display: none;
         background-image: linear-gradient(90deg, #d1cdda, #c2bccf,#b2a5ce );
         right: 0;
         z-index: 101;
         position: fixed;
-        width: 20vw;
-        min-width: 200px;
         -webkit-transform: translateX(100%);
         -ms-transform: translateX(100%);
         transform: translateX(100%);
@@ -305,10 +321,11 @@ button {
         top: 0;
         -webkit-box-shadow: 0 -20px 20px -5px rgba(0, 0, 0, 0.05);
         box-shadow: 0 -20px 20px -5px rgba(0, 0, 0, 0.05);
-        min-height: 100vh;
         overflow: auto;
     }
-    
+    .honey-site-header.scrolled{
+        box-sizing: unset;
+    }
     .honey-site-menu ul {
         position: relative;
         margin-top: 150px;
@@ -398,6 +415,13 @@ button {
         
         .honey-site-header > .container > ul > li{
             float: right;
+        }
+        .honey-site-header.scrolled > .container > ul >li, .honey-site-header.awake > .container > ul > li{
+            float: right;
+        }
+        .honey-site-header.scrolled > .container > ul > a, .honey-site-header.awake > .container > ul > a{
+            width: fit-content;
+            float: left;
         }
         #honey-navbar-spy > #honey-navbar > ul > li {
             float: right;
@@ -2093,9 +2117,25 @@ span.user {
     .honey-contact-wrap {
         padding: 30px 0 0 0;
     }
+    .too{
+        max-width: 50vw !important;
+        padding-left: 5vw;
+    }
+    .container {
+        align-items: center;
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+    .honey-about-inner {
+        min-width: 80vw;
+    }
+
 }
 
 @media all and (max-width: 767px) {
+    .intel{
+        padding-top: 20px;
+    }
     h2 {
         font-size: 24px;
     }
@@ -2188,6 +2228,9 @@ span.user {
     }
     .honey-page-section {
         padding: 120px 0 40px;
+    }
+    .honey-about-img, .too {
+        min-width: 70vw;
     }
 }
 
