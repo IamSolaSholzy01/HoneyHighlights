@@ -111,7 +111,7 @@ loader();
         , animateIn: "fadeIn"
         , animateOut: "fadeOut"
     });
-    /* *** Gallery *** */
+    /* *** Catalogue *** */
     (function () {
         $(document).on("click", ".click-to-expand", function () {
             var imageSrc = $(this).parents(".image-grid").find("img").attr("src");
@@ -120,24 +120,23 @@ loader();
     })();
     
     /* *** Isotope Active *** */
-    $('.gallery-items').imagesLoaded(function () {
+    $('.catalogue-items').imagesLoaded(function () {
         // Add isotope click function
-        $('.gallery-filter li').on('click', function () {
-            $(".gallery-filter li").removeClass("active");
+        $('.honey-catalogue-filter li').on('click', function () {
+            $(".honey-catalogue-filter li").removeClass("active");
             $(this).addClass("active");
             var selector = $(this).attr('data-filter');
-            $(".gallery-items").isotope({
+            $(".catalogue-items").isotope({
                 filter: selector
                 , animationOptions: {
                     duration: 750
                     , easing: 'linear'
                     , queue: false
-                ,
                 }
             });
             return false;
         });
-        $(".gallery-items").isotope({
+        $(".catalogue-items").isotope({
             itemSelector: '.single-item'
             , layoutMode: 'masonry'
         ,
