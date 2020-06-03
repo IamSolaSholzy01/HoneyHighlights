@@ -1,7 +1,7 @@
 ﻿/* *** 01. Fonts *** */
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,600,700|Source+Sans+Pro:400,600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
 
 /* *** 02. Loader Start*** */
 #ftco-loader {
@@ -729,6 +729,16 @@ button {
     position: relative;
     padding: 160px 0 80px 0;
 }
+@media all and (max-width: 900px){
+    .honey-about-section{
+        padding: 80px 0 80px 0;
+    }
+}
+@media all and (max-width: 1025px) and (min-width: 901px){
+    .honey-about-section{
+        padding: 120px 0 80px 0;
+    }
+}
 .honey-about-info h2 {
     font-family: 'Martel Sans', sans-serif;
     color: #1b1b1b;
@@ -737,6 +747,110 @@ button {
     margin: 0 0 15px;
     font-weight: 700;
 }
+/* ** Testimonial style ** */
+
+.honey-testimonial-section {
+    background-color: #3a243b;
+}
+.testimonial-items {
+    padding: 50px 0;
+}
+.testimonial-item {
+    text-align: center;
+}
+.testimonial-item i {
+    color: #ff69b4;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.testimonial-item figure {
+    width: 90px;
+    height: 90px;
+    padding: 5px;
+    margin: 0 auto 15px;
+    position: relative;
+}
+.testimonial-item figure img {
+    border-radius: 50px;
+    width: 100%;
+}
+.testimonial-item h4 {
+    font-size: 14px;
+    line-height: 1.5em;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.testimonial-item p {
+    color: #888;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5em;
+}
+.testimonial-items .owl-dots {
+    display: block;
+    text-align: center;
+}
+.testimonial-items .owl-dots .owl-dot {
+    border: 1px solid #888;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 6px;
+    transition: all 0.5s ease-in-out;
+}
+.testimonial-items .owl-dots .owl-dot.active {
+    border: 1px solid #ff69b4;
+    background-color: #ff69b4;
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+    transition: all 0.5s ease-in-out;
+}
+/* ** My Team ** */
+.honey-team-section {
+    padding: 50px 0;
+}
+.honey-team-section-heading {
+    padding-bottom: 4%;
+}
+.honey-team-section-heading p{
+    font-family: 'Handlee', cursive;
+}
+@media all and (max-width: 767px) and (orientation: portrait){
+    .honey-team-section-heading p{
+        font-size: 2vh;
+    }
+}
+.honey-team-section-heading h2 {
+    font-size: 32px;
+    margin: 0;
+}
+.honey-team-content .honey-team-thumb {
+    width: 25vw;
+    height: 25vw;
+    min-width: 150px;
+    min-height: 150px;
+    max-width: 300px;
+    max-height: 300px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+.honey-team-content .honey-team-thumb:hover img {
+    transform: scale(1.1);
+}
+.honey-team-content .honey-team-thumb img {
+    width: 100%;
+}
+.honey-team-content h3 {
+    color: #1B1B1B;
+    margin-bottom: 0;
+    font-size: 18px;
+}
+.honey-team-content span {
+    color: #888;
+}
 /* *** 11. About General *** */
 .honey-about-info p {
     font-family: 'Martel Sans', sans-serif;
@@ -744,6 +858,11 @@ button {
 }
 .also p{
     color: #000;
+}
+@media all and (max-width: 767px) and (orientation: portrait){
+    .also p{
+        font-size: 2vh;
+    }
 }
 .honey-signature-dark {
     font-family: 'Poppins', sans-serif;
@@ -892,3 +1011,12 @@ button {
 .first {
     padding-left: 0px;
 }
+/* *** 16. Catalogue Blog Contact - Page Section *** */
+.honey-page-section {
+    padding: 160px 0 40px;
+}
+.honey-page-content h2 {
+    font-size: 32px;
+    margin: 0;
+}
+/* *** 17. Contact *** */
