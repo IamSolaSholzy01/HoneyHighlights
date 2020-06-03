@@ -73,7 +73,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Martel Sans', sans-serif;
+    font-family: Helvetica, sans-serif;
     color: #1B1B1B;
     line-height: 1.5em;
     margin: 0 0 20px;
@@ -192,6 +192,14 @@ button {
 .align-center {
     text-align: center;
 }
+/* *** Margins and Paddings*** */
+.mb-40 {
+    margin-bottom: 40px;
+}
+.xs-padding {
+    padding: 15px;
+}
+
 img,
 .form-control,
 .form-control:hover,
@@ -199,7 +207,7 @@ button {
     -webkit-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s;
-    color: #1B1B1B;
+    color: #FF69B4;
 }
 /* *** 05. Footer *** */
 .honey-footer-section {
@@ -258,6 +266,7 @@ button {
     font-size: 14px;
     line-height: 1.5em;
     font-weight: 400;
+    text-align: center;
     color: #fff;
     margin: 0;
 }
@@ -747,6 +756,11 @@ button {
     margin: 0 0 15px;
     font-weight: 700;
 }
+
+/* *** Image *** */
+.honey-about-inner .honey-about-img {
+    padding-bottom: 40px;
+}
 /* ** Testimonial style ** */
 
 .honey-testimonial-section {
@@ -820,7 +834,7 @@ button {
 }
 @media all and (max-width: 767px) and (orientation: portrait){
     .honey-team-section-heading p{
-        font-size: 2vh;
+        font-size: 2.8vh;
     }
 }
 .honey-team-section-heading h2 {
@@ -861,7 +875,7 @@ button {
 }
 @media all and (max-width: 767px) and (orientation: portrait){
     .also p{
-        font-size: 2vh;
+        font-size: 2.3vh;
     }
 }
 .honey-signature-dark {
@@ -879,6 +893,11 @@ button {
     font-weight: 400;
     height: 30px;
 }
+.honey-about-inner {
+    display: flex;
+    align-items: center;
+    /*border: #1DCAFF 1px solid;*/
+}
 /* *** 12. Services - Index *** */
 .honey-homepage-services-section {
     padding: 7vh 0;
@@ -891,10 +910,10 @@ button {
 .honey-catalogue-items .col-md-6:nth-child(2) {
     margin-top: 75px;
 }
-.honey-catalogue-wrap {
-    padding-bottom: 80px;
+.catalogue-wrap {
+    padding-bottom: 30px;
     padding-right: 0;
-    padding-left: 80px;
+    /*padding-left: 80px;*/
     position: relative;
 }
 .honey-catalogue-wrap:hover img {
@@ -969,6 +988,41 @@ button {
 .honey-catalogue-link:hover {
     color: #c56765;
 }
+.entry-thumb {
+    padding-bottom: 40px;
+}
+
+/* *** Small Screens*** */
+@media all and (max-width: 767px){
+    .honey-catalogue-wrap {
+        padding: 0 0 15px 0;
+    }
+}
+
+/* *** Large Screens *** */
+
+@media (min-width: 768px) {
+    .catalogue-wrap {
+        padding-left: 20px;
+    }
+    .catalogue-wrap h3 {
+        font-size: 22px;
+    }
+    .honey-catalogue-content {
+        top: 40px;
+    }
+    .honey-background-wrap .background-img-item {
+        height: 500px;
+    }
+    .honey-page-content h2 {
+        font-size: 24px;
+    }
+    .honey-page-content p {
+        margin: 0;
+    }
+}
+
+
 /* *** 15. Catalogues *** */
 .honey-catalogue-page-section {
     padding: 160px 0 80px 0;
@@ -978,10 +1032,9 @@ button {
 }
 .honey-catalogue-filter {
     width: 100%;
-    padding-bottom: 40px;
+    /*padding-bottom: 40px;*/
 }
 .honey-catalogue-filter li {
-    margin-right: 40px;
     display: inline-block;
     line-height: 1.5em;
     cursor: pointer;
@@ -992,7 +1045,7 @@ button {
     margin-right: 0;
 }
 .honey-catalogue-filter li.active {
-    color: #c56765;
+    color: #FF69B4;
     content: "";
     left: 0;
     bottom: -4px;
@@ -1002,21 +1055,149 @@ button {
     transition: 700ms cubic-bezier(0.17, 0.67, 0, 1.01);
 }
 .honey-catalogue-filter li:hover {
-    color: #c56765;
+    color: #FF69B4;
+}
+.honey-blog-items .honey-page-content p{
+    text-align: justify;
 }
 .single-item {
     padding-bottom: 1vh;
-    padding-right: 1vw;
+    /*padding-right: 1vw;*/
 }
 .first {
-    padding-left: 0px;
+    /*padding-left: 0px;*/
 }
 /* *** 16. Catalogue Blog Contact - Page Section *** */
 .honey-page-section {
-    padding: 160px 0 40px;
+    padding: 160px 0 0px;
+}
+@media (max-width: 767px){
+.honey-page-section {
+    padding: 80px 0 0px;
+}
 }
 .honey-page-content h2 {
     font-size: 32px;
     margin: 0;
 }
+
+
 /* *** 17. Contact *** */
+
+.honey-contact-section {
+    position: relative;
+    z-index: 1;
+    padding-top: 1px;
+    padding-bottom: 60px;
+}
+.honey-contact-wrap {
+    background-color: #fff;
+    padding: 40px 40px 0 40px;
+}
+
+/* *** Small Screens *** */
+@media (max-width: 767px){
+.honey-contact-wrap {
+    padding: 30px 0 0 0;
+}
+}
+
+/* *** Larger abit *** */
+@media (max-width: 992px){
+.honey-contact-wrap {
+    padding: 30px 0 0 0; 
+}
+}
+.honey-contact-section h3 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.5em;
+    color: #1b1b1b;
+}
+.honey-contact-info ul li {
+    line-height: 1.5em;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.honey-contact-info ul li a {
+    color: #888;
+    align-items: center;
+    line-height: 1.5em;
+    display: flex;
+    font-size: 16px;
+}
+.honey-contact-info ul li i {
+    margin-right: 10px;
+    color: #FF69B4;
+    font-size: 20px;
+}
+.honey-contact-info ul li {
+    font-size: 16px;
+}
+.honey-contact-form .form-control {
+    border-radius: 0;
+    height: 45px;
+    font-size: 16px;
+    background-color: transparent;
+    border-width: 0 0 1px;
+    border-style: solid;
+    border-color: #ececec;
+    outline: none;
+}
+.honey-contact-form:focus,
+.form-control:focus {
+    border-bottom-width: 2px;
+    border-color: #FF69B4;
+}
+.form-control:focus {
+    border-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.honey-contact-form .form-control.message {
+    height: 150px;
+}
+#form-messages {
+    display: none;
+}
+#form-messages.alert-danger,
+#form-messages.alert-success {
+    display: block;
+}
+
+/* *** Button Styles ***/
+.honey-btn2 {
+    padding: 10px 30px;
+    border: 2px solid #FF69B4 !important;
+    color: #1b1b1b;
+    font-weight: 600;
+    position: relative;
+    z-index: 1;
+    outline: none;
+}
+
+.honey-btn2:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #FF69B4;
+    -webkit-transition: 700ms cubic-bezier(0.17, 0.67, 0, 1.01);
+    -o-transition: 700ms cubic-bezier(0.17, 0.67, 0, 1.01);
+    transition: 700ms cubic-bezier(0.17, 0.67, 0, 1.01);
+}
+
+.honey-btn2:hover,
+.honey-btn2:focus {
+    border-color: #FF69B4;
+    color: #fff !important;
+}
+
+.honey-btn2:hover:after,
+.honey-btn2:focus:after {
+    width: 100%;
+}
