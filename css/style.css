@@ -922,6 +922,12 @@ button {
 .honey-services-section {
     padding: 160px 0 80px 0;
 }
+/* *** Small Screens *** */
+@media (max-width: 990px){
+    .honey-services-section {
+       padding: 80px 0 0px;
+    }
+}
 /* *** 14. Services - General *** */
 .honey-catalogue-items .col-md-6:nth-child(2) {
     margin-top: 75px;
