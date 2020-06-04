@@ -130,7 +130,7 @@ a:focus {
 b,
 strong {
     font-weight: 700;
-    color: #ff69b4;
+    color: #b19;
 }
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
@@ -757,7 +757,7 @@ button {
     font-weight: 700;
 }
 
-/* *** Image *** */
+/* ** Image ** */
 .honey-about-inner .honey-about-img {
     padding-bottom: 40px;
 }
@@ -896,7 +896,23 @@ button {
 .honey-about-inner {
     display: flex;
     align-items: center;
-    /*border: #1DCAFF 1px solid;*/
+}
+.too {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.too:after {
+    content : "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("../img/about.jpg"); 
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    opacity : 0.2;
+    z-index: -1;
 }
 /* *** 12. Services - Index *** */
 .honey-homepage-services-section {
@@ -1062,9 +1078,6 @@ button {
 .single-item {
     padding-bottom: 1vh;
     /*padding-right: 1vw;*/
-}
-.first {
-    /*padding-left: 0px;*/
 }
 /* *** 16. Catalogue Blog Contact - Page Section *** */
 .honey-page-section {
