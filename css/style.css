@@ -1299,3 +1299,80 @@ span.user {
 #honey-blog-about-content *{
     font-family: 'Handlee', cursive;
 }
+/* *** 19. Blog Content *** */
+.breadcrumb{
+    position: relative;
+    padding: 80px;
+    background-color: #ffffff;
+}
+.honey-single-post {}
+.honey-single-post img {
+    width: 100%;
+    height: 100%;
+}
+.honey-single-post .entry-thumb {
+    padding-bottom: 40px;
+}
+.honey-single-post h2 {
+    font-weight: 700;
+    margin: 0 0 5px;
+}
+.honey-meta-info {}
+.honey-meta-info span {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #888;
+    font-size: 12px;
+    margin-right: 15px;
+}
+.honey-meta-info a {
+    font-weight: 400;
+    color: #888;
+}
+.honey-meta-info i {
+    color: #888;
+}
+/* ** social share style ** */
+
+.honey-share-wrap {
+    padding-top: 20px;
+}
+.honey-share-wrap h4 {
+    font-weight: 600;
+    font-size: 18px;
+}
+.honey-share-icon {
+    display: inline-block;
+}
+.honey-share-icon li {
+    display: inline-block;
+    margin-right: 10px;
+}
+.honey-share-icon i {}
+.honey-share-icon li:nth-child(1) a {
+    background-color: #3B5998;
+}
+.honey-share-icon li:nth-child(2) a {
+    background-color: #1DCAFF;
+}
+.honey-share-icon li:nth-child(3) a {
+    background-color: #DB4A39;
+}
+.honey-share-icon li:nth-child(4) a {
+    background-color: #e4405f;
+}
+.honey-share-icon li:nth-child(5) a {
+    background-color: #0077B5;
+}
+.honey-share-icon li a {
+    display: inline-block;
+    font-size: 18px;
+    color: #fff;
+    padding: 8px 11px;
+    border-radius: 50%;
+    font-weight: 600;
+    line-height: 1.5em;
+}
+.honey-share-icon li a:hover {
+    box-shadow: 0px 16px 28px 0px rgba(0, 0, 0, 0.20);
+}
