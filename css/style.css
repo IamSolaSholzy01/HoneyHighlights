@@ -1221,16 +1221,18 @@ button {
     padding-bottom: 3vh;
 }
 .honey-blog-post .honey-blog-content h3 {
+    color: #3A243B;
     font-weight: 600;
     font-size: 20px;
     line-height: 1.5em;
     font-family: 'Handlee', cursive;
 }
+
 .actual-blog-post{
     font-family: 'Handlee', cursive;
 }
 .honey-blog-post .honey-blog-content a {
-    color: #1B1B1B;
+    color: #3A243B;
 }
 .honey-blog-post .honey-blog-content a:hover {
     opacity: 0.8;
@@ -1250,6 +1252,10 @@ span.date {
 span.user {
     font-size: 12px;
     line-height: 1.5em;
+}
+.honey-blog-content{
+    box-shadow: 5px 5px 5px #3A243B;
+    padding: 5px;
 }
 .honey-blog-post .honey-blog-content .honey-post-meta {
     color: #17a2b8;
