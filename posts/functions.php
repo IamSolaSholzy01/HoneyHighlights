@@ -13,7 +13,7 @@
     $db = new mysqli($servername, $username, $password, $dbasename);
 	// get post with id 1 from database
 	$post_query_result = mysqli_query($db, "SELECT * FROM posts WHERE id=1");
-	$post = mysqil_fetch_assoc($post_query_result);
+	$post = mysqli_fetch_assoc($post_query_result);
 
 	// Get all comments from database
 	$comments_query_result = mysqli_query($db, "SELECT * FROM comments WHERE post_id=" . $post['id'] . " ORDER BY created_at DESC");
