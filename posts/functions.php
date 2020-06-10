@@ -4,7 +4,13 @@
 	// they are assigned an id in the session variable to identify them across pages
 	$user_id = 1;
 	// connect to database
-	$db = mysql_connect("localhost", "root", "", "honeyhighlights");
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbasename = "honeyhighlights";
+
+    // Create connection
+    $db = new mysqli($servername, $username, $password, $dbasename);
 	// get post with id 1 from database
 	$post_query_result = mysql_query($db, "SELECT * FROM posts WHERE id=1");
 	$post = mysql_fetch_assoc($post_query_result);
@@ -36,4 +42,4 @@
 		$result = mysql_query($db, "SELECT COUNT(*) AS total FROM comments");
 		$data = mysql_fetch_assoc($result);
 		return $data['total'];
-	
+    }
