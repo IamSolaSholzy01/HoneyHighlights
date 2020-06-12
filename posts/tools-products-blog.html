@@ -337,7 +337,7 @@ p.PadderBetweenControlandBody{
     <h1><span lang=EN-US>Eyebrow Brush</span></h1>
 
     <p class=MsoNormal><img style="width: 92px; height: 108px; float: left;"
-    src="Honey%20Highlights%20Blog%20Posts%20(1)_files/eyebrow-brush.jpg" align="left"
+    src="Honey%20Highlights%20Blog%20Posts%20(1)_files/eyebrow-brush.jpg" 
     hspace=12 v:shapes="_x0000_s1038"><span lang=EN-US>This brush is
     commonly referred to as an angled brush, it is slanted linear brush used to
     both <b style='mso-bidi-font-weight:normal'>fill </b>and <b style='mso-bidi-font-weight:
@@ -356,8 +356,8 @@ p.PadderBetweenControlandBody{
 
     <h1><span lang=EN-US>Spoolie / Mascara Wand</span></h1>
 
-    <p class=MsoNormal><img width=106 height=106 
-    src="Honey%20Highlights%20Blog%20Posts%20(1)_files/spoolie.jpg" align=left
+    <p class=MsoNormal><img style="width:106; height:106; float:left" width=106 height=106 
+    src="Honey%20Highlights%20Blog%20Posts%20(1)_files/spoolie.jpg" 
     hspace=12 v:shapes="Picture_x0020_11"><span lang=EN-US>It is a long
     brush with soft and spiral bristles. They are used for <b style='mso-bidi-font-weight:
     normal'>brushing</b> and <b style='mso-bidi-font-weight:normal'>blending</b>
