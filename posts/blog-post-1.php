@@ -1,6 +1,6 @@
-<?php include('functions.php'); ?>
 <!DOCTYPE html>
 <html>
+
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -280,14 +280,14 @@ p.PadderBetweenControlandBody{
 
     <h1><span lang=EN-US>Powder Brush</span></h1>
 
-    <p class=MsoNormal><img width=98 height=92 
-    src="Honey%20Highlights%20Blog%20Posts%20(1)_files/powder-brush.jpg" align=left
-    hspace=12 alt="powder brush.jpg" v:shapes="Picture_x0020_10"><span
-    lang=EN-US>A powder brush is usually a fluffy and round shaped brush designed
-    in such a way that blends powder makeup as you apply it, such that some refer
-    to it as a big blending brush. There are some angled or slant shaped brushes,
-    and these are better used for applying blush and bronze, as well as, for
-    highlighting specific parts of the face.</span></p>
+    <p class=MsoNormal><img style="width: 98px; height: 92px; float: left;"
+    src="Honey%20Highlights%20Blog%20Posts%20(1)_files/powder-brush.jpg" alt="powder brush.jpg" 
+    v:shapes="Picture_x0020_10"><span lang=EN-US>A powder brush is usually 
+      a fluffy and round shaped brush designed in such a way that blends powder 
+      makeup as you apply it, such that some refer to it as a big blending brush. 
+      There are some angled or slant shaped brushes, and these are better used for 
+      applying blush and bronze, as well as, for highlighting specific parts of the face.
+    </span></p>
 
     <p class=MsoNormal><span lang=EN-US>To use: </span></p>
 
@@ -299,14 +299,15 @@ p.PadderBetweenControlandBody{
 
     <h1><span lang=EN-US>Foundation brush/beauty sponge</span></h1>
 
-    <p class=MsoNormal><img width=100 height=100 
-    src="Honey%20Highlights%20Blog%20Posts%20(1)_files/beauty-sponge.jpg" align=left
-    hspace=12 v:shapes="Picture_x0020_1"><span lang=EN-US>It is a round,
-    domed shaped densely packed brush which allows blending of <b style='mso-bidi-font-weight:
-    normal'>foundation</b> as you brush. When using this brush don�t be too heavy
-    handed instead build up the amount of product you would like to apply instead
-    of brushing all at once. A sponge is ideal for a flawless and natural
-    foundation application; it is also very easy to use.</span></p>
+    <p class=MsoNormal><img style="width: 100px; height: 100px; float: left; margin-right: 5px;"
+    src="Honey%20Highlights%20Blog%20Posts%20(1)_files/beauty-sponge.jpg" 
+    v:shapes="Picture_x0020_1"><span lang=EN-US>It is a round, domed shaped 
+      densely packed brush which allows blending of <b style='mso-bidi-font-weight:normal'>foundation</b>
+      as you brush. When using this brush don't be too heavy handed instead 
+      build up the amount of product you would like to apply instead of brushing 
+      all at once. A sponge is ideal for a flawless and natural foundation application; 
+      it is also very easy to use.
+    </span></p>
 
     <p class=MsoNormal><span lang=EN-US>How to use:</span></p>
 
@@ -317,15 +318,15 @@ p.PadderBetweenControlandBody{
 
     <h1><span lang=EN-US>Blending Brush</span></h1>
 
-    <p class=MsoNormal><img width=98 height=98
-    src="Honey%20Highlights%20Blog%20Posts%20(1)_files/blending-brush.jpg" align=left
-    hspace=12 v:shapes="Picture_x0020_9"><span lang=EN-US>A blending
-    brush is a loose dome shaped brush perfect for blending both wet and dry
-    products. It can be used for applying eye shadow which blends colors
-    effortlessly on the eye lid and crease. It can also be used to <b
-    style='mso-bidi-font-weight:normal'>blend</b> concealer to the skin; you can
-    have as many blending brushes as you want depending on the purpose you want it
-    to serve.</span></p>
+    <p class=MsoNormal><img style="width: 98px; height: 98px; float: left;"
+    src="Honey%20Highlights%20Blog%20Posts%20(1)_files/blending-brush.jpg" 
+    v:shapes="Picture_x0020_9"><span lang=EN-US>A blending brush is a loose 
+      dome shaped brush perfect for blending both wet and dry products. 
+      It can be used for applying eye shadow which blends colors effortlessly 
+      on the eye lid and crease. It can also be used to <b style='mso-bidi-font-weight:normal'>blend</b>
+      concealer to the skin; you can have as many blending brushes as you want 
+      depending on the purpose you want it to serve.
+    </span></p>
 
     <p class=MsoNormal><span lang=EN-US>How to use:</span></p>
 
@@ -335,8 +336,8 @@ p.PadderBetweenControlandBody{
 
     <h1><span lang=EN-US>Eyebrow Brush</span></h1>
 
-    <p class=MsoNormal><img width=92 height=108 
-    src="Honey%20Highlights%20Blog%20Posts%20(1)_files/eyebrow-brush.jpg" align=left
+    <p class=MsoNormal><img style="width: 92px; height: 108px; float: left;"
+    src="Honey%20Highlights%20Blog%20Posts%20(1)_files/eyebrow-brush.jpg" align="left"
     hspace=12 v:shapes="_x0000_s1038"><span lang=EN-US>This brush is
     commonly referred to as an angled brush, it is slanted linear brush used to
     both <b style='mso-bidi-font-weight:normal'>fill </b>and <b style='mso-bidi-font-weight:
@@ -384,9 +385,9 @@ p.PadderBetweenControlandBody{
 
     <h1><span lang=EN-US>Foundation</span></h1>
 
-    <p class=MsoNormal><img width=124 height=62 class="padding-5"
-    src="Honey%20Highlights%20Blog%20Posts%20(1)_files/foundation.jpg" align=left
-    hspace=12 v:shapes="Picture_x0020_21"><span lang=EN-US>A foundation
+    <p class=MsoNormal><img style="width: 124px; height: 62px; float: left; margin-right: 10px;"
+    src="Honey%20Highlights%20Blog%20Posts%20(1)_files/foundation.jpg"
+    v:shapes="Picture_x0020_21"><span lang=EN-US>A foundation
     is a liquid applied to the face to create an even, uniform color to the
     complexion. It covers flaws and gives the desired finish <b style='mso-bidi-font-weight:
     normal'>matte </b>or </span><span
@@ -411,10 +412,10 @@ p.PadderBetweenControlandBody{
 
     <h1><span lang=EN-US>A Powder</span></h1>
 
-    <p class=MsoNormal><img width=124 height=82 class="padding-5"
-    src="Honey%20Highlights%20Blog%20Posts%20(1)_files/powder.jpg" align=left
-    hspace=12 v:shapes="Picture_x0020_24"><span lang=EN-US>It could be
-    compact or loose depending on your choice; it also works best when it�s the <b
+    <p class=MsoNormal><img style="width: 124px; height: 82px; float: left; margin-right: 10px;"
+    src="Honey%20Highlights%20Blog%20Posts%20(1)_files/powder.jpg" 
+    v:shapes="Picture_x0020_24"><span lang=EN-US>It could be
+    compact or loose depending on your choice; it also works best when it's the <b
     style='mso-bidi-font-weight:normal'>same shade</b> with your <b
     style='mso-bidi-font-weight:normal'>skin tone</b> and is usually applied right
     after a foundation. It is important to know that to avoid looking cakey, use
@@ -426,9 +427,9 @@ p.PadderBetweenControlandBody{
 
     <h1><span lang=EN-US>A Brow Pencil / Brow Gel</span></h1>
 
-    <p class=MsoNormal><img width=124 height=83 class="padding-5"
-    src="Honey%20Highlights%20Blog%20Posts%20(1)_files/brow-pencil.jpg" align=left
-    hspace=12 v:shapes="Picture_x0020_23"><span lang=EN-US>This is used
+    <p class=MsoNormal><img style="width: 124px; height: 83px; float: left; margin-right: 10px;"
+    src="Honey%20Highlights%20Blog%20Posts%20(1)_files/brow-pencil.jpg"
+    v:shapes="Picture_x0020_23"><span lang=EN-US>This is used
     to <b style='mso-bidi-font-weight:normal'>fill</b> the brows and make it look
     fuller and a little bit darker, a brow pencil should be used when your brows
     are <span class=GramE>more <b style='mso-bidi-font-weight:normal'>defined </b>and
@@ -442,9 +443,9 @@ p.PadderBetweenControlandBody{
 
     <h1><span lang=EN-US>A Lipstick / Lip gloss</span></h1>
 
-    <p class=MsoNormal><img width=124 height=82 class="padding-5"
-    src="Honey%20Highlights%20Blog%20Posts%20(1)_files/lipstick.jpg" align=left
-    hspace=12 v:shapes="Picture_x0020_25"><span lang=EN-US>Depending on
+    <p class=MsoNormal><img style="width: 124px; height: 82px; float: left; margin-right: 10px;"
+    src="Honey%20Highlights%20Blog%20Posts%20(1)_files/lipstick.jpg"
+    v:shapes="Picture_x0020_25"><span lang=EN-US>Depending on
     your choice and occasion, you could use a lip-gloss for a casual outing this
     prevents your lips from cracking and looking dry but a lipstick on the other
     hand could give you a bold look especially if you have an event or an occasion
@@ -466,7 +467,7 @@ p.PadderBetweenControlandBody{
     tutorial video on how to do a nude makeup or you want an easy brow tutorial for
     beginners, click on the link below a very detailed tutorial awaits you.</span></p>
 
-    <p class=MsoNormal><span lang=EN-US>Easy brow tutorial <span class=SpellE>link<a
+    <p class=MsoNormal><span lang=EN-US>Easy brow tutorial <span class=SpellE>link <a
     href="https://youtu.be/wX5TtjoNBv">https:/youtu.be/wX5TtjoNBv</a></span></span></p>
 
     <p class=MsoNormal><span lang=EN-US>Nude makeup tutorial link:</span></p>
@@ -475,10 +476,10 @@ p.PadderBetweenControlandBody{
       <!-- Share Wrap -->
       <div class="honey-share-wrap">
         <ul class="honey-share-icon">
-            <li><a href="post.html#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="post.html#" style="padding:8px 15px"><i class="fa fa-facebook"></i></a></li>
             <li><a href="post.html#"><i class="fa fa-twitter"></i></a></li>
             <li><a href="post.html#"><i class="fa fa-google"></i></a></li>
-            <li><a href="post.html#"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="post.html#" style="padding: 8px 13px"><i class="fa fa-instagram"></i></a></li>
             <li><a href="post.html#"><i class="fa fa-linkedin"></i></a></li>
         </ul>
     </div>
