@@ -1432,3 +1432,35 @@ overflow: hidden;
 .honey-comment-form .form-control.message {
     height: 150px;
 }
+/* ***Subscribe Form*** */
+.subscribe{
+    padding: 10px;
+    padding-bottom: 20px;
+    width: 100%;
+    background-color: #9762af;
+}
+.subscribe h2{
+    font-size: 26px;
+    line-height: 1.5em;
+    font-weight: 400;
+    color: #fff;
+    margin: 0;
+}
+
+.sub
+.subscribe-form{
+    width: 100%;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+.subscribe-form button{
+    padding: 6px 10px;
+    color: #fff;
+    border-color: #fff;
+}
+.subscribe-input{
+    margin-right: 15px;
+    height: 40px;
+    width: 70%;
+    padding: 10px;    
+}
