@@ -28,9 +28,9 @@
                                 <div class="error"></div>
                                 <div class="form loginBox">
                                     <form method="" action="" accept-charset="UTF-8">
-                                    <input id="email" class="form-control" type="text" placeholder="Email" name="email">
-                                    <input id="password" class="form-control" type="password" placeholder="Password" name="password">
-                                    <input class="honey-btn2 btn-login" type="button" value="Login" onclick="loginAjax()">
+                                    <input id="email" class="form-control" type="text" placeholder="Email" name="email" required>
+                                    <input id="password" class="form-control" type="password" placeholder="Password" name="password" required>
+                                    <input class="btn-login" type="button" value="Login" onclick="loginAjax()">
                                     </form>
                                 </div>
                              </div>
@@ -38,11 +38,14 @@
                         <div class="box">
                             <div class="content registerBox" style="display:none;">
                              <div class="form">
-                                <form method="" html="{:multipart=>true}" data-remote="true" action="" accept-charset="UTF-8">
-                                <input id="email" class="form-control" type="text" placeholder="Email" name="email">
-                                <input id="password" class="form-control" type="password" placeholder="Password" name="password">
-                                <input id="password_confirmation" class="form-control" type="password" placeholder="Repeat Password" name="password_confirmation">
-                                <input class="honey-btn2 btn-register" type="button" value="Create account" name="commit">
+                                <form method="POST" html="{:multipart=>true}" data-remote="true" action="register.php" accept-charset="UTF-8">
+                                <input id="firstname" class="form-control" type="text" placeholder="Firstname" name="firstname" required>
+                                <input id="surname" class="form-control" type="text" placeholder="Lastname" name="surname" required>
+                                <input id="username" class="form-control" type="text" placeholder="username" name="username" required>
+                                <input id="email" class="form-control" type="text" placeholder="Email" name="email" required>
+                                <input id="password" class="form-control" type="password" placeholder="Password" name="password" required>
+                                <input id="password_confirmation" class="form-control" type="password" placeholder="Repeat Password" name="password_confirmation" required>
+                                <button class="btn-register" type="submit" name="commit"> Create account</button>
                                 </form>
                                 </div>
                             </div>
