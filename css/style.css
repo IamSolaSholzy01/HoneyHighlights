@@ -1445,6 +1445,7 @@ overflow: hidden;
     font-weight: 400;
     color: #fff;
     margin: 0;
+    font-variant: small-caps;
 }
 
 .sub
@@ -1460,7 +1461,24 @@ overflow: hidden;
 }
 .subscribe-input{
     margin-right: 15px;
+    margin-bottom: 10px;
     height: 40px;
     width: 70%;
     padding: 10px;    
+}
+@media all and (min-width: 768px){
+    .subscribe-input{
+        margin-right: 15px;
+        height: 40px;
+        width: 50%;
+        padding: 10px;    
+    }
+}
+@media all and (min-width: 901px){
+    .subscribe-input{
+        margin-right: 15px;
+        height: 40px;
+        width: 40%;
+        padding: 10px;    
+    }
 }
