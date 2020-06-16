@@ -18,7 +18,7 @@ create table comments(
 Insert into comments(comment_id,post_id,body) value(
 	1,
     1,
-    'I really enjoyed thos post..Thanks HoneyHighlights'
+    'I really enjoyed this post..Thanks HoneyHighlights'
 );
 create table replies(
 	reply_id int(11),
