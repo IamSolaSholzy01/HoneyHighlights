@@ -155,6 +155,8 @@ function validateForm(){
         passError.textContent = "Password too short. At least 6 characters."
     } else if(!regularExpression.test(passwordField)){
         passError.textContent = "Password must have at least one number and at least one special character.";
+    } else if(passwordField === surname) {
+        passError.textContent = "Do not use yur surname as password";
     }
     else {
         passError.textContent = "";
