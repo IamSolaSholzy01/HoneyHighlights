@@ -1,11 +1,66 @@
 /*
  *
  * login-register modal
- * Autor: Creative Tim
+ * Autor: Creative ;
  * Web-autor: creative.tim
  * Web script: http://creative-tim.com
  * 
  */
+
+ let clickedStatus = false;
+ let clickNumber = 0;
+ function aliababwa(){
+    let regpassword = document.getElementById('regpassword');
+    let clickShow = document.getElementById('passwordshow');
+    if (clickNumber > 0){
+        if (!clickedStatus){
+            regpassword.setAttribute('type', 'text');
+            clickShow.textContent = "Hide";
+            clickedStatus = true;
+        } 
+    } else if (clickNumber < 1) {
+        clickNumber++;
+    }
+
+    clickShow.style.display = "block";
+    clickShow.onclick = function (event){
+        event.preventDefault();
+        switch (clickedStatus){
+            case true: 
+                regpassword.setAttribute('type', 'password');
+                clickShow.textContent = "Show";
+                clickedStatus = false;
+                break;
+        
+            default:
+                regpassword.setAttribute('type', 'text');
+                clickShow.textContent = "Hide";
+                clickedStatus = true;
+                break;
+        }
+    }
+ }
+
+ window.onclick = function(event){
+     console.log("Hello");
+    let regpassword = document.getElementById('regpassword');
+    let clickShow = document.getElementById('passwordshow');
+    let create = document.getElementById('createacc');
+    if (event.target != regpassword && event.target != clickShow && event.target != create  && clickedStatus) {
+        event.preventDefault();
+        regpassword.setAttribute('type', 'password');
+        clickShow.textContent = "Show";
+        clickedStatus = false;
+        clickShow.style.display = "none";
+    } else if (event.target != regpassword && event.target != clickShow && event.target != create && !clickedStatus) {
+        event.preventDefault();
+        regpassword.setAttribute('type', 'password');
+        clickShow.textContent = "Show";
+        clickedStatus = true;
+        clickShow.style.display = "none";
+    }
+ }
+
 function showRegisterForm(){
     $('.loginBox').fadeOut('fast',function(){
         $('.registerBox').fadeIn('fast');
@@ -89,6 +144,7 @@ function validateForm(){
     let confirmPasswordField = document.forms['login']['password_confirmation'].value;
     let passError = document.getElementById('passError');
     let confirmError = document.getElementById('confirmError');
+    var regularExpression = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$/;
 
     if (passwordField === firstName) {
         passError.textContent = "Do not use your first name as password";
@@ -98,8 +154,8 @@ function validateForm(){
         return false;    
     } else if(passwordField.length < 6){
         passError.textContent = "Password too short. At least 6 characters."
-    } else if(! /^[a-zA-Z0-9]+$/.test(passwordField)){
-        passError.textContent = "Validation failed";
+    } else if(!regularExpression.test(passwordField)){
+        passError.textContent = "Password must have at least one number and at least one special character.";
     }
     else {
         passError.textContent = "";

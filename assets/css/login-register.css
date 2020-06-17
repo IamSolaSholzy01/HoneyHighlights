@@ -196,7 +196,20 @@
     padding: 13px 12px;
     width: 100%;
 }
-
+.field-icon {
+    float: right;
+    margin-right: 8px;
+    margin-top: -14%;
+    position: relative;
+    z-index: 2;
+    cursor:pointer;
+    padding: 2px;
+    -webkit-transform-origin-y: -50%;
+    -ms-transform-origin-y: -50%;
+  }
+  .field-icon:hover {
+      border: 1px solid #faf;
+  }
 
 @media (max-width:400px){
     .login .modal-dialog{

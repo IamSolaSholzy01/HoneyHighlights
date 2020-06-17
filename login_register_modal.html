@@ -28,8 +28,8 @@
                                 <div class="error"></div>
                                 <div class="form loginBox">
                                     <form method="" action="" accept-charset="UTF-8">
-                                    <input id="email" class="form-control" type="text" placeholder="Email" name="email" required>
-                                    <input id="password" class="form-control" type="password" placeholder="Password" name="password" required>
+                                    <input id="loginemail" class="form-control" type="text" placeholder="Email" name="email" required>
+                                    <input id="loginpassword" class="form-control" type="password" placeholder="Password" name="password" required>
                                     <input class="btn-login" type="button" value="Login" onclick="loginAjax()">
                                     </form>
                                 </div>
@@ -42,8 +42,9 @@
                                         <input id="firstname" class="form-control" type="text" placeholder="First name" name="firstname" required>
                                         <input id="surname" class="form-control" type="text" placeholder="Last name" name="surname" required>
                                         <input id="username" class="form-control" type="text" placeholder="Username" name="username" required>
-                                        <input id="email" class="form-control" type="email" placeholder="Email" name="email" required>
-                                        <input id="password" onblur="return validateForm()" class="form-control" type="password" placeholder="Password" name="password" required><span id="passError" style="color: red;"></span>
+                                        <input id="regemail" class="form-control" type="email" placeholder="Email" name="email" required>
+                                        <div><input id="regpassword" onblur="return validateForm()" onfocus="aliababwa()" class="form-control" type="password" placeholder="Password" name="password" required><p id="passwordshow" class="field-icon" style="display: none;">Show</p></div>
+                                        <span id="passError" style="color: red;"></span>
                                         <input id="password_confirmation" onblur="return validateForm()" class="form-control" type="password" placeholder="Repeat Password" name="password_confirmation" required><span id="confirmError" style="color: red;"></span>
                                         <button class="btn-register" type="submit" name="commit">Create account</button>
                                     </form>
@@ -54,7 +55,7 @@
                     <div class="modal-footer">
                         <div class="forgot login-footer">
                             <span>Looking to
-                                 <a href="javascript: showRegisterForm();">create an account</a>
+                                 <a id="createacc" href="javascript: showRegisterForm();">create an account</a>
                             ?</span>
                         </div>
                         <div class="forgot register-footer" style="display:none">
