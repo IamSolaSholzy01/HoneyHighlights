@@ -42,7 +42,6 @@
  }
 
  window.onclick = function(event){
-     console.log("Hello");
     let regpassword = document.getElementById('regpassword');
     let clickShow = document.getElementById('passwordshow');
     let create = document.getElementById('createacc');
