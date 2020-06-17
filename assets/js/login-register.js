@@ -157,6 +157,8 @@ function validateForm(){
         passError.textContent = "Password must have at least one number and at least one special character.";
     } else if(passwordField === surname) {
         passError.textContent = "Do not use yur surname as password";
+    } else if (confirmPasswordField !== passwordField) {
+        confirmError.textContent = "Both passwords must match"        
     }
     else {
         passError.textContent = "";
