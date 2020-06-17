@@ -68,4 +68,40 @@ function shakeModal(){
     }, 1000 ); 
 }
 
-   
+function submitValidation(){
+    let firstName = document.forms['login']['firstname'].value;
+    let surname = document.forms['login']['surname'].value;
+    let passwordField = document.forms['login']['password'].value;
+    let confirmPasswordField = document.forms['login']['password_confirmation'].value;
+    let passError = document.getElementById('passError');
+    let confirmError = document.getElementById('confirmError');
+
+    if (passwordField == "") {
+        passError.textContent = "Password must not be empty";
+        return false;
+    }
+}
+
+function validateForm(){
+    let firstName = document.forms['login']['firstname'].value;
+    let surname = document.forms['login']['surname'].value;
+    let passwordField = document.forms['login']['password'].value;
+    let confirmPasswordField = document.forms['login']['password_confirmation'].value;
+    let passError = document.getElementById('passError');
+    let confirmError = document.getElementById('confirmError');
+
+    if (passwordField === firstName) {
+        passError.textContent = "Do not use your first name as password";
+        return false;
+    } else if (passwordField === "honeyhighlights" || passwordField === "HoneyHighlights" || passwordField === "Honeyhighlights") {
+        passError.textContent = "Do not use Honeyhighlights as password";
+        return false;    
+    } else if(passwordField.length < 6){
+        passError.textContent = "Password too short. At least 6 characters."
+    } else if(! /^[a-zA-Z0-9]+$/.test(passwordField)){
+        passError.textContent = "Validation failed";
+    }
+    else {
+        passError.textContent = "";
+    }
+}

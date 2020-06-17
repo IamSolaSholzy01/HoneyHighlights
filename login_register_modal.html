@@ -38,15 +38,15 @@
                         <div class="box">
                             <div class="content registerBox" style="display:none;">
                              <div class="form">
-                                <form method="POST" html="{:multipart=>true}" data-remote="true" action="register.php" accept-charset="UTF-8">
-                                <input id="firstname" class="form-control" type="text" placeholder="Firstname" name="firstname" required>
-                                <input id="surname" class="form-control" type="text" placeholder="Lastname" name="surname" required>
-                                <input id="username" class="form-control" type="text" placeholder="username" name="username" required>
-                                <input id="email" class="form-control" type="text" placeholder="Email" name="email" required>
-                                <input id="password" class="form-control" type="password" placeholder="Password" name="password" required>
-                                <input id="password_confirmation" class="form-control" type="password" placeholder="Repeat Password" name="password_confirmation" required>
-                                <button class="btn-register" type="submit" name="commit"> Create account</button>
-                                </form>
+                                    <form method="POST" onsubmit="return submitValidate()" html="{:multipart=>true}" data-remote="true" action="register.php" accept-charset="UTF-8" name="login">
+                                        <input id="firstname" class="form-control" type="text" placeholder="First name" name="firstname" required>
+                                        <input id="surname" class="form-control" type="text" placeholder="Last name" name="surname" required>
+                                        <input id="username" class="form-control" type="text" placeholder="Username" name="username" required>
+                                        <input id="email" class="form-control" type="email" placeholder="Email" name="email" required>
+                                        <input id="password" onblur="return validateForm()" class="form-control" type="password" placeholder="Password" name="password" required><span id="passError" style="color: red;"></span>
+                                        <input id="password_confirmation" onblur="return validateForm()" class="form-control" type="password" placeholder="Repeat Password" name="password_confirmation" required><span id="confirmError" style="color: red;"></span>
+                                        <button class="btn-register" type="submit" name="commit">Create account</button>
+                                    </form>
                                 </div>
                             </div>
                         </div>

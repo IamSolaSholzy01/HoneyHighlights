@@ -1,4 +1,4 @@
-<? php
+<?php
 
 if($_POST && isset($_POST['firstname'], $_POST['surname'], $_POST['email'], $_POST['password'], $_POST['username'])){
 
@@ -7,6 +7,8 @@ if($_POST && isset($_POST['firstname'], $_POST['surname'], $_POST['email'], $_PO
     $email = $_POST['email'];
     $usename = $_POST['username'];
     $passkey = $_POST['password'];
+
+    echo "received input";
 
     $servername = "localhost";
     $username = "root";
@@ -26,10 +28,10 @@ if($_POST && isset($_POST['firstname'], $_POST['surname'], $_POST['email'], $_PO
 
      //Hashing function
      $hashed_password = password_hash($passkey, PASSWORD_DEFAULT);
-     $sql = "INSERT INTO user_table VALUE ('$firstname','$surname','$email','$usename','$hashed_password')";
+     $sql = "INSERT INTO user_table (firstname, surname, email, username, passkey) VALUE ('$firstname','$surname','$email','$usename','$hashed_password')";
  
      if (mysqli_query($conn, $sql)) {
-         echo "New record created successfully";
+         echo "<h1>New record created successfully</h1>";
      } else {
          echo "Error: " . $sql . "<br>" . mysqli_error($conn);
      }

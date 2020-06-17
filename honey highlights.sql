@@ -1,7 +1,7 @@
 use honeyhighlights;
 select * from contact_table;
 create table posts(
-	post_id int(11) primary key auto_increment,
+	post_id int(11) AUTO_INCREMENT PRIMARY KEY,
     title varchar(250),
     created_at timestamp
 );
@@ -10,7 +10,7 @@ Insert into posts(post_id,title) value(
     '5 TOOLS AND 5 PRODUCTS YOU SHOULD HAVE AS A MAKEUP BEGINNER'
 );
 create table comments(
-	comment_id int(11) auto_increment,
+	comment_id int(11) AUTO_INCREMENT,
     post_id int(11),
     body text,
     created_at timestamp 
