@@ -27,10 +27,11 @@
                                 </div>
                                 <div class="error"></div>
                                 <div class="form loginBox">
-                                    <form method="" action="" accept-charset="UTF-8">
+                                    <form id="login_form" method="POST" action="" accept-charset="UTF-8">
                                     <input id="loginemail" class="form-control" type="text" placeholder="Email" name="email" required>
                                     <input id="loginpassword" class="form-control" type="password" placeholder="Password" name="password" required>
-                                    <input class="btn-login" type="button" value="Login" onclick="loginAjax()">
+                                    <span id="response"></span>
+                                    <input class="btn-login" type="button" value="Login" onclick="submit()">
                                     </form>
                                 </div>
                              </div>
@@ -68,3 +69,36 @@
 		  </div>
     </div>
 </body>
+
+<script>
+    $(function(){
+    
+        var form  = $("#login_form");
+        console.log("clicked");
+        form.submit(function(e){
+    
+            $(this).attr("disabled","disabled");
+            e.preventDefault();
+             
+        // Call ajax for pass data to other place
+        $.ajax({
+            type: form.attr("method"),
+            url: 'login.php',
+            data: form.serialize(),
+            dataType: "json", // getting filed value in serialize form
+        
+            success: function(data){ 
+               $('#response').text(data.content);// show the response
+               $('#response').css("color","green");
+                $("input:submit").removeAttr("disabled");
+            },
+            error: function(data) { 
+                $('#response').text("An error occured");
+                $('#response').css("color","red");
+                $("input:submit").removeAttr("disabled");
+            }
+        });
+    
+        });
+    });
+    </script>
