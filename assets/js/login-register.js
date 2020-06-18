@@ -45,13 +45,16 @@
     let regpassword = document.getElementById('regpassword');
     let clickShow = document.getElementById('passwordshow');
     let create = document.getElementById('createacc');
-    if (event.target != regpassword && event.target != clickShow && event.target != create  && clickedStatus) {
+    let googleIcon = document.getElementById('google_login');
+    let facebookIcon = document.getElementById('facebook_login');
+    let logginuser = document.getElementById('logginuser');
+    if (event.target != regpassword && event.target != clickShow && event.target != googleIcon && event.target != facebookIcon && event.target != logginuser && event.target != create  && clickedStatus) {
         event.preventDefault();
         regpassword.setAttribute('type', 'password');
         clickShow.textContent = "Show";
         clickedStatus = false;
         clickShow.style.display = "none";
-    } else if (event.target != regpassword && event.target != clickShow && event.target != create && !clickedStatus) {
+    } else if (event.target != regpassword && event.target != clickShow && event.target != googleIcon && event.target != facebookIcon && event.target != logginuser && event.target != create && !clickedStatus) {
         event.preventDefault();
         regpassword.setAttribute('type', 'password');
         clickShow.textContent = "Show";
