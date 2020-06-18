@@ -30,13 +30,14 @@
                                     <form method="POST" action="server.php" accept-charset="UTF-8">
                                     <input id="loginemail" class="form-control" type="text" placeholder="Email" name="email" required>
                                     <input id="loginpassword" class="form-control" type="password" placeholder="Password" name="password" required>
-                                    <input class="btn-login" type="button" name="loginbtn" value="Login" onclick="loginAjax()">
+                                    <input class="btn-login" type="button" name="loginbtn" value="Login">
                                     </form>
                                 </div>
                              </div>
                         </div>
                         <div class="box">
                             <div class="content registerBox" style="display:none;">
+                            <div class="errors"></div>
                              <div class="form">
                                     <form method="POST" html="{:multipart=>true}" data-remote="true" action="server.php" accept-charset="UTF-8" name="login">
                                     <script language="php"> include('errors.php');</script>

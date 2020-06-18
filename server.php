@@ -109,9 +109,11 @@ if($_POST && isset($_POST['email'], $_POST['password'])){
     }
      else {
          echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+         echo ("<script>shakeModal();</script>");
      }
      //header("Location: blog.html");
      echo json_encode($data);
 }
+echo ("<script src='assets/js/login-register.js></script>");
 
 ?>
