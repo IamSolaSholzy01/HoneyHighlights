@@ -27,10 +27,10 @@
                                 </div>
                                 <div class="error"></div>
                                 <div class="form loginBox">
-                                    <form method="" action="" accept-charset="UTF-8">
+                                    <form method="POST" action="server.php" accept-charset="UTF-8">
                                     <input id="loginemail" class="form-control" type="text" placeholder="Email" name="email" required>
                                     <input id="loginpassword" class="form-control" type="password" placeholder="Password" name="password" required>
-                                    <input class="btn-login" type="button" value="Login" onclick="loginAjax()">
+                                    <input class="btn-login" type="button" name="loginbtn" value="Login" onclick="loginAjax()">
                                     </form>
                                 </div>
                              </div>
@@ -38,15 +38,17 @@
                         <div class="box">
                             <div class="content registerBox" style="display:none;">
                              <div class="form">
-                                    <form method="POST" html="{:multipart=>true}" data-remote="true" action="register.php" accept-charset="UTF-8" name="login">
+                                    <form method="POST" html="{:multipart=>true}" data-remote="true" action="server.php" accept-charset="UTF-8" name="login">
+                                    <script language="php"> include('errors.php');</script>
                                         <input id="firstname" class="form-control" type="text" placeholder="First name" name="firstname" required>
                                         <input id="surname" class="form-control" type="text" placeholder="Last name" name="surname" required>
                                         <input id="username" class="form-control" type="text" placeholder="Username" name="username" required>
                                         <input id="regemail" class="form-control" type="email" placeholder="Email" name="email" required>
-                                        <div><input id="regpassword" onblur="return validateForm()" onfocus="aliababwa()" class="form-control" type="password" placeholder="Password" name="password" required><p id="passwordshow" class="field-icon" style="display: none;">Show</p></div>
+                                        <div><input id="regpassword" onblur="return validateForm()" onfocus="aliababwa()" class="form-control" type="password" placeholder="Password" name="password" required /><p id="passwordshow" class="field-icon" style="display: none;">Show</p></div>
                                         <span id="passError" style="color: red;"></span>
-                                        <input id="password_confirmation" onblur="return validateForm()" class="form-control" type="password" placeholder="Repeat Password" name="password_confirmation" required><span id="confirmError" style="color: red;"></span>
-                                        <button class="btn-register" type="submit" name="commit">Create account</button>
+                                        <div><input id="passwordconfirmation" onblur="return validateForm()" onfocus="alibaba()" class="form-control" type="password" placeholder="Repeat Password" name="password_confirmation" required /><p id="confirmpasswordshow" class="field-icon" style="display: none;">Show</p></div>
+                                        <span id="confirmError" style="color: red;"></span>
+                                        <input id="registerbtn" class="btn-register" type="submit" name="commit" value="Create account" />
                                     </form>
                                 </div>
                             </div>
@@ -67,4 +69,8 @@
 		      </div>
 		  </div>
     </div>
+    <script src="js/include.js"></script>
+    <script>
+        includeHTML();
+    </script>
 </body>
