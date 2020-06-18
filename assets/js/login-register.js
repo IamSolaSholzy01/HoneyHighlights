@@ -125,20 +125,6 @@ function shakeModal(){
     }, 1000 ); 
 }
 
-function submitValidation(){
-    let firstName = document.forms['login']['firstname'].value;
-    let surname = document.forms['login']['surname'].value;
-    let passwordField = document.forms['login']['password'].value;
-    let confirmPasswordField = document.forms['login']['password_confirmation'].value;
-    let passError = document.getElementById('passError');
-    let confirmError = document.getElementById('confirmError');
-
-    if (passwordField == "") {
-        passError.textContent = "Password must not be empty";
-        return false;
-    }
-}
-
 function validateForm(){
     let firstName = document.forms['login']['firstname'].value;
     let surname = document.forms['login']['surname'].value;
