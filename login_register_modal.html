@@ -74,3 +74,36 @@
         includeHTML();
     </script>
 </body>
+
+<script>
+    $(function(){
+    
+        var form  = $("#login_form");
+        console.log("clicked");
+        form.submit(function(e){
+    
+            $(this).attr("disabled","disabled");
+            e.preventDefault();
+             
+        // Call ajax for pass data to other place
+        $.ajax({
+            type: form.attr("method"),
+            url: 'login.php',
+            data: form.serialize(),
+            dataType: "json", // getting filed value in serialize form
+        
+            success: function(data){ 
+               $('#response').text(data.content);// show the response
+               $('#response').css("color","green");
+                $("input:submit").removeAttr("disabled");
+            },
+            error: function(data) { 
+                $('#response').text("An error occured");
+                $('#response').css("color","red");
+                $("input:submit").removeAttr("disabled");
+            }
+        });
+    
+        });
+    });
+    </script>
