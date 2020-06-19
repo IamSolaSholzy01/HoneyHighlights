@@ -86,21 +86,21 @@
                                      <span>or</span>
                                    <div class="line r"></div>
                                </div>
-                               <div class="error"></div>
                                <div class="form loginBox">
-                                <form class="logform" method="POST" action="login.php" accept-charset="UTF-8">
-                                <input id="loginemail" class="form-control" type="text" placeholder="Email" name="email" required>
-                                <input id="loginpassword" class="form-control" type="password" placeholder="Password" name="password" required>
-                                <input class="btn-login" type="submit" value="Login">
-                                <span id="reply"></span>
+                                <div class="error" id="reply"></div>
+                                <form class="logform" method="POST" action="server.php" accept-charset="UTF-8" name="logginginform">
+                                    <input id="loginemail" class="form-control" type="text" placeholder="Email" name="email" required>
+                                    <input id="loginpassword" class="form-control" type="password" placeholder="Password" name="password" required>
+                                    <input class="btn-login" id="loginbtn" type="submit" value="Login">
                                 </form>
                             </div>
                             </div>
                        </div>
                        <div class="box">
                            <div class="content registerBox" style="display:none;">
+                            <div class="error" id="response"></div>
                             <div class="form">
-                                   <form class="registrationform" method="POST" action="register.php" accept-charset="UTF-8" >
+                                   <form class="registrationform" method="POST" action="server.php" accept-charset="UTF-8" name="registerform">
                                    <script language="php"> include('errors.php');</script>
                                        <input id="firstname" class="form-control" type="text" placeholder="First name" name="firstname" required>
                                        <input id="surname" class="form-control" type="text" placeholder="Last name" name="surname" required>
@@ -111,7 +111,6 @@
                                        <div><input id="passwordconfirmation" onblur="return validateForm()" onfocus="alibaba()" class="form-control" type="password" placeholder="Repeat Password" name="password_confirmation" required /><p id="confirmpasswordshow" class="field-icon" style="display: none;">Show</p></div>
                                        <span id="confirmError" style="color: red;"></span>
                                        <input id="registerbtn" class="btn-register" type="submit" name="commit" value="Create account" />
-                                       <span id="response" style="color: red;"></span>
                                    </form>
                                </div>
                            </div>
@@ -132,7 +131,7 @@
              </div>
          </div>
    </div>
-<!----End of Modal-->
+    <!----End of Modal-->
 
     <!-- Blog -->
     <section class="honey-page-section" style="padding-top: calc(44px + 5vh); padding-bottom: 5vh;">
@@ -228,6 +227,17 @@
             </div>
         </div>
     </section>
+    <!-- Subscribe -->
+    <div class="subscribe" id="subscribe-form">
+        <h2>Subscribe to our mailing list now <br> Be the first to know once a blog post is dropped</h2>
+
+        <form class="subscribe-form" action="subscribe.php" method="POST" name="subscribersss">
+            <input class="subscribe-input" type="email" name="email" id="email" placeholder="Email" required >
+            <button id="subscribe-button" class="honey-btn2" type="submit">Subscribe</button>
+        </form>
+    </div>
+    <div class="subscribe" id="subscribe-result"></div>
+    </div>
     <!-- Footer -->
     <div include-html="footer.html"></div> 
     <!-- Loader -->
@@ -244,76 +254,127 @@
     <script>
         includeHTML();
     </script>
-    <script type="text/javascript">
-        $(document).ready(function(){
-            openLoginModal();
+
+    <script>
+        $(function(){
+            event.preventDefault();
+            var subForm = $('.subscribe-form');
+            subForm.submit(function(e) { 
+                url = subForm.attr('action');
+                type = subForm.attr('method');
+                data = {};
+                console.log("Oga Ade how far na");
+
+                subForm.find('[name]').each(function() { 
+                    var that = $(this),
+                    name = that.attr('name'),
+                    value = that.val();
+                    data[name] = value;
+                });
+
+                console.log(data);
+
+                $.ajax({
+                    type: type,
+                    url: url,
+                    dataType: 'JSON',
+                    data: data,
+                    success: function(response) { 
+                        $('#subscribe-form').css('display','none');
+                        $('#subscribe-result').html(response.content);
+                        $('#subscribe-result').css('display','block');
+                     },
+                    error: function(response) {
+                        $('#subscribe-result').html(response.email);
+                    }
+                })
+                return false;
+             });
+
         });
     </script>
-    
-<script>
-    $(function(){
-        console.log("clicked");
-        event.preventDefault(); 
-        //registration form
-        var regForm  = $(".registrationform");
-        console.log(regForm.name);
-        regForm.submit(function(e){
-            console.log("registration clicked");
-            url = regForm.attr('action');
-            type = regForm.attr('method');
-            data = {};
 
-            regForm.find('[name]').each(function(){
-                var that = $(this),
-                name = that.attr('name'),
-                value = that.val();
-                data[name] = value;
-            });
+    <script>
+        $(function(){
+            event.preventDefault(); 
+            //registration form
+            var regForm  = $(".registrationform");
+            regForm.submit(function(e){
+                url = regForm.attr('action');
+                type = regForm.attr('method');
+                data = {};
 
-            console.log(data);
+                regForm.find('[name]').each(function(){
+                    var that = $(this),
+                    name = that.attr('name'),
+                    value = that.val();
+                    data[name] = value;
+                });
 
-            // Call ajax for pass data to other place
-            $.ajax({
-                type: type,
-                url: url,
-                dataType: 'JSON',
-                data: data,
-                success: function(response){ 
-                    if(response.id == "OKAY"){
-                        $('#response').html(response.content);// show the response
-                    }
-                    if(response.id == "duplicateName"){
-                        $('#response').html(response.content);// show the response
-                    }else if(response.id == "duplicateEmail"){
-                        $('#response').html(response.content);// show the response
-                    }else if(response.id == "success"){
-                        $('#response').html(response.content);// show the response
-                        $('#response').css("color","green");
-                        showLoginForm();
-                    }
+                // Call ajax for pass data to other place
+                $.ajax({
+                    type: type,
+                    url: url,
+                    dataType: 'JSON',
+                    data: data,
+                    success: function(response){ 
+                        if(response.id == "duplicateName"){
+                            shakeModal(); 
+                            $('#response').html(response.content);// show the response
+                            $('.error').addClass('alert alert-danger');
+                            setTimeout(() => {
+                                $('#username').val("");
+                                $('#regpassword').val("");
+                                $('passwordconfirmation').val("");
+                            }, 3000); 
+                        }else if(response.id == "duplicateEmail"){
+                            shakeModal();
+                            $('#response').html(response.content);// show the response
+                            $('#response').css("color","red");
+                            $('.error').addClass('alert alert-danger');
+                            setTimeout(() => {
+                                $('#regemail').val("");
+                                $('#regpassword').val("");
+                                $('#firstname').val("");
+                                $('#surname').val("");
+                                $('#passwordconfirmation').val("");
+                                $('#response').val("");
+                            }, 3000); 
+                        }else if(response.id == "success"){
+                            $('#response').html(response.content);// show the response
+                            $('#response').css("color","green");
+                            $('.error').addClass('alert alert-success');
+                            setTimeout(() => {
+                                $('#regemail').val("");
+                                $('#regpassword').val("");
+                                $('#firstname').val("");
+                                $('#surname').val("");
+                                $('#passwordconfirmation').val("");
+                                $('#response').val("");
+                                $('.error').removeClass('alert alert-success')
+                                showLoginForm();
+                            }, 3000); 
+                        }
+                        $("input:submit").removeAttr("disabled");
+                    },
+                    error : function(){
+                    $('#response').text("Serious error");// show the response
+                    shakeModal();
                     $("input:submit").removeAttr("disabled");
-                },
-                error : function(){
-                $('#response').text("Serious error");// show the response
-                $("input:submit").removeAttr("disabled");
-                }
-            });
-            return false;
-        });   
-});
+                    }
+                });
+                return false;
+            });   
+        });
     </script>
     <script>
         
         $(function(){
-            
-        console.log("login side clicked");
         event.preventDefault(); 
         
         //Login form
         var logForm  = $(".logform");
-        console.log(logForm.name);
         logForm.submit(function(e){
-            console.log("Login clicked");
             url = logForm.attr('action');
             type = logForm.attr('method');
             data = {};
@@ -325,29 +386,48 @@
                 data[name] = value;
             });
 
-            console.log(data);
-
             // Call ajax for pass data to other place
             $.ajax({
                 type: type,
                 url: url,
                 dataType: 'JSON',
                 data: data,
-                success: function(response){ 
-                    if(response.id == "OKAY"){
-                        $('#reply').html(response.content);// show the response
-                    }
+                success: function(response){
                     if(response.id == "success"){
                         $('#reply').html(response.content);// show the response
                         $('#reply').css("color","green");
+                        $('.error').addClass('alert alert-success');
+                        setTimeout(() => {
+                            $('#loginemail').val("");
+                            $('#loginpassword').val("");
+                            $('#reply').text("");
+                            $('.error').removeClass('alert alert-success');
+                        }, 3000);                         
                     }else if(response.id == "error"){
                         $('#reply').html(response.content);// show the response
                         $('#reply').css("color","red");
+                        $('.error').addClass('alert alert-danger');
+                        shakeModal();
+                        setTimeout(() => {
+                            $('#loginemail').val("");
+                            $('#loginpassword').val("");
+                        }, 3000); 
+                    }else if(response.id == "emailerror"){
+                        $('#reply').html(response.content);// show the response
+                        $('#reply').css("color","blue");
+                        $('.error').addClass('alert alert-danger');
+                        shakeModal();
+                        setTimeout(() => {
+                            $('#loginemail').val("");
+                            $('#loginpassword').val("");
+                        }, 3000); 
                     }
                     $("input:submit").removeAttr("disabled");
                 },
                 error : function(){
-                $('#reply').text("Serious error");// show the response
+                $('#response').text("Serious error");// show the response
+                $('.error').addClass('alert alert-danger');
+                shakeModal();
                 $("input:submit").removeAttr("disabled");
                 }
             });
@@ -356,6 +436,8 @@
     });
     
     </script>
+    
+
 </body>
 
 </html>

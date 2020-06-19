@@ -25,6 +25,11 @@
             regpassword.setAttribute('type', 'text');
             clickShow.textContent = "Hide";
             clickedStatus = true;
+            setTimeout(() => {
+                regpassword.setAttribute('type', 'password');
+                clickShow.textContent = "Show";
+                clickedStatus = false;
+            }, 5000);
         } 
     } else if (clickNumber < 1) {
         clickNumber++;
@@ -44,6 +49,11 @@
                 regpassword.setAttribute('type', 'text');
                 clickShow.textContent = "Hide";
                 clickedStatus = true;
+                setTimeout(() => {
+                    regpassword.setAttribute('type', 'password');
+                    clickShow.textContent = "Show";
+                    clickedStatus = false;
+                }, 5000);
                 break;
         }
     }
@@ -58,9 +68,14 @@
     let confirmShow = document.getElementById('confirmpasswordshow');
     if (confirmNumber > 0){
         if (!confirmStatus){
-            confirmShow.setAttribute('type', 'text');
+            confirmpassword.setAttribute('type', 'text');
             confirmShow.textContent = "Hide";
             confirmStatus = true;
+            setTimeout(() => {
+                confirmpassword.setAttribute('type', 'password');
+                confirmShow.textContent = "Show";
+                confirmStatus = false;
+            }, 5000);
         } 
     } else if (confirmNumber < 1) {
         confirmNumber++;
@@ -80,12 +95,19 @@
                 confirmpassword.setAttribute('type', 'text');
                 confirmShow.textContent = "Hide";
                 confirmStatus = true;
+                setTimeout(() => {
+                    confirmpassword.setAttribute('type', 'password');
+                    confirmShow.textContent = "Show";
+                    confirmStatus = false;
+                }, 5000);
                 break;
         }
     }
  }
-
- window.onclick = function(event){
+ /*let modalities = document.getElementById('loginModal');*/
+ /*window.onclick = function(event){
+     if (event.target != document.getElementsByClassName('modal-dialog').querySelectorAll('*')){}
+     else{ 
     let confirmpassword = document.getElementById('passwordconfirmation');
     let confirmShow = document.getElementById('confirmpasswordshow');
     let clickShow = document.getElementById('passwordshow');
@@ -94,33 +116,33 @@
     let facebookIcon = document.getElementById('facebook_login');
     let logginuser = document.getElementById('logginuser');
     let registerButton = document.getElementById('registerbtn');
-    if (event.target != regpassword && event.target != clickShow && event.target != googleIcon && event.target != facebookIcon && event.target != logginuser && event.target != create && event.target != registerButton && clickedStatus ) {
+    let loginButton = document.getElementById('loginbtn');
+    if (event.target != regpassword && event.target != clickShow && event.target != googleIcon && event.target != facebookIcon && event.target != logginuser && event.target != create && event.target != registerButton && event.target != loginButton && clickedStatus ) {
         event.preventDefault();
         regpassword.setAttribute('type', 'password');
         clickShow.textContent = "Show";
         clickStatus = false;
         clickShow.style.display = "none";
-    } else if (event.target != regpassword && event.target != clickShow && event.target != googleIcon && event.target != facebookIcon && event.target != logginuser && event.target != create && event.target != registerButton && !clickedStatus) {
+    } else if (event.target != regpassword && event.target != clickShow && event.target != googleIcon && event.target != facebookIcon && event.target != logginuser && event.target != create && event.target != registerButton && event.target != loginButton && !clickedStatus) {
         event.preventDefault();
         regpassword.setAttribute('type', 'password');
         clickShow.textContent = "Show";
         clickStatus = true;
         clickShow.style.display = "none";
-    } else if (event.target != confirmpassword && event.target != confirmShow && event.target != googleIcon && event.target != facebookIcon && event.target != logginuser && event.target != create  && event.target != registerButton && confirmStatus) {
+    } else if (event.target != confirmpassword && event.target != confirmShow && event.target != googleIcon && event.target != facebookIcon && event.target != logginuser && event.target != create  && event.target != registerButton && event.target != loginButton && confirmStatus) {
         event.preventDefault();
         confirmpassword.setAttribute('type', 'password');
         confirmShow.textContent = "Show";
         confirmStatus = false;
         confirmShow.style.display = "none";
-    } else if (event.target != confirmpassword && event.target != confirmShow && event.target != googleIcon && event.target != facebookIcon && event.target != logginuser && event.target != create && event.target != registerButton && !confirmStatus) {
+    } else if (event.target != confirmpassword && event.target != confirmShow && event.target != googleIcon && event.target != facebookIcon && event.target != logginuser && event.target != create && event.target != registerButton && event.target != loginButton && !confirmStatus) {
         event.preventDefault();
         confirmpassword.setAttribute('type', 'password');
         confirmShow.textContent = "Show";
         confirmStatus = true;
         confirmShow.style.display = "none";
-    }
-
- }
+    } }
+ }*/
 
 function showRegisterForm(){
     $('.loginBox').fadeOut('fast',function(){
@@ -178,22 +200,20 @@ function loginAjax(){
 
 function shakeModal(){
     $('#loginModal .modal-dialog').addClass('shake');
-             $('.error').addClass('alert alert-danger').html("Invalid email/password combination");
-             $('input[type="password"]').val('');
              setTimeout( function(){ 
                 $('#loginModal .modal-dialog').removeClass('shake'); 
     }, 1000 ); 
 }
 
 function validateForm(){
-    let firstName = document.getElementById("firstname");
-    //document.forms['login']['firstname'].value;
-    let surname = document.getElementById("surname");
-    //document.forms['login']['surname'].value;
-    let passwordField = document.getElementById("regpassword");
-    //document.forms['login']['password'].value;
-    let confirmPasswordField = document.getElementById("passwordconfirmation");
-    //document.forms['login']['password_confirmation'].value;
+    //let firstName = document.getElementById("firstname");
+    let firstName = document.forms['registerform']['firstname'].value;
+    //let surname = document.getElementById("surname");
+    let surname = document.forms['registerform']['surname'].value;
+    //let passwordField = document.getElementById("regpassword");
+    let passwordField = document.forms['registerform']['password'].value;
+    //let confirmPasswordField = document.getElementById("passwordconfirmation");
+    let confirmPasswordField = document.forms['registerform']['password_confirmation'].value;
     let passError = document.getElementById('passError');
     let confirmError = document.getElementById('confirmError');
     var regularExpression = /^(?=.*[0-9])[a-zA-Z0-9]{6,16}$/;

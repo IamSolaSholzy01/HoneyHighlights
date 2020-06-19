@@ -30,7 +30,7 @@ if($_POST && isset($_POST['firstname'], $_POST['surname'], $_POST['email'], $_PO
         if ($user['username'] === $usename) {
             $data = array(
                 "id" => "duplicateName",
-                "content" => "Name already exists"
+                "content" => "Username already exists"
             );
             array_push($errors, "Username has been used before.");
             

@@ -10,22 +10,28 @@ if($_POST && isset($_POST['email'])) {
 
     // Create connection
     $conn = new mysqli($servername, $username, $password, $dbasename);
-    
-    echo "connection successful";
 
     // Check connection
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
     }
-    echo "Connected successfully";
 
-    $sql = "INSERT INTO subscribers_table (email) VALUE ('$email')";
+    $sql = "SELECT * from user_table where email = '$email'";
+    $result = mysqli_query($conn, $sql);
+    if (mysqli_num_rows($result) > 0) {  }  
+
+    $sql = "INSERT INTO subscribe_table (email) VALUE ('$email')";
 
     if (mysqli_query($conn, $sql)) {
-        echo "New record created successfully";
+        $data = array(
+            "id" => "Successful",
+            "content" => "Thank you for subscribing.",
+            "email" => $email
+        );
     } else {
-        echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+
     }
 }
+echo json_encode($data);
 
 ?>
