@@ -1,17 +1,19 @@
 <?php
 
-header("Content-type:application/json;charset=utf-8");
-
 if($_POST && isset($_POST['email'], $_POST['password'])){
     $email = $_POST['email'];
     $passkey = $_POST['password'];
 
-    echo "received input ";
+    //echo "received input ";
 
     $servername = "localhost";
     $username = "root";
     $password = "";
     $dbasename = "honeyhighlights";
+    $data = array(
+        "id" => "success",
+        "content" => "OKAYYY"
+    );
 
      // Create connection
      $conn = mysqli_connect($servername, $username, $password, $dbasename);
@@ -47,7 +49,7 @@ if($_POST && isset($_POST['email'], $_POST['password'])){
      else {
          echo "Error: " . $sql . "<br>" . mysqli_error($conn);
      }
-     
+
      echo json_encode($data);
 }
 

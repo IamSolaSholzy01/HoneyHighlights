@@ -88,13 +88,13 @@
                                </div>
                                <div class="error"></div>
                                <div class="form loginBox">
-                                   <form class="loginform" method="POST" action="login.php" accept-charset="UTF-8">
-                                   <input id="loginemail" class="form-control" type="text" placeholder="Email" name="email" required>
-                                   <input id="loginpassword" class="form-control" type="password" placeholder="Password" name="password" required>
-                                   <input class="btn-login" type="submit" value="Login">
-                                   <span id="reply" style="color: red;"></span>
-                                    </form>
-                               </div>
+                                <form class="logform" method="POST" action="login.php" accept-charset="UTF-8">
+                                <input id="loginemail" class="form-control" type="text" placeholder="Email" name="email" required>
+                                <input id="loginpassword" class="form-control" type="password" placeholder="Password" name="password" required>
+                                <input class="btn-login" type="submit" value="Login">
+                                <span id="reply"></span>
+                                </form>
+                            </div>
                             </div>
                        </div>
                        <div class="box">
@@ -300,13 +300,17 @@
             });
             return false;
         });   
-
-
-
-        console.log("clicked");
+});
+    </script>
+    <script>
+        
+        $(function(){
+            
+        console.log("login side clicked");
         event.preventDefault(); 
+        
         //Login form
-        var logForm  = $(".loginform");
+        var logForm  = $(".logform");
         console.log(logForm.name);
         logForm.submit(function(e){
             console.log("Login clicked");
@@ -349,7 +353,8 @@
             });
             return false;
         });   
-});
+    });
+    
     </script>
 </body>
 
