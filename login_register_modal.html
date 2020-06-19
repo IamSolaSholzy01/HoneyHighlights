@@ -39,7 +39,7 @@
                             <div class="content registerBox" style="display:none;">
                             <div class="errors"></div>
                              <div class="form">
-                                    <form method="POST" html="{:multipart=>true}" data-remote="true" action="server.php" accept-charset="UTF-8" name="login">
+                                    <form class="registrationform" method="POST" action="server.php" accept-charset="UTF-8" >
                                     <script language="php"> include('errors.php');</script>
                                         <input id="firstname" class="form-control" type="text" placeholder="First name" name="firstname" required>
                                         <input id="surname" class="form-control" type="text" placeholder="Last name" name="surname" required>
@@ -50,6 +50,7 @@
                                         <div><input id="passwordconfirmation" onblur="return validateForm()" onfocus="alibaba()" class="form-control" type="password" placeholder="Repeat Password" name="password_confirmation" required /><p id="confirmpasswordshow" class="field-icon" style="display: none;">Show</p></div>
                                         <span id="confirmError" style="color: red;"></span>
                                         <input id="registerbtn" class="btn-register" type="submit" name="commit" value="Create account" />
+                                        <span id="response" style="color: red;"></span>
                                     </form>
                                 </div>
                             </div>
@@ -77,10 +78,11 @@
 </body>
 
 <script>
+    /*
     $(function(){
     
         var form  = $("#login_form");
-        console.log("clicked");
+        console.log("login clicked");
         form.submit(function(e){
     
             $(this).attr("disabled","disabled");
@@ -106,5 +108,12 @@
         });
     
         });
+
+        var form2  = $(".registrationform");
+        console.log("clicked");
+
+        return false;
+
     });
+    */
     </script>

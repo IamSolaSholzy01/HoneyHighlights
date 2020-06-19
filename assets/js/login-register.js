@@ -11,6 +11,8 @@
  let confirmStatus = false;
  let clickNumber = 0;
  let confirmNumber = 0;
+
+
  function aliababwa(){
     let passError = document.getElementById('passError');
     if (!countErrors) {
@@ -159,6 +161,7 @@ function openRegisterModal(){
 }
 
 function loginAjax(){
+
     /*   Remove this comments when moving to server
     $.post( "/login", function( data ) {
             if(data == 1){
@@ -183,10 +186,14 @@ function shakeModal(){
 }
 
 function validateForm(){
-    let firstName = document.forms['login']['firstname'].value;
-    let surname = document.forms['login']['surname'].value;
-    let passwordField = document.forms['login']['password'].value;
-    let confirmPasswordField = document.forms['login']['password_confirmation'].value;
+    let firstName = document.getElementById("firstname");
+    //document.forms['login']['firstname'].value;
+    let surname = document.getElementById("surname");
+    //document.forms['login']['surname'].value;
+    let passwordField = document.getElementById("regpassword");
+    //document.forms['login']['password'].value;
+    let confirmPasswordField = document.getElementById("passwordconfirmation");
+    //document.forms['login']['password_confirmation'].value;
     let passError = document.getElementById('passError');
     let confirmError = document.getElementById('confirmError');
     var regularExpression = /^(?=.*[0-9])[a-zA-Z0-9]{6,16}$/;
