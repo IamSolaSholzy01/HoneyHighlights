@@ -12,7 +12,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Honey Highlights</title>
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
-    <link href="css/all.min.css" rel="stylesheet">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="css/themify-icons.css" rel="stylesheet">
@@ -88,9 +87,10 @@
                                </div>
                                <div class="form loginBox">
                                 <div class="error" id="reply"></div>
-                                <form class="logform" method="POST" action="server.php" accept-charset="UTF-8" name="logginginform">
+                                <form class="logform" method="POST" action="php/server.php" accept-charset="UTF-8" name="logginginform">
                                     <input id="loginemail" class="form-control" type="text" placeholder="Email" name="email" required>
                                     <input id="loginpassword" class="form-control" type="password" placeholder="Password" name="password" required>
+                                    <input type="checkbox" name="remember" id="remember"><label for="remember-me">Remember me</label>
                                     <input class="btn-login" id="loginbtn" type="submit" value="Login">
                                 </form>
                             </div>
@@ -100,8 +100,7 @@
                            <div class="content registerBox" style="display:none;">
                             <div class="error" id="response"></div>
                             <div class="form">
-                                   <form class="registrationform" method="POST" action="server.php" accept-charset="UTF-8" name="registerform">
-                                   <script language="php"> include('errors.php');</script>
+                                   <form class="registrationform" method="POST" action="php/server.php" accept-charset="UTF-8" name="registerform">
                                        <input id="firstname" class="form-control" type="text" placeholder="First name" name="firstname" required>
                                        <input id="surname" class="form-control" type="text" placeholder="Last name" name="surname" required>
                                        <input id="username" class="form-control" type="text" placeholder="Username" name="username" required>
@@ -231,7 +230,7 @@
     <div class="subscribe" id="subscribe-form">
         <h2>Subscribe to our mailing list now <br> Be the first to know once a blog post is dropped</h2>
 
-        <form class="subscribe-form" action="subscribe.php" method="POST" name="subscribersss">
+        <form class="subscribe-form" action="php/subscribe.php" method="POST" name="subscribersss">
             <input class="subscribe-input" type="email" name="email" id="email" placeholder="Email" required >
             <button id="subscribe-button" class="honey-btn2" type="submit">Subscribe</button>
         </form>
@@ -363,7 +362,7 @@
                     $("input:submit").removeAttr("disabled");
                     }
                 });
-                return false;
+                //return false;
             });   
         });
     </script>

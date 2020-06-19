@@ -1,29 +1,28 @@
-use honeyhighlights;
-select * from contact_table;
-create table posts(
-	post_id int(11) AUTO_INCREMENT PRIMARY KEY,
-    title varchar(250),
-    created_at timestamp
-);
-Insert into posts(post_id,title) value(
-	1,
-    '5 TOOLS AND 5 PRODUCTS YOU SHOULD HAVE AS A MAKEUP BEGINNER'
-);
-create table comments(
-	comment_id int(11) AUTO_INCREMENT,
-    post_id int(11),
+CREATE TABLE posts_table (
+    post_id integer  AUTO_INCREMENT PRIMARY KEY,
+    post_title varchar(500),
+    created_at timestamp,
+    author varchar(250));
+
+CREATE TABLE comments_table (
+    comment_id integer AUTO_INCREMENT PRIMARY KEY,
+	post_id integer,
+	body text,
+	created_at timestamp,
+	name varchar(250),
+	email varchar(250));
+    
+CREATE TABLE replies_table (
+    reply_id integer AUTO_INCREMENT PRIMARY KEY,
+    comment_id integer,
+    post_id integer,
     body text,
-    created_at timestamp 
-);
-Insert into comments(comment_id,post_id,body) value(
-	1,
-    1,
-    'I really enjoyed this post..Thanks HoneyHighlights'
-);
-create table replies(
-	reply_id int(11),
-	comment_id int(11),
-    post_id int(11),
-    body text,
-    created_at timestamp
-);
+    created_at timestamp,
+    user_id integer,
+    name varchar(250),
+    email varchar(250));
+    
+CREATE TABLE reactions_table(
+    post_id integer,
+    likes integer,
+    dislikes integer);
