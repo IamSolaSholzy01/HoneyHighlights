@@ -15,33 +15,47 @@ if($_POST && isset($_POST['firstname'], $_POST['surname'], $_POST['email'], $_PO
     $passkey = $_POST['password'];
     
 
-    echo $usename;
-    echo "received input";
+    //echo $usename;
+    //echo "received input";
      // Create connection
     $conn = mysqli_connect($servername, $username, $password, $dbasename);
     
-    echo "connection successful";
+    //echo "connection successful";
      
     // Check connection
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
     }
-    echo "Connected successfully";
+    //echo "Connected successfully";
     
 
     //Check to make sure the username and email are not already existing.
     $sqls = "SELECT * FROM `user_table` WHERE username = '$usename' OR email = '$email'";
     $result = mysqli_query($conn, $sqls);
+    $data = array(
+        "response" => "OKAY",
+        "content" => "Connected Well"
+    );
+    /*
     $user = mysqli_fetch_assoc($result);
     if ($user) {
         echo "<br />name already exists";
+        
         if ($user['username'] === $usename) {
+            $data = array(
+                "response" => "duplicateName",
+                "content" => "Name already exists"
+            );
             array_push($errors, "Username has been used before.");
-            echo("<br /><h1 style='color:red;'>HIIIII</h1><br/>");
+            //echo("<br /><h1 style='color:red;'>HIIIII</h1><br/>");
         }
         if ($user['email'] === $email) {
+            $data = array(
+                "response" => "duplicateEmail",
+                "content" => "The email already exists. Try logging in"
+            );
             array_push($errors, "The email already exists. Try logging in?");
-            echo("<br /><h1 style='color:red;'>HIIIII</h1><br/>");
+            //echo("<br /><h1 style='color:red;'>HIIIII</h1><br/>");
         }
     }
      
@@ -51,21 +65,24 @@ if($_POST && isset($_POST['firstname'], $_POST['surname'], $_POST['email'], $_PO
         $sql = "INSERT INTO user_table (firstname, surname, email, username, passkey) VALUE ('$firstname','$surname','$email','$usename','$hashed_password')";
 
         if (mysqli_query($conn, $sql)) {
+            $data = array(
+                "response" => "success",
+                "content" => "Account has been created"
+            );
             echo "<h1>New record created successfully</h1>";
-            header("Location: blog.html");
+            //header("Location: blog.html");
         }
      }  
      else {
         echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-        header("Location: login_register_modal.html");
+        $data = array(
+            "response" => "error",
+            "content" =>  mysqli_error($conn)
+        );
+        //header("Location: login_register_modal.html");
     }
-     
-
-    /*
-    if(password_verify($password, $hashed_password)) {
-    
-    } 
-    */
+     */
+    echo json_encode($data);
 
 }
 
