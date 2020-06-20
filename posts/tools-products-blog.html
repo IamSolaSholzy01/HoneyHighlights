@@ -490,41 +490,31 @@ p.PadderBetweenControlandBody{
         <div class="row">
             <div class="col-md-6">
                 <div class="honey-comments-wrapper">
-                    <h4>There are 2 comments</h4>
-                    <ul id="honey-comments-list" class="honey-comments-list">
+                    <h4>There are <span class="commentnum"></span> comments</h4>
+                    <ul id="honey-comments" class="honey-comments-list">
                         <li>
                             <div class="honey-comment-main-level">
-                                <div class="honey-comment-avatar"> <img src="img/blog/people-01.jpeg" alt=""> </div>
+                                <div class="honey-comment-avatar"></div>
                                 <div class="honey-comment-box">
                                     <div class="honey-comment-head">
-                                        <h6 class="honey-comment-name by-author"><a href="#">Emily Carkle</a></h6> <i class="fa fa-reply"></i> </div>
+                                        <h6 class="honey-comment-name by-author"><a href="#"></a></h6> <i class="fa fa-reply"></i> </div>
                                     <div class="honey-comment-content">
-                                        <p>Praesent ultricies cursus ligula, sed vestibulum elit pretium ac. Nam sollicitudin aliquam mattis.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="honey-comment-main-level">
-                                <div class="honey-comment-avatar"> <img src="img/blog/people-02.jpeg" alt=""> </div>
-                                <div class="honey-comment-box">
-                                    <div class="honey-comment-head">
-                                        <h6 class="honey-comment-name"><a href="#">Emma Martin</a></h6> <i class="fa fa-reply"></i> </div>
-                                    <div class="honey-comment-content">
-                                        <p>Vivamus rutrum pulvinar sollicitudin. In faucibus dolor sed nisi vehicula ultrices.</p>
+                                        <p class="honey-comment-body"></p>
                                     </div>
                                 </div>
                             </div>
                         </li>
                     </ul>
+                    <ul id="honey-comments-list"></ul>
                 </div>
             </div>
             <div class="col-md-6">
                 <!-- Comment Form -->
                 <div class="honey-comments-form-wrapper">
                     <div class="honey-comment-form">
-                        <h4>Leave a reply</h4>
-                        <form method="post" id="ajax_form" class="form-horizontal row">
+                        <h4>Leave a comment</h4>
+                        <form action="../php/comment.php" method="post" id="ajax-form" class="form-horizontal row">
+                          <input type="hidden" id="post_id" name="post_id" value="1">
                             <div class="col-sm-6">
                                 <div class="form-group">
                                     <input type="text" id="name" name="name" class="form-control" placeholder="Name" required> </div>
@@ -538,12 +528,14 @@ p.PadderBetweenControlandBody{
                                     <textarea id="message" name="message" cols="30" rows="5" class="form-control message" placeholder="Message" required></textarea>
                                 </div>
                             </div>
+                            <div class="response"></div>
                             <div class="col-sm-12">
                                 <div class="form-group">
                                     <button class="honey-btn2" type="submit">Send Message</button>
                                 </div>
                             </div>
                         </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -557,37 +549,6 @@ p.PadderBetweenControlandBody{
 <div include-html="../footer.html"></div> 
 <!-- loader -->
 
-
-<!----Footer 
-<footer class="honey-footer-section text-center bg-deep-purple">
-  <div class="container">
-      Social Link 
-      <div class="row">
-          <div class="col-md-12 text-center mb-20">
-              <div class="text-center">
-                  <ul class="honey-social-link">
-                      <li><a href="https://wa.me/2347088810879" target="_blank"><i class="fa fa-phone"></i></a></li>
-                      <li><a href="https://twitter.com/Hoyindamola__" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                      <li><a href="https://instagram.com/honeyhighlights_" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                  </ul>
-              </div>
-          </div>
-      </div>
-      Logo 
-      <div class="row">
-          <div class="col-md-12 text-center">
-              <div class="brand"><img src="../img/logo-white.png" alt="honeyhighlights"></div>
-          </div>
-      </div>
-      Copyright
-      <div class="row">
-          <div class="col-md-12">
-              <p class="copyright" id="footertext">© 2020 Honey Highlights. All rights reserved.</p>
-          </div>
-      </div>
-  </div>
-</footer>  
----->
 <!-- JS -->
 <script src="../js/vendor/jquery-1.12.4.min.js"></script>
 <script src="../js/vendor/bootstrap.min.js"></script>
@@ -596,8 +557,112 @@ p.PadderBetweenControlandBody{
 <script src="../js/vendor/jquery.isotope.v3.0.2.js"></script>
 <script src="../js/scripts.js"></script>
 <script src="../js/include.js"></script>
+
     <script>
         includeHTML();
     </script>
+
+    <!--pass post id to php script-->
+    
+    <!--Load Comments script-->
+    <script>
+      console.log("im in");
+      sessionStorage.setItem("post_id", "1");
+      $(function runn(){
+        //event.preventDefault(); 
+        //Comment form 
+            url = '../php/load-comments.php';
+            type = 'POST';
+            var value = $('#post_id').val();
+            console.log("im in again");
+            // Call ajax for pass data to other place
+            $.ajax({
+                type: type,
+                url: url,
+                dataType: 'JSON',
+                data: {post_id: '1'},
+                success: function(response){
+                  console.log(response);
+                    var num = 0;
+                  $.each(response, function () {
+                    num++;
+                    var newComment = $("body").find("#honey-comments > li").clone();
+                    newComment.find(".honey-comment-name").append(this.name);
+                    newComment.find(".honey-comment-body").append(this.body);
+
+                  $(newComment).appendTo("#honey-comments-list");
+                  });
+                  $('.commentnum').html(num);
+                  $("input:submit").removeAttr("disabled");
+                },
+                error: function(response){
+                $('.response').text("Big error");// show the response
+                console.log(response);
+                $('.response').addClass('alert alert-danger');
+                $("input:submit").removeAttr("disabled");
+                }
+        }); 
+       return false;  
+    });
+    runn();
+
+    </script>
+    <!--Load Comments script Ends-->
+
+
+    <!--Post Comment script-->
+    <script>
+      //ajax_form
+      $(function(){
+        event.preventDefault(); 
+        
+        //Comment form 
+        var commentForm  = $("#ajax-form");
+        commentForm.submit(function(e){
+            url = commentForm.attr('action');
+            type = commentForm.attr('method');
+            data = {};
+
+            commentForm.find('[name]').each(function(){
+                var that = $(this),
+                name = that.attr('name'),
+                value = that.val();
+                data[name] = value;
+            });
+
+            // Call ajax for pass data to other place
+            $.ajax({
+                type: type,
+                url: url,
+                dataType: 'JSON',
+                data: data,
+                success: function(response){
+                    if(response.feedback == "success"){
+                        $('.response').text("Your comment has been sent");// show the response
+                        $('.response').css("color","green");
+                        $('.response').addClass('alert alert-success');
+                        setTimeout(() => {
+                            $('#name').val("");
+                            $('#email').val("");
+                            $('#message').val("");
+                            $('.response').text("");
+                            $('.response').removeClass('alert alert-success');
+                            runn();
+                        }, 3000);                         
+                    }
+                    $("input:submit").removeAttr("disabled");
+                },
+                error: function(){
+                $('.response').text("Big error");// show the response
+                $('.response').addClass('alert alert-danger');
+                $("input:submit").removeAttr("disabled");
+                }
+            });
+            return false;
+        });   
+    });
+    
+    </script>
+    <!--Post Comment script Ends-->
 </body>
 </html>

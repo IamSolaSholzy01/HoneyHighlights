@@ -395,6 +395,7 @@
                     if(response.id == "success"){
                         $('#reply').html(response.content);// show the response
                         $('#reply').css("color","green");
+                        $('.error').removeClass('alert alert-danger');
                         $('.error').addClass('alert alert-success');
                         setTimeout(() => {
                             $('#loginemail').val("");
@@ -413,7 +414,7 @@
                         }, 3000); 
                     }else if(response.id == "emailerror"){
                         $('#reply').html(response.content);// show the response
-                        $('#reply').css("color","blue");
+                        $('#reply').css("color","red");
                         $('.error').addClass('alert alert-danger');
                         shakeModal();
                         setTimeout(() => {

@@ -1390,8 +1390,12 @@ span.user {
     font-size: 18px;
     font-weight: 600;
 }
-.honey-comments-list{
-    overflow-y: scroll;
+#honey-comments{
+    display: none;
+}
+#honey-comments-list{
+    overflow-y: auto;
+    height: 34vh;
     position: relative;
     margin-bottom: 0px;
 }
@@ -1403,7 +1407,8 @@ span.user {
     margin-right: 10px;
 }
 .honey-comment-box .honey-comment-head {
-padding: 10px 12px 0 12px;
+padding: 0px 0px 0px 10px;
+background-color: honeydew;
 overflow: hidden;
 }
 .honey-comment-box .honey-comment-head i{
@@ -1414,7 +1419,13 @@ overflow: hidden;
     color: #FF69B4;
 }
 .honey-comment-box .honey-comment-content{
-    padding: 0 12px 12px 12px;
+    background-color: #ffebcd;    
+    margin-bottom: 10px;
+    /*padding: 0 12px 12px 12px;*/
+}
+.honey-comment-content p{
+    font-size: 18px;
+    padding: 5px;
 }
 .honey-comment-form h4 {
     font-size: 18px;
