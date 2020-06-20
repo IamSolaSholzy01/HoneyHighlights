@@ -244,7 +244,7 @@ p.PadderBetweenControlandBody{
       </span>
       <div class="col-md-8 offset-md-2">
         <div class="honey-page-content text-center">
-            <div class="honey-meta-info"> <span><i class="fa fa-users"></i> Oyindamola Ogundeji</span> <span><i class="fa fa-clock-o"></i>27.05.2020</span> </div>
+            <div class="honey-meta-info"> <i class="fa fa-users"></i><span id="post_author"></span> <i class="fa fa-clock-o"></i><span id="post_date"></span> </div>
         </div>
       </div>
       <div style='mso-element:para-border-div;border:none;border-bottom:solid #C6C6C6 1.0pt;
@@ -505,6 +505,7 @@ p.PadderBetweenControlandBody{
                             </div>
                         </li>
                     </ul>
+                    <span id="empty"></span>
                     <ul id="honey-comments-list"></ul>
                 </div>
             </div>
@@ -562,14 +563,39 @@ p.PadderBetweenControlandBody{
         includeHTML();
     </script>
 
-    <!--pass post id to php script-->
-    
+    <!--Load Data-->
+    <script>
+      //ajax_form
+      $(function(){
+        console.log("loading data");
+        url = '../php/load-data.php';
+        type = 'POST';
+            // Call ajax for pass data to other place
+            $.ajax({
+                type: type,
+                url: url,
+                dataType: 'JSON',
+                data: {post_id: '1'},
+                success: function(response){ 
+                  console.log(response);
+                  $('#post_author').html(response.author);
+                  $('#post_date').html(response.created_at);
+                  //$("input:submit").removeAttr("disabled");
+                },
+                error: function(response){
+                $("input:submit").removeAttr("disabled");
+                }
+        }); 
+       return false;  
+    });
+    </script>
+    <!--Load Data script Ends-->
+
     <!--Load Comments script-->
     <script>
       console.log("im in");
       sessionStorage.setItem("post_id", "1");
-      $(function runn(){
-        //event.preventDefault(); 
+      function runn(){
         //Comment form 
             url = '../php/load-comments.php';
             type = 'POST';
@@ -582,30 +608,36 @@ p.PadderBetweenControlandBody{
                 dataType: 'JSON',
                 data: {post_id: '1'},
                 success: function(response){
+                  if(response.id=="error"){
+                      $('.commentnum').html("0");
+                      $("#empty").html(response.content);
+                  }else{
                   console.log(response);
-                    var num = 0;
+                  $("#empty").html("");
+                  var num = 0;
                   $.each(response, function () {
                     num++;
                     var newComment = $("body").find("#honey-comments > li").clone();
                     newComment.find(".honey-comment-name").append(this.name);
                     newComment.find(".honey-comment-body").append(this.body);
-
-                  $(newComment).appendTo("#honey-comments-list");
+                    
+                    $(newComment).appendTo("#honey-comments-list");
                   });
                   $('.commentnum').html(num);
                   $("input:submit").removeAttr("disabled");
+                }
                 },
                 error: function(response){
                 $('.response').text("Big error");// show the response
-                console.log(response);
                 $('.response').addClass('alert alert-danger');
                 $("input:submit").removeAttr("disabled");
                 }
         }); 
        return false;  
+    };
+    $(function(){
+      runn();
     });
-    runn();
-
     </script>
     <!--Load Comments script Ends-->
 
@@ -615,7 +647,6 @@ p.PadderBetweenControlandBody{
       //ajax_form
       $(function(){
         event.preventDefault(); 
-        
         //Comment form 
         var commentForm  = $("#ajax-form");
         commentForm.submit(function(e){
