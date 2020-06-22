@@ -27,6 +27,16 @@ if($_POST && isset($_POST['firstname'], $_POST['surname'], $_POST['email'], $_PO
         
         if ($result===null) {
             throw new Exception("No records inside the Database");
+            //Hashing function
+            $hashed_password = $util->hash($passkey);
+            $sql = "INSERT INTO user_table (firstname, surname, email, username, passkey) VALUE ('$firstname','$surname','$email','$username','$hashed_password')";
+
+            if ($datas->runSimpleQuery($connection, $sql)) {
+                $data = array(
+                "id" => "success",
+                "content" => "Account has been created"
+                );
+            } 
         } else {
             $user = mysqli_fetch_assoc($result);
             if ($user){
@@ -49,16 +59,7 @@ if($_POST && isset($_POST['firstname'], $_POST['surname'], $_POST['email'], $_PO
             }
         }  
         
-        //Hashing function
-        $hashed_password = $util->hash($passkey);
-        $sql = "INSERT INTO user_table (firstname, surname, email, username, passkey) VALUE ('$firstname','$surname','$email','$username','$hashed_password')";
-
-        if ($datas->runSimpleQuery($connection, $sql)) {
-            $data = array(
-            "id" => "success",
-            "content" => "Account has been created"
-            );
-        } 
+        
         echo json_encode($data);
     }
 } 

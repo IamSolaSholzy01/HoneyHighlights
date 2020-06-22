@@ -70,6 +70,7 @@
                         $('#response').css("color","red");
                         $('.error').addClass('alert alert-danger');
                         setTimeout(() => {
+                            $('#username').val("");
                             $('#regemail').val("");
                             $('#regpassword').val("");
                             $('#firstname').val("");

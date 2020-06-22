@@ -9,7 +9,7 @@ class Util{
         return $value;
     }
     public function hash($value) {
-        $result = password_hash($$value, PASSWORD_DEFAULT);
+        $result = password_hash($value, PASSWORD_DEFAULT);
         return $result;
     }
     public function redirect($url) {
