@@ -17,13 +17,11 @@ $post_id = $_POST['post_id'];
             "author" => $row['author'],
             "created_at" => $row['created_at']
         );
-    }else {
+    } else {
         $data = array(
         "id" => "error",
         "content" => "No post data");
     }
-
     echo json_encode($data);
-
 ?>
 

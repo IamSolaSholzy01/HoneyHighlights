@@ -101,7 +101,7 @@
                 $("input:submit").removeAttr("disabled");
                 }
             });
-            return false;
+            //return false;
         });
     }
 
@@ -127,18 +127,7 @@
                 dataType: 'JSON',
                 data: data,
                 success: function(response){
-                    if(response.id == "success"){
-                        $('#reply').html(response.content);// show the response
-                        $('#reply').css("color","green");
-                        $('.error').removeClass('alert alert-danger');
-                        $('.error').addClass('alert alert-success');
-                        setTimeout(() => {
-                            $('#loginemail').val("");
-                            $('#loginpassword').val("");
-                            $('#reply').text("");
-                            $('.error').removeClass('alert alert-success');
-                        }, 3000);                         
-                    }else if(response.id == "error"){
+                    if(response.id == "error"){
                         $('#reply').html(response.content);// show the response
                         $('#reply').css("color","red");
                         $('.error').addClass('alert alert-danger');
@@ -156,6 +145,23 @@
                             $('#loginemail').val("");
                             $('#loginpassword').val("");
                         }, 3000); 
+                    } else if(response){
+                        console.log(response);
+                        sessionStorage.setItem('id', response.id);
+                        sessionStorage.setItem('username',  response.username);
+                        sessionStorage.setItem('email', response.email);
+                        sessionStorage.setItem('firstname', response.firstname);
+                        console.log(sessionStorage.getItem('email'));
+                        $('#reply').html("Login Successful");// show the response
+                        $('#reply').css("color","green");
+                        $('.error').removeClass('alert alert-danger');
+                        $('.error').addClass('alert alert-success');
+                        setTimeout(() => {
+                            $('#loginemail').val("");
+                            $('#loginpassword').val("");
+                            $('#reply').text("");
+                            $('.error').removeClass('alert alert-success');
+                        }, 3000);                         
                     }
                     $("input:submit").removeAttr("disabled");
                 },
@@ -166,6 +172,6 @@
                 $("input:submit").removeAttr("disabled");
                 }
             });
-            return false;
+            //return false;
         });
     }

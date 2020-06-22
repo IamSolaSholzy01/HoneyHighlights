@@ -1,4 +1,5 @@
 <?php
+session_start();
 require_once('classes.php');
 $datas = new DBControllers();
 $connection = $datas->connectDB();

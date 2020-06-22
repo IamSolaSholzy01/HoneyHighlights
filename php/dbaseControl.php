@@ -1,7 +1,7 @@
 
 <?php
 class DBControllers {
-    private $servername = "localhost"; 
+    private $servername = "localhost";
     private $db_username = "root";
     private $db_password = "";
     private $db_name = "honeyhighlights";
@@ -26,7 +26,15 @@ class DBControllers {
         }
         return $queryResult;
     }
-     
+    function runBaseQuery($query) {
+        $result = mysqli_query($this->conn,$query);
+        while($row=mysqli_fetch_assoc($result)) {
+        $resultset[] = $row;
+        }		
+        if(!empty($resultset))
+        return $resultset;
+    }
+
     
     function runQuery($query, $param_type, $param_value_array) {
         
@@ -47,7 +55,6 @@ class DBControllers {
             return $resultset;
         }
     }
-    
     function bindQueryParams($sql, $param_type, $param_value_array) {
         $param_value_reference[] = & $param_type;
         for($i=0; $i<count($param_value_array); $i++) {
@@ -65,14 +72,10 @@ class DBControllers {
         $sql->execute();
     }
     
-    function update($conn, $query, $param_type, $param_value_array) {
+    function update($query, $param_type, $param_value_array) {
         $sql = $this->conn->prepare($query);
         $this->bindQueryParams($sql, $param_type, $param_value_array);
         $sql->execute();
-    }
-    function queryEmail (){
-        $query = "SELECT * FROM user_table WHERE email = ?";
-        return $query;
     }
 }
 ?>
