@@ -13,7 +13,7 @@ class Util{
         return $result;
     }
     public function redirect($url) {
-        header("Location:" . $url); 
+        header("Location:" . $url);
         exit;
     }
 }
