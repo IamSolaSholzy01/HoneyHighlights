@@ -1,28 +1,14 @@
 <?php
-
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbasename = "honeyhighlights";
+require_once('classes.php');
+$datas = new DBControllers();
+$connection = $datas->connectDB();
 
 $post_id = $_POST['post_id'];
-
-//echo $post_id;
-
-    // Create connection
-    $conn = mysqli_connect($servername, $username, $password, $dbasename);
-    
-    //echo " connection successful";
-
-    // Check connection
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
-    }
 
     $sql = "SELECT * from posts_table where post_id = '$post_id'";
 
     //seelct comments
-    $result = mysqli_query($conn, $sql);
+    $result = $datas->runSimpleQuery($connection, $sql);
     
     $data = array();
     if (mysqli_num_rows($result) > 0) {    
