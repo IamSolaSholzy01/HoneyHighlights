@@ -19,22 +19,22 @@ $post_id = $_POST['post_id'];
         die("Connection failed: " . $conn->connect_error);
     }
 
-    $sql = "SELECT * from comments_table where comments_table.post_id = '$post_id' ORDER BY comments_table.created_at";
-    
+    $sql = "SELECT * from posts_table where post_id = '$post_id'";
+
     //seelct comments
     $result = mysqli_query($conn, $sql);
     
     $data = array();
     if (mysqli_num_rows($result) > 0) {    
-        while($row = mysqli_fetch_assoc($result))
-        {
-            $data[] = $row;
-        }
-
-    }else{
+        $row = mysqli_fetch_assoc($result);
+        $data = array(
+            "author" => $row['author'],
+            "created_at" => $row['created_at']
+        );
+    }else {
         $data = array(
         "id" => "error",
-        "content" => "No comments for this post");
+        "content" => "No post data");
     }
 
     echo json_encode($data);
