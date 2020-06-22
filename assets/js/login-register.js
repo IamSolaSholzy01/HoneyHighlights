@@ -5,29 +5,29 @@
  * Web-autor: creative.tim
  * Web script: http://creative-tim.com
  * 
- */
- let countErrors = false;
- let clickedStatus = false;
- let confirmStatus = false;
- let clickNumber = 0;
- let confirmNumber = 0;
+ * 
+*/
+
+let countErrors = false;
+let clickedStatus = false;
+let confirmStatus = false;
+let clickNumber = 0;
+let confirmNumber = 0;
 
 
- function aliababwa(){
-    let passError = document.getElementById('passError');
+var aliababwa = function () {
     if (!countErrors) {
-        passError.style.display = "none";
+        $('#passError').css('display', 'none');
     }
-    let regpassword = document.getElementById('regpassword');
-    let clickShow = document.getElementById('passwordshow');
+
     if (clickNumber > 0){
         if (!clickedStatus){
-            regpassword.setAttribute('type', 'text');
-            clickShow.textContent = "Hide";
+            $('#regpassword').attr('type', 'text');
+            $('#passwordshow').text('Hide');
             clickedStatus = true;
             setTimeout(() => {
-                regpassword.setAttribute('type', 'password');
-                clickShow.textContent = "Show";
+                $('#regpassword').attr('type', 'password');
+                $('#passwordshow').text('Show');
                 clickedStatus = false;
             }, 5000);
         } 
@@ -35,45 +35,42 @@
         clickNumber++;
     }
 
-    clickShow.style.display = "block";
-    clickShow.onclick = function (event){
+    $('#passwordshow').css('display', 'block');
+    $('#passwordshow').click(function (event){
         event.preventDefault();
         switch (clickedStatus){
             case true: 
-                regpassword.setAttribute('type', 'password');
-                clickShow.textContent = "Show";
+                $('#regpassword').attr('type', 'password');
+                $('#passwordshow').text('Show');
                 clickedStatus = false;
                 break;
         
             default:
-                regpassword.setAttribute('type', 'text');
-                clickShow.textContent = "Hide";
+                $('#regpassword').attr('type', 'text');
+                $('#passwordshow').text('Hide');
                 clickedStatus = true;
                 setTimeout(() => {
-                    regpassword.setAttribute('type', 'password');
-                    clickShow.textContent = "Show";
+                    $('#regpassword').attr('type', 'password');
+                    $('#passwordshow').text('Show');
                     clickedStatus = false;
                 }, 5000);
                 break;
         }
-    }
- }
+    });
+}
 
- function alibaba(){
-     let confirmError = document.getElementById('confirmError');
+var alibaba = function () {
     if (!countErrors) {
-        confirmError.style.display = "none";
+        $('#confirmError').css('display', 'none');
     }
-    let confirmpassword = document.getElementById('passwordconfirmation');
-    let confirmShow = document.getElementById('confirmpasswordshow');
     if (confirmNumber > 0){
         if (!confirmStatus){
-            confirmpassword.setAttribute('type', 'text');
-            confirmShow.textContent = "Hide";
+            $('#passwordconfirmation').attr('type', 'text');
+            $('#confirmpasswordshow').text('Hide');
             confirmStatus = true;
             setTimeout(() => {
-                confirmpassword.setAttribute('type', 'password');
-                confirmShow.textContent = "Show";
+                $('#passwordconfirmation').attr('type', 'password');
+                $('#confirmpasswordshow').text('Show');
                 confirmStatus = false;
             }, 5000);
         } 
@@ -81,70 +78,31 @@
         confirmNumber++;
     }
 
-    confirmShow.style.display = "block";
-    confirmShow.onclick = function (event){
+    $('#confirmpasswordshow').css('display', 'block');
+    $('#confirmpasswordshow').click(function (event){
         event.preventDefault();
         switch (confirmStatus){
             case true: 
-                confirmpassword.setAttribute('type', 'password');
-                confirmShow.textContent = "Show";
-                confirmStatus = false;
-                break;
+            $('#passwordconfirmation').attr('type', 'password');
+            $('#confirmpasswordshow').text('Show');
+            confirmStatus = false;
+            break;
         
             default:
-                confirmpassword.setAttribute('type', 'text');
-                confirmShow.textContent = "Hide";
+                $('#passwordconfirmation').attr('type', 'text');
+                $('#confirmpasswordshow').text('Hide');
                 confirmStatus = true;
                 setTimeout(() => {
-                    confirmpassword.setAttribute('type', 'password');
-                    confirmShow.textContent = "Show";
+                    $('#passwordconfirmation').attr('type', 'password');
+                    $('#confirmpasswordshow').text('Show');
                     confirmStatus = false;
                 }, 5000);
                 break;
         }
-    }
- }
- /*let modalities = document.getElementById('loginModal');*/
- /*window.onclick = function(event){
-     if (event.target != document.getElementsByClassName('modal-dialog').querySelectorAll('*')){}
-     else{ 
-    let confirmpassword = document.getElementById('passwordconfirmation');
-    let confirmShow = document.getElementById('confirmpasswordshow');
-    let clickShow = document.getElementById('passwordshow');
-    let create = document.getElementById('createacc');
-    let googleIcon = document.getElementById('google_login');
-    let facebookIcon = document.getElementById('facebook_login');
-    let logginuser = document.getElementById('logginuser');
-    let registerButton = document.getElementById('registerbtn');
-    let loginButton = document.getElementById('loginbtn');
-    if (event.target != regpassword && event.target != clickShow && event.target != googleIcon && event.target != facebookIcon && event.target != logginuser && event.target != create && event.target != registerButton && event.target != loginButton && clickedStatus ) {
-        event.preventDefault();
-        regpassword.setAttribute('type', 'password');
-        clickShow.textContent = "Show";
-        clickStatus = false;
-        clickShow.style.display = "none";
-    } else if (event.target != regpassword && event.target != clickShow && event.target != googleIcon && event.target != facebookIcon && event.target != logginuser && event.target != create && event.target != registerButton && event.target != loginButton && !clickedStatus) {
-        event.preventDefault();
-        regpassword.setAttribute('type', 'password');
-        clickShow.textContent = "Show";
-        clickStatus = true;
-        clickShow.style.display = "none";
-    } else if (event.target != confirmpassword && event.target != confirmShow && event.target != googleIcon && event.target != facebookIcon && event.target != logginuser && event.target != create  && event.target != registerButton && event.target != loginButton && confirmStatus) {
-        event.preventDefault();
-        confirmpassword.setAttribute('type', 'password');
-        confirmShow.textContent = "Show";
-        confirmStatus = false;
-        confirmShow.style.display = "none";
-    } else if (event.target != confirmpassword && event.target != confirmShow && event.target != googleIcon && event.target != facebookIcon && event.target != logginuser && event.target != create && event.target != registerButton && event.target != loginButton && !confirmStatus) {
-        event.preventDefault();
-        confirmpassword.setAttribute('type', 'password');
-        confirmShow.textContent = "Show";
-        confirmStatus = true;
-        confirmShow.style.display = "none";
-    } }
- }*/
+    });
+}
 
-function showRegisterForm(){
+var showRegisterForm = function () {
     $('.loginBox').fadeOut('fast',function(){
         $('.registerBox').fadeIn('fast');
         $('.login-footer').fadeOut('fast',function(){
@@ -155,7 +113,8 @@ function showRegisterForm(){
     $('.error').removeClass('alert alert-danger').html('');
        
 }
-function showLoginForm(){
+
+var showLoginForm = function () {
     $('#loginModal .registerBox').fadeOut('fast',function(){
         $('.loginBox').fadeIn('fast');
         $('.register-footer').fadeOut('fast',function(){
@@ -167,14 +126,15 @@ function showLoginForm(){
      $('.error').removeClass('alert alert-danger').html(''); 
 }
 
-function openLoginModal(){
+var openLoginModal = function () {
     showLoginForm();
     setTimeout(function(){
         $('#loginModal').modal('show');    
     }, 230);
     
 }
-function openRegisterModal(){
+
+var openRegisterModal =  function () {
     showRegisterForm();
     setTimeout(function(){
         $('#loginModal').modal('show');    
@@ -182,7 +142,7 @@ function openRegisterModal(){
     
 }
 
-function loginAjax(){
+var loginAjax = function () {
 
     /*   Remove this comments when moving to server
     $.post( "/login", function( data ) {
@@ -198,63 +158,53 @@ function loginAjax(){
      shakeModal();
 }
 
-function shakeModal(){
+var shakeModal = function () {
     $('#loginModal .modal-dialog').addClass('shake');
              setTimeout( function(){ 
                 $('#loginModal .modal-dialog').removeClass('shake'); 
     }, 1000 ); 
 }
 
-function validateForm(){
-    //let firstName = document.getElementById("firstname");
-    let firstName = document.forms['registerform']['firstname'].value;
-    //let surname = document.getElementById("surname");
-    let surname = document.forms['registerform']['surname'].value;
-    //let passwordField = document.getElementById("regpassword");
-    let passwordField = document.forms['registerform']['password'].value;
-    //let confirmPasswordField = document.getElementById("passwordconfirmation");
-    let confirmPasswordField = document.forms['registerform']['password_confirmation'].value;
-    let passError = document.getElementById('passError');
-    let confirmError = document.getElementById('confirmError');
-    var regularExpression = /^(?=.*[0-9])[a-zA-Z0-9]{6,16}$/;
+var validateForm = function (){
+    var firstName = $('#registerform input[name = firstname]').val();
+    var surname = $('#registerform input[name = surname]').val();
+    var passwordField = $('#registerform input[name = password]').val();
+    var confirmPasswordField = $('#registerform input[name = password_confirmation]').val();
+    var passError = $('#passError');
+    var confirmError = $('#confirmError');
 
-    if (passwordField === firstName) {
-        passError.textContent = "Do not use your first name as password";
-        passError.style.display = "block";
+    if ($('#registerform input[name = password]').val() === $('#registerform input[name = firstname]').val()) {
+        $('#passError').text("Do not use your first name as password");
+        $('#passError').css('display', 'block');
         countErrors = true;
         return false;
-    } else if (passwordField === "honeyhighlights" || passwordField === "HoneyHighlights" || passwordField === "Honeyhighlights") {
-        passError.textContent = "Do not use Honeyhighlights as password";
-        passError.style.display = "block";
+    } else if ($('#registerform input[name = password]').val() === "honeyhighlights" || $('#registerform input[name = password]').val() === "HoneyHighlights" || $('#registerform input[name = password]').val() === "Honeyhighlights") {
+        $('#passError').text("Do not use Honeyhighlights as password");
+        $('#passError').css('display', 'block');
         countErrors = true;
         return false;    
-    } else if(passwordField.length < 6){
-        passError.textContent = "Password too short. At least 6 characters."
-        passError.style.display = "block";
+    } else if($('#registerform input[name = password]').val().length < 6){
+        $('#passError').text("Password too short. At least 6 characters.");
+        $('#passError').css('display', 'block');
         countErrors = true;
         return false;
-    } else if(!regularExpression.test(passwordField)){
-        passError.textContent = "Password must have at least one number.";
-        passError.style.display = "block";
+    } else if($('#registerform input[name = password]').val() === $('#registerform input[name = surname]').val()) {
+        $('#passError').text("Do not use your surname as password.");
+        $('#passError').css('display', 'block');
         countErrors = true;
         return false;
-    } else if(passwordField === surname) {
-        passError.textContent = "Do not use yur surname as password";
-        passError.style.display = "block";
-        countErrors = true;
-        return false;
-    } if (confirmPasswordField != passwordField) {
-        confirmError.textContent = "Both passwords must match";
-        confirmError.style.display = "block";
+    } if ($('#registerform input[name = password_confirmation]').val() != $('#registerform input[name = password]').val()) {
+        $('#confirmError').text("Both passwords must match.");
+        $('#confirmError').css('display', 'block');
         countErrors = true;
         return false;
     }
     else {
         countErrors = false;
-        passError.textContent = "";
-        passError.style.display = "none";
-        confirmError.textContent = "";
-        confirmError.style.display = "none";
+        $('#passError').text("");
+        $('#passError').css('display', 'none')
+        $('#confirmError').text("");
+        $('#confirmError').css('display', 'none');
         return true;
     }
 }

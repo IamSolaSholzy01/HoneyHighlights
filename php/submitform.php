@@ -1,32 +1,18 @@
 <?php
+require_once('classes.php');
+$datas = new DBControllers();
+$util = new Util();
+$connection = $datas->connectDB();
 
 if($_POST && isset($_POST['name'], $_POST['email'], $_POST['message'])) {
 
-    $name = $_POST['name'];
-    $email = $_POST['email'];
+    $name = $util->clean_input($_POST['name']);
+    $email = $util->clean_input($_POST['email']);
     $message = $_POST['message'];
-
-    //echo "gotten name = .$name";
-
-    $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $dbasename = "honeyhighlights";
-
-    // Create connection
-    $conn = mysqli_connect($servername, $username, $password, $dbasename);
-    
-    echo "connection successful";
-
-    // Check connection
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
-    }
-    echo "Connected successfully";
 
     $sql = "INSERT INTO contact_table VALUE ('$name','$email','$message')";
 
-    if (mysqli_query($conn, $sql)) {
+    if ($datas->runSimpleQuery($connection, $sql)) {
         echo "New record created successfully";
     } else {
         echo "Error: " . $sql . "<br>" . mysqli_error($conn);

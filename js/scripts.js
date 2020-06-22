@@ -1,11 +1,11 @@
-﻿var loader = function() {
+﻿/*var loader = function() {
     setTimeout(function() { 
         if($('#ftco-loader').length > 0) {
             $('#ftco-loader').removeClass('show');
         }
     }, 1500);
 };
-loader();
+loader();*/
 
 (function ($) {
     "use strict";
@@ -160,13 +160,3 @@ loader();
         });
     }
 })(jQuery);
-   /* console.log('I am here oooo');
-    var today = new Date();
-    var year = today.getFullYear();
-    console.log(year);
-    //var copyYear = document.getElementById("copyrightyear");
-    var some = document.getElementById("footertext");
-    console.log(some.innerHTML);
-    copyYear.innerHTML = year;
-*/    
-

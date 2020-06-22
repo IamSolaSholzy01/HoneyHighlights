@@ -1,34 +1,32 @@
 
 <?php
-class DBController {
-	private $host = "localhost";
-	private $user = "root";
-	private $password = "";
-	private $database = "honeyhighlights";
-	private $conn;
-	
+class DBControllers {
+    private $servername = "localhost"; 
+    private $db_username = "root";
+    private $db_password = "";
+    private $db_name = "honeyhighlights";
+    private $conn;
+    
     function __construct() {
         $this->conn = $this->connectDB();
-	}	
-	
-	function connectDB() {
-		$conn = mysqli_connect($this->host,$this->user,$this->password,$this->database);
-		return $conn;
-	}
-	
-    function runBaseQuery($query) {
-        $result = mysqli_query($this->connectDB(),$query);
-        /*while($row=mysqli_fetch_assoc($result)) {
-            $resultset[] = $row;
-        }		
-        if(!empty($resultset))*/
-        if (mysqli_num_rows($result)>0){
-        $resultset = mysqli_fetch_assoc($result);}
-        else {$resultset = [];}
-        return $resultset;
     }
     
-    
+	function connectDB() {
+        $conn = mysqli_connect($this->servername,$this->db_username,$this->db_password,$this->db_name);
+        if (mysqli_connect_errno()){
+            throw new Exception("MySQL connection error: " . mysqli_connect_error());
+        }
+		return $conn;
+    }
+
+    function runSimpleQuery($conn, $query){
+        $queryResult = mysqli_query($conn, $query);
+        if ($queryResult===null) {
+            throw new Exception("Nothing in the query");
+        }
+        return $queryResult;
+    }
+     
     
     function runQuery($query, $param_type, $param_value_array) {
         
@@ -36,7 +34,9 @@ class DBController {
         $this->bindQueryParams($sql, $param_type, $param_value_array);
         $sql->execute();
         $result = $sql->get_result();
-        
+        if ($result===null) {
+            throw new Exception("Nothing in the query");
+        }
         if ($result->num_rows > 0) {
             while($row = $result->fetch_assoc()) {
                 $resultset[] = $row;
@@ -65,10 +65,14 @@ class DBController {
         $sql->execute();
     }
     
-    function update($query, $param_type, $param_value_array) {
+    function update($conn, $query, $param_type, $param_value_array) {
         $sql = $this->conn->prepare($query);
         $this->bindQueryParams($sql, $param_type, $param_value_array);
         $sql->execute();
+    }
+    function queryEmail (){
+        $query = "SELECT * FROM user_table WHERE email = ?";
+        return $query;
     }
 }
 ?>

@@ -1,30 +1,18 @@
 <?php
+require_once('classes.php');
+$datas = new DBControllers();
+$connection = $datas->connectDB();
 
 if($_POST && isset($_POST['name'], $_POST['email'], $_POST['message'])) {
 
     $post_id = $_POST['post_id'];
     $name = $_POST['name'];
     $email = $_POST['email'];
-    $body = $_POST['message'];
-
-    
-    $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $dbasename = "honeyhighlights";
-
-    // Create connection
-    $conn = mysqli_connect($servername, $username, $password, $dbasename);
-    
-    
-    // Check connection
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
-    }
+    $body = $_POST['message']; 
     
     $sql = "INSERT INTO comments_table(post_id,body,name,email) VALUE ('$post_id','$body','$name','$email')";
 
-    if (mysqli_query($conn, $sql)) {
+    if ($datas->runSimpleQuery($connection, $sql)) {
          
             $data = array(
                 "name" => $name,
@@ -32,7 +20,7 @@ if($_POST && isset($_POST['name'], $_POST['email'], $_POST['message'])) {
                 "feedback" => "success"
              );
             
-    }else{
+    } else {
         $data = array(
             "name" => $name,
             "content" => $body,

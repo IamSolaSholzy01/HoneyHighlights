@@ -88,8 +88,8 @@
                                <div class="form loginBox">
                                 <div class="error" id="reply"></div>
                                 <form class="logform" method="POST" action="php/server.php" accept-charset="UTF-8" name="logginginform">
-                                    <input id="loginemail" class="form-control" type="text" placeholder="Email" name="email" required>
-                                    <input id="loginpassword" class="form-control" type="password" placeholder="Password" name="password" required>
+                                    <input id="loginemail" class="form-control" title="Please put in an existing email address" type="text" placeholder="Email" name="email" required>
+                                    <input id="loginpassword" class="form-control" type="password" title="Please put in a valid password" placeholder="Password" name="password" required>
                                     <input type="checkbox" name="remember" id="remember"><label for="remember-me">Remember me</label>
                                     <input class="btn-login" id="loginbtn" type="submit" value="Login">
                                 </form>
@@ -100,14 +100,14 @@
                            <div class="content registerBox" style="display:none;">
                             <div class="error" id="response"></div>
                             <div class="form">
-                                   <form class="registrationform" method="POST" action="php/server.php" accept-charset="UTF-8" name="registerform">
-                                       <input id="firstname" class="form-control" type="text" placeholder="First name" name="firstname" required>
-                                       <input id="surname" class="form-control" type="text" placeholder="Last name" name="surname" required>
-                                       <input id="username" class="form-control" type="text" placeholder="Username" name="username" required>
-                                       <input id="regemail" class="form-control" type="email" placeholder="Email" name="email" required>
-                                       <div><input id="regpassword" onblur="return validateForm()" onfocus="aliababwa()" class="form-control" type="password" placeholder="Password" name="password" required /><p id="passwordshow" class="field-icon" style="display: none;">Show</p></div>
+                                   <form class="registrationform" method="POST" action="php/server.php" accept-charset="UTF-8" id="registerform" name="registerform">
+                                       <input id="firstname" class="form-control" type="text" title="Please input your firstname" placeholder="First name" name="firstname" required>
+                                       <input id="surname" class="form-control" type="text" title="Please input your surname" placeholder="Last name" name="surname" required>
+                                       <input id="username" class="form-control" type="text" title="Username must not be less than 4 characters" placeholder="Username" pattern="(?=.*[a-z]).{4,}" name="username" required>
+                                       <input id="regemail" class="form-control" type="email" title="Please input a valid email address" placeholder="Email" name="email" required>
+                                       <div><input id="regpassword" onblur="return validateForm()" onfocus="aliababwa()" title="Minimum 6 characters, must include at least one lowercase and one uppercase letter, and at least one number." class="form-control" type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" placeholder="Password" name="password" required /><p id="passwordshow" class="field-icon" style="display: none;">Show</p></div>
                                        <span id="passError" style="color: red;"></span>
-                                       <div><input id="passwordconfirmation" onblur="return validateForm()" onfocus="alibaba()" class="form-control" type="password" placeholder="Repeat Password" name="password_confirmation" required /><p id="confirmpasswordshow" class="field-icon" style="display: none;">Show</p></div>
+                                       <div><input id="passwordconfirmation" onblur="return validateForm()" onfocus="alibaba()" class="form-control" type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" placeholder="Repeat Password" name="password_confirmation" required /><p id="confirmpasswordshow" class="field-icon" style="display: none;">Show</p></div>
                                        <span id="confirmError" style="color: red;"></span>
                                        <input id="registerbtn" class="btn-register" type="submit" name="commit" value="Create account" />
                                    </form>
@@ -240,7 +240,7 @@
     <!-- Footer -->
     <div include-html="footer.html"></div> 
     <!-- Loader -->
-   <div id="ftco-loader" class="show fullscreen"><img src="img/gifgit.gif" class="circular"/></div>
+    <!--<div id="ftco-loader" class="show fullscreen"><img src="img/gifgit.gif" class="circular"/></div>-->
 
     <!-- JS -->
     <script src="js/vendor/jquery-1.12.4.min.js"></script>
@@ -431,7 +431,7 @@
                 $("input:submit").removeAttr("disabled");
                 }
             });
-            return false;
+            //return false;
         });   
     });
     

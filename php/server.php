@@ -1,92 +1,79 @@
 <?php
-
 session_start();
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbasename = "honeyhighlights";
-$errors = array();
+require_once('classes.php');
+$datas = new DBControllers();
+$util = new Util();
 
+$connection = $datas->connectDB();
 
+try {
 //Create Account
 if($_POST && isset($_POST['firstname'], $_POST['surname'], $_POST['email'], $_POST['password'], $_POST['username'])){
-
-    $firstname = $_POST['firstname'];
-    $surname = $_POST['surname'];
-    $email = $_POST['email'];
-    $usename = $_POST['username'];
+    $firstname = $util->clean_input(mysqli_real_escape_string($connection, $_POST['firstname']));
+    $surname = $util->clean_input(mysqli_real_escape_string($connection, $_POST['surname']));
+    $email = $util->clean_input(mysqli_real_escape_string($connection, $_POST['email']));
+    $username = $util->clean_input(mysqli_real_escape_string($connection, $_POST['username']));
     $passkey = $_POST['password'];
-
-    $conn = mysqli_connect($servername, $username, $password, $dbasename);
     
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
+    if (!(preg_match("/^.*(?=.{6,})(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).*$/", $passkey)) || (!(strlen($username) >= 4)))
+    {
+        throw new Exception("Invalid Username and/or Password Format");
     }
 
-    $sqls = "SELECT * FROM `user_table` WHERE username = '$usename' OR email = '$email'";
-    $result = mysqli_query($conn, $sqls);
+    else {
 
-    $user = mysqli_fetch_assoc($result);
-
-    if ($user){
+        $sqls = "SELECT * FROM `user_table` WHERE username = '$username' OR email = '$email'";
+        $result = $datas->runSimpleQuery($connection, $sqls);
         
-        if ($user['username'] === $usename) {
-            $data = array(
-                "id" => "duplicateName",
-                "content" => "Username already exists"
-            );
-            array_push($errors, "Username has been used before.");
-            
-        }
-        elseif ($user['email'] === $email) {
-            $data = array(
-                "id" => "duplicateEmail",
-                "content" => "The email already exists. Try logging in"
-            );
-            array_push($errors, "The email already exists. Try logging in?");
-        }else{
-            $data = array(
-                "id" => "OKAY",
-                "content" => "Connected Well"
-            );
-        }
-    }  
-    if (count($errors)==0) {
+        if ($result===null) {
+            throw new Exception("No records inside the Database");
+        } else {
+            $user = mysqli_fetch_assoc($result);
+            if ($user){
+                if ($user['username'] === $username) {
+                    $data = array(
+                    "id" => "duplicateName",
+                    "content" => "Username already exists"
+                    );
+                } elseif ($user['email'] === $email) {
+                    $data = array(
+                    "id" => "duplicateEmail",
+                    "content" => "The email already exists. Try logging in"
+                    );
+                } else {
+                    $data = array(
+                    "id" => "OKAY",
+                    "content" => "Connected Well"
+                    );
+                }
+            }
+        }  
+        
         //Hashing function
-        $hashed_password = password_hash($passkey, PASSWORD_DEFAULT);
-        $sql = "INSERT INTO user_table (firstname, surname, email, username, passkey) VALUE ('$firstname','$surname','$email','$usename','$hashed_password')";
+        $hashed_password = $util->hash($passkey);
+        $sql = "INSERT INTO user_table (firstname, surname, email, username, passkey) VALUE ('$firstname','$surname','$email','$username','$hashed_password')";
 
-        if (mysqli_query($conn, $sql)) {
+        if ($datas->runSimpleQuery($connection, $sql)) {
             $data = array(
-                "id" => "success",
-                "content" => "Account has been created"
+            "id" => "success",
+            "content" => "Account has been created"
             );
-        }
-     }  
-    echo json_encode($data);
+        } 
+        echo json_encode($data);
+    }
 } 
 
-elseif($_POST && isset($_POST['email'], $_POST['password'])){
+elseif ($_POST && isset($_POST['email'], $_POST['password'])){
     
-    $email = $_POST['email'];
+    $email = $util->clean_input(mysqli_real_escape_string($connection, $_POST['email']));
     $passkey = $_POST['password'];
-
-    //echo "received input ";
-
-
-    // Create connection
-    $conn = mysqli_connect($servername, $username, $password, $dbasename);
     
-    //echo " connection successful";
-
-    // Check connection
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
-    }
-    //echo " connected successfully";  
- 
     $sql = "SELECT * from user_table where email = '$email'";
-    $result = mysqli_query($conn, $sql);
+    $result = $datas->runSimpleQuery($connection, $sql);
+    if ($result===null) {
+        throw new Exception("No records inside the Database");
+    }
+    
     if (mysqli_num_rows($result) > 0) {          
         $row = mysqli_fetch_assoc($result);
         $hashed_password = $row['passkey'];
@@ -108,5 +95,8 @@ elseif($_POST && isset($_POST['email'], $_POST['password'])){
 
     echo json_encode($data);
 }
+} catch(Exception $e) {
+    echo $e->getMessage();
+  }
 
 ?>
