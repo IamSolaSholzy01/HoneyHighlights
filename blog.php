@@ -45,7 +45,7 @@
                                 <li><a href="about.html">About Us</a></li>
                                 <li><a href="services.html">Services</a></li>
                                 <li><a href="catalogue.html">Catalogue</a></li>
-                                <li class="giddy"><a href="blog.html">Blog</a></li>
+                                <li class="giddy"><a href="blog.php">Blog</a></li>
                                 <li><a href="contact.html">Contact</a></li>
                                 <li><a  data-toggle="modal" href="javascript:void(0)" onclick="openLoginModal();">Log in</a></li>
                             </ul>
@@ -88,9 +88,9 @@
                                <div class="form loginBox">
                                 <div class="error" id="reply"></div>
                                 <form class="logform" method="POST" action="php/login.php" accept-charset="UTF-8" name="logginginform">
-                                    <input id="loginemail" class="form-control" title="Please put in an existing email address" type="text" placeholder="Email" name="email" required>
-                                    <input id="loginpassword" class="form-control" type="password" title="Please put in a valid password" placeholder="Password" name="password" required>
-                                    <input type="checkbox" name="remember" id="remember"><label for="remember-me">Remember me</label>
+                                    <input id="loginemail" class="form-control" title="Please put in an existing email address" type="text" value="<?php if(isset($_COOKIE["member_login"])) { echo $_COOKIE["member_login"]; } ?>" placeholder="Email" name="email" required>
+                                    <input id="loginpassword" class="form-control" type="password" title="Please put in a valid password" value="<?php if(isset($_COOKIE["member_password"])) { echo $_COOKIE["member_password"]; } ?>" placeholder="Password" name="password" required>
+                                    <input type="checkbox" name="remember" id="remember" <?php if(isset($_COOKIE["member_login"])) { ?> checked <?php } ?> ><label for="remember-me">Remember me</label>
                                     <input class="btn-login" id="loginbtn" type="submit" value="Login">
                                 </form>
                             </div>
@@ -151,8 +151,8 @@
                     <div class="honey-blog-post"> <img src="img/blog/blog-01.jpg" alt="blog post">
                         <div class="honey-blog-content">
                             <p class="honey-date-user"> <span class="date"><i class="fa fa-clock-o"></i> 04.06.2020</span> <span class="user"><i class="fa fa-users"></i></i> O. Ogundeji</span> </p>
-                            <h3><a href="posts/tools-products-blog.html">Tools and Products for Makeup</a></h3>
-                            <p class="actual-blog-post">As an individual interested in makeup application, it can be challenging when considering the wide range of tools and products you can apply. How can you know the right tool for your makeup project?</p> <a href="posts/tools-products-blog.html" class="honey-post-meta">Read More <i class="fa fa-arrow-right"></i></a> </div>
+                            <h3><a href="posts/tools-products-blog.php">Tools and Products for Makeup</a></h3>
+                            <p class="actual-blog-post">As an individual interested in makeup application, it can be challenging when considering the wide range of tools and products you can apply. How can you know the right tool for your makeup project?</p> <a href="posts/tools-products-blog.php" class="honey-post-meta">Read More <i class="fa fa-arrow-right"></i></a> </div>
                     </div>
                 </div>
                 <div class="col-md-6">

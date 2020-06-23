@@ -496,7 +496,7 @@ p.PadderBetweenControlandBody{
                                 <div class="honey-comment-avatar"></div>
                                 <div class="honey-comment-box">
                                     <div class="honey-comment-head">
-                                        <h6 class="honey-comment-name by-author"><a href="#"></a></h6> <i class="fa fa-reply"></i> </div>
+                                        <h6 class="honey-comment-name by-author"><a href="#"></a></h6> <i class="fa fa-reply honey-reply-icon" id="reply-icon"></i> </div>
                                     <div class="honey-comment-content">
                                         <p class="honey-comment-body"></p>
                                     </div>
@@ -620,8 +620,11 @@ p.PadderBetweenControlandBody{
                     var newComment = $("body").find("#honey-comments > li").clone();
                     newComment.find(".honey-comment-name").append(this.name);
                     newComment.find(".honey-comment-body").append(this.body);
-                    
+                    newComment.find(".honey-reply-icon").addClass(this.comment_id);
+                    newComment.find(".honey-reply-icon").attr('id', this.comment_id);
+
                     $(newComment).appendTo("#honey-comments-list");
+                   
                   });
                   $('.commentnum').html(num);
                   $("input:submit").removeAttr("disabled");
