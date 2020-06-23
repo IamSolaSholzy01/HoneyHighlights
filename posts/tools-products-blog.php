@@ -501,7 +501,7 @@ p.PadderBetweenControlandBody{
                                         <p class="honey-comment-body"></p>
                                     </div>
                                     <div id="reply-div">
-                                      <input class="reply-input" type="text" placeholder="reply here" name="reply"> <input type="submit" value="Send">
+                                      <input class="reply-input" type="text" placeholder="reply here" name="reply"> <input type="submit" class ="reply-button" value="Send">
                                     </div>                                    
                                 </div>
                             </div>
@@ -568,12 +568,17 @@ p.PadderBetweenControlandBody{
     <!--Reply clicked-->
     <script>
       function replyclicked(id){
-        console.log(id);
-        $('#'+id).closest('.honey-comment-box').find('#reply-div').css('display','inline');
-        
+      console.log(id);
+        $('#'+id).closest('.honey-comment-box').find('#reply-div').slideToggle();
       }
     </script>
     <!--Reply clicked end-->
+    
+
+    <!--Reply submit button clicked-->
+    <script>
+
+    </script>
 
     <!--Load Data-->
     <script>

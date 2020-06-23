@@ -1401,6 +1401,8 @@ span.user {
 }
 .honey-comment-box .honey-comment-name{
     font-size: 16px;
+    color: #FFFFFF;
+    padding-bottom: 5px;
     line-height: 1.5em;
     font-weight: 600;
     float: left;
@@ -1408,19 +1410,19 @@ span.user {
 }
 .honey-comment-box .honey-comment-head {
 padding: 0px 0px 0px 10px;
-background-color: honeydew;
+background-color: #b19bd9;
 overflow: hidden;
 }
 .honey-comment-box .honey-comment-head i{
+    padding-top: 15px;
     float: right;
     margin-right: 20px;
-    position: relative;
     top: 20px;
-    color: #FF69B4;
+    color: #FFFFFF;
 }
 .honey-comment-box .honey-comment-content{
-    background-color: #ffebcd;    
-    margin-bottom: 10px;
+    background-color: whitesmoke;    
+   
     /*padding: 0 12px 12px 12px;*/
 }
 .honey-comment-content p{
@@ -1446,8 +1448,27 @@ overflow: hidden;
 }
 /* ***Reply Style *** */
 #reply-div{
+    margin-top: 0;
+    width: 100%;
+    margin-bottom: 10px;
     display: none;
+    padding-left: 10%;
 }
+.reply-input{
+    padding: 4px 10px;
+    width: 80%;
+    border: 1px solid #b19bd9 !important;
+}
+.reply-button{
+    padding: 4px 10px;
+    border: 1px solid #b19bd9 !important;
+    color: #1b1b1b;
+    background-color: #FFFFFF;
+    position: relative;
+    z-index: 1;
+    outline: none;
+}
+
 /* ***Subscribe Form*** */
 .subscribe{
     padding: 10px;
