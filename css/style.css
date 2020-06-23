@@ -1444,6 +1444,10 @@ overflow: hidden;
 .honey-comment-form .form-control.message {
     height: 150px;
 }
+/* ***Reply Style *** */
+#reply-div{
+    display: none;
+}
 /* ***Subscribe Form*** */
 .subscribe{
     padding: 10px;

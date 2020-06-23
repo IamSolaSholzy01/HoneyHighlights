@@ -496,11 +496,13 @@ p.PadderBetweenControlandBody{
                                 <div class="honey-comment-avatar"></div>
                                 <div class="honey-comment-box">
                                     <div class="honey-comment-head">
-                                        <h6 class="honey-comment-name by-author"><a href="#"></a></h6> <i class="fa fa-reply honey-reply-icon" id="reply-icon"></i> </div>
+                                        <h6 class="honey-comment-name by-author"><a href="#"></a></h6><i class="fa fa-reply honey-reply-icon" onclick="replyclicked(this.id)"></i></div>
                                     <div class="honey-comment-content">
                                         <p class="honey-comment-body"></p>
                                     </div>
-                                    
+                                    <div id="reply-div">
+                                      <input class="reply-input" type="text" placeholder="reply here" name="reply"> <input type="submit" value="Send">
+                                    </div>                                    
                                 </div>
                             </div>
                         </li>
@@ -562,6 +564,16 @@ p.PadderBetweenControlandBody{
     <script>
         includeHTML();
     </script>
+
+    <!--Reply clicked-->
+    <script>
+      function replyclicked(id){
+        console.log(id);
+        $('#'+id).closest('.honey-comment-box').find('#reply-div').css('display','inline');
+        
+      }
+    </script>
+    <!--Reply clicked end-->
 
     <!--Load Data-->
     <script>
