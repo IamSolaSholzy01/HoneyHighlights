@@ -573,12 +573,10 @@ p.PadderBetweenControlandBody{
       }
     </script>
     <!--Reply clicked end-->
-    
+     
 
     <!--Reply submit button clicked-->
-    <script>
-
-    </script>
+  
 
     <!--Load Data-->
     <script>
