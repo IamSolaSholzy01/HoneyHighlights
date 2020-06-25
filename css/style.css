@@ -1451,9 +1451,10 @@ overflow: hidden;
     margin-top: 0;
     width: 100%;
     margin-bottom: 10px;
-    display: none;
+    display: block;
     padding-left: 10%;
 }
+#reply-input{display: none;}
 .reply-input{
     padding: 4px 10px;
     width: 80%;

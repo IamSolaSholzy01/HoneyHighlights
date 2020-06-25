@@ -166,7 +166,7 @@
                             $('.error').removeClass('alert alert-success'); 
                             $('#loginLink').css('display', 'none');
                             $('#logoutLink').css('display', 'block'); 
-                            $('#loginSection').css('display', 'none');
+                            closeModal();
                         }, 3000);                    
                     }
                     $("input:submit").removeAttr("disabled");
@@ -197,4 +197,13 @@
 
         login.style.display= 'none';
         logout.style.display = 'block';
+    }
+    var logout = function () {
+        if (sessionStorage.getItem('email')!=null){
+            console.log(sessionStorage.getItem('email'));
+            toggleLoginLogout();
+            } else if (sessionStorage.getItem('email')==null) {
+            $('#loginLink').css('display', 'block');
+            $('#logoutLink').css('display', 'none');    
+        }
     }

@@ -83,7 +83,6 @@ elseif ($_POST && isset($_POST['email'], $_POST['password'])){
             $isAuthenticated = true; 
             if ($isAuthenticated) {
                 $_SESSION["member_id"] = $row[0]["id"];
-                
                 // Set Auth Cookies if 'Remember Me' checked
                 if (! empty($_POST["remember"])) {
                     setcookie("member_login", $email, $cookie_expiration_time);

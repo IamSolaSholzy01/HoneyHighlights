@@ -13,6 +13,12 @@ class Auth {
         $result = $db_handle->runQuery($query, 's', array($email));
         return $result;
     }
+    function getMemberById($id) {
+        $db_handle = new DBControllers();
+        $query = "SELECT * FROM user_table WHERE id = ?";
+        $result = $db_handle->runQuery($query, 'i', array($id));
+        return $result;
+    }
     function getMemberByUsernameOrEmail($username, $email) {
         $db_handle = new DBControllers();
         $query = "SELECT * FROM user_table WHERE username = ? OR email = ?";

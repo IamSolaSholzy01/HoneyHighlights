@@ -134,7 +134,7 @@ var openLoginModal = function () {
     
 }
 var closeModal = function () {
-    $('#loginModal').css('display', 'none');
+    $('#loginModal').modal('hide');
 }
 
 var openRegisterModal =  function () {

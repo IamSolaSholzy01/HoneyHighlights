@@ -256,15 +256,6 @@
     <script>$(function(){event.preventDefault();subscribe();});</script>
     <script>$(function(){event.preventDefault();register();});</script>
     <script>$(function(){event.preventDefault();login();});</script>
-    <script>$(function(){
-        if (sessionStorage.getItem('email')!=null){
-            console.log(sessionStorage.getItem('email'));
-            toggleLoginLogout();
-            } else if (sessionStorage.getItem('email')==null) {
-            $('#loginLink').css('display', 'block');
-            $('#logoutLink').css('display', 'none');    
-            }
-        });
-    </script>
+    <script>$(function(){event.preventDefault();logout();});</script>
 </body>
 </html>

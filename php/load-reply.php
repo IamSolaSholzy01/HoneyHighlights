@@ -6,7 +6,7 @@ $connection = $datas->connectDB();
 
 $post_id = $_POST['post_id'];
 
-    $sql = "SELECT * from replies_table where post_id = '$comment_id' ORDER BY created_at";
+    $sql = "SELECT * from replies_table where post_id = '$post_id' ORDER BY created_at";
     $result = $datas->runSimpleQuery($connection, $sql);
     $data = array();
     $no_row = mysqli_num_rows($result);

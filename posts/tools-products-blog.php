@@ -39,6 +39,13 @@ href="Honey%20Highlights%20Blog%20Posts%20(1)_files/themedata.thmx">
 href="Honey%20Highlights%20Blog%20Posts%20(1)_files/colorschememapping.xml">
 
 <link rel=plchdr href="Honey%20Highlights%20Blog%20Posts%20(1)_files/plchdr.htm">
+  <!--Modal-->
+    <link href="../assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="../assets/css/login-register.css" rel="stylesheet" />
+	  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <script src="../assets/js/jquery-1.10.2.js" type="text/javascript"></script>
+	  <script src="../assets/js/bootstrap.js" type="text/javascript"></script>
+    <script src="../assets/js/login-register.js" type="text/javascript"></script>
 <style>
  /* Font Definitions */
 @font-face
@@ -210,7 +217,7 @@ p.PadderBetweenControlandBody{
                           <li><a href="../about.html">About Us</a></li>
                           <li><a href="../services.html">Services</a></li>
                           <li><a href="../catalogue.html">Catalogue</a></li>
-                          <li><a href="../blog.html">Blog</a></li>
+                          <li><a href="../blog.php">Blog</a></li>
                           <li><a href="../contact.html">Contact</a></li>
                       </ul>
                   </div>
@@ -227,6 +234,78 @@ p.PadderBetweenControlandBody{
   </div>
   
 </header>
+<!--Beginning of Modal-->
+<div class="container" id="loginSection">
+        
+        <div class="modal fade login" id="loginModal">
+             <div class="modal-dialog login animated" style="margin-top: 150px;">
+                 <div class="modal-content">
+                    <div class="modal-header">
+                       <button type="button" data-dismiss="modal" aria-hidden="true">&times;</button>
+                       <h4 class="modal-title">Login with</h4>
+                   </div>
+                   <div class="modal-body">
+                       <div class="box">
+                            <div class="content">
+                               <div class="social">
+                                   <a id="google_login" class="circle google" href="#">
+                                       <i class="fa fa-google-plus fa-fw"></i>
+                                   </a>
+                                   <a id="facebook_login" class="circle facebook" href="#">
+                                       <i class="fa fa-facebook fa-fw"></i>
+                                   </a>
+                               </div>
+                               <div class="division">
+                                   <div class="line l"></div>
+                                     <span>or</span>
+                                   <div class="line r"></div>
+                               </div>
+                               <div class="form loginBox">
+                                <div class="error" id="reply"></div>
+                                <form class="logform" method="POST" action="../php/server.php" accept-charset="UTF-8" name="logginginform">
+                                    <input id="loginemail" class="form-control" title="Please put in an existing email address" type="text" value="<?php if(isset($_COOKIE["member_login"])) { echo $_COOKIE["member_login"]; } ?>" placeholder="Email" name="email" required>
+                                    <input id="loginpassword" class="form-control" type="password" title="Please put in a valid password" value="<?php if(isset($_COOKIE["member_password"])) { echo $_COOKIE["member_password"]; } ?>" placeholder="Password" name="password" required>
+                                    <input type="checkbox" name="remember" id="remember" <?php if(isset($_COOKIE["member_login"])) { ?> checked <?php } ?> ><label for="remember-me">Remember me</label>
+                                    <input class="btn-login" id="loginbtn" type="submit" value="Login">
+                                </form>
+                            </div>
+                            </div>
+                       </div>
+                       <div class="box">
+                           <div class="content registerBox" style="display:none;">
+                            <div class="error" id="response"></div>
+                            <div class="form">
+                                   <form class="registrationform" method="POST" action="../php/server.php" accept-charset="UTF-8" id="registerform" name="registerform">
+                                       <input id="firstname" class="form-control" type="text" title="Please input your firstname" placeholder="First name" name="firstname" required>
+                                       <input id="surname" class="form-control" type="text" title="Please input your surname" placeholder="Last name" name="surname" required>
+                                       <input id="username" class="form-control" type="text" title="Username must not be less than 4 characters" placeholder="Username" pattern="(?=.*[a-z]).{4,}" name="username" required>
+                                       <input id="regemail" class="form-control" type="email" title="Please input a valid email address" placeholder="Email" name="email" required>
+                                       <div><input id="regpassword" onblur="return validateForm()" onfocus="aliababwa()" title="Minimum 6 characters, must include at least one lowercase and one uppercase letter, and at least one number." class="form-control" type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" placeholder="Password" name="password" required /><p id="passwordshow" class="field-icon" style="display: none;">Show</p></div>
+                                       <span id="passError" style="color: red;"></span>
+                                       <div><input id="passwordconfirmation" onblur="return validateForm()" onfocus="alibaba()" class="form-control" type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" placeholder="Repeat Password" name="password_confirmation" required /><p id="confirmpasswordshow" class="field-icon" style="display: none;">Show</p></div>
+                                       <span id="confirmError" style="color: red;"></span>
+                                       <input id="registerbtn" class="btn-register" type="submit" name="commit" value="Create account" />
+                                   </form>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="modal-footer">
+                       <div class="forgot login-footer">
+                           <span>Looking to
+                                <a id="createacc" href="javascript: showRegisterForm();">create an account</a>
+                           ?</span>
+                       </div>
+                       <div class="forgot register-footer" style="display:none">
+                            <span>Already have an account?</span>
+                            <a href="javascript: showLoginForm();" id="logginuser">Login</a>
+                       </div>
+                   </div>
+                 </div>
+             </div>
+         </div>
+   </div>
+    <!----End of Modal-->
 <div class="WordSection1 honey-page-section" >
   <div class="container">
     
@@ -510,7 +589,8 @@ p.PadderBetweenControlandBody{
                                         <p class="honey-reply-body"></p>
                                     </div>
                                     </div>
-                                      <input class="reply-input" type="text" placeholder="reply here" name="reply"> <input type="submit" class ="reply-button" value="Send" onclick="postreply()">
+                                      <div id="reply-input"><input class="reply-input" type="text" placeholder="reply here" name="reply"> <input type="submit" class ="reply-button" value="Send" onclick="postreply()">
+                                      </div>
                                     </div>                                    
                                 </div>
                             </div>
@@ -570,15 +650,20 @@ p.PadderBetweenControlandBody{
 <script src="../js/scripts.js"></script>
 <script src="../js/include.js"></script>
 
-    <script>
-        includeHTML();
-    </script>
+<script src="../js/ajax.js"></script>
+<script>includeHTML();</script>
+<script>$(function(){event.preventDefault();subscribe();});</script>
+<script>$(function(){event.preventDefault();register();});</script>
+<script>$(function(){event.preventDefault();login();});</script>
+
+
+
 
     <!--Reply clicked-->
     <script>
       function replyclicked(id){
       document.getElementById('hidden-id').value = id;
-      $('#'+id).closest('.honey-comment-box').find('#reply-div').slideToggle();
+      $('#'+id).closest('.honey-comment-box').find('#reply-input').slideToggle();
       }
     </script>
     <!--Reply clicked end-->
@@ -605,6 +690,7 @@ p.PadderBetweenControlandBody{
                   }
                   if(response.feedback=="success"){
                     console.log(response.feedback);
+                    runner();
                   }
                   $("input:submit").removeAttr("disabled");
                 },
@@ -612,6 +698,9 @@ p.PadderBetweenControlandBody{
                   if(response.id=="1"){
                       console.log(response.content);
                   }
+                  alert("Please LOG IN to Reply");
+                  openLoginModal();
+                  
                   console.log(response.content);
                 $("input:submit").removeAttr("disabled");
                 }
@@ -621,6 +710,41 @@ p.PadderBetweenControlandBody{
     </script>
 
     <!--Load replies-->
+    <script>
+      function runner() {
+        url = '../php/load-reply.php';
+        type = 'POST';
+        $.ajax({
+          type: type,
+          url: url,
+          dataType: 'JSON',
+          data: {post_id: '1'},
+          success: function (response){
+            if(response.id=="error"){
+              $(".honey-reply-body").html("");
+              console.log('yam');
+            }else{
+              console.log(response);
+              var num = 0;
+              $.each(response, function () {
+                num++;
+                alert(this.body);
+                $('#reply-div').css('display', 'show');
+
+                $(".honey-reply-name").html(this.name);
+                $(".honey-reply-body").html(this.body);
+              });
+            }
+          },
+          error: function (){
+            $('.response').text("Big error");// show the response
+                $('.response').addClass('alert alert-danger');
+                $("input:submit").removeAttr("disabled");
+                console.log('more yams');
+          }
+        });
+      }
+    </script>
     
 
     <!--Load Data-->
