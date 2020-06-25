@@ -575,17 +575,17 @@ p.PadderBetweenControlandBody{
                             <div class="honey-comment-main-level">
                                 <div class="honey-comment-avatar"></div>
                                 <div class="honey-comment-box">
-                                    <div class="honey-comment-head">
+                                    <div class="honey-comment-head" onclick="showreply(this)">
                                         <h6 class="honey-comment-name by-author"><a href="#"></a></h6><i class="fa fa-reply honey-reply-icon" onclick="replyclicked(this.id)"></i></div>
                                     <div class="honey-comment-content">
                                         <p class="honey-comment-body"></p>
                                     </div>
                                     <div id="reply-div">
-                                      <div id="reply-input">
+                                    </div> 
+                                    <div id="reply-input">
                                         <input class="reply-input" type="text" placeholder="reply here" name="reply">
                                         <input type="submit" class ="reply-button" value="Send" onclick="postreply()">
-                                      </div>
-                                    </div>                                    
+                                      </div>                                   
                                 </div>
                             </div>
                         </li>
@@ -665,8 +665,13 @@ p.PadderBetweenControlandBody{
     <!--Reply clicked-->
     <script>
       function replyclicked(id){
-      document.getElementById('hidden-id').value = id;
-      $('#'+id).closest('.honey-comment-box').find('#reply-input').slideToggle();
+        document.getElementById('hidden-id').value = id;
+          $('#'+id).closest('.honey-comment-box').find('#reply-input').slideToggle();
+      }
+      function showreply(me){
+        console.log("show reply is clicked");
+        //$(me).closest('.honey-comment-box').find('#reply-input').slideToggle();
+        $(me).closest('.honey-comment-box').find('#reply-div').slideToggle();
       }
     </script>
     <!--Reply clicked end-->
