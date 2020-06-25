@@ -490,6 +490,7 @@ p.PadderBetweenControlandBody{
             <div class="col-md-6">
                 <div class="honey-comments-wrapper">
                     <h4>There are <span class="commentnum"></span> comments</h4>
+                    <input id="hidden-id" type="hidden">
                     <ul id="honey-comments" class="honey-comments-list">
                         <li>
                             <div class="honey-comment-main-level">
@@ -501,7 +502,15 @@ p.PadderBetweenControlandBody{
                                         <p class="honey-comment-body"></p>
                                     </div>
                                     <div id="reply-div">
-                                      <input class="reply-input" type="text" placeholder="reply here" name="reply"> <input type="submit" class ="reply-button" value="Send">
+                                    <div class="honey-reply-box">
+                                    <div class="honey-reply-head">
+                                        <h6 class="honey-reply-name by-author"><a href="#"></a></h6>
+                                    </div>
+                                    <div class="honey-reply-content">
+                                        <p class="honey-reply-body"></p>
+                                    </div>
+                                    </div>
+                                      <input class="reply-input" type="text" placeholder="reply here" name="reply"> <input type="submit" class ="reply-button" value="Send" onclick="postreply()">
                                     </div>                                    
                                 </div>
                             </div>
@@ -568,15 +577,53 @@ p.PadderBetweenControlandBody{
     <!--Reply clicked-->
     <script>
       function replyclicked(id){
-      console.log(id);
-        $('#'+id).closest('.honey-comment-box').find('#reply-div').slideToggle();
+      document.getElementById('hidden-id').value = id;
+      $('#'+id).closest('.honey-comment-box').find('#reply-div').slideToggle();
       }
     </script>
     <!--Reply clicked end-->
      
 
     <!--Reply submit button clicked-->
-  
+    <script>
+      function postreply(){
+        var id = document.getElementById('hidden-id').value;
+        $('#'+id).closest('.honey-comment-box').find('#reply-div').slideToggle();
+        var text_value = $('#'+id).closest('.honey-comment-box').find('.reply-input').val();
+        url = '../php/postreply.php';
+        type = 'POST';
+            // Call ajax for pass data to other place
+            $.ajax({
+                type: type,
+                url: url,
+                dataType: 'JSON',
+                data: {comment_id: id,text: text_value},
+                success: function(response){ 
+                  $('#'+id).closest('.honey-comment-box').find('.reply-input').val("");
+                  if(response.id=="1"){
+                      console.log(response.content);
+                  }
+                  if(response.feedback=="success"){
+                      console.log(response.feedback);
+
+
+                  }
+                  $("input:submit").removeAttr("disabled");
+                },
+                error: function(response){
+                  if(response.id=="1"){
+                      console.log(response.content);
+                  }
+                  console.log(response.content);
+                $("input:submit").removeAttr("disabled");
+                }
+        }); 
+      return false;  
+    }
+    </script>
+
+    <!--Load replies-->
+    
 
     <!--Load Data-->
     <script>
@@ -609,7 +656,6 @@ p.PadderBetweenControlandBody{
     <!--Load Comments script-->
     <script>
       console.log("im in");
-      sessionStorage.setItem("post_id", "1");
       function runn(){
         //Comment form 
             url = '../php/load-comments.php';
