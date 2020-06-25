@@ -581,21 +581,24 @@ p.PadderBetweenControlandBody{
                                         <p class="honey-comment-body"></p>
                                     </div>
                                     <div id="reply-div">
-                                    <div class="honey-reply-box">
-                                    <div class="honey-reply-head">
-                                        <h6 class="honey-reply-name by-author"><a href="#"></a></h6>
-                                    </div>
-                                    <div class="honey-reply-content">
-                                        <p class="honey-reply-body"></p>
-                                    </div>
-                                    </div>
-                                      <div id="reply-input"><input class="reply-input" type="text" placeholder="reply here" name="reply"> <input type="submit" class ="reply-button" value="Send" onclick="postreply()">
+                                      <div id="reply-input">
+                                        <input class="reply-input" type="text" placeholder="reply here" name="reply">
+                                        <input type="submit" class ="reply-button" value="Send" onclick="postreply()">
                                       </div>
                                     </div>                                    
                                 </div>
                             </div>
                         </li>
+                        <div class="honey-reply-box">
+                              <div class="honey-reply-head">
+                                 <h6 class="honey-reply-name by-author"><a href="#"></a></h6>
+                               </div>
+                              <div class="honey-reply-content">
+                                 <p class="honey-reply-body"></p>
+                             </div>
+                        </div>
                     </ul>
+                    
                     <span id="empty"></span>
                     <ul id="honey-comments-list"></ul>
                 </div>
@@ -725,14 +728,22 @@ p.PadderBetweenControlandBody{
               console.log('yam');
             }else{
               console.log(response);
-              var num = 0;
               $.each(response, function () {
-                num++;
-                alert(this.body);
-                $('#reply-div').css('display', 'show');
-
-                $(".honey-reply-name").html(this.name);
-                $(".honey-reply-body").html(this.body);
+                var row = this;
+                console.log(row);
+                var c_id = this.comment_id;
+                $('#honey-comments-list').find('.honey-reply-icon').each(function(){
+                    var div_id = $(this).attr('id');
+                    if(c_id===div_id){
+                      console.log(this);
+                      console.log(div_id);
+                    var newComment = $("body").find("#honey-comments .honey-reply-box").clone();
+                      newComment.find(".honey-reply-name").append(row.name);
+                      newComment.find(".honey-reply-body").append(row.body); 
+                      $('#'+div_id).closest('.honey-comment-box').find('#reply-div').css("display","block");
+                      $(newComment).appendTo($('#'+div_id).closest('.honey-comment-box').find('#reply-div'));
+                    }
+                });
               });
             }
           },
@@ -743,6 +754,7 @@ p.PadderBetweenControlandBody{
                 console.log('more yams');
           }
         });
+
       }
     </script>
     
@@ -823,6 +835,7 @@ p.PadderBetweenControlandBody{
     };
     $(function(){
       runn();
+      runner();
     });
     </script>
     <!--Load Comments script Ends-->

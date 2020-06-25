@@ -1403,9 +1403,11 @@ span.user {
     font-size: 16px;
     color: #FFFFFF;
     padding-bottom: 5px;
+    padding-top: 5px;
     line-height: 1.5em;
     font-weight: 600;
     float: left;
+    margin-top: 0;
     margin-right: 10px;
 }
 .honey-comment-box .honey-comment-head {
@@ -1451,13 +1453,36 @@ overflow: hidden;
     margin-top: 0;
     width: 100%;
     margin-bottom: 10px;
-    display: block;
+    display: none;
     padding-left: 10%;
+    overflow-y: auto;
+    max-height: 15vh;
 }
+.honey-reply-box .honey-reply-name{
+    font-size: 16px;
+    color: #FFFFFF;
+    line-height: 1.5em;
+    float: left;
+    margin-top: 0;
+    margin-right: 10px;
+}
+.honey-reply-box .honey-reply-head {
+    padding: 0px 0px 0px 5px;
+    background-color: #d3b8e0;
+    overflow: hidden;
+}
+.honey-reply-box .honey-reply-content{
+    background-color: whitesmoke;    
+}
+.honey-reply-content p{
+    padding: 5px;
+}
+
 #reply-input{display: none;}
 .reply-input{
     padding: 4px 10px;
     width: 80%;
+    margin-bottom: 10px;
     border: 1px solid #b19bd9 !important;
 }
 .reply-button{
