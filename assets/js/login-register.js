@@ -133,6 +133,9 @@ var openLoginModal = function () {
     }, 230);
     
 }
+var closeModal = function () {
+    $('#loginModal').css('display', 'none');
+}
 
 var openRegisterModal =  function () {
     showRegisterForm();

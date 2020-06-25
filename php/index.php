@@ -1,5 +1,6 @@
+
 <?php
-session_start();
+/*session_start();
 
 require_once "Auth.php";
 require_once "Util.php";
@@ -11,7 +12,6 @@ $util = new Util();
 require_once "authCookieSessionValidate.php";
 
 if ($isLoggedIn) {
-    $util->redirect("dashboard.php");
 }
 
 if ($_POST && isset($_POST['email'], $_POST['password'])) {
@@ -57,4 +57,4 @@ if ($_POST && isset($_POST['email'], $_POST['password'])) {
     } else {
         $message = "Invalid Login";
     }
-}
+}*/

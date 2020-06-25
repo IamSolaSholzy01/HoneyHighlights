@@ -47,7 +47,8 @@
                                 <li><a href="catalogue.html">Catalogue</a></li>
                                 <li class="giddy"><a href="blog.php">Blog</a></li>
                                 <li><a href="contact.html">Contact</a></li>
-                                <li><a  data-toggle="modal" href="javascript:void(0)" onclick="openLoginModal();">Log in</a></li>
+                                <li><a  data-toggle="modal" id="loginLink" href="javascript:void(0)" onclick="openLoginModal();">Log in</a></li>
+                                <li><a href="php/logout.php" id="logoutLink" style="display: none;">Log Out</a>
                             </ul>
                         </div>
                     </nav>
@@ -60,7 +61,7 @@
     </header>
     <!--<div include-html="login_register_modal.html"></div> -->
     <!--Beginning of Modal-->
-    <div class="container">
+    <div class="container" id="loginSection">
         
         <div class="modal fade login" id="loginModal">
              <div class="modal-dialog login animated" style="margin-top: 150px;">
@@ -87,7 +88,7 @@
                                </div>
                                <div class="form loginBox">
                                 <div class="error" id="reply"></div>
-                                <form class="logform" method="POST" action="php/login.php" accept-charset="UTF-8" name="logginginform">
+                                <form class="logform" method="POST" action="php/server.php" accept-charset="UTF-8" name="logginginform">
                                     <input id="loginemail" class="form-control" title="Please put in an existing email address" type="text" value="<?php if(isset($_COOKIE["member_login"])) { echo $_COOKIE["member_login"]; } ?>" placeholder="Email" name="email" required>
                                     <input id="loginpassword" class="form-control" type="password" title="Please put in a valid password" value="<?php if(isset($_COOKIE["member_password"])) { echo $_COOKIE["member_password"]; } ?>" placeholder="Password" name="password" required>
                                     <input type="checkbox" name="remember" id="remember" <?php if(isset($_COOKIE["member_login"])) { ?> checked <?php } ?> ><label for="remember-me">Remember me</label>
@@ -255,5 +256,15 @@
     <script>$(function(){event.preventDefault();subscribe();});</script>
     <script>$(function(){event.preventDefault();register();});</script>
     <script>$(function(){event.preventDefault();login();});</script>
+    <script>$(function(){
+        if (sessionStorage.getItem('email')!=null){
+            console.log(sessionStorage.getItem('email'));
+            toggleLoginLogout();
+            } else if (sessionStorage.getItem('email')==null) {
+            $('#loginLink').css('display', 'block');
+            $('#logoutLink').css('display', 'none');    
+            }
+        });
+    </script>
 </body>
 </html>

@@ -11,7 +11,12 @@ $connection = $db_handle->connectDB();
 require_once "authCookieSessionValidate.php";
 
 if ($isLoggedIn) {
-    echo ("You are logged in");
+    ?>
+    <script type="text/javascript" src="../js/ajax.js">
+       setAsLoggedIn();
+       console.log("You are logged in.");
+    </script>
+    <?php
 }
 
 if ($_POST && isset($_POST['email'], $_POST['password'])) {
@@ -21,10 +26,26 @@ if ($_POST && isset($_POST['email'], $_POST['password'])) {
     $passkey = $_POST['password'];
     
     $user = $auth->getMemberByEmail($email);
-    if (password_verify($passkey, $user[0]["passkey"])) {
-        $isAuthenticated = true;
+    if (count($user) > 0) {
+        $row = $user;
+        if (password_verify($passkey, $user[0]["passkey"])) {
+            $isAuthenticated = true;
+            $data = array(
+                "id" => $row[0]['id'],
+                "username" => $row[0]['username'],
+                "email" => $row[0]['email'],
+                "firstname" => $row[0]['firstname']
+            );
+        } else {  
+            $data = array(
+            "id" => "error",
+            "content" => "Wrong email/password combination");
+        }
+    } else {
+        $data = array( 
+        "id" => "emailerror",
+        "content" => "That email doesn't exist.");
     }
-    
     if ($isAuthenticated) {
         $_SESSION["member_id"] = $user[0]["id"];
         
@@ -54,9 +75,10 @@ if ($_POST && isset($_POST['email'], $_POST['password'])) {
             $util->clearAuthCookie();
         }
         //$util->redirect("dashboard.php");
-        echo ("You be OG");
     } else {
         $message = "Invalid Login";
     }
+    echo json_encode($data);
 }
 ?>
+<script src="../js/ajax.js"></script>

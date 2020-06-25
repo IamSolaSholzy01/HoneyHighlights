@@ -1,3 +1,4 @@
+    var isLoggedIn;
     var subscribe = function(){
         var subForm = $('.subscribe-form');
         subForm.submit(function(e) { 
@@ -101,7 +102,7 @@
                 $("input:submit").removeAttr("disabled");
                 }
             });
-            //return false;
+            return false;
         });
     }
 
@@ -156,12 +157,17 @@
                         $('#reply').css("color","green");
                         $('.error').removeClass('alert alert-danger');
                         $('.error').addClass('alert alert-success');
+                        $('#loginLink').css('display', 'none');
+                        $('#logoutLink').css('display', 'block');
                         setTimeout(() => {
                             $('#loginemail').val("");
                             $('#loginpassword').val("");
                             $('#reply').text("");
                             $('.error').removeClass('alert alert-success');
-                        }, 3000);                         
+                            $('#loginLink').css('display', 'none');
+                            $('#logoutLink').css('display', 'block'); 
+                            $('#loginSection').css('display', 'none');
+                        }, 3000);                    
                     }
                     $("input:submit").removeAttr("disabled");
                 },
@@ -169,9 +175,26 @@
                 $('#response').text("Serious error");// show the response
                 $('.error').addClass('alert alert-danger');
                 shakeModal();
+                console.log("errors oo");
                 $("input:submit").removeAttr("disabled");
                 }
             });
-            //return false;
+            return false;
         });
+    }
+    var setAsLoggedIn = function () {
+        isLoggedIn = true;
+    }
+    var setAsLoggedOut = function () {
+        isLoggedIn = false;
+        sessionStorage.clear();
+        console.log("Cleared");
+    }
+    var toggleLoginLogout = function () {
+
+        var login = document.getElementById('loginLink');
+        var logout = document.getElementById('logoutLink');
+
+        login.style.display= 'none';
+        logout.style.display = 'block';
     }

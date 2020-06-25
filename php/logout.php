@@ -1,15 +1,24 @@
 <?php
 session_start();
 
-require "Util.php";
+require "utilities.php";
 $util = new Util();
 
 //Clear Session
 $_SESSION["member_id"] = "";
 session_destroy();
 
+echo ('<script src="../js/ajax.js">
+    setAsLoggedOut();
+</script>');
+echo('<script>
+    sessionStorage.clear();
+    console.log("Cleared");
+    </script>');
 // clear cookies
 $util->clearAuthCookie();
-
-header("Location: ./");
 ?>
+
+<script type="text/javascript">
+    window.location.href = "../index.html";
+</script>

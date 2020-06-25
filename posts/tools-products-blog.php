@@ -597,16 +597,14 @@ p.PadderBetweenControlandBody{
                 type: type,
                 url: url,
                 dataType: 'JSON',
-                data: {comment_id: id,text: text_value},
+                data: {post_id: '1',comment_id: id,text: text_value},
                 success: function(response){ 
                   $('#'+id).closest('.honey-comment-box').find('.reply-input').val("");
                   if(response.id=="1"){
-                      console.log(response.content);
+                    console.log(response.content);
                   }
                   if(response.feedback=="success"){
-                      console.log(response.feedback);
-
-
+                    console.log(response.feedback);
                   }
                   $("input:submit").removeAttr("disabled");
                 },
@@ -618,7 +616,7 @@ p.PadderBetweenControlandBody{
                 $("input:submit").removeAttr("disabled");
                 }
         }); 
-      return false;  
+      //return false;  
     }
     </script>
 

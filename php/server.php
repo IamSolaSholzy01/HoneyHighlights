@@ -5,7 +5,7 @@ require_once('utilities.php');
 $auth = new Auth();
 $datas = new DBControllers();
 $util = new Util();
-
+require_once "authCookieSessionValidate.php";
 $connection = $datas->connectDB();
 
 try {
@@ -80,7 +80,39 @@ elseif ($_POST && isset($_POST['email'], $_POST['password'])){
         $hashed_password = $row[0]['passkey'];
         
         if(password_verify($passkey, $hashed_password)) {
-            $isAuthenticated = true;
+            $isAuthenticated = true; 
+            if ($isAuthenticated) {
+                $_SESSION["member_id"] = $row[0]["id"];
+                
+                // Set Auth Cookies if 'Remember Me' checked
+                if (! empty($_POST["remember"])) {
+                    setcookie("member_login", $email, $cookie_expiration_time);
+                    
+                    $random_password = $util->getToken(16);
+                    setcookie("random_password", $random_password, $cookie_expiration_time);
+                    
+                    $random_selector = $util->getToken(32);
+                    setcookie("random_selector", $random_selector, $cookie_expiration_time);
+                    
+                    $random_password_hash = password_hash($random_password, PASSWORD_DEFAULT);
+                    $random_selector_hash = password_hash($random_selector, PASSWORD_DEFAULT);
+                    
+                    $expiry_date = date("Y-m-d H:i:s", $cookie_expiration_time);
+                    
+                    // mark existing token as expired
+                    $userToken = $auth->getTokenByEmail($email, 0);
+                    if (! empty($userToken[0]["id"])) {
+                        $auth->markAsExpired($userToken[0]["id"]);
+                    }
+                    // Insert new token
+                    $auth->insertToken($email, $random_password_hash, $random_selector_hash, $expiry_date);
+                } else {
+                    $util->clearAuthCookie();
+                }
+            } else {
+                $message = "Invalid Login";
+            }
+
             $data = array(
                 "id" => $row[0]['id'],
                 "username" => $row[0]['username'],
@@ -92,7 +124,7 @@ elseif ($_POST && isset($_POST['email'], $_POST['password'])){
             "content" => "Wrong email/password combination");
         }
     } else {
-        $data = array(
+        $data = array( 
         "id" => "emailerror",
         "content" => "That email doesn't exist.");
     }
@@ -102,5 +134,6 @@ elseif ($_POST && isset($_POST['email'], $_POST['password'])){
 } catch(Exception $e) {
     echo $e->getMessage();
   }
+
 
 ?>

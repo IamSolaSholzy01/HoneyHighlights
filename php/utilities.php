@@ -56,6 +56,13 @@ class Util{
             setcookie("random_selector", "");
         }
     }
+    public function toggleLoginLogout() {
+        ?>
+        <script src="js/ajax.js">
+           toggleLoginLogout();
+        </script>
+        <?php
+    }
 }
 
 ?>
