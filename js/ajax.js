@@ -163,7 +163,7 @@
                             $('#loginemail').val("");
                             $('#loginpassword').val("");
                             $('#reply').text("");
-                            $('.error').removeClass('alert alert-success');
+                            $('.error').removeClass('alert alert-success'); 
                             $('#loginLink').css('display', 'none');
                             $('#logoutLink').css('display', 'block'); 
                             $('#loginSection').css('display', 'none');
