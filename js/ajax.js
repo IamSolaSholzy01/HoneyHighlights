@@ -184,9 +184,14 @@
         });
     }
     function signOut() {
-        var auth2 = gapi.auth2.getAuthInstance();
-        auth2.signOut().then(function () {
-          console.log('User signed out.');
+            var auth2 = gapi.auth2.getAuthInstance();
+            auth2.signOut().then(function () {
+                console.log('User signed out.');
+        });
+      }
+      function onLoad() {
+        gapi.load('auth2', function() {
+          gapi.auth2.init();
         });
       }
     function onSignIn(googleUser) {
@@ -194,6 +199,28 @@
         sessionStorage.setItem('id', profile.getId());
         sessionStorage.setItem('username',  profile.getName());
         sessionStorage.setItem('email', profile.getEmail());
+        $.ajax({
+            type: 'POST',
+            url: 'php/google.php',
+            dataType: 'JSON',
+            data: {
+                username: sessionStorage.getItem('username'), 
+                email: sessionStorage.getItem('email'),
+                id: sessionStorage.getItem('id')
+            },
+            success: function(response){
+                if (response.feedback == "success") {
+                    console.log('success');
+                    console.log(response.name);
+                    console.log(response.email);
+                } else {
+                    console.log('failure');
+                }
+            },
+            error: function(){
+                console.log('errors upon errors');
+            }
+        });
         console.log(sessionStorage.getItem('email'));
         $('#reply').html("Login Successful");// show the response
         $('#reply').css("color","green");

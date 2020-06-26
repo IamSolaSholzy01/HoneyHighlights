@@ -21,7 +21,7 @@ if ($isLoggedIn) {
 
 if ($_POST && isset($_POST['email'], $_POST['password'])) {
     $isAuthenticated = false;
-    
+     
     $email = $util->clean_input(mysqli_real_escape_string($connection, $_POST['email']));
     $passkey = $_POST['password'];
     
@@ -48,6 +48,8 @@ if ($_POST && isset($_POST['email'], $_POST['password'])) {
     }
     if ($isAuthenticated) {
         $_SESSION["member_id"] = $user[0]["id"];
+        $_SESSION["username"] = $user[0]["username"];
+        $_SESSION["email"] = $user[0]["email"];
         
         // Set Auth Cookies if 'Remember Me' checked
         if (! empty($_POST["remember"])) {

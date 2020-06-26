@@ -5,19 +5,15 @@ $datas = new DBControllers();
 $connection = $datas->connectDB();
         
     $id = $_SESSION["member_id"];
-
+ 
     if($id!=null){
             
         $body = $_POST['text']; 
         $comment_id = $_POST['comment_id'];
         $post_id = $_POST['post_id'];
-        $sql = "SELECT * from user_table WHERE id = '$id'";
-        $result = $datas->runSimpleQuery($connection, $sql);
-        
-        if (mysqli_num_rows($result) > 0) {
-            $row = mysqli_fetch_assoc($result);
-            $username = $row['username'];
-            $email = $row['email']; 
+
+            $username = $_SESSION['username'];
+            $email = $_SESSION['email']; 
             $sql2 = "INSERT INTO replies_table(comment_id,post_id,body,user_id,name,email) VALUE ('$comment_id','$post_id','$body',$id,'$username','$email')";
             if ($datas->runSimpleQuery($connection, $sql2)) {
                 $data = array(
@@ -31,8 +27,7 @@ $connection = $datas->connectDB();
                 "content" => $body,
                 "feedback" => "error"
             ); 
-            }     
-        } 
+            }   
     }else{
         ?>
         <script>

@@ -4,6 +4,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="google-signin-client_id" content="985530739515-m4s7l3v4k5r7fu8vbfkm6p56ir1pb88d.apps.googleusercontent.com">
 <title>Honey Highlights - Blog</title>
 <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.png">
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
@@ -46,6 +47,7 @@ href="Honey%20Highlights%20Blog%20Posts%20(1)_files/colorschememapping.xml">
     <script src="../assets/js/jquery-1.10.2.js" type="text/javascript"></script>
 	  <script src="../assets/js/bootstrap.js" type="text/javascript"></script>
     <script src="../assets/js/login-register.js" type="text/javascript"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
 <style>
  /* Font Definitions */
 @font-face
@@ -618,6 +620,7 @@ p.PadderBetweenControlandBody{
         var text_value = $('#'+id).closest('.honey-comment-box').find('.reply-input').val();
         url = '../php/postreply.php';
         type = 'POST';
+        console.log("Entering ajax");
             // Call ajax for pass data to other place
             $.ajax({
                 type: type,
@@ -636,6 +639,7 @@ p.PadderBetweenControlandBody{
                   $("input:submit").removeAttr("disabled");
                 },
                 error: function(response){
+                  console.log("An error occurred");
                   if(response.id=="1"){
                       console.log(response.content);
                   }
