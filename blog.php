@@ -42,7 +42,7 @@
                         <div class="honey-site-menu-inner" id="honey-navbar">
                             <ul class="list-unstyled">
                                 <li><a href="index.html">Home</a></li>
-                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="about.php">About Us</a></li>
                                 <li><a href="services.html">Services</a></li>
                                 <li><a href="catalogue.html">Catalogue</a></li>
                                 <li class="giddy"><a href="blog.php">Blog</a></li>
@@ -64,7 +64,7 @@
     <div class="container" id="loginSection">
         
     <?php include './php/loginmodal.php';?>
-    
+
     <!-- Blog -->
     <section class="honey-page-section" style="padding-top: calc(44px + 5vh); padding-bottom: 5vh;">
         <div class="container">
