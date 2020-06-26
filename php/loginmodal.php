@@ -12,9 +12,7 @@
                        <div class="box">
                             <div class="content">
                                <div class="social">
-                                   <a id="google_login" class="circle google" href="#">
-                                       <i class="fa fa-google-plus fa-fw"></i>
-                                   </a>
+                                   <div class="g-signin2" data-onsuccess="onSignIn"></div>
                                    <a id="facebook_login" class="circle facebook" href="#">
                                        <i class="fa fa-facebook fa-fw"></i>
                                    </a>

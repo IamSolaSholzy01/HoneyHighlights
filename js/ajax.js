@@ -183,6 +183,38 @@
             return false;
         });
     }
+    function signOut() {
+        var auth2 = gapi.auth2.getAuthInstance();
+        auth2.signOut().then(function () {
+          console.log('User signed out.');
+        });
+      }
+    function onSignIn(googleUser) {
+        var profile = googleUser.getBasicProfile();
+        sessionStorage.setItem('id', profile.getId());
+        sessionStorage.setItem('username',  profile.getName());
+        sessionStorage.setItem('email', profile.getEmail());
+        console.log(sessionStorage.getItem('email'));
+        $('#reply').html("Login Successful");// show the response
+        $('#reply').css("color","green");
+        $('.error').removeClass('alert alert-danger');
+        $('.error').addClass('alert alert-success');
+        $('#loginLink').css('display', 'none');
+        $('#logoutLink').css('display', 'block');
+        setTimeout(() => {
+        $('#loginemail').val("");
+        $('#loginpassword').val("");
+        $('#reply').text("");
+        $('.error').removeClass('alert alert-success'); 
+        $('#loginLink').css('display', 'none');
+        $('#logoutLink').css('display', 'block'); 
+        closeModal();
+        }, 3000);         
+        console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+        console.log('Name: ' + profile.getName());
+        console.log('Image URL: ' + profile.getImageUrl());
+        console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+    }
     var setAsLoggedIn = function () {
         isLoggedIn = true;
     }
