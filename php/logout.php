@@ -19,7 +19,7 @@ echo('<script>
 $util->clearAuthCookie();
 ?>
 
-<script type="text/javascript">
-    //signOut();
+<script type="text/javascript" src="https://apis.google.com/js/platform.js" async defer>
+    signOut();
     window.location.href = "../index.html";
 </script>
