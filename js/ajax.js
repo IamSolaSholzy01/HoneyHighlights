@@ -171,8 +171,9 @@
                     }
                     $("input:submit").removeAttr("disabled");
                 },
-                error : function(){
-                $('#response').text("Serious error");// show the response
+                error : function(response){
+                console.log(response);
+                $('#reply').text("Serious error");// show the response
                 $('.error').addClass('alert alert-danger');
                 shakeModal();
                 console.log("errors oo");

@@ -122,14 +122,15 @@ elseif ($_POST && isset($_POST['email'], $_POST['password'])){
             "id" => "error",
             "content" => "Wrong email/password combination");
         }
-    } else {
+    }else{
         $data = array( 
         "id" => "emailerror",
-        "content" => "That email doesn't exist.");
+        "content" => "That email doesn't exist");
     }
 
     echo json_encode($data);
 }
+
 } catch(Exception $e) {
     echo $e->getMessage();
   }
