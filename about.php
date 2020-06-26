@@ -18,6 +18,14 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/owl.carousel.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <!--Modal-->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="assets/css/login-register.css" rel="stylesheet" />
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <script src="assets/js/jquery-1.10.2.js" type="text/javascript"></script>
+	<script src="assets/js/bootstrap.js" type="text/javascript"></script>
+    <script src="assets/js/login-register.js" type="text/javascript"></script>
+    
 </head>
 
 <body>
