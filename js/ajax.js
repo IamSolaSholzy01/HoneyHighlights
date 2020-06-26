@@ -194,7 +194,7 @@
           gapi.auth2.init();
         });
       }
-    function onSignIn(googleUser) {
+    function onSignIn(googleUser) { 
         var profile = googleUser.getBasicProfile();
         sessionStorage.setItem('id', profile.getId());
         sessionStorage.setItem('username',  profile.getName());
