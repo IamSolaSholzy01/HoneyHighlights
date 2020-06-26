@@ -72,10 +72,10 @@ elseif ($_POST && isset($_POST['email'], $_POST['password'])){
     $result = $auth->getMemberByEmail($email);
 
     if ($result===null) {
-        throw new Exception("No records inside the Database");
-    }
-    
-    if (count($result) > 0) {          
+        $data = array( 
+            "id" => "emailerror",
+            "content" => "That email doesn't exist");
+    }elseif (count($result) > 0) {          
         $row = $result;
         $hashed_password = $row[0]['passkey'];
         
