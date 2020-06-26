@@ -82,9 +82,9 @@ elseif ($_POST && isset($_POST['email'], $_POST['password'])){
         if(password_verify($passkey, $hashed_password)) {
             $isAuthenticated = true; 
             if ($isAuthenticated) {
-                $_SESSION["member_id"] = $user[0]["id"];
-                $_SESSION["username"] = $user[0]["username"];
-                $_SESSION["email"] = $user[0]["email"];
+                $_SESSION["member_id"] = $row[0]["id"];
+                $_SESSION["username"] = $row[0]["username"];
+                $_SESSION["email"] = $row[0]["email"];
                 // Set Auth Cookies if 'Remember Me' checked
                 if (! empty($_POST["remember"])) {
                     setcookie("member_login", $email, $cookie_expiration_time);

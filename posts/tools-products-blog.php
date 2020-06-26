@@ -590,9 +590,9 @@ p.PadderBetweenControlandBody{
 <script src="../js/ajax.js"></script>
 <script>includeHTML();</script>
 <script>$(function(){event.preventDefault();subscribe();});</script>
-    <script>$(function(){event.preventDefault();register();});</script>
-    <script>$(function(){event.preventDefault();login();});</script>
-    <script>$(function(){event.preventDefault();logout();});</script>
+<script>$(function(){event.preventDefault();register();});</script>
+<script>$(function(){event.preventDefault();login();});</script>
+<script>$(function(){event.preventDefault();logout();});</script>
 
 
 
@@ -628,11 +628,14 @@ p.PadderBetweenControlandBody{
                 dataType: 'JSON',
                 data: {post_id: '1',comment_id: id,text: text_value},
                 success: function(response){ 
+                  console.log(response);
                   $('#'+id).closest('.honey-comment-box').find('.reply-input').val("");
                   if(response.id=="1"){
                     console.log(response.content);
+                    alert("Please LOG IN to Reply");
+                    openLoginModal();
                   }
-                  if(response.feedback=="success"){
+                  else if(response.feedback=="success"){
                     console.log(response.feedback);
                     runner();
                   }
@@ -643,14 +646,11 @@ p.PadderBetweenControlandBody{
                   if(response.id=="1"){
                       console.log(response.content);
                   }
-                  alert("Please LOG IN to Reply");
-                  openLoginModal();
-                  
                   console.log(response.content);
                 $("input:submit").removeAttr("disabled");
                 }
         }); 
-      //return false;  
+      return false;  
     }
     </script>
 

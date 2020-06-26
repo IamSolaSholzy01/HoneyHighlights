@@ -201,18 +201,33 @@
         sessionStorage.setItem('email', profile.getEmail());
         $.ajax({
             type: 'POST',
-            url: 'php/google.php',
+            url: './php/google.php',
             dataType: 'JSON',
             data: {
-                username: sessionStorage.getItem('username'), 
-                email: sessionStorage.getItem('email'),
-                id: sessionStorage.getItem('id')
+                username: profile.getName(), 
+                email: profile.getEmail(),
+                id: profile.getId()
             },
             success: function(response){
                 if (response.feedback == "success") {
                     console.log('success');
                     console.log(response.name);
                     console.log(response.email);
+                    $('#reply').html("Login Successful");
+                    $('#reply').css("color","green");
+                    $('.error').removeClass('alert alert-danger');
+                    $('.error').addClass('alert alert-success');
+                    $('#loginLink').css('display', 'none');
+                    $('#logoutLink').css('display', 'block');
+                    setTimeout(() => {
+                    $('#loginemail').val("");
+                    $('#loginpassword').val("");
+                    $('#reply').text("");
+                    $('.error').removeClass('alert alert-success'); 
+                    $('#loginLink').css('display', 'none');
+                    $('#logoutLink').css('display', 'block'); 
+                    closeModal();
+                    }, 3000);         
                 } else {
                     console.log('failure');
                 }
@@ -221,25 +236,9 @@
                 console.log('errors upon errors');
             }
         });
-        console.log(sessionStorage.getItem('email'));
-        $('#reply').html("Login Successful");// show the response
-        $('#reply').css("color","green");
-        $('.error').removeClass('alert alert-danger');
-        $('.error').addClass('alert alert-success');
-        $('#loginLink').css('display', 'none');
-        $('#logoutLink').css('display', 'block');
-        setTimeout(() => {
-        $('#loginemail').val("");
-        $('#loginpassword').val("");
-        $('#reply').text("");
-        $('.error').removeClass('alert alert-success'); 
-        $('#loginLink').css('display', 'none');
-        $('#logoutLink').css('display', 'block'); 
-        closeModal();
-        }, 3000);         
+        //console.log(sessionStorage.getItem('email'));
         console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
         console.log('Name: ' + profile.getName());
-        console.log('Image URL: ' + profile.getImageUrl());
         console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
     }
     var setAsLoggedIn = function () {
