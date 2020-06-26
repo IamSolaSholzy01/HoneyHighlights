@@ -37,6 +37,8 @@
                                 <li><a href="catalogue.html">Catalogue</a></li>
                                 <li><a href="blog.php">Blog</a></li>
                                 <li><a href="contact.html">Contact</a></li>
+                                <li><a  data-toggle="modal" id="loginLink" href="javascript:void(0)" onclick="openLoginModal();">Log in</a></li>
+                                <li><a href="php/logout.php" id="logoutLink" style="display: none;">Log Out</a>
                             </ul>
                         </div>
                     </nav>
@@ -53,6 +55,8 @@
         
     </header>
     <!-- About Us -->
+    <?php include './php/loginmodal.php';?>
+    
     <section class="honey-about-section honey-about-inner-page">
         <div class="container intel">
             <div class="row honey-about-inner">
@@ -166,5 +170,8 @@
     <script src="js/ajax.js"></script>
     <script>includeHTML();</script>
     <script>$(function(){event.preventDefault();subscribe();});</script>
+    <script>$(function(){event.preventDefault();register();});</script>
+    <script>$(function(){event.preventDefault();login();});</script>
+    <script>$(function(){event.preventDefault();logout();});</script>
 </body>
 </html>
