@@ -44,7 +44,7 @@
                                 <li><a href="services.html">Services</a></li>
                                 <li><a href="catalogue.html">Catalogue</a></li>
                                 <li><a href="blog.php">Blog</a></li>
-                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="contact.php">Contact</a></li>
                                 <li><a  data-toggle="modal" id="loginLink" href="javascript:void(0)" onclick="openLoginModal();">Log in</a></li>
                                 <li><a href="php/logout.php" id="logoutLink" style="display: none;">Log Out</a>
                             </ul>

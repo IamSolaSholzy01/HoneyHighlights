@@ -22,7 +22,7 @@ if($_POST && isset($_POST['name'], $_POST['email'], $_POST['message'])) {
     $to = "olajumokeoyinda@gmail.com";
     $subject = "New contacts from form";
     mail($to, $subject, $message);
-    header("Location: contact.html");
+    header("Location: contact.php");
     exit;
 }
 

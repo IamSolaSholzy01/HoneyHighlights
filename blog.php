@@ -46,7 +46,7 @@
                                 <li><a href="services.html">Services</a></li>
                                 <li><a href="catalogue.html">Catalogue</a></li>
                                 <li class="giddy"><a href="blog.php">Blog</a></li>
-                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="contact.php">Contact</a></li>
                                 <li><a  data-toggle="modal" id="loginLink" href="javascript:void(0)" onclick="openLoginModal();">Log in</a></li>
                                 <li><a href="php/logout.php" id="logoutLink" style="display: none;">Log Out</a>
                             </ul>
@@ -159,6 +159,7 @@
             </div>
         </div>
     </section>
+    </div>
     <!-- Subscribe -->
     <div class="subscribe" id="subscribe-form">
         <h2>Subscribe to our mailing list now <br> Be the first to know once a blog post is dropped</h2>
@@ -169,7 +170,7 @@
         </form>
     </div>
     <div class="subscribe" id="subscribe-result"></div>
-    </div>
+    
     <!-- Footer -->
     <div include-html="footer.html"></div> 
     <!-- Loader -->
