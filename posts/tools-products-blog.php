@@ -646,6 +646,8 @@ p.PadderBetweenControlandBody{
                   if(response.id=="1"){
                       console.log(response.content);
                   }
+                  alert("Please LOG IN to Reply");
+                  openLoginModal();
                   console.log(response.content);
                 $("input:submit").removeAttr("disabled");
                 }

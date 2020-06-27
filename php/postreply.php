@@ -31,15 +31,10 @@ $connection = $datas->connectDB();
                 ); 
             }   
     }else{
-        ?>
-        <script>
-            console.log("Errorrrr");
-        </script>
-        <?php
         $data = array(
             "id" => "1",
             "content" => "Please log in",
-            "feedback" => "error"
+            "feedback" => "error" 
         ); 
     }
     echo json_encode($data);        
