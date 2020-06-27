@@ -266,3 +266,205 @@
             $('#logoutLink').css('display', 'none');    
         }
     }
+
+var postComment = function () {
+    //Comment form 
+    var commentForm  = $("#ajax-form");
+    commentForm.submit(function(e){
+        url = commentForm.attr('action');
+        type = commentForm.attr('method');
+        data = {};
+
+        commentForm.find('[name]').each(function(){
+            var that = $(this),
+            name = that.attr('name'),
+            value = that.val();
+            data[name] = value;
+        });
+
+        // Call ajax for pass data to other place
+        $.ajax({
+            type: type,
+            url: url,
+            dataType: 'JSON',
+            data: data,
+            success: function(response){
+                if(response.feedback == "success"){
+                    $('.response').text("Your comment has been sent");// show the response
+                    $('.response').css("color","green");
+                    $('.response').addClass('alert alert-success');
+                    setTimeout(() => {
+                        $('#name').val("");
+                        $('#email').val("");
+                        $('#message').val("");
+                        $('.response').text("");
+                        $('.response').removeClass('alert alert-success');
+                        runn();
+                    }, 3000);                         
+                }
+                $("input:submit").removeAttr("disabled");
+            },
+            error: function(){
+                $('.response').text("Big error");// show the response
+                $('.response').addClass('alert alert-danger');
+                $("input:submit").removeAttr("disabled");
+            }
+        });
+        return false;
+    }); 
+}
+var runn = function (){
+    //Comment form 
+    url = '../php/load-comments.php';
+    type = 'POST';
+    var value = $('#post_id').val();
+    console.log("im in again");
+    // Call ajax for pass data to other place
+    $.ajax({
+        type: type,
+        url: url,
+        dataType: 'JSON',
+        data: {post_id: '1'},
+        success: function(response){
+            if(response.id=="error"){
+                $('.commentnum').html("0");
+                $("#empty").html(response.content);
+            }else{
+                console.log(response);
+                $("#empty").html("");
+                var num = 0;
+                $.each(response, function () {
+                    num++;
+                    var newComment = $("body").find("#honey-comments > li").clone();
+                    newComment.find(".honey-comment-name").append(this.name);
+                    newComment.find(".honey-comment-body").append(this.body);
+                    newComment.find(".honey-reply-icon").addClass(this.comment_id);
+                    newComment.find(".honey-reply-icon").attr('id', this.comment_id);
+                    $(newComment).appendTo("#honey-comments-list");
+                });
+                $('.commentnum').html(num);
+                $("input:submit").removeAttr("disabled");
+            }
+        },
+        error: function(response){
+            $('.response').text("Big error");// show the response
+            $('.response').addClass('alert alert-danger');
+            $("input:submit").removeAttr("disabled");
+        }
+    }); 
+   return false;  
+};
+var loadData = function () { 
+    console.log("loading data");
+        url = '../php/load-data.php';
+        type = 'POST';
+            // Call ajax for pass data to other place
+            $.ajax({
+                type: type,
+                url: url,
+                dataType: 'JSON',
+                data: {post_id: '1'},
+                success: function(response){ 
+                  console.log(response);
+                  $('#post_author').html(response.author);
+                  $('#post_date').html(response.created_at);
+                  //$("input:submit").removeAttr("disabled");
+                },
+                error: function(response){
+                $("input:submit").removeAttr("disabled");
+            }
+        }); 
+    return false; 
+ }
+
+ var runner = function () {
+    url = '../php/load-reply.php';
+    type = 'POST';
+    $.ajax({
+      type: type,
+      url: url,
+      dataType: 'JSON',
+      data: {post_id: '1'},
+      success: function (response){
+        if(response.id=="error"){
+          $(".honey-reply-body").html("");
+          console.log('yam');
+        }else{
+          console.log(response);
+          $.each(response, function () {
+            var row = this;
+            console.log(row);
+            var c_id = this.comment_id;
+            $('#honey-comments-list').find('.honey-reply-icon').each(function(){
+                var div_id = $(this).attr('id');
+                if(c_id===div_id){
+                  console.log(this);
+                  console.log(div_id);
+                var newComment = $("body").find("#honey-comments .honey-reply-box").clone();
+                  newComment.find(".honey-reply-name").append(row.name);
+                  newComment.find(".honey-reply-body").append(row.body); 
+                  $('#'+div_id).closest('.honey-comment-box').find('#reply-div').css("display","block");
+                  $(newComment).appendTo($('#'+div_id).closest('.honey-comment-box').find('#reply-div'));
+                }
+            });
+          });
+        }
+      },
+      error: function (){
+        $('.response').text("Big error");// show the response
+            $('.response').addClass('alert alert-danger');
+            $("input:submit").removeAttr("disabled");
+            console.log('more yams');
+      }
+    });
+
+  }
+  var postreply = function (){
+    var id = document.getElementById('hidden-id').value;
+    $('#'+id).closest('.honey-comment-box').find('#reply-div').slideToggle();
+    var text_value = $('#'+id).closest('.honey-comment-box').find('.reply-input').val();
+    url = '../php/postreply.php';
+    type = 'POST';
+    console.log("Entering ajax");
+        // Call ajax for pass data to other place
+        $.ajax({
+            type: type,
+            url: url,
+            dataType: 'JSON',
+            data: {post_id: '1',comment_id: id,text: text_value},
+            success: function(response){ 
+              console.log(response);
+              $('#'+id).closest('.honey-comment-box').find('.reply-input').val("");
+              if(response.id=="1"){
+                console.log(response.content);
+                alert("Please LOG IN to Reply");
+                openLoginModal();
+              }
+              else if(response.feedback=="success"){
+                console.log(response.feedback);
+                runner();
+              }
+              $("input:submit").removeAttr("disabled");
+            },
+            error: function(response){
+              console.log("An error occurred");
+              if(response.id=="1"){
+                  console.log(response.content);
+              }
+              alert("Please LOG IN to Reply");
+              openLoginModal();
+              console.log(response.content);
+            $("input:submit").removeAttr("disabled");
+            }
+    }); 
+  return false;  
+}
+var replyclicked = function (id){
+    document.getElementById('hidden-id').value = id;
+      $('#'+id).closest('.honey-comment-box').find('#reply-input').slideToggle();
+  }
+var showreply = function (me){
+    console.log("show reply is clicked");
+    //$(me).closest('.honey-comment-box').find('#reply-input').slideToggle();
+    $(me).closest('.honey-comment-box').find('#reply-div').slideToggle();
+  }
