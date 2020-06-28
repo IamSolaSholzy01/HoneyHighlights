@@ -6,6 +6,7 @@ $util = new Util();
 
 //Clear Session
 $_SESSION["member_id"] = "";
+session_unset();
 session_destroy();
 
 echo ('<script src="../js/ajax.js">

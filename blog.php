@@ -66,6 +66,8 @@
         
     <?php include './php/loginmodal.php';?>
     <input type="hidden" id="google" name="google" value="./php/google.php">
+
+
     <!-- Blog -->
     <section class="honey-page-section" style="padding-top: calc(44px + 5vh); padding-bottom: 5vh;">
         <div class="container">
