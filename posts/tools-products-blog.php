@@ -205,39 +205,35 @@ p.PadderBetweenControlandBody{
 </head>
 
 <body lang=EN-GB link="#0563C1" vlink="#954F72" style='tab-interval:36.0pt'>
-<!-- Header -->
-<header class="honey-site-header">
-  <div class="container">
-      <ul>
+    <!-- Header -->
+    <header class="honey-site-header">
+      <div class="container">
+        <ul>
           <a href="../index.html" class="honey-site-logo"><img src="../img/logo-dark.png" alt="honey"></a>
-          <li>
+            <li>
               <!-- Menu -->
               <nav class="honey-site-menu" id="honey-navbar-spy">
-                  <div class="honey-site-menu-inner" id="honey-navbar">
-                      <ul class="list-unstyled">
-                          <li><a href="../index.html">Home</a></li>
-                          <li><a href="../about.php">About Us</a></li>
-                          <li><a href="../services.html">Services</a></li>
-                          <li><a href="../catalogue.html">Catalogue</a></li>
-                          <li><a href="../blog.php">Blog</a></li>
-                          <li><a href="../contact.php">Contact</a></li>
-                          <li><a  data-toggle="modal" id="loginLink" href="javascript:void(0)" onclick="openLoginModal();">Log in</a></li>
-                          <li><a href="../php/logout.php" id="logoutLink" style="display: none;">Log Out</a>
-                      </ul>
-                  </div>
+                <div class="honey-site-menu-inner" id="honey-navbar">
+                  <ul class="list-unstyled">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../about.php">About Us</a></li>
+                    <li><a href="../services.html">Services</a></li>
+                    <li><a href="../catalogue.html">Catalogue</a></li>
+                    <li><a href="../blog.php">Blog</a></li>
+                    <li><a href="../contact.php">Contact</a></li>
+                    <li><a  data-toggle="modal" id="loginLink" href="javascript:void(0)" onclick="openLoginModal();">Log in</a></li>
+                    <li><a href="../php/logout.php" id="logoutLink" style="display: none;">Log Out</a>
+                  </ul>
+                </div>
               </nav>
-          </li>
-      </ul>
-      
-          
-      <div class="row align-items-center">
-          
-      </div>    
-      <!-- Menu Burger -->
-      <div class="col-6 col-md-8 text-right honey-menu-burger-wrap"> <a href="#" class="honey-site-nav-toggle honey-js-honey-site-nav-toggle"><i></i></a> </div>
-  </div>
+            </li>
+        </ul>
+         
+        <!-- Menu Burger -->
+        <div class="col-6 col-md-8 text-right honey-menu-burger-wrap"> <a href="#" class="honey-site-nav-toggle honey-js-honey-site-nav-toggle"><i></i></a> </div>
+      </div>
   
-</header>
+    </header>
 <!--Beginning of Modal-->
 <?php include '../php/loginmodalposts.php';?>
 <div class="WordSection1 honey-page-section" >
@@ -574,7 +570,16 @@ p.PadderBetweenControlandBody{
   </div>
   
 </div>
+<!-- Subscribe -->
+<div class="subscribe" id="subscribe-form">
+  <h2>Subscribe to our mailing list now <br> Be the first to know once a blog post is dropped</h2>
 
+  <form class="subscribe-form" action="php/subscribe.php" method="POST" name="subscribersss">
+    <input class="subscribe-input" type="email" name="email" id="email" placeholder="Email" required >
+    <button id="subscribe-button" class="honey-btn2" type="submit">Subscribe</button>
+  </form>
+</div>
+<div class="subscribe" id="subscribe-result"></div>
 <!-- Footer -->
 <div include-html="../footer.html"></div> 
 <!-- loader -->
@@ -593,7 +598,7 @@ p.PadderBetweenControlandBody{
 <script>$(function(){event.preventDefault();register();});</script>
 <script>$(function(){event.preventDefault();login();});</script>
 <script>$(function(){event.preventDefault();logout();});</script>
-<script>$(function(){loadData(); });</script>
+<script>$(function(){loadData();});</script>
 <script>$(function(){runn();runner();});</script>
 <script>$(function(){event.preventDefault();postComment();});</script>
 </body>
