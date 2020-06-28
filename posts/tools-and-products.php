@@ -237,12 +237,19 @@
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/bwOgE2rXtno" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                         <div><hr/></div>
-
+                        <!--Reactions-->
+                        <div class="honey-share-wrap">
+                        <h3>What do you think about this post?</h3>
+                            <ul class="honey-reaction-icon">
+                            <i id="thumbup" onclick="reaction(this)" class="fa fa-thumbs-o-up"></i><span id="like"></span>
+                            <i id="thumbdown" onclick="reaction(this)" class="fa fa-thumbs-o-down"></i><span  id="dislike"></span>
+                            </ul>
+                        </div>
                         <!-- Share Wrap -->
                         <div class="honey-share-wrap">
                             <ul class="honey-share-icon">
                                 <li><a href="post.html#" style="padding:8px 15px"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="post.html#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="post.html#"><i class="fa fa-twitter"></i></a></li>
                                 <li><a href="post.html#"><i class="fa fa-google"></i></a></li>
                                 <li><a href="post.html#" style="padding: 8px 13px"><i class="fa fa-instagram"></i></a></li>
                                 <li><a href="post.html#"><i class="fa fa-linkedin"></i></a></li>

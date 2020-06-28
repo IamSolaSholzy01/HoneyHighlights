@@ -76,6 +76,14 @@
                         <p>Pellentesque id lobortis elit, nec venenatis eros. Suspendisse aliquam porttitor libero non molestie. Duis ligula enim, interdum et dui eget, pretium venenatis lectus. Donec posuere iaculis libero vel ultricies. Donec massa arcu, euismod ut justo id, rutrum mattis eros. Morbi at porta lacus, vel sagittis lacus. Proin at lectus imperdiet, interdum neque a, ullamcorper sapien.</p>
                         <p>Sed cursus sem ac augue faucibus bibendum. Nulla eget consequat mi. Maecenas dignissim, erat at mattis bibendum, elit mi mollis nisi, et sagittis dolor eros eget diam. Pellentesque id ipsum a ex porttitor interdum. In at nibh egestas, porttitor quam sed, placerat risus. Pellentesque sollicitudin finibus enim, vel convallis massa porta nec. Proin at risus eget mi imperdiet gravida. Maecenas eget iaculis justo. Aliquam turpis ipsum, finibus varius egestas eget, tempus ac velit. Sed non magna pretium, venenatis nisl quis, vulputate nibh.</p>
                         <hr />
+                        <!--Reactions-->
+                        <div class="honey-share-wrap">
+                        <h3>What do you think about this post?</h3>
+                            <ul class="honey-reaction-icon">
+                            <i onclick="reaction(this)" class="fa fa-thumbs-o-up"></i><span id="like"></span>
+                            <i onclick="reaction(this)" class="fa fa-thumbs-o-down"></i><span  id="dislike"></span>
+                            </ul>
+                        </div>
                         <!-- Share Wrap -->
                         <div class="honey-share-wrap">
                             <ul class="honey-share-icon">

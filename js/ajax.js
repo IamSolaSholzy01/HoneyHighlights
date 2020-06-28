@@ -472,3 +472,10 @@ var showreply = function (me){
     //$(me).closest('.honey-comment-box').find('#reply-input').slideToggle();
     $(me).closest('.honey-comment-box').find('#reply-div').slideToggle();
   }
+var reaction = function (me){
+    if(me.id =="thumbup"){
+        console.log("thumbs upp");
+    }else if(me.id == "thumbdown"){
+        console.log("thumbs downnn");
+    }
+}
