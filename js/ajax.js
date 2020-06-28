@@ -421,6 +421,7 @@ var loadData = function () {
   }
   var postreply = function (){
     var id = document.getElementById('hidden-id').value;
+    var postid = document.getElementById('post-id').value;
     $('#'+id).closest('.honey-comment-box').find('#reply-div').slideToggle();
     var text_value = $('#'+id).closest('.honey-comment-box').find('.reply-input').val();
     url = '../php/postreply.php';
@@ -431,7 +432,7 @@ var loadData = function () {
             type: type,
             url: url,
             dataType: 'JSON',
-            data: {post_id: '1',comment_id: id,text: text_value},
+            data: {post_id: postid,comment_id: id,text: text_value},
             success: function(response){ 
               console.log(response);
               $('#'+id).closest('.honey-comment-box').find('.reply-input').val("");
@@ -449,10 +450,11 @@ var loadData = function () {
             error: function(response){
               console.log("An error occurred");
               if(response.id=="1"){
-                  console.log(response.content);
+                console.log(response.content);
+                
               }
               alert("Please LOG IN to Reply");
-              openLoginModal();
+            openLoginModal();
               console.log(response.content);
             $("input:submit").removeAttr("disabled");
             }
