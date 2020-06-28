@@ -6,6 +6,15 @@ CREATE TABLE user_table(
   email VARCHAR(250),
   passkey VARCHAR(250)
 )
+CREATE TABLE subscribe_table(
+  id integer AUTO_INCREMENT PRIMARY KEY,
+  email varchar(250)
+);
+CREATE TABLE contact_table(
+  name varchar(250),
+  email varchar(250),
+  message varchar(2500)
+);
 CREATE TABLE posts_table (
     post_id integer  AUTO_INCREMENT PRIMARY KEY,
     post_title varchar(500),

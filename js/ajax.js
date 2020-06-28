@@ -195,13 +195,14 @@
         });
       }
     function onSignIn(googleUser) { 
+        var url = document.getElementById('google').value;
         var profile = googleUser.getBasicProfile();
         sessionStorage.setItem('id', profile.getId());
         sessionStorage.setItem('username',  profile.getName());
         sessionStorage.setItem('email', profile.getEmail());
         $.ajax({
             type: 'POST',
-            url: '../php/google.php',
+            url: url,
             dataType: 'JSON',
             data: {
                 username: profile.getName(), 
@@ -380,11 +381,12 @@ var loadData = function () {
  var runner = function () {
     url = '../php/load-reply.php';
     type = 'POST';
+    var postid = document.getElementById('post_id').value;
     $.ajax({
       type: type,
       url: url,
       dataType: 'JSON',
-      data: {post_id: '1'},
+      data: {post_id: postid},
       success: function (response){
         if(response.id=="error"){
           $(".honey-reply-body").html("");
@@ -421,7 +423,7 @@ var loadData = function () {
   }
   var postreply = function (){
     var id = document.getElementById('hidden-id').value;
-    var postid = document.getElementById('post-id').value;
+    var postid = document.getElementById('post_id').value;
     $('#'+id).closest('.honey-comment-box').find('#reply-div').slideToggle();
     var text_value = $('#'+id).closest('.honey-comment-box').find('.reply-input').val();
     url = '../php/postreply.php';

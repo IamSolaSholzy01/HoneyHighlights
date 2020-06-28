@@ -56,6 +56,7 @@
     </header>
     <!--Beginning of Modal-->
     <?php include '../php/loginmodalposts.php';?>
+    <input type="hidden" id="google" name="google" value="../php/google.php">
     <section class="honey-page-section">
         <div class="container">
             <p class="blog-title">5 TOOLS AND 5 PRODUCTS YOU SHOULD HAVE AS A MAKEUP BEGINNER</p>
@@ -300,6 +301,7 @@
                         <h4>Leave a comment</h4>
                         <form action="../php/comment.php" method="post" id="ajax-form" class="form-horizontal row">
                           <input type="hidden" id="post_id" name="post_id" value="1">
+                          
                             <div class="col-sm-6">
                                 <div class="form-group">
                                     <input type="text" id="name" name="name" class="form-control" placeholder="Name" required> </div>

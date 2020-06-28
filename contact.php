@@ -63,6 +63,7 @@
     </header>
     <!-- Contact Me -->
     <?php include './php/loginmodal.php';?>
+    <input type="hidden" id="google" name="google" value="./php/google.php">
     <section class="honey-page-section">
         <div class="container">
             <div class="col-md-8 offset-md-2">

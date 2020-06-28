@@ -64,7 +64,7 @@
     </header>
     <!-- About Us -->
     <?php include './php/loginmodal.php';?>
-    
+    <input type="hidden" id="google" name="google" value="./php/google.php">
     <section class="honey-about-section honey-about-inner-page">
         <div class="container intel">
             <div class="row honey-about-inner">
