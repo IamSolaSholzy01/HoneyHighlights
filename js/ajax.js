@@ -195,13 +195,14 @@
         });
       }
     function onSignIn(googleUser) { 
+        var url = document.getElementById('google').value;
         var profile = googleUser.getBasicProfile();
         sessionStorage.setItem('id', profile.getId());
         sessionStorage.setItem('username',  profile.getName());
         sessionStorage.setItem('email', profile.getEmail());
         $.ajax({
             type: 'POST',
-            url: 'php/google.php',
+            url: url,
             dataType: 'JSON',
             data: {
                 username: profile.getName(), 

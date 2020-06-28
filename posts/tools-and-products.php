@@ -56,6 +56,7 @@
     </header>
     <!--Beginning of Modal-->
     <?php include '../php/loginmodalposts.php';?>
+    <input type="hidden" id="google" name="google" value="../php/google.php">
     <section class="honey-page-section">
         <div class="container">
             <p class="blog-title">5 TOOLS AND 5 PRODUCTS YOU SHOULD HAVE AS A MAKEUP BEGINNER</p>
