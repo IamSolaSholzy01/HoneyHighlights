@@ -201,7 +201,7 @@
         sessionStorage.setItem('email', profile.getEmail());
         $.ajax({
             type: 'POST',
-            url: './php/google.php',
+            url: '../php/google.php',
             dataType: 'JSON',
             data: {
                 username: profile.getName(), 

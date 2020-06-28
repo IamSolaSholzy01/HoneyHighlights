@@ -7,7 +7,7 @@ $post_id = $_POST['post_id'];
 
     $sql = "SELECT * from posts_table where post_id = '$post_id'";
 
-    //seelct comments
+    //select comments 
     $result = $datas->runSimpleQuery($connection, $sql);
     
     $data = array();

@@ -85,8 +85,8 @@
                     <div class="honey-blog-post"> <img src="img/blog/blog-01.jpg" alt="blog post">
                         <div class="honey-blog-content">
                             <p class="honey-date-user"> <span class="date"><i class="fa fa-clock-o"></i> 04.06.2020</span> <span class="user"><i class="fa fa-users"></i></i> O. Ogundeji</span> </p>
-                            <h3><a href="posts/tools-products-blog.php">Tools and Products for Makeup</a></h3>
-                            <p class="actual-blog-post">As an individual interested in makeup application, it can be challenging when considering the wide range of tools and products you can apply. How can you know the right tool for your makeup project?</p> <a href="posts/tools-products-blog.php" class="honey-post-meta">Read More <i class="fa fa-arrow-right"></i></a> </div>
+                            <h3><a href="posts/tools-and-products.php">Tools and Products for Makeup</a></h3>
+                            <p class="actual-blog-post">As an individual interested in makeup application, it can be challenging when considering the wide range of tools and products you can apply. How can you know the right tool for your makeup project?</p> <a href="posts/tools-and-products.php" class="honey-post-meta">Read More <i class="fa fa-arrow-right"></i></a> </div>
                     </div>
                 </div>
                 <div class="col-md-6">

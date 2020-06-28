@@ -17,9 +17,9 @@
     <!--Modal-->
     <link href="../assets/css/bootstrap.css" rel="stylesheet" />
     <link href="../assets/css/login-register.css" rel="stylesheet" />
-	  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
     <script src="../assets/js/jquery-1.10.2.js" type="text/javascript"></script>
-	  <script src="../assets/js/bootstrap.js" type="text/javascript"></script>
+	<script src="../assets/js/bootstrap.js" type="text/javascript"></script>
     <script src="../assets/js/login-register.js" type="text/javascript"></script>
     <script src="https://apis.google.com/js/platform.js" async defer></script>
 </head>
@@ -36,21 +36,18 @@
                         <div class="honey-site-menu-inner" id="honey-navbar">
                             <ul class="list-unstyled">
                                 <li><a href="../index.html">Home</a></li>
-                                <li><a href="../about.html">About Us</a></li>
+                                <li><a href="../about.php">About Us</a></li>
                                 <li><a href="../services.html">Services</a></li>
                                 <li><a href="../catalogue.html">Catalogue</a></li>
-                                <li><a href="../blog.html">Blog</a></li>
+                                <li><a href="../blog.php">Blog</a></li>
                                 <li><a href="../contact.php">Contact</a></li>
+                                <li><a  data-toggle="modal" id="loginLink" href="javascript:void(0)" onclick="openLoginModal();">Log in</a></li>
+                                <li><a href="../php/logout.php" id="logoutLink" style="display: none;">Log Out</a>
                             </ul>
                         </div>
                     </nav>
                 </li>
-            </ul>
-            
-                
-            <div class="row align-items-center">
-                
-            </div>    
+            </ul>   
             <!-- Menu Burger -->
             <div class="col-6 col-md-8 text-right honey-menu-burger-wrap"> <a href="#" class="honey-site-nav-toggle honey-js-honey-site-nav-toggle"><i></i></a> </div>
         </div>
@@ -62,8 +59,8 @@
         <div class="container">
             <div class="col-md-8 offset-md-2">
                 <div class="honey-page-content text-center">
-                    <h2>POST HEADER</h2>
-                    <div class="honey-meta-info"> <span><i class="fa fa-users"></i>Oyin Ogundeji</span> <span><i class="fa fa-clock-o"></i>04-06-2020</span> </div>
+                    <h2>POST TITLE</h2>
+                    <div class="honey-meta-info"> <i class="fa fa-users"></i><span id="post_author"></span> <i class="fa fa-clock-o"></i><span id="post_date"></span> </div>
                 </div>
             </div>
         </div>
@@ -147,7 +144,7 @@
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <input type="email" id="email" name="email" class="form-control" placeholder="Email" required> </div>
+                                    <input type="email" id="comment-email" name="email" class="form-control" placeholder="Email" required> </div>
                             </div>
                             <div class="col-sm-12">
                                 <div class="form-group">
@@ -167,6 +164,16 @@
         </div>
     </div>
     </section>
+    <!-- Subscribe -->
+    <div class="subscribe" id="subscribe-form">
+    <h2>Subscribe to our mailing list now <br> Be the first to know once a blog post is dropped</h2>
+
+    <form class="subscribe-form" action="php/subscribe.php" method="POST" name="subscribersss">
+        <input class="subscribe-input" type="email" name="email" id="subscribe-email" placeholder="Email" required >
+        <button id="subscribe-button" class="honey-btn2" type="submit">Subscribe</button>
+    </form>
+    </div>
+    <div class="subscribe" id="subscribe-result"></div>
     <!-- Footer -->
     <div include-html="../footer.html"></div> 
     <!-- JS -->

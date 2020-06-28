@@ -1,0 +1,50 @@
+p {
+    font-family: 'Candara Regular';
+    font-size: 18px;
+}
+p.blog-title {
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:16.0pt;
+	font-family:"Calibri",sans-serif;
+	color:#262626;
+	font-weight:bold;
+}
+p.underline{
+	margin:0cm;
+	margin-bottom:.0001pt;
+	border:none;
+	padding:0cm;
+	font-size:1.0pt;
+	font-family:"Calibri",sans-serif;
+}
+.underline-side{
+    border-bottom:solid #C6C6C6 1.0pt;
+    padding-bottom: 2.67px;
+}
+.padder-blog {
+    margin-bottom:6.0pt;
+}
+.heading-five{
+    margin-top:10.0pt;
+    margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	font-size:36.0pt;
+	font-family:"Candara",sans-serif;
+	color:#323E4F;
+    font-weight:normal;
+}
+.heading-one {
+    margin-top:10.0pt;
+    margin-right:0cm;
+    margin-bottom:0cm;
+    margin-left:0cm;
+    margin-bottom:.0001pt;
+    font-size:24.0pt;
+    font-family:"Candara",sans-serif;
+    font-variant:small-caps;
+    font-weight:bold;
+}
