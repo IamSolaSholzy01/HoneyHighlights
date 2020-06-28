@@ -481,6 +481,7 @@ p.PadderBetweenControlandBody{
 
     <p class=MsoNormal><span lang=EN-US>Easy brow tutorial <span class=SpellE>link <a
     href="https://youtu.be/wX5TtjoNBv">https:/youtu.be/wX5TtjoNBv</a></span></span></p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/bwOgE2rXtno" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
     <p class=MsoNormal><span lang=EN-US>Nude makeup tutorial link:</span></p>
 

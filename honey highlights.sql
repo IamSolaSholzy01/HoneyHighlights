@@ -1,3 +1,11 @@
+CREATE TABLE user_table(
+  id integer AUTO_INCREMENT PRIMARY KEY,
+  firstname VARCHAR(250),
+  surname VARCHAR(250),
+  username VARCHAR(250),
+  email VARCHAR(250),
+  passkey VARCHAR(250)
+)
 CREATE TABLE posts_table (
     post_id integer  AUTO_INCREMENT PRIMARY KEY,
     post_title varchar(500),
@@ -26,10 +34,14 @@ CREATE TABLE reactions_table(
     post_id integer,
     likes integer,
     dislikes integer);
+CREATE TABLE subscribe_table(
+  id integer AUTO_INCREMENT PRIMARY KEY,
+  email VARCHAR(250)
+)
 
 CREATE TABLE `token_table` (
   `id` int(11) NOT NULL,
-  `username` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
   `password_hash` varchar(255) NOT NULL,
   `selector_hash` varchar(255) NOT NULL,
   `is_expired` int(11) NOT NULL DEFAULT '0',
