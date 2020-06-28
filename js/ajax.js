@@ -421,7 +421,7 @@ var loadData = function () {
   }
   var postreply = function (){
     var id = document.getElementById('hidden-id').value;
-    var postid = document.getElementById('post-id').value;
+    var postid = document.getElementById('post_id').value;
     $('#'+id).closest('.honey-comment-box').find('#reply-div').slideToggle();
     var text_value = $('#'+id).closest('.honey-comment-box').find('.reply-input').val();
     url = '../php/postreply.php';
