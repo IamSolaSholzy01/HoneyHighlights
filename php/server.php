@@ -29,14 +29,17 @@ if($_POST && isset($_POST['firstname'], $_POST['surname'], $_POST['email'], $_PO
         if ($result===null) {
             //Hashing function
             $hashed_password = $util->hash($passkey);
+            $sqls = "INSERT INTO user_table (firstname, surname, email, username, passkey) VALUES ('$firstname','$surname','$email','$username','$hashed_password')";
+            $resolution = mysqli_query($connection, $sqls); 
             $insert = $auth->insertUser($firstname, $surname, $email, $username, $hashed_password);
 
-            if ($insert) {
+            if ($resolution) {
                 $data = array(
                 "id" => "success",
                 "content" => "Account has been created"
                 );
-            } 
+            }
+
         } else {
             $user = $result;
             if ($user){
