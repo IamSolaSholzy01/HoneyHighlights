@@ -237,8 +237,8 @@
                         <div class="honey-share-wrap">
                         <h3>What do you think about this post?</h3>
                             <ul class="honey-reaction-icon">
-                            <i id="thumbup" onclick="reaction(this)" class="fa fa-thumbs-o-up"></i><span id="like"></span>
-                            <i id="thumbdown" onclick="reaction(this)" class="fa fa-thumbs-o-down"></i><span  id="dislike"></span>
+                            <i id="like" onclick="reaction(this)" class="fa fa-thumbs-o-up"></i><span id="thumbup"></span>
+                            <i id="dislike" onclick="reaction(this)" class="fa fa-thumbs-o-down"></i><span  id="thumbdown"></span>
                             </ul>
                         </div>
                         <!-- Share Wrap -->
@@ -335,7 +335,7 @@
     <div class="subscribe" id="subscribe-form">
     <h2>Subscribe to our mailing list now <br> Be the first to know once a blog post is dropped</h2>
 
-    <form class="subscribe-form" action="php/subscribe.php" method="POST" name="subscribersss">
+    <form class="subscribe-form" action="../php/subscribe.php" method="POST" name="subscribersss">
         <input class="subscribe-input" type="email" name="email" id="subscribe-email" placeholder="Email" required >
         <button id="subscribe-button" class="honey-btn2" type="submit">Subscribe</button>
     </form>
@@ -357,7 +357,7 @@
     <script>$(function(){event.preventDefault();register();});</script>
     <script>$(function(){event.preventDefault();login();});</script>
     <script>$(function(){event.preventDefault();logout();});</script>
-    <script>$(function(){loadData(); });</script>
+    <script>$(function(){loadData(); loadreaction(); });</script>
     <script>$(function(){runn();runner();});</script>
     <script>$(function(){event.preventDefault();postComment();});</script>
 </body>

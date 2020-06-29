@@ -1530,8 +1530,13 @@ span.user {
 /* *Honey Reactions* */
 .honey-reaction-icon i{
     font-size: 25px;
-    padding-right: 20px;
 }
+.honey-reaction-icon span{
+    font-size: 20px;
+    padding: 5px;
+}
+
+
 /* **Blog-Comments ** */
 .honey-comments-wrapper h4 {
     font-size: 18px;
