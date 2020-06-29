@@ -335,7 +335,7 @@
     <div class="subscribe" id="subscribe-form">
     <h2>Subscribe to our mailing list now <br> Be the first to know once a blog post is dropped</h2>
 
-    <form class="subscribe-form" action="php/subscribe.php" method="POST" name="subscribersss">
+    <form class="subscribe-form" action="../php/subscribe.php" method="POST" name="subscribersss">
         <input class="subscribe-input" type="email" name="email" id="subscribe-email" placeholder="Email" required >
         <button id="subscribe-button" class="honey-btn2" type="submit">Subscribe</button>
     </form>
