@@ -473,9 +473,61 @@ var showreply = function (me){
     $(me).closest('.honey-comment-box').find('#reply-div').slideToggle();
   }
 var reaction = function (me){
-    if(me.id =="thumbup"){
+    var id = me.id;
+    var postid = document.getElementById('post_id').value;
+    url = '../php/reaction.php';
+    type = 'POST';
+    $.ajax({
+        type: type,
+        url: url,
+        dataType: 'JSON',
+        data: {post_id: postid,reaction: id},
+        success: function(response){ 
+            console.log(response);
+        if(response.id=="success" && id=="like"){
+            $("#thumbup").html(response.likes);
+            $("#like").css("color","blue");
+            $("#thumbdown").html(response.dislikes);
+        }else if(response.id=="success" && id=="dislike"){
+            $("#thumbup").html(response.likes);
+            $("#dislike").css("color","red");
+            $("#thumbdown").html(response.dislikes);
+        }
+          $("input:submit").removeAttr("disabled");
+        },
+        error: function(response){
+         console.log(response);
+        $("input:submit").removeAttr("disabled");
+        }
+    }); 
+    if(me.id =="like"){
         console.log("thumbs upp");
-    }else if(me.id == "thumbdown"){
+    }else if(me.id == "dislike"){
         console.log("thumbs downnn");
     }
+    return false;
+}
+var loadreaction = function (){
+    var postid = document.getElementById('post_id').value;
+    url = '../php/load-reaction.php';
+    type = 'POST';
+    $.ajax({
+        type: type,
+        url: url,
+        dataType: 'JSON',
+        data: {post_id: postid},
+        success: function(response){ 
+            console.log(response);
+        if(response.id=="success"){
+            $("#thumbup").html(response.likes);
+            $("#thumbdown").html(response.dislikes);
+        }
+          $("input:submit").removeAttr("disabled");
+        },
+        error: function(response){
+         console.log(response);
+        $("input:submit").removeAttr("disabled");
+        }
+    }); 
+    return false;
 }
