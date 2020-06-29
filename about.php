@@ -37,7 +37,7 @@
                 <li>
                     <!-- Menu -->
                     <nav class="honey-site-menu" id="honey-navbar-spy">
-                        <div class="honey-site-menu-inner" id="honey-navbar">
+                        <div class="honey-site-menu-inner honey-menu-container" id="honey-navbar">
                             <ul class="list-unstyled">
                                 <li><a href="index.html">Home</a></li>
                                 <li class="giddy"><a href="about.html">About Us</a></li>

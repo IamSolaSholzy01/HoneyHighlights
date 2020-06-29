@@ -496,6 +496,12 @@ button {
         box-shadow: 0 -20px 20px -5px rgba(0, 0, 0, 0.05);
         overflow: none;
     }
+    .honey-menu-container{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
     .honey-menu-burger-wrap {
         position: relative;
         z-index: 1022;
@@ -594,36 +600,9 @@ button {
         height: 100vh;
         display: block;
     }
-    @media all and (orientation: landscape) {
-        .honey-site-menu ul{
-            margin-top: 7vh;
-            margin-bottom: 3vh;
-        }
-        .honey-site-menu ul > li {
-            line-height: 1em;
-        }
-    }
-    @media all and (max-width: 300px) and (orientation: landscape){
-        .honey-site-menu ul{
-            margin-top: 3vh;
-            margin-bottom: 3vh;
-        }
-    }
-    @media all and (orientation: portrait) {
-        .honey-site-menu ul{
-            margin-top: 20vh;
-            margin-bottom: 10vh;
-        }
-    }
-    .honey-site-menu ul {
-        position: relative;
-    }
     
     .honey-site-menu ul > li {
-        list-style: none;
-        visibility: hidden;
-        opacity: 0;
-        top: -20px;
+        width: 80vw;
         position: relative;
         text-align: center;
         -webkit-transition: .3s all ease;

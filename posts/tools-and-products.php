@@ -35,7 +35,7 @@
                     <!-- Menu -->
                     <nav class="honey-site-menu" id="honey-navbar-spy">
                         <div class="honey-site-menu-inner" id="honey-navbar">
-                            <ul class="list-unstyled">
+                            <ul class="list-unstyled honey-menu-container">
                                 <li><a href="../index.html">Home</a></li>
                                 <li><a href="../about.php">About Us</a></li>
                                 <li><a href="../services.html">Services</a></li>
@@ -114,10 +114,9 @@
                             <p><img src="Honey%20Highlights%20Blog%20Posts%20(1)_files/beauty-sponge.jpg" alt="foundation brush"
                                 style="width: 100px; height: 100px; float: left; margin-right: 5px;" />
                                 It is a round, domed shaped densely packed brush which allows blending of 
-                                <b style='mso-bidi-font-weight:normal'>foundation</b> as you brush. When using this brush 
-                                don't be too heavy handed instead build up the amount of product you would like to apply instead 
-                                of brushing all at once. A sponge is ideal for a flawless and natural foundation application; 
-                                it is also very easy to use.
+                                <b>foundation</b> as you brush. When using this brush don't be too heavy handed instead build 
+                                up the amount of product you would like to apply instead of brushing all at once. A sponge is 
+                                ideal for a flawless and natural foundation application; it is also very easy to use.
                             </p>
                             <p>To use:</p>
                             <p>Start from the center of the face and work to the outward corner in circular motions, for 
@@ -131,9 +130,8 @@
                                 src="Honey%20Highlights%20Blog%20Posts%20(1)_files/blending-brush.jpg" alt="blending brush.jpg" />
                                 A blending brush is a loose dome shaped brush perfect for blending both wet and dry products.
                                 It can be used for applying eye shadow which blends colors effortlessly on the eye lid and 
-                                crease. It can also be used to <b style='mso-bidi-font-weight:normal'>blend</b> concealer 
-                                to the skin; you can have as many blending brushes as you want depending on the purpose you 
-                                want it to serve.
+                                crease. It can also be used to <b>blend</b> concealer to the skin; you can have as many blending 
+                                brushes as you want depending on the purpose you want it to serve.
                             </p>
                             <p>To use:</p>
                             <p>In sweeping movement, glide brush across lid to apply eye color.</p>
@@ -144,8 +142,8 @@
                             <p><img style="width: 92px; height: 108px; float: left;"
                                 src="Honey%20Highlights%20Blog%20Posts%20(1)_files/eyebrow-brush.jpg" alt="eyebrow brush.jpg" />
                                 This brush is commonly referred to as an angled brush, it is slanted linear brush used to 
-                                both <b style='mso-bidi-font-weight:normal'>fill </b>and <b style='mso-bidi-font-weight: normal'>highlight</b> 
-                                brows. This brush helps to create precise lines and noticeable definition while applying your concealer.
+                                both <b>fill </b>and <b>highlight</b> brows. This brush helps to create precise lines and noticeable 
+                                definition while applying your concealer.
                             </p>
                             <p>To use:</p>
                             <p>There are techniques and method on how to use this brush, to get a detailed explanation tap the link below.</p>
@@ -157,17 +155,15 @@
                             <p><img style="width: 96px; height: 96px; float: left;"
                                 src="Honey%20Highlights%20Blog%20Posts%20(1)_files/spoolie.jpg" alt="spoolie.jpg" />
                                 It is a long brush with soft and spiral bristles. They are used for 
-                                <b style='mso-bidi-font-weight:normal'>brushing</b> and 
-                                <b style='mso-bidi-font-weight:normal'>blending</b> brow 
-                                fillers. They can also be used to remove clumps following mascara application.
+                                <b>brushing</b> and <b>blending</b> brow fillers. They can also be used to remove clumps 
+                                following mascara application.
                             </p>
                         </div>
                         <div><hr/></div>
                         <div class="container">
-                            <p>Now that you know these basic tools you might be wondering 
-                                what kind of products can they be used for and which is most 
-                                important, all these questions will be answered below as I 
-                                explain five products that you should have as a makeup beginner.
+                            <p>Now that you know these basic tools you might be wondering what kind of products can they be 
+                                used for and which is most important, all these questions will be answered below as I explain 
+                                five products that you should have as a makeup beginner.
                             </p>
                         </div>
                         <div class="section-heading"><p class="heading-five">PRODUCTS</p></div>
