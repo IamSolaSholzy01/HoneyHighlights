@@ -31,3 +31,10 @@
 .maroon {
     color: #a12e3b;
 }
+.light-grey{
+    color: #f1f1f1;
+}
+.bg-light-grey{
+    background-color: #f1f1f1;
+    color: #000;
+}

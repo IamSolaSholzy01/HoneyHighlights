@@ -1,4 +1,4 @@
-﻿
+
 <!doctype html>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
@@ -19,6 +19,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/owl.carousel.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/colours.css" rel="stylesheet">
 
     <!--Modal-->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
@@ -28,6 +29,14 @@
 	<script src="assets/js/bootstrap.js" type="text/javascript"></script>
     <script src="assets/js/login-register.js" type="text/javascript"></script>
     <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <style>
+        b {
+            color: black;
+        }
+        body {
+            background-color: #f1f1f1;
+        }
+    </style>
 </head>
 
 <body>
@@ -62,106 +71,131 @@
     </header>
     <!--<div include-html="login_register_modal.html"></div> -->
     <!--Beginning of Modal-->
-    <div class="container" id="loginSection">
+    <div class="" id="loginSection">
         
     <?php include './php/loginmodal.php';?>
     <input type="hidden" id="google" name="google" value="./php/google.php">
 
+    <div class="honey-blog-row honey-page-section">
+    <!-- Blog entries -->
+    <div class="honey-col l8 s12">
+    <!-- Blog entry -->
+    <div class="honey-card-4 honey-margin bg-white">
+        <img src="img\blog\blog-01.jpg" alt="Nature" style="width:100%">
+        <div class="honey-container">
+        <h3><b>TOOLS and PRODUCTS for MAKEUP</b></h3>
+        <h5><span style="padding-right: 15px;" class="user"><i class="fa fa-users honey-opacity"></i></i> O. Ogundeji</span><span class="honey-opacity"><span class="date honey-opacity"><i class="fa fa-clock-o"></i> 04.06.2020</span></span></h5>
+        </div>
 
-    <!-- Blog -->
-    <section class="honey-page-section" style="padding-top: calc(44px + 5vh); padding-bottom: 5vh;">
-        <div class="container">
-            <div class="col-md-8 offset-md-2">
-                <div class="honey-page-content text-center" id="blog-quote-section">
-                    <h2>Blog</h2>
-                    <p>If you do good work for good clients,
-                        <br />it will lead to other good work for other good clients.</p>
-                </div>
+        <div class="honey-container">
+        <p>As an individual interested in makeup application, it can be challenging when considering the wide range of tools 
+            and products you can apply. How can you know the right tool for your makeup project?</p>
+        <div class="honey-row">
+            <div class="honey-col m8 s12">
+            <button onclick="window.location.href='posts/tools-and-products.php';" class="honey-button honey-padding-large bg-white honey-border"><b>READ MORE »</b></button>
+            </div>
+            <div class="honey-col m4 honey-hide-small">
+            <p><span class="honey-padding-large honey-right"><b>Comments  </b> <span class="honey-badge">0</span></span></p>
             </div>
         </div>
-    </section>
-    <section class="honey-blog-section">
-        <div class="container">
-            <div class="honey-blog-items grid-list row">
-                <div class="col-md-6">
-                    <div class="honey-blog-post"> <img src="img/blog/blog-01.jpg" alt="blog post">
-                        <div class="honey-blog-content">
-                            <p class="honey-date-user"> <span class="date"><i class="fa fa-clock-o"></i> 04.06.2020</span> <span class="user"><i class="fa fa-users"></i></i> O. Ogundeji</span> </p>
-                            <h3><a href="posts/tools-and-products.php">Tools and Products for Makeup</a></h3>
-                            <p class="actual-blog-post">As an individual interested in makeup application, it can be challenging when considering the wide range of tools and products you can apply. How can you know the right tool for your makeup project?</p> <a href="posts/tools-and-products.php" class="honey-post-meta">Read More <i class="fa fa-arrow-right"></i></a> </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="honey-blog-post"> <img src="img/blog/blog-02.jpg" alt="blog post">
-                        <div class="honey-blog-content">
-                            <p class="honey-date-user"> <span class="date"><i class="fa fa-clock-o"></i> 13.11.2019</span> <span class="user"><i class="fa fa-users"></i> C. Litora</span> </p>
-                            <h3><a href="posts/post.html">Aptent Tacition</a></h3>
-                            <p class="actual-blog-post">Class aptent taciti sociosqu ad litora. Vestibulum quis sapien metus. In mauris enim, facilisis quis fermentum non, varius vel erat. Duis rutrum lorem sit amet nisl blandit sagittis. Fusce prules tincidunt ornare.</p> <a href="post.html" class="honey-post-meta">Read More <i class="fa fa-arrow-right"></i></a> </div>
-                    </div>
-                </div>
-                <!--<div class="col-md-6">
-                    <div class="honey-blog-post"> <img src="img/blog/blog-01.jpg" alt="">
-                        <div class="honey-blog-content">
-                            <p class="honey-date-user"> <span class="date"><i class="fa fa-clock-o"></i> 13.11.2019</span> <span class="user"><i class="fa fa-users"></i> A. Duis</span> </p>
-                            <h3><a href="post.html">Duis Rutrum</a></h3>
-                            <p>Duis rutrum lorem sit amet nisl blandit sagittis. Vestibulum quis sapien metus. In mauris enim, facilisis quis fermentum non, varius vel erat. Fusce prules tincidunt ornare. Class aptent taciti sociosqu ad litora.</p> <a href="post.html" class="honey-post-meta">Read More <span class="ti-shift-right-alt"></span></a> </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="honey-blog-post"> <img src="img/blog/blog-04.jpg" alt="blog post">
-                        <div class="honey-blog-content">
-                            <p class="honey-date-user"> <span class="date"><i class="fa fa-clock-o"></i> 13.11.2019</span> <span class="user"><i class="fa fa-users"></i> S. Blandit</span> </p>
-                            <h3><a href="post.html">Aptent Tacition</a></h3>
-                            <p>Vestibulum quis sapien metus. Duis rutrum lorem sit amet nisl blandit sagittis. In mauris enim, facilisis quis fermentum non, varius vel erat. Fusce prules tincidunt ornare. Class aptent taciti sociosqu ad litora.</p> <a href="post.html" class="honey-post-meta">Read More <span class="ti-shift-right-alt"></span></a> </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="honey-blog-post"> <img src="img/blog/blog-05.jpg" alt="">
-                        <div class="honey-blog-content">
-                            <p class="honey-date-user"> <span class="date"><i class="fa fa-clock-o"></i> 13.11.2019</span> <span class="user"><i class="fa fa-users"></i> F. Mauris</span> </p>
-                            <h3><a href="post.html">Fermentum Mauris</a></h3>
-                            <p>Vestibulum quis sapien metus. Duis rutrum lorem sit amet nisl blandit sagittis. In mauris enim, facilisis quis fermentum non, varius vel erat. Fusce prules tincidunt ornare. Class aptent taciti sociosqu ad litora.</p> <a href="post.html" class="honey-post-meta">Read More <span class="ti-shift-right-alt"></span></a> </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="honey-blog-post"> <img src="img/blog/blog-06.jpg" alt="blog post">
-                        <div class="honey-blog-content">
-                            <p class="honey-date-user"> <span class="date"><i class="fa fa-clock-o"></i> 13.11.2019</span> <span class="user"><i class="fa fa-users"></i> B. Erat</span> </p>
-                            <h3><a href="post.html">Blandit Varius</a></h3>
-                            <p>In mauris enim, facilisis quis fermentum non, varius vel erat. Vestibulum quis sapien metus. Duis rutrum lorem sit amet nisl blandit sagittis. Fusce prules tincidunt ornare. Class aptent taciti sociosqu ad litora.</p> <a href="post.html" class="honey-post-meta">Read More <span class="ti-shift-right-alt"></span></a> </div>
-                    </div>
-                </div>-->
-            </div>
-            <!-- Pagination -->
-            <ul class="honey-pagination-wrap align-center mt-30">
-                <li><a href="blog.html#"><i class="fa fa-arrow-left"></i></a></li>
-                <li><a href="blog.html#" class="active">1</a></li>
-                <!--<li><a href="blog.html#">2</a></li>
-                <li><a href="blog.html#">3</a></li>-->
-                <li><a href="blog.html#"><i class="fa fa-arrow-right"></i></a></li>
-            </ul>
         </div>
-    </section>
-    <!-- About Me in Blog -->
-    <section id = "honey-blog-about">
-        <div class="container">
-            <div class="honey-blog-about-me">
-                <div id="honey-blog-about-header">
-                    <h2>About Me</h2>
-                </div>
-                <div id="honey-blog-about-content">
-                    <p>Hi, there! I’m Oyin, a professional, freelance makeup artist living in Lagos. I have passion for 
-                        flawless skincare, beauty and music. I would describe my style of makeup as classy, modern and 
-                        always – always what suits my clients best.
-                        I love meeting new people which is one of the joy my job brings. I have a YouTube channel
-                        which was created so that I could meet and connect with people while teaching them makeup 
-                        routine and techniques.
-                        I am looking forward to meeting you and hopefully get in touch with you as time go on.
-                        </p>
-                </div>
+    </div>
+    <hr>
+
+    <!-- Blog entry -->
+    <div class="honey-card-4 honey-margin bg-white">
+    <img src="/w3images/bridge.jpg" alt="Norway" style="width:100%">
+        <div class="honey-container">
+        <h3><b>BLOG ENTRY</b></h3>
+        <h5>Title description, <span class="honey-opacity">April 2, 2014</span></h5>
+        </div>
+
+        <div class="honey-container">
+        <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
+            tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        <div class="honey-row">
+            <div class="honey-col m8 s12">
+            <button class="honey-button honey-padding-large bg-white honey-border"><b>READ MORE »</b></button>
+            </div>
+            <div class="honey-col m4 honey-hide-small honey-right">
+            <p><span class="honey-padding-large honey-right"><b>Comments  </b> <span class="honey-badge">2</span></span></p>
             </div>
         </div>
-    </section>
+        </div>
+    </div>
+    <!-- END BLOG ENTRIES -->
+    </div>
+
+    <!-- Introduction menu -->
+    <div class="honey-col l4">
+    <!-- About Card -->
+    <div class="honey-card honey-margin honey-margin-top">
+    <img src="img/about.jpg" style="width:100%">
+        <div class="honey-container bg-white">
+        <h4><b>About Me</b></h4>
+        <p>Hi, there! I’m Oyin, a professional, freelance makeup artist living in Lagos. I have passion for 
+            flawless skincare, beauty and music. I would describe my style of makeup as classy, modern and 
+            always what suits my clients best.
+            I love meeting new people which is one of the joy my job brings. I have a YouTube channel
+            which was created so that I could meet and connect with people while teaching them makeup 
+            routine and techniques.
+            I am looking forward to meeting you and hopefully get in touch with you as time go on.
+        </p>
+        </div>
+    </div><hr>
+    
+    <!-- Posts -->
+    <div class="honey-card honey-margin">
+        <div class="honey-container honey-padding">
+            <h4>Popular Posts</h4>
+        </div>
+        <ul class="honey-ul honey-hoverable bg-white">
+            <li class="honey-padding-16">
+                <img src="/w3images/workshop.jpg" alt="Image" class="honey-left honey-margin-right" style="width:50px">
+                <span class="honey-large">Lorem</span><br>
+                <span>Sed mattis nunc</span>
+            </li>
+            <li class="honey-padding-16">
+                <img src="/w3images/gondol.jpg" alt="Image" class="honey-left honey-margin-right" style="width:50px">
+                <span class="honey-large">Ipsum</span><br>
+                <span>Praes tinci sed</span>
+            </li> 
+            <li class="honey-padding-16">
+                <img src="/w3images/skies.jpg" alt="Image" class="honey-left honey-margin-right" style="width:50px">
+                <span class="honey-large">Dorum</span><br>
+                <span>Ultricies congue</span>
+            </li>   
+            <li class="honey-padding-16 honey-hide-medium honey-hide-small">
+                <img src="/w3images/rock.jpg" alt="Image" class="honey-left honey-margin-right" style="width:50px">
+                <span class="honey-large">Mingsum</span><br>
+                <span>Lorem ipsum dipsum</span>
+            </li>  
+        </ul>
+    </div>
+    <hr> 
+    
+    <!-- Labels / tags -->
+    <div class="honey-card honey-margin">
+        <div class="honey-container honey-padding">
+        <h4>Tags</h4>
+        </div>
+        <div class="honey-container bg-white">
+        <p style="margin-block-start: 1em; margin-inline-end: 1em;"><span class="honey-tag bg-black honey-margin-bottom">Travel</span> <span class="honey-tag bg-light-grey honey-small honey-margin-bottom">New York</span> <span class="honey-tag bg-light-grey honey-small honey-margin-bottom">London</span>
+        <span class="honey-tag bg-light-grey honey-small honey-margin-bottom">IKEA</span> <span class="honey-tag bg-light-grey honey-small honey-margin-bottom">NORWAY</span> <span class="honey-tag bg-light-grey honey-small honey-margin-bottom">DIY</span>
+        <span class="honey-tag bg-light-grey honey-small honey-margin-bottom">Ideas</span> <span class="honey-tag bg-light-grey honey-small honey-margin-bottom">Baby</span> <span class="honey-tag bg-light-grey honey-small honey-margin-bottom">Family</span>
+        <span class="honey-tag bg-light-grey honey-small honey-margin-bottom">News</span> <span class="honey-tag bg-light-grey honey-small honey-margin-bottom">Clothing</span> <span class="honey-tag bg-light-grey honey-small honey-margin-bottom">Shopping</span>
+        <span class="honey-tag bg-light-grey honey-small honey-margin-bottom">Sports</span> <span class="honey-tag bg-light-grey honey-small honey-margin-bottom">Games</span>
+        </p>
+        </div>
+    </div>
+    
+    <!-- END Introduction Menu -->
+    </div>
+
+    <!-- END GRID -->
+    </div><br>
+
+    <!-- END w3-content -->
     </div>
     <!-- Subscribe -->
     <div class="subscribe" id="subscribe-form">
