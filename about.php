@@ -40,7 +40,7 @@
                         <div class="honey-site-menu-inner honey-menu-container" id="honey-navbar">
                             <ul class="list-unstyled">
                                 <li><a href="index.html">Home</a></li>
-                                <li class="giddy"><a href="about.html">About Us</a></li>
+                                <li class="giddy"><a href="about.php">About Us</a></li>
                                 <li><a href="services.html">Services</a></li>
                                 <li><a href="catalogue.html">Catalogue</a></li>
                                 <li><a href="blog.php">Blog</a></li>
