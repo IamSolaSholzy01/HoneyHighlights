@@ -221,8 +221,8 @@ p.PadderBetweenControlandBody{
                     <li><a href="../catalogue.html">Catalogue</a></li>
                     <li><a href="../blog.php">Blog</a></li>
                     <li><a href="../contact.php">Contact</a></li>
-                    <li><a  data-toggle="modal" id="loginLink" href="javascript:void(0)" onclick="openLoginModal();">Log in</a></li>
-                    <li><a href="../php/logout.php" id="logoutLink" style="display: none;">Log Out</a>
+                    <li id="loginLink"><a  data-toggle="modal" href="javascript:void(0)" onclick="openLoginModal();">Log in</a></li>
+                    <li id="logoutLink" style="display: none;"><a href="../php/logout.php">Log Out</a>
                   </ul>
                 </div>
               </nav>
