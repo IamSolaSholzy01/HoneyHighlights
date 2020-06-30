@@ -237,8 +237,8 @@
                         <div class="honey-share-wrap">
                         <h3>What do you think about this post?</h3>
                             <ul class="honey-reaction-icon">
-                            <i id="like" onclick="reaction(this)" class="fa fa-thumbs-o-up"></i><span id="thumbup"></span>
-                            <i id="dislike" onclick="reaction(this)" class="fa fa-thumbs-o-down"></i><span  id="thumbdown"></span>
+                            <i id="like" onclick="reaction(this)" style="cursor: pointer;" class="fa fa-thumbs-o-up"></i><span id="thumbup"></span>
+                            <i id="dislike" onclick="reaction(this)" style="cursor: pointer;" class="fa fa-thumbs-o-down"></i><span  id="thumbdown"></span>
                             </ul>
                         </div>
                         <!-- Share Wrap -->

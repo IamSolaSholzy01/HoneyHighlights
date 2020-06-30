@@ -84,7 +84,7 @@
         <img src="img\blog\blog-01.jpg" alt="Nature" style="width:100%">
         <div class="honey-container">
         <h3><b>TOOLS and PRODUCTS for MAKEUP</b></h3>
-        <h5><span style="padding-right: 15px;" class="user"><i class="fa fa-users honey-opacity"></i></i> O. Ogundeji</span><span class="honey-opacity"><span class="date honey-opacity"><i class="fa fa-clock-o"></i> 04.06.2020</span></span></h5>
+        <h5><span style="padding-right: 15px;" class="user"><i class="fa fa-users honey-opacity"></i> O. Ogundeji</span><span class="honey-opacity"><span class="date honey-opacity"><i class="fa fa-clock-o"></i> 04.06.2020</span></span></h5>
         </div>
 
         <div class="honey-container">
@@ -95,7 +95,7 @@
             <button onclick="window.location.href='posts/tools-and-products.php';" class="honey-button honey-padding-large bg-white honey-border"><b>READ MORE »</b></button>
             </div>
             <div class="honey-col m4 honey-hide-small">
-            <p><span class="honey-padding-large honey-right"><b>Comments  </b> <span class="honey-badge">0</span></span></p>
+            <p><span class="honey-padding-large honey-right"><b>Comments  </b> <span class="honey-badge"><span class="commentnum1"></span></span></span></p>
             </div>
         </div>
         </div>
@@ -115,10 +115,10 @@
             tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
         <div class="honey-row">
             <div class="honey-col m8 s12">
-            <button class="honey-button honey-padding-large bg-white honey-border"><b>READ MORE »</b></button>
+            <button class="honey-button honey-padding-large bg-white honey-border"  onclick="window.location.href='#';"><b>READ MORE »</b></button>
             </div>
             <div class="honey-col m4 honey-hide-small honey-right">
-            <p><span class="honey-padding-large honey-right"><b>Comments  </b> <span class="honey-badge">2</span></span></p>
+            <p><span class="honey-padding-large honey-right"><b>Comments  </b> <span class="honey-badge">0</span></span></p>
             </div>
         </div>
         </div>
@@ -150,22 +150,22 @@
             <h4>Popular Posts</h4>
         </div>
         <ul class="honey-ul honey-hoverable bg-white">
-            <li class="honey-padding-16">
-                <img src="/w3images/workshop.jpg" alt="Image" class="honey-left honey-margin-right" style="width:50px">
-                <span class="honey-large">Lorem</span><br>
-                <span>Sed mattis nunc</span>
+            <li class="honey-padding-16" style="cursor:pointer" onclick="window.location.href='posts/tools-and-products.php';" >
+                <img src="img\blog\blog-01.jpg" alt="Image" class="honey-left honey-margin-right" style="width:50px">
+                <span class="honey-large">Tools and Products for Makeup</span><br>
+                <span>O. Ogundeji</span>
             </li>
-            <li class="honey-padding-16">
+            <li class="honey-padding-16" style="cursor:pointer" onclick="window.location.href='#';">
                 <img src="/w3images/gondol.jpg" alt="Image" class="honey-left honey-margin-right" style="width:50px">
-                <span class="honey-large">Ipsum</span><br>
+                <span class="honey-large">Blog Entry</span><br>
                 <span>Praes tinci sed</span>
             </li> 
-            <li class="honey-padding-16">
+            <li class="honey-padding-16" style="cursor:pointer" onclick="window.location.href='#';">
                 <img src="/w3images/skies.jpg" alt="Image" class="honey-left honey-margin-right" style="width:50px">
                 <span class="honey-large">Dorum</span><br>
                 <span>Ultricies congue</span>
             </li>   
-            <li class="honey-padding-16 honey-hide-medium honey-hide-small">
+            <li class="honey-padding-16 honey-hide-medium honey-hide-small" style="cursor:pointer" onclick="window.location.href='#';">
                 <img src="/w3images/rock.jpg" alt="Image" class="honey-left honey-margin-right" style="width:50px">
                 <span class="honey-large">Mingsum</span><br>
                 <span>Lorem ipsum dipsum</span>
@@ -227,5 +227,48 @@
     <script>$(function(){event.preventDefault();register();});</script>
     <script>$(function(){event.preventDefault();login();});</script>
     <script>$(function(){event.preventDefault();logout();});</script>
+    <script>
+        $(function(){
+            //Comment form 
+            url = 'php/load-comments.php';
+            type = 'POST';
+            var value = $('#post_id').val();
+            console.log("im in again");
+            // Call ajax for pass data to other place
+            $.ajax({
+                type: type,
+                url: url,
+                dataType: 'JSON',
+                data: {post_id: '1'},
+                success: function(response){
+                    if(response.id=="error"){
+                        $('.commentnum1').html("0");
+                        $("#empty").html(response.content);
+                    }else{
+                        console.log(response);
+                        $("#empty").html("");
+                        var num = 0;
+                        $.each(response, function () {
+                            num++;
+                            var newComment = $("body").find("#honey-comments > li").clone();
+                            newComment.find(".honey-comment-name").append(this.name);
+                            newComment.find(".honey-comment-body").append(this.body);
+                            newComment.find(".honey-reply-icon").addClass(this.comment_id);
+                            newComment.find(".honey-reply-icon").attr('id', this.comment_id);
+                            $(newComment).appendTo("#honey-comments-list");
+                        });
+                        $('.commentnum1').html(num);
+                        $("input:submit").removeAttr("disabled");
+                    }
+                },
+                error: function(response){
+                    $('.response').text("Big error");// show the response
+                    $('.response').addClass('alert alert-danger');
+                    $("input:submit").removeAttr("disabled");
+                }
+            }); 
+        return false;  
+        });
+    </script>
 </body>
 </html>

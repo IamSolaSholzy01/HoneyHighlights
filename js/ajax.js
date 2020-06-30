@@ -378,7 +378,7 @@ var loadData = function () {
     return false; 
  }
 
- var runner = function () {
+var runner = function () {
     url = '../php/load-reply.php';
     type = 'POST';
     var postid = document.getElementById('post_id').value;
@@ -505,7 +505,7 @@ var reaction = function (me){
     }else if(me.id == "dislike"){
         console.log("thumbs downnn");
     }
-    return false;
+    //return false;
 }
 var loadreaction = function (){
     var postid = document.getElementById('post_id').value;
@@ -529,5 +529,5 @@ var loadreaction = function (){
         $("input:submit").removeAttr("disabled");
         }
     }); 
-    return false;
+    //return false;
 }
