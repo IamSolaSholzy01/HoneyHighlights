@@ -207,7 +207,7 @@ p.PadderBetweenControlandBody{
 <body lang=EN-GB link="#0563C1" vlink="#954F72" style='tab-interval:36.0pt'>
     <!-- Header -->
     <header class="honey-site-header">
-      <div class="container">
+      <div class="header-container">
         <ul>
           <a href="../index.html" class="honey-site-logo"><img src="../img/logo-dark.png" alt="honey"></a>
             <li>

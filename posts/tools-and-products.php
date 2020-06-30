@@ -28,7 +28,7 @@
 <body>
     <!-- Header -->
     <header class="honey-site-header">
-        <div class="container">
+        <div class="header-container">
             <ul>
                 <a href="../index.html" class="honey-site-logo"><img src="../img/logo-dark.png" alt="honey"></a>
                 <li>
