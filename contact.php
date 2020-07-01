@@ -42,7 +42,7 @@
                                 <li><a href="index.html">Home</a></li>
                                 <li><a href="about.html">About Us</a></li>
                                 <li><a href="services.html">Services</a></li>
-                                <li><a href="catalogue.html">Catalogue</a></li>
+                                <li><a href="catalogues.html">Catalogue</a></li>
                                 <li ><a href="blog.php">Blog</a></li>
                                 <li class="giddy"><a href="contact.php">Contact</a></li>
                                 <li id="loginLink"><a  data-toggle="modal" href="javascript:void(0)" onclick="openLoginModal();">Log in</a></li>
