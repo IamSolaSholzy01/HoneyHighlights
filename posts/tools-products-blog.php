@@ -217,7 +217,7 @@ p.PadderBetweenControlandBody{
                   <ul class="list-unstyled">
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="../about.php">About Us</a></li>
-                    <li><a href="../services.html">Services</a></li>
+                    <!--<li><a href="services.html">Services</a></li>-->
                     <li><a href="../catalogue.html">Catalogue</a></li>
                     <li><a href="../blog.php">Blog</a></li>
                     <li><a href="../contact.php">Contact</a></li>

@@ -42,7 +42,7 @@
                             <ul class="list-unstyled">
                                 <li><a href="index.html">Home</a></li>
                                 <li class="giddy"><a href="about.php">About Us</a></li>
-                                <li><a href="services.html">Services</a></li>
+                                <!--<li><a href="services.html">Services</a></li>-->
                                 <li><a href="catalogues.html">Catalogue</a></li>
                                 <li><a href="blog.php">Blog</a></li>
                                 <li><a href="contact.php">Contact</a></li>
