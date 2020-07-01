@@ -50,6 +50,25 @@ html, body {
 	padding: 0; 
 }
 
+.scrollprogress{
+	padding: 10px 16px;
+	color: #f1f1f1;
+}
+
+.posts{
+	padding: 16px;
+}
+
+.scrollprogress.scrolled, .scrollprogress.awake{
+	position: fixed;
+	top: 15%;
+	width: 100%;
+}
+
+.sticky + .posts{
+	padding-top: 102px;
+}
+
 h1, h2, h3, h4, h5, h6, p, blockquote, address, big, cite, code, em, font, img, small, strike, sub, sup, li, ol, ul, fieldset, form, label, legend, button, table, caption, tr, th, td {
 	margin: 0;
 	padding: 0;
