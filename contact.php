@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href="css/colours.css" rel="stylesheet">
     <!--Modal-->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
     <link href="assets/css/login-register.css" rel="stylesheet" />

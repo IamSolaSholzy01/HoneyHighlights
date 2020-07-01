@@ -13,6 +13,7 @@
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 		<link href="css/owl.carousel.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
+		<link href="css/colours.css" rel="stylesheet">
 		<link href="css/bootstrap.min.css" />
 		<title>Honey Highlights &#8211; Catalogue</title>
 		<script type="text/javascript">
@@ -25,8 +26,6 @@
 				display: inline !important;
 				border: none !important;
 				box-shadow: none !important;
-				height: 1em !important;
-				width: 1em !important;
 				margin: 0 .07em !important;
 				vertical-align: -0.1em !important;
 				background: none !important;
@@ -86,18 +85,11 @@
 				</button>
 			</form>		
 		</div>-->
-		<div class="header-image" style="background-image: url(img/about.jpg); filter: blur(12px);"></div>
+		<div class="header-image" style="background-image: url(img/about.jpg); filter: blur(12px); position: fixed; z-index: -1;"></div>
 		<section class="honey-catalogue-page-section">
 			<div class="header section-inner">
-				<h1 class="blog-title"><a style="color: #fff;">Catalogue</a></h1>
-				<div class="blog-description"><p>My expanded catalogue below</p></div>
-				<center>				
-					<ul class="honey-social-link">
-						<li id="menu-item-17" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="https://wa.me/2347088810879" target="_new"><i class="fa fa-phone"></i></a></li>
-						<li id="menu-item-18" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="https://www.twitter.com/Hoyindamola_" target="_new"><i class="fa fa-twitter"></i></a></li>
-						<li id="menu-item-19" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="https://www.instagram.com/honeyhighlights_" target="_new"><i class="fa fa-instagram"></i></a></li>
-					<ul>		
-				</center>
+				<h1 class="blog-title"><a style="color: #fff; font-family: 'Raleway', sans-serif;">Catalogue</a></h1>
+				<div class="blog-description" style="font-family: 'Raleway', sans-serif;"><p>I don't trust words...</p></div>
 			</div><!-- .header -->
 
 			<main id="site-content">
@@ -115,7 +107,6 @@
                         </li>
                     </ul>
 				</div>
-				<div class="scrollprogress" id="scrollprogress">Wow</div>
 				<div class="posts group" id="posts">
 					<a href="img/Portfolio Images/LAMMY''S HIGHLIGHTS.jpeg" id="post-106" class="post post-106 type-post status-publish format-standard has-post-thumbnail sticky hentry category-lifestyle tag-coffee tag-developers" style="background-image: url('img/Portfolio Images/LAMMY\'\'S HIGHLIGHTS.jpeg');">
 						<div class="post-overlay">
@@ -227,49 +218,16 @@
 											
 			</main><!-- #site-content -->
 
-			<div class="credits section-inner">
-				<p>&copy; 2020 <a href="https://andersnoren.se/themes/hitchcock">Honey Highlights</a></p>
-				<p class="theme-by">Theme by <a href="https://www.andersnoren.se">Tolu Olagunju<!--Nor&eacute;n--></a></p>
-			</div><!-- .credits -->
 		</section>
-		<div include-html="footer.html"></div>
+		<div style="background: transparent;" include-html="footer.html"></div>
 		<script type='text/javascript' src='js/include.js'></script>
-		<script src="js\vendor\jquery-1.12.4.min.js"></script>
+		<script src="js/vendor/jquery-1.12.4.min.js"></script>
 		<script src="js\vendor\bootstrap.min.js"></script>
 		<script src="js\vendor\owl.carousel.min.js"></script>
 		<script src="js\vendor\imagesloaded.pkgd.min.js"></script>
 		<script src="js\vendor\jquery.isotope.v3.0.2.js"></script>
 		<script src="js\scripts.js"></script>
 		<script>includeHTML();</script>
-		<script>
-			$(window).scroll(function () {
-        console.log('scrolled');
-        var $this = $(this)
-            , st = $this.scrollTop()
-            , scrollprogress = $('.scrollprogress');
-        if (st > 150) {
-            if (!scrollprogress.hasClass('scrolled')) {
-                scrollprogress.addClass('scrolled');
-            }
-        }
-        if (st < 150) {
-            if (scrollprogress.hasClass('scrolled')) {
-                scrollprogress.removeClass('scrolled sleep');
-            }
-        }
-        if (st > 350) {
-            if (!scrollprogress.hasClass('awake')) {
-                scrollprogress.addClass('awake');
-            }
-        }
-        if (st < 350) {
-            if (scrollprogress.hasClass('awake')) {
-                scrollprogress.removeClass('awake');
-                scrollprogress.addClass('sleep');
-            }
-        }
-    });
-		</script>
 	</body>
 </html>
 <!-- Dynamic page generated in 0.578 seconds. -->
