@@ -827,7 +827,9 @@ input[type="button"],
 	text-indent: -9999px;
 	transition: width 200ms linear;
 }
-
+.honey-site-header{
+	background: transparent !important;
+}
 .header-search .search-button {
 	background: #1d1d1d;
 	color: #757575;
@@ -868,6 +870,9 @@ input[type="button"],
 	width: 325px; 
 	position: relative;
 	z-index: 2;
+}
+.honey-footer-section {
+	background: transparent !important;
 }
 
 .blog-title {
