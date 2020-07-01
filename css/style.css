@@ -1524,6 +1524,14 @@ span.user {
     padding-right: 2px;
     color: #888;
 }
+
+/* **IFRAME** */
+@media (max-width:682px){
+    .eyebrow-vid{
+        width: 100%;
+    }
+}
+
 /* ** social share style ** */
 
 .honey-share-wrap {
