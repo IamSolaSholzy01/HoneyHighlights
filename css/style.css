@@ -1372,6 +1372,21 @@ button {
 .honey-col.l6{
     width: 50%;
 }
+.serious-wrapper{
+    position: relative;
+    overflow: hidden;
+    display: block;
+    height: 400px;
+}
+.popular-posts{
+    float: left;
+    height: inherit;
+}
+.slideshow-container{
+    float: left;
+    height: inherit;
+}
+
 .honey-col.l8, .honey-col.m8{
     width:66.66666% !important;
 }
