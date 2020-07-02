@@ -325,7 +325,7 @@ var runn = function (){
         type: type,
         url: url,
         dataType: 'JSON',
-        data: {post_id: '1'},
+        data: {post_id: value},
         success: function(response){
             if(response.id=="error"){
                 $('.commentnum').html("0");
@@ -357,6 +357,7 @@ var runn = function (){
 };
 var loadData = function () { 
     console.log("loading data");
+    var value = $('#post_id').val();
         url = '../php/load-data.php';
         type = 'POST';
             // Call ajax for pass data to other place
@@ -364,7 +365,7 @@ var loadData = function () {
                 type: type,
                 url: url,
                 dataType: 'JSON',
-                data: {post_id: '1'},
+                data: {post_id: value},
                 success: function(response){ 
                   console.log(response);
                   $('#post_author').html(response.author);

@@ -206,6 +206,9 @@ button {
 .bg-purples {
     background: #d6d4da;
 }
+.bg-smoky-black{
+    background: #1c110a;
+}
 /* ** Alignments ** */
 .align-left {
     text-align: left;
