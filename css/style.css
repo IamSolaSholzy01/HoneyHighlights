@@ -533,7 +533,9 @@ button {
         transform: translate(-50%, -60%);
     }
     .honey-menu-burger-wrap {
-        position: relative;
+        position: absolute !important;
+        top: 25%;
+        left: 50%;
         z-index: 1022;
     }
     .honey-site-nav-toggle {

@@ -180,8 +180,8 @@
         <h4>Tags</h4>
         </div>
         <div class="honey-container bg-white">
-        <p style="margin-block-start: 1em; margin-inline-end: 1em;"><span class="honey-tag bg-black honey-margin-bottom">Travel</span> <span class="honey-tag bg-light-grey honey-small honey-margin-bottom">New York</span> <span class="honey-tag bg-light-grey honey-small honey-margin-bottom">London</span>
-        <span class="honey-tag bg-light-grey honey-small honey-margin-bottom">IKEA</span> <span class="honey-tag bg-light-grey honey-small honey-margin-bottom">NORWAY</span> <span class="honey-tag bg-light-grey honey-small honey-margin-bottom">DIY</span>
+        <p style="margin-block-start: 1em; margin-inline-end: 1em;"><span class="honey-tag bg-black honey-margin-bottom">Makeup</span> <span class="honey-tag bg-light-grey honey-small honey-margin-bottom">Tools</span> <span class="honey-tag bg-light-grey honey-small honey-margin-bottom">Products</span>
+        <span class="honey-tag bg-light-grey honey-small honey-margin-bottom">Routine</span> <span class="honey-tag bg-light-grey honey-small honey-margin-bottom">Beauty</span> <span class="honey-tag bg-light-grey honey-small honey-margin-bottom">Face</span>
         <span class="honey-tag bg-light-grey honey-small honey-margin-bottom">Ideas</span> <span class="honey-tag bg-light-grey honey-small honey-margin-bottom">Baby</span> <span class="honey-tag bg-light-grey honey-small honey-margin-bottom">Family</span>
         <span class="honey-tag bg-light-grey honey-small honey-margin-bottom">News</span> <span class="honey-tag bg-light-grey honey-small honey-margin-bottom">Clothing</span> <span class="honey-tag bg-light-grey honey-small honey-margin-bottom">Shopping</span>
         <span class="honey-tag bg-light-grey honey-small honey-margin-bottom">Sports</span> <span class="honey-tag bg-light-grey honey-small honey-margin-bottom">Games</span>
