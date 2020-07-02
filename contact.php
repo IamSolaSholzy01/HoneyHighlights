@@ -27,6 +27,11 @@
     <script src="assets/js/jquery-1.10.2.js" type="text/javascript"></script>
 	<script src="assets/js/bootstrap.js" type="text/javascript"></script>
     <script src="assets/js/login-register.js" type="text/javascript"></script>
+    <style>
+        .honey-site-header.scrolled, .honey-site-header.awake {
+            background-color: #fff !important;
+        }
+    </style>
 </head>
 
 <body>

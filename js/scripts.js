@@ -34,7 +34,6 @@ loader();*/
     };
     OnePageNav();
     $(window).scroll(function () {
-        console.log('scrolled');
         var $this = $(this)
             , st = $this.scrollTop()
             , navbar = $('.honey-site-header')

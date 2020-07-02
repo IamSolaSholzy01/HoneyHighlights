@@ -16,9 +16,9 @@
     <link href="css/themify-icons.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/owl.carousel.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet"> 
+    <link href="css/style.css" rel="stylesheet">
     <link href="css/colours.css" rel="stylesheet">
-    </head>
+</head>
 
 
 <body>
@@ -43,21 +43,21 @@
                     </nav>
                 </li>
             </ul>
-  
+
             <!-- Menu Burger -->
-            <div class="honey-menu-burger-wrap"> <a href="#" class="honey-site-nav-toggle honey-js-honey-site-nav-toggle"><i></i></a> </div>
+            <div class="col-6 col-md-8 text-right honey-menu-burger-wrap"> <a href="#" class="honey-site-nav-toggle honey-js-honey-site-nav-toggle"><i></i></a> </div>
         </div>
-        
+
     </header>
-   <!-- Slider -->
+    <!-- Slider -->
     <div class="honey-slider-section bg-white">
         <div class="honey-profile-info">
             <div class="d-flex align-items-center w-100">
-            
+
                 <div class="mx-auto honey-profile-inner" style="background: rgba(0,0,0,0.3);">
-                    <h2>HONEY HIGHLIGHTS<span>Look like <b style="color: #8e6bcf; font-weight: 800;">you</b> Desire</span></h2> 
+                    <h2>HONEY HIGHLIGHTS<span>Look like <b style="color: #8e6bcf; font-weight: 800;">you</b> Desire</span></h2>
                 </div>
-            
+
             </div>
         </div>
         <div class="owl-carousel honey-main-slider">
@@ -151,7 +151,7 @@
                 <h4>Popular Posts</h4>
             </div>
             <ul class="honey-ul honey-hoverable bg-white">
-                <li class="honey-padding-16" style="cursor:pointer" onclick="window.location.href='posts/tools-and-products.php';" >
+                <li class="honey-padding-16" style="cursor:pointer" onclick="window.location.href='posts/tools-and-products.php';">
                     <img src="img\blog\blog-01.jpg" alt="Image" class="honey-left honey-margin-right" style="width:50px">
                     <span class="honey-large">Tools and Products for Makeup</span><br>
                     <span>O. Ogundeji</span>
@@ -160,16 +160,11 @@
                     <img src="#" alt="Image" class="honey-left honey-margin-right" style="width:50px">
                     <span class="honey-large">Blog Entry</span><br>
                     <span>Praes tinci sed</span>
-                </li> 
+                </li>
                 <li class="honey-padding-16" style="cursor:pointer" onclick="window.location.href='#';">
                     <img src="#" alt="Image" class="honey-left honey-margin-right" style="width:50px">
                     <span class="honey-large">Dorum</span><br>
                     <span>Ultricies congue</span>
-                </li>   
-                <li class="honey-padding-16 honey-hide-medium honey-hide-small" style="cursor:pointer" onclick="window.location.href='#';">
-                    <img src="#" alt="Image" class="honey-left honey-margin-right" style="width:50px">
-                    <span class="honey-large">Mingsum</span><br>
-                    <span>Lorem ipsum dipsum</span>
                 </li>
                 <li class="honey-padding-16 honey-hide-medium honey-hide-small" style="cursor:pointer" onclick="window.location.href='#';">
                     <img src="#" alt="Image" class="honey-left honey-margin-right" style="width:50px">
@@ -180,7 +175,12 @@
                     <img src="#" alt="Image" class="honey-left honey-margin-right" style="width:50px">
                     <span class="honey-large">Mingsum</span><br>
                     <span>Lorem ipsum dipsum</span>
-                </li>  
+                </li>
+                <li class="honey-padding-16 honey-hide-medium honey-hide-small" style="cursor:pointer" onclick="window.location.href='#';">
+                    <img src="#" alt="Image" class="honey-left honey-margin-right" style="width:50px">
+                    <span class="honey-large">Mingsum</span><br>
+                    <span>Lorem ipsum dipsum</span>
+                </li>
             </ul>
         </div>
         <!-- Slideshow container -->
@@ -188,15 +188,15 @@
 
             <!-- Full-width images with number and caption text -->
             <div class="mySlides fades fadeOut">
-            <img src="img/Portfolio Images/CTPLUS MODEL HIGHLIGHTS.JPG" style="width:100%; object-fit: cover;">
+                <img src="img/Portfolio Images/CTPLUS MODEL HIGHLIGHTS.JPG" style="width:100%; object-fit: cover;">
             </div>
-        
+
             <div class="mySlides fades fadeOut">
-            <img src="img/Portfolio Images/CHINAZA'S HIGHLIGHTS.jpeg" style="width:100%; object-fit: cover;">
+                <img src="img/Portfolio Images/CHINAZA'S HIGHLIGHTS.jpeg" style="width:100%; object-fit: cover;">
             </div>
-        
+
             <div class="mySlides fades fadeOut">
-            <img src="img/Portfolio Images/BISI'S HIGHLIGHTS.jpeg" style="width:100%; object-fit: cover;">
+                <img src="img/Portfolio Images/BISI'S HIGHLIGHTS.jpeg" style="width:100%; object-fit: cover;">
             </div>
         </div>
     </section>
@@ -205,14 +205,14 @@
         <h2>Subscribe to our mailing list now <br> Be the first to know once a blog post is dropped</h2>
 
         <form class="subscribe-form" action="php/subscribe.php" method="POST" name="subscribersss">
-            <input class="subscribe-input" type="email" name="email" id="email" placeholder="Email" required >
+            <input class="subscribe-input" type="email" name="email" id="email" placeholder="Email" required>
             <button id="subscribe-button" class="honey-btn2" type="submit">Subscribe</button>
         </form>
     </div>
     <div class="subscribe" id="subscribe-result"></div>
     </div>
     <!-- Footer -->
-    <div include-html="footer.html"></div> 
+    <div include-html="footer.html"></div>
     <!-- loader -->
     <!--<div id="ftco-loader" class="show fullscreen"><img src="img/gifgit.gif" class="circular"/></div>-->
 
@@ -225,23 +225,33 @@
     <script src="js\scripts.js"></script>
     <script src="js\include.js"></script>
     <script src="js\ajax.js"></script>
-    <script>includeHTML();</script>
-    <script>$(function(){event.preventDefault();subscribe();});</script>
+    <script>
+        includeHTML();
+    </script>
+    <script>
+        $(function() {
+            event.preventDefault();
+            subscribe();
+        });
+    </script>
     <script>
         var slideIndex = 0;
         showSlides();
 
         function showSlides() {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) {slideIndex = 1}
-        slides[slideIndex-1].style.display = "block";
-        setTimeout(showSlides, 2000); // Change image every 2 seconds
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
         }
     </script>
 </body>
+
 </html>
