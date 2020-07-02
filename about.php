@@ -141,11 +141,6 @@
                 </div>
                 <div class="col-md-4 col-sm-4 xs-padding">
                     <div class="honey-team-content text-center">
-                        <div class="honey-team-thumb"> <img src="" alt=""> </div>
-                        <h3></h3> <span></span> </div>
-                </div>
-                <div class="col-md-4 col-sm-4 xs-padding">
-                    <div class="honey-team-content text-center">
                         <div class="honey-team-thumb"> <img src="img/team/team-01.jpg" alt="" style="border-radius: 50%;"> </div>
                         <h3>Sonia Ogungbe</h3> <span>Lighting Expert</span> </div>
                 </div>
