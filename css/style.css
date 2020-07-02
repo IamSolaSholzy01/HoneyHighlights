@@ -869,6 +869,9 @@ button {
     font-family: 'Handlee', cursive;
     font-size: 16px;
 }
+.honey-team-wrap *{
+    margin: auto;
+}
 @media all and (max-width: 767px) and (orientation: portrait){
     .honey-team-section-heading p{
         font-size: 2.8vh;
