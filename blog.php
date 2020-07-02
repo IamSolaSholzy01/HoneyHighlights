@@ -233,7 +233,7 @@
             url = 'php/load-comments.php';
             type = 'POST';
             var value = $('#post_id').val();
-            console.log("im in again");
+            //console.log("im in again");
             // Call ajax for pass data to other place
             $.ajax({
                 type: type,
@@ -245,7 +245,7 @@
                         $('.commentnum1').html("0");
                         $("#empty").html(response.content);
                     }else{
-                        console.log(response);
+                        //console.log(response);
                         $("#empty").html("");
                         var num = 0;
                         $.each(response, function () {

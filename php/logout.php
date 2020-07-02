@@ -14,7 +14,7 @@ echo ('<script src="../js/ajax.js">
 </script>');
 echo('<script>
     sessionStorage.clear();
-    console.log("Cleared");
+    //console.log("Cleared");
     </script>');
 // clear cookies
 $util->clearAuthCookie();

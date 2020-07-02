@@ -14,7 +14,7 @@ if ($isLoggedIn) {
     ?>
     <script type="text/javascript" src="../js/ajax.js">
        setAsLoggedIn();
-       console.log("You are logged in.");
+       //console.log("You are logged in.");
     </script>
     <?php
 }
