@@ -43,7 +43,7 @@
                                 <li><a href="index.html">Home</a></li>
                                 <li class="giddy"><a href="about.php">About Us</a></li>
                                 <!--<li><a href="services.html">Services</a></li>-->
-                                <li><a href="catalogues.html">Catalogue</a></li>
+                                <li><a href="catalogue.html">Catalogue</a></li>
                                 <li><a href="blog.php">Blog</a></li>
                                 <li><a href="contact.php">Contact</a></li>
                                 <li id="loginLink"><a  data-toggle="modal" href="javascript:void(0)" onclick="openLoginModal();">Log in</a></li>
@@ -126,17 +126,17 @@
             <div class="row honey-team-wrap">
                 <div class="col-md-4 col-sm-4 xs-padding">
                     <div class="honey-team-content text-center">
-                        <div class="honey-team-thumb"> <img src="img/team/team-01.jpg" alt=""> </div>
+                        <div class="honey-team-thumb"> <img src="img/team/team-01.jpg" alt="" style="border-radius: 50%;"> </div>
                         <h3>Oyindamola Ogundeji</h3> <span>Makeup Artist</span> </div>
                 </div>
                 <div class="col-md-4 col-sm-4 xs-padding">
                     <div class="honey-team-content text-center">
-                        <div class="honey-team-thumb"> <img src="img/team/team-01.jpg" alt=""> </div>
+                        <div class="honey-team-thumb"> <img src="img/team/team-01.jpg" alt="" style="border-radius: 50%;"> </div>
                         <h3>Sola Olagunju</h3> <span>Hype-man</span> </div>
                 </div>
                 <div class="col-md-4 col-sm-4 xs-padding">
                     <div class="honey-team-content text-center">
-                        <div class="honey-team-thumb"> <img src="img/team/team-01.jpg" alt=""> </div>
+                        <div class="honey-team-thumb"> <img src="img/team/team-01.jpg" alt="" style="border-radius: 50%;"> </div>
                         <h3>Mishael Abiola</h3> <span>Web Designer</span> </div>
                 </div>
                 <div class="col-md-4 col-sm-4 xs-padding">
@@ -146,7 +146,7 @@
                 </div>
                 <div class="col-md-4 col-sm-4 xs-padding">
                     <div class="honey-team-content text-center">
-                        <div class="honey-team-thumb"> <img src="img/team/team-01.jpg" alt=""> </div>
+                        <div class="honey-team-thumb"> <img src="img/team/team-01.jpg" alt="" style="border-radius: 50%;"> </div>
                         <h3>Sonia Ogungbe</h3> <span>Lighting Expert</span> </div>
                 </div>
             </div>

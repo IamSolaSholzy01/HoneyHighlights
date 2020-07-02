@@ -941,12 +941,22 @@ button {
 
 .fades {
     -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
+    -webkit-animation-duration: 2s;
     animation-name: fade;
-    animation-duration: 1.5s;
+    animation-duration: 2s;
+  }
+
+  @-moz-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
   }
   
   @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  @-o-keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
   }
@@ -955,6 +965,39 @@ button {
     from {opacity: .4}
     to {opacity: 1}
   }
+
+.fade-out {
+    animation: fadeOut ease 1s;
+    -webkit-animation: fadeOut ease 1s;
+    -moz-animation: fadeOut ease 1s;
+    -o-animation: fadeOut ease 1s;
+    -ms-animation: fadeOut ease 1s;
+}
+
+@-webkit-keyframes fadeOut {
+    from {opacity: 1}
+    to {opacity: .4}
+}
+
+@keyframes fadeOut {
+    from {opacity: 1}
+    to {opacity: .4}
+}
+
+@-moz-keyframes fadeOut {
+    from {opacity: 1}
+    to {opacity: .4}
+}
+
+@-o-keyframes fadeOut {
+    from {opacity: 1}
+    to {opacity: .4}
+}
+
+@-ms-keyframes fadeOut {
+    from {opacity: 1}
+    to {opacity: .4}
+}
 .too:after {
     content : "";
     display: block;
@@ -972,6 +1015,12 @@ button {
     font-family: 'Coming Soon', cursive;
     font-size: 18px;
     font-weight: 600;
+}
+.excessfont{
+    color: #fff;
+    font-family: 'Coming Soon', cursive;
+    font-size: 1.3em;
+    font-weight: 400;
 }
 /* *** 12. Services - Index *** */
 .honey-homepage-services-section {

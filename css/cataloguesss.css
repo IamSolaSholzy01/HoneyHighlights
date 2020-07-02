@@ -875,6 +875,10 @@ input[type="button"],
 	background: transparent !important;
 }
 
+.subscribe {
+	display: none;
+}
+
 .blog-title {
 	font-size: 3em;
 	font-weight: 500;

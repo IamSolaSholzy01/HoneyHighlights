@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="css/colours.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/cataloguesss.css"
     <!--Modal-->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
     <link href="assets/css/login-register.css" rel="stylesheet" />
@@ -42,7 +43,7 @@
                                 <li><a href="index.html">Home</a></li>
                                 <li><a href="about.html">About Us</a></li>
                                 <!--<li><a href="services.html">Services</a></li>-->
-                                <li><a href="catalogues.html">Catalogue</a></li>
+                                <li><a href="catalogue.html">Catalogue</a></li>
                                 <li ><a href="blog.php">Blog</a></li>
                                 <li class="giddy"><a href="contact.php">Contact</a></li>
                                 <li id="loginLink"><a  data-toggle="modal" href="javascript:void(0)" onclick="openLoginModal();">Log in</a></li>
@@ -65,12 +66,13 @@
     <!-- Contact Me -->
     <?php include './php/loginmodal.php';?>
     <input type="hidden" id="google" name="google" value="./php/google.php">
+    <div class="header-image" style="background-image: url('img/about.jpg'); filter: blur(8px); position: fixed; z-index: -1;"></div>
     <section class="honey-page-section">
-        <div class="container">
+        <div class="container honey-margin">
             <div class="col-md-8 offset-md-2">
                 <div class="honey-page-content text-center">
-                    <h2>Contact</h2>
-                    <p>Please reach out to me with your inquiry!</p>
+                    <h2 style="color: #fff;">Contact</h2>
+                    <p class="excessfont">Please reach out to me with your inquiry!</p>
                 </div>
             </div>
         </div>
@@ -78,7 +80,7 @@
     <section class="honey-contact-section">
         <div id="honey-contactMap"></div>
         <div class="container">
-            <div class="row honey-contact-wrap">
+            <div class="row honey-contact-wrap honey-card honey-padding" style="border-radius: 10%;">
                 <div class="col-md-6 xs-padding">
                     <div class="honey-contact-info">
                         <h3>Get in touch</h3>
