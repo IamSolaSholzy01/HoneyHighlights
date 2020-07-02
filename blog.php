@@ -104,7 +104,7 @@
 
     <!-- Blog entry -->
     <div class="honey-card-4 honey-margin bg-white">
-    <img src="/w3images/bridge.jpg" alt="Norway" style="width:100%">
+    <img src="#" alt="Norway" style="width:100%">
         <div class="honey-container">
         <h3><b>BLOG ENTRY</b></h3>
         <h5>Title description, <span class="honey-opacity">April 2, 2014</span></h5>
@@ -156,17 +156,17 @@
                 <span>O. Ogundeji</span>
             </li>
             <li class="honey-padding-16" style="cursor:pointer" onclick="window.location.href='#';">
-                <img src="/w3images/gondol.jpg" alt="Image" class="honey-left honey-margin-right" style="width:50px">
+                <img src="#" alt="Image" class="honey-left honey-margin-right" style="width:50px">
                 <span class="honey-large">Blog Entry</span><br>
                 <span>Praes tinci sed</span>
             </li> 
             <li class="honey-padding-16" style="cursor:pointer" onclick="window.location.href='#';">
-                <img src="/w3images/skies.jpg" alt="Image" class="honey-left honey-margin-right" style="width:50px">
+                <img src="#" alt="Image" class="honey-left honey-margin-right" style="width:50px">
                 <span class="honey-large">Dorum</span><br>
                 <span>Ultricies congue</span>
             </li>   
             <li class="honey-padding-16 honey-hide-medium honey-hide-small" style="cursor:pointer" onclick="window.location.href='#';">
-                <img src="/w3images/rock.jpg" alt="Image" class="honey-left honey-margin-right" style="width:50px">
+                <img src="#" alt="Image" class="honey-left honey-margin-right" style="width:50px">
                 <span class="honey-large">Mingsum</span><br>
                 <span>Lorem ipsum dipsum</span>
             </li>  
