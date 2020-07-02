@@ -867,6 +867,7 @@ button {
 }
 .honey-team-section-heading p{
     font-family: 'Handlee', cursive;
+    font-size: 16px;
 }
 @media all and (max-width: 767px) and (orientation: portrait){
     .honey-team-section-heading p{
@@ -1206,6 +1207,7 @@ button {
 }
 }
 .honey-page-content h2 {
+    font-family: 'Raleway', sans-serif;
     font-size: 32px;
     margin: 0;
 }
@@ -1217,8 +1219,11 @@ button {
     padding-bottom: 60px;
 }
 .honey-contact-wrap {
-    background-color: #fff;
+    background-color: #eee;
     padding: 40px 40px 0 40px;
+}
+.honey-contact-wrap * {
+    font-family: 'Raleway', sans-serif;
 }
 /* ** Small Screens ** */
 @media (max-width: 767px){
@@ -1234,9 +1239,12 @@ button {
 }
 .honey-contact-section h3 {
     font-weight: 600;
-    font-size: 20px;
+    font-size: 30px;
     line-height: 1.5em;
     color: #1b1b1b;
+}
+.honey-contact-section p {
+    font-size: 16px;
 }
 .honey-contact-info ul li {
     line-height: 1.5em;
@@ -1249,7 +1257,7 @@ button {
     align-items: center;
     line-height: 1.5em;
     display: flex;
-    font-size: 16px;
+    font-size: 18px;
 }
 .honey-contact-info ul li i {
     margin-right: 10px;
@@ -1257,12 +1265,12 @@ button {
     font-size: 20px;
 }
 .honey-contact-info ul li {
-    font-size: 16px;
+    font-size: 18px;
 }
 .honey-contact-form .form-control {
     border-radius: 0;
     height: 45px;
-    font-size: 16px;
+    font-size: 18px;
     background-color: transparent;
     border-width: 0 0 1px;
     border-style: solid;
@@ -1494,6 +1502,9 @@ button {
 }
 .honey-card-4{
     box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
+}
+.honey-card-extra{
+    box-shadow:0 8px 20px 0 rgba(0,0,0,1),0 8px 40px 0 rgba(0,0,0,1);
 }
 .honey-blog-section {
     padding-bottom: 3vh;

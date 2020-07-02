@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="css/colours.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/cataloguesss.css"
+    <link rel="stylesheet" href="css/cataloguesss.css">
     <!--Modal-->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
     <link href="assets/css/login-register.css" rel="stylesheet" />
@@ -41,7 +41,7 @@
                         <div class="honey-site-menu-inner" id="honey-navbar">
                         <ul class="list-unstyled honey-menu-container">
                                 <li><a href="index.html">Home</a></li>
-                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="about.php">About Us</a></li>
                                 <!--<li><a href="services.html">Services</a></li>-->
                                 <li><a href="catalogue.html">Catalogue</a></li>
                                 <li ><a href="blog.php">Blog</a></li>
@@ -80,7 +80,7 @@
     <section class="honey-contact-section">
         <div id="honey-contactMap"></div>
         <div class="container">
-            <div class="row honey-contact-wrap honey-card honey-padding" style="border-radius: 10%;">
+            <div class="row honey-contact-wrap honey-card-extra honey-padding">
                 <div class="col-md-6 xs-padding">
                     <div class="honey-contact-info">
                         <h3>Get in touch</h3>
