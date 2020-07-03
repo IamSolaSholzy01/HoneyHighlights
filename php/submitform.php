@@ -68,11 +68,11 @@ if($_POST && isset($_POST['name'], $_POST['email'], $_POST['message'])) {
     // Additional headers 
     $headers .= 'From: '.$fromName.'<'.$from.'>' . "\r\n"; 
     // Send email 
-    if(mail($to, $subject, $htmlContent, $headers)){ 
-        echo 'Email has sent successfully.'; 
-    }else{ 
-        echo 'Email sending failed.'; 
-    }
+    //if(mail($to, $subject, $htmlContent, $headers)){ 
+    //    echo 'Email has sent successfully.'; 
+    //}else{ 
+    //    echo 'Email sending failed.'; 
+    //}
 
     //header("Location: ../contact.php");
     //exit;
