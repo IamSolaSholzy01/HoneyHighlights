@@ -27,7 +27,7 @@ if($_POST && isset($_POST['name'], $_POST['email'], $_POST['message'])) {
     echo json_encode($data);
 
     // send email to honey highlights and redirect
-    $to = "honeyhighlights1@gmail.com";
+    $to = 'example@honeyhighlights.com'; 
     $from = $email; 
     $fromName = $name; 
     $subject = "New Request Contact";
