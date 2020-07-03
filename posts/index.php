@@ -2,5 +2,5 @@
 require_once('../php/classes.php');
 $util = new Util();
 
-$util->redirect('../blog.html');
+$util->redirect('../blog.php');
 ?>
