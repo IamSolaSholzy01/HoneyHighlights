@@ -17,9 +17,9 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/owl.carousel.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link href="css/colours.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/cataloguesss.css">
+    <link rel="stylesheet" href="css/cataloguesss.min.css">
     <!--Modal-->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
     <link href="assets/css/login-register.css" rel="stylesheet" />

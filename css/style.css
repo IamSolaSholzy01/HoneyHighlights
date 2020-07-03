@@ -1070,6 +1070,8 @@ img {
     }
 }
 
+
+/*
 .fade-out {
     animation: fadeOut ease 1s;
     -webkit-animation: fadeOut ease 1s;
@@ -1122,6 +1124,7 @@ img {
         opacity: .4
     }
 }
+*/
 
 .too:after {
     content: "";
