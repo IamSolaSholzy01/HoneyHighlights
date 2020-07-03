@@ -101,7 +101,7 @@
                     <div class="honey-contact-form">
                         <h3>Contact Form</h3>
                         <p>Please reach out to me with your inquiry! I am available within most of Lagos.</p>
-                        <form action="php/submitform.php" method="post" class="form-horizontal">
+                        <form id = "contact-form" action="php/submitform.php" method="post" class="form-horizontal">
                             <div class="form-group colum-row row">
                                 <div class="col-sm-6">
                                     <input type="text" id="name" name="name" class="form-control" placeholder="Name" required> </div>
@@ -117,6 +117,7 @@
                                     <textarea id="message" name="message" cols="30" rows="5" class="form-control message" placeholder="Enter your message" required></textarea>
                                 </div>
                             </div>
+                            <div class="contact-result"></div>
                             <div class="form-group row">
                                 <div class="col-md-12">
                                     <button class="honey-btn2" type="submit">Submit</button>
@@ -155,6 +156,7 @@
     <script src="js/ajax.js"></script>
     <script>includeHTML();</script>
     <script>$(function(){event.preventDefault();subscribe();});</script>
+    <script>$(function(){event.preventDefault();contact_request();});</script>
     <script>$(function(){event.preventDefault();register();});</script>
     <script>$(function(){event.preventDefault();login();});</script>
     <script>$(function(){event.preventDefault();logout();});</script>
