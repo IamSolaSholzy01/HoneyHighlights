@@ -1,5 +1,5 @@
-
 <?php
+header("Location: ../");
 /*session_start();
 
 require_once "Auth.php";
@@ -58,3 +58,4 @@ if ($_POST && isset($_POST['email'], $_POST['password'])) {
         $message = "Invalid Login";
     }
 }*/
+?>

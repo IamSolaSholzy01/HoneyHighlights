@@ -247,19 +247,16 @@ p.PadderBetweenControlandBody{
           StoreItemID="X_5F329CAD-B019-4FA6-9FEF-74898909AD20" Title="Post Title"
           ID="89512082">
           
-          <p class=Publishwithline>5 TOOLS AND 5 PRODUCTS YOU SHOULD HAVE AS A MAKEUP
-          BEGINNER<w:sdtPr></w:sdtPr></p>
+          <span>5 TOOLS AND 5 PRODUCTS YOU SHOULD HAVE AS A MAKEUP
+          BEGINNER</span><w:sdtPr></w:sdtPr>
         </w:Sdt>
       </span>
       <div class="col-md-8 offset-md-2">
-        <div class="honey-page-content text-center">
-            <div class="honey-meta-info"> <i class="fa fa-users"></i><span id="post_author"></span> <i class="fa fa-clock-o"></i><span id="post_date"></span> </div>
+        <div class="honey-page-content honey-margin text-center">
+            <div class="honey-meta-info"><i class="fa fa-users"></i><span id="post_author"></span> <i class="fa fa-clock-o"></i><span id="post_date"></span> </div>
         </div>
       </div>
-      <div style='mso-element:para-border-div;border:none;border-bottom:solid #C6C6C6 1.0pt;
-      padding:0cm 0cm 2.0pt 0cm'>
-        <p class=underline><o:p>&nbsp;</o:p></p>
-      </div>
+      <hr />
       <p class=PadderBetweenControlandBody><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
       </w:Sdt>
       
