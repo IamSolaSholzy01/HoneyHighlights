@@ -74,7 +74,7 @@
                 <div class="too xs-padding">
                     <div class="honey-about-info also">
                         <h2>About Us</h2>
-                        <p>Hi, I'm honey a Professional Makeup Artist.</p>
+                        <p>Hi, I'm honey. I'm a Professional Makeup Artist.</p>
                         <p>Do you want to look more beautiful and confident? </p>
                         <p> So do we. Here at <b>honeyhighlights</b> we have a passion for enhancing beauty and
                              are experienced in ensuring our models and clients have a suitable makeup 
@@ -83,7 +83,7 @@
                              <b>speed</b> in getting the job done, and <b>flexibility</b> especially when providing great 
                              looks and makeovers for them. We desire not only to make beauty but to teach it also, and that
                              is why we have created a platform on YouTube in order for our viewers to learn even with little to no knowledge of makeup.</p>
-                        <p class="honey-signature-dark"><img src="img/signature.png" alt="Honey Highlights"></p>
+                        <!--<p class="honey-signature-dark"><img src="img/signature.png" alt="Honey Highlights"></p>-->
                     </div>
                 </div>
             </div>
@@ -132,12 +132,12 @@
                 <div class="col-md-4 col-sm-4 xs-padding">
                     <div class="honey-team-content text-center">
                         <div class="honey-team-thumb"> <img src="img/team/team-01.jpg" alt="" style="border-radius: 50%;"> </div>
-                        <h3>Sola Olagunju</h3> <span>Hype-man</span> </div>
+                        <h3>Sola Olagunju</h3> <span>Web Administrator</span> </div>
                 </div>
                 <div class="col-md-4 col-sm-4 xs-padding">
                     <div class="honey-team-content text-center">
                         <div class="honey-team-thumb"> <img src="img/team/team-01.jpg" alt="" style="border-radius: 50%;"> </div>
-                        <h3>Mishael Abiola</h3> <span>Web Designer</span> </div>
+                        <h3>Mishael Abiola</h3> <span>Web Administrator</span> </div>
                 </div>
                 <div class="col-md-4 col-sm-4 xs-padding">
                     <div class="honey-team-content text-center">
@@ -149,7 +149,7 @@
     </section>
     <!-- Subscribe -->
     <div class="subscribe" id="subscribe-form">
-        <h2>Subscribe to our mailing list now <br> Be the first to know once a blog post is dropped</h2>
+        <h2>Subscribe to our mailing list now <br>Be the first to know when we give discounts and deals on our services and our latest blog posts</h2>
 
         <form class="subscribe-form" action="php/subscribe.php" method="POST" name="subscribersss">
             <input class="subscribe-input" type="email" name="email" id="email" placeholder="Email" required >

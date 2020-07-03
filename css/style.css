@@ -953,8 +953,8 @@ img {
 }
 
 .honey-team-content .honey-team-thumb {
-    width: 25vw;
-    height: 25vw;
+    width: 15vw;
+    height: 15vw;
     min-width: 150px;
     min-height: 150px;
     max-width: 300px;
@@ -1141,7 +1141,7 @@ img {
 }
 
 .too p {
-    font-family: 'Coming Soon', cursive;
+    font-family: 'Raleway', sans-serif;
     font-size: 18px;
     font-weight: 400
 }
