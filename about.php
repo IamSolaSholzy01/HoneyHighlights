@@ -129,17 +129,12 @@
                         <div class="honey-team-thumb"> <img src="img/team/team-01.jpg" alt="" style="border-radius: 50%;"> </div>
                         <h3>Oyindamola Ogundeji</h3> <span>Makeup Artist</span> </div>
                 </div>
-                <div class="col-md-4 col-sm-4 xs-padding">
+                <div class="col-md-4 col-sm-4 xs-padding no-margin" style="margin: 0;">
                     <div class="honey-team-content text-center">
-                        <div class="honey-team-thumb"> <img src="img/team/team-01.jpg" alt="" style="border-radius: 50%;"> </div>
-                        <h3>Sola Olagunju</h3> <span>Web Administrator</span> </div>
+                        <div class="honey-team-thumb"> <img src="img/team/webteam.jpg" alt="" style="border-radius: 50%;"> </div>
+                        <h3>Web Team</h3><span></span></div>
                 </div>
-                <div class="col-md-4 col-sm-4 xs-padding">
-                    <div class="honey-team-content text-center">
-                        <div class="honey-team-thumb"> <img src="img/team/team-01.jpg" alt="" style="border-radius: 50%;"> </div>
-                        <h3>Mishael Abiola</h3> <span>Web Administrator</span> </div>
-                </div>
-                <div class="col-md-4 col-sm-4 xs-padding">
+                <div class="col-md-4 col-sm-4 xs-padding no-margin" style="margin: 0;">
                     <div class="honey-team-content text-center">
                         <div class="honey-team-thumb"> <img src="img/team/team-01.jpg" alt="" style="border-radius: 50%;"> </div>
                         <h3>Sonia Ogungbe</h3> <span>Lighting Expert</span> </div>
