@@ -12,7 +12,7 @@
     <link href="../css/themify-icons.css" rel="stylesheet">
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/owl.carousel.css" rel="stylesheet">
-    <link href="../css/style.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
     <link href="css/blog-styles.min.css" rel="stylesheet">
 
     <!--Modal-->
@@ -233,6 +233,19 @@
                             <iframe class="eyebrow-vid" width="560" height="315" src="https://www.youtube.com/embed/bwOgE2rXtno" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                         <div><hr/></div>
+                        <!--About Me-->
+                        <div class="card mb-3">
+                            <div class="card-body">
+                            <h3 class="card-title">About The Author</h3>
+                            <p class="card-text">Hi, there! I’m Oyin, a professional, freelance makeup artist living in Lagos. 
+                                I have passion for flawless skincare, beauty and music. I would describe my style of makeup as classy, 
+                                modern and always what suits my clients best.</p>
+                            <p class="card-text">I love meeting new people which is one of the joy my job brings. I have a YouTube channel
+                                which was created so that I could meet and connect with people while teaching them makeup 
+                                routine and techniques.</p>
+                            <p class="card-text">I am looking forward to meeting you and hopefully get in touch with you as time go on.</p>
+                            </div>
+                        </div>
                         <!--Reactions-->
                         <div class="honey-share-wrap">
                         <h3>What do you think about this post?</h3>
@@ -272,7 +285,7 @@
                                     <div class="honey-comment-head" onclick="showreply(this)">
                                         <h6 class="honey-comment-name by-author"><a href="#"></a></h6><i class="fa fa-reply honey-reply-icon" onclick="replyclicked(this.id)"></i></div>
                                     <div class="honey-comment-content">
-                                        <p class="honey-comment-body"></p>
+                                        <p></span><span class="honey-comment-body"></span><span class="honey-comment-time"></p>
                                     </div>
                                     <div id="reply-div">
                                     </div> 

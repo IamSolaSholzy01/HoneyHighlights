@@ -393,6 +393,7 @@
                         var newComment = $("body").find("#honey-comments > li").clone();
                         newComment.find(".honey-comment-name").append(this.name);
                         newComment.find(".honey-comment-body").append(this.body);
+                        newComment.find(".honey-comment-time").append(this.created_at);
                         newComment.find(".honey-reply-icon").addClass(this.comment_id);
                         newComment.find(".honey-reply-icon").attr('id', this.comment_id);
                         $(newComment).appendTo("#honey-comments-list");

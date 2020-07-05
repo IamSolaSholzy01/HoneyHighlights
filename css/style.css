@@ -1978,6 +1978,7 @@ span.user {
     margin-right: 10px
 }
 
+
 .honey-comment-box .honey-comment-head {
     padding: 0 0 0 10px;
     background-color: #b19bd9;
@@ -1997,8 +1998,17 @@ span.user {
 }
 
 .honey-comment-content p {
+    word-break: break-all;
+    text-align: right;
     font-size: 18px;
     padding: 5px
+}
+.honey-comment-body{
+    float: left;
+    text-align: left;
+}
+.honey-comment-time {
+    color: blueviolet;
 }
 
 .honey-comment-form h4 {
