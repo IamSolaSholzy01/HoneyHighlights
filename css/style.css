@@ -2,52 +2,6 @@
 @import url(https://fonts.googleapis.com/css2?family=Handlee&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap);
-#ftco-loader {
-    position: fixed;
-    width: 50px;
-    height: 50px;
-    left: 50%;
-    top: 50%;
-    background-color: rgba(255, 255, 255, .9);
-    border-radius: 16px;
-    opacity: 0;
-    visibility: hidden;
-    z-index: 1000
-}
-
-#ftco-loader.fullscreen {
-    padding: 0;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    -webkit-transform: none;
-    -ms-transform: none;
-    transform: none;
-    background-color: #fff;
-    border-radius: 0;
-    -webkit-box-shadow: none;
-    box-shadow: none
-}
-
-#ftco-loader.show {
-    visibility: visible;
-    opacity: 1
-}
-
-#ftco-loader .circular {
-    position: absolute;
-    margin-top: 10vh;
-    margin-left: 10vw;
-    padding-top: 10vh;
-    padding-left: 10vw;
-    left: calc(10%);
-    top: calc(10%);
-    display: block;
-    width: 50vw;
-    max-width: 150px
-}
-
 * {
     padding: 0;
     margin: 0
@@ -100,7 +54,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: Raleway, Helvetica, sans-serif;
+    font-family: 'Raleway', Helvetica, sans-serif;
     color: #1b1b1b;
     line-height: 1.5em;
     margin: 0 0 20px;
@@ -202,6 +156,59 @@ button {
     background: #1b1b1b
 }
 
+.smoky-black {
+    color: #1c110a
+}
+
+.bg-smoky-black {
+    background-color: #1c110a
+}
+
+.ecru {
+    color: #b6ab7c
+}
+
+.bg-ecru {
+    background-color: #b6ab7c
+}
+
+.ebony {
+    color: #606d5d
+}
+
+.rose-dust {
+    color: #a16878
+}
+
+.portland-orange {
+    color: #f5653d
+}
+
+.orange-yellow-crayola {
+    color: #e9c46a
+}
+
+.burnt-sienna {
+    color: #ee6c4d
+}
+
+.old-burgundy {
+    color: #472d30
+}
+
+.maroon {
+    color: #a12e3b
+}
+
+.light-grey {
+    color: #f1f1f1
+}
+
+.bg-light-grey {
+    background-color: #f1f1f1;
+    color: #000
+}
+
 .bg-pink {
     background: #ff69b4
 }
@@ -216,10 +223,6 @@ button {
 
 .bg-deep-purple {
     background: #3a243b
-}
-
-.bg-pink-color-gradient {
-    background-image: linear-gradient(0, #b19bd9, #ff69b4)
 }
 
 .bg-light {
@@ -738,13 +741,13 @@ img {
     text-align: center
 }
 
-@media all and (min-width:600px) {
+@media all and (min-width:601px) {
     .honey-profile-info h2 {
         font-size: 5vw
     }
 }
 
-@media all and (max-width:601px) {
+@media all and (max-width:600px) {
     .honey-profile-info h2 {
         font-size: 5vw
     }
@@ -1978,7 +1981,6 @@ span.user {
     margin-right: 10px
 }
 
-
 .honey-comment-box .honey-comment-head {
     padding: 0 0 0 10px;
     background-color: #b19bd9;
@@ -2003,10 +2005,12 @@ span.user {
     font-size: 18px;
     padding: 5px
 }
-.honey-comment-body{
+
+.honey-comment-body {
     float: left;
     text-align: left;
 }
+
 .honey-comment-time {
     color: blueviolet;
 }

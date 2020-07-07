@@ -12,13 +12,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Honey Highlights</title>
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
-    <link href="css/themify-icons.css" rel="stylesheet">
+    <h2>Subscribe to our mailing list now <br>Be the first to know when we give discounts and deals on our services and our latest blog posts</h2>
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/owl.carousel.css" rel="stylesheet">
     <link href="css/style.min.css" rel="stylesheet">
-    <link href="css/colours.css" rel="stylesheet">
     <!--Modal-->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
     <link href="assets/css/login-register.css" rel="stylesheet" />

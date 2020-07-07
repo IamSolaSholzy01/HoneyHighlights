@@ -12,13 +12,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Honey Highlights</title>
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
-    <link rel="stylesheet" href="css/themify-icons.css">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/style.min.css">
-    <link href="css/colours.css" rel="stylesheet">
     <link rel="stylesheet" href="css/cataloguesss.min.css">
     <!--Modal-->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
@@ -33,7 +30,6 @@
         }
     </style>
 </head>
-
 <body>
     <!-- Header -->
     <header class="honey-site-header">
@@ -148,7 +144,6 @@
     <!-- JS -->
     <script src="js/vendor/jquery-1.12.4.min.js"></script>
     <script src="js/vendor/bootstrap.min.js"></script>
-    <script src="js/vendor/owl.carousel.min.js"></script>
     <script src="js/vendor/imagesloaded.pkgd.min.js"></script>
     <script src="js/vendor/jquery.isotope.v3.0.2.js"></script>
     <script src="js/scripts.js"></script>

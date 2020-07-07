@@ -9,9 +9,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.png">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="../css/themify-icons.css" rel="stylesheet">
     <link href="../css/bootstrap.min.css" rel="stylesheet">
-    <link href="../css/owl.carousel.css" rel="stylesheet">
     <link href="../css/style.css" rel="stylesheet">
     <link href="css/blog-styles.min.css" rel="stylesheet">
 
@@ -359,7 +357,6 @@
     <!-- JS -->
     <script src="../js/vendor/jquery-1.12.4.min.js"></script>
     <script src="../js/vendor/bootstrap.min.js"></script>
-    <script src="../js/vendor/owl.carousel.min.js"></script>
     <script src="../js/vendor/imagesloaded.pkgd.min.js"></script>
     <script src="../js/vendor/jquery.isotope.v3.0.2.js"></script>
     <script src="../js/scripts.js"></script>
