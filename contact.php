@@ -45,8 +45,7 @@
 </head>
 <body>
     <!-- Header -->
-    <header class="honey-site-header">
-        <div class="header-container">
+    <header class="honey-site-header"><div class="header-container">
             <ul>
                 <a href="index.html" class="honey-site-logo"><img src="img/logo-dark.png" alt="honey"></a>
                 <li>
@@ -56,7 +55,6 @@
                         <ul class="list-unstyled honey-menu-container">
                                 <li><a href="index.html">Home</a></li>
                                 <li><a href="about.php">About Us</a></li>
-                                <!--<li><a href="services.html">Services</a></li>-->
                                 <li><a href="catalogue.html">Catalogue</a></li>
                                 <li ><a href="blog.php">Blog</a></li>
                                 <li class="giddy"><a href="contact.php">Contact</a></li>
@@ -67,16 +65,9 @@
                     </nav>
                 </li>
             </ul>
-            
-                
-            <div class="row align-items-center">
-                
-            </div>    
             <!-- Menu Burger -->
-            <div class="col-6 col-md-8 text-right honey-menu-burger-wrap"> <a href="#" class="honey-site-nav-toggle honey-js-honey-site-nav-toggle"><i></i></a> </div>
-        </div>
-        
-    </header>
+            <div class="col-6 col-md-8 text-right honey-menu-burger-wrap"><a href="#" class="honey-site-nav-toggle honey-js-honey-site-nav-toggle"><i></i></a></div>
+    </div></header>
     <!-- Contact Me -->
     <?php include './php/loginmodal.php';?>
     <input type="hidden" id="google" name="google" value="./php/google.php">
@@ -97,8 +88,7 @@
             <div class="row honey-contact-wrap honey-card-extra honey-padding">
                 <div class="col-md-6 xs-padding">
                     <div class="honey-contact-info">
-                        <h3>Get in touch</h3>
-                        <p>Do you have any question, request or complaint? Are you in need of our services wherever you are? Do you want to come to us, or, do you want us to come to you? Whatever you need, please, note that we are always reachable via the media below. We are eagerly expecting your call. 😁😁😊😊</p>
+                        <h3>Get in touch</h3><p>Do you have any question, request or complaint? Are you in need of our services wherever you are? Do you want to come to us, or, do you want us to come to you? Whatever you need, please, note that we are always reachable via the media below. We are eagerly expecting your call. 😁😁😊😊</p>
                         <ul>
                             <li><i class="fa fa-home"></i>Oyinda's house</li>
                             <li><i class="fa fa-mobile"></i>+234 708 881 0879</li>
