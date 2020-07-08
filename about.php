@@ -12,7 +12,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Honey Highlights</title>
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
-    <h2>Subscribe to our mailing list now <br>Be the first to know when we give discounts and deals on our services and our latest blog posts</h2>
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -52,11 +51,6 @@
                     </nav>
                 </li>
             </ul>
-            
-                
-            <div class="row align-items-center">
-                
-            </div>    
             <!-- Menu Burger -->
             <div class="col-6 col-md-8 text-right honey-menu-burger-wrap"> <a href="#" class="honey-site-nav-toggle honey-js-honey-site-nav-toggle"><i></i></a> </div>
         </div>
@@ -150,8 +144,7 @@
             <button id="subscribe-button" class="honey-btn2" type="submit">Subscribe</button>
         </form>
     </div>
-    <div class="subscribe" id="subscribe-result"></div>
-    </div>    
+    <div class="subscribe" id="subscribe-result"></div>  
     <!-- Footer -->
     <div include-html="footer.html"></div> 
     <!-- Loader -->
@@ -160,16 +153,13 @@
     <!-- JS -->
     <script src="js/vendor/jquery-1.12.4.min.js"></script>
     <script src="js/vendor/bootstrap.min.js"></script>
-    <script src="js/vendor/owl.carousel.min.js"></script>
-    <script src="js/vendor/imagesloaded.pkgd.min.js"></script>
+    <script src="js/vendor/owl.carousel.min.js" async></script>
+    <script src="js/vendor/imagesloaded.pkgd.min.js" async></script>
     <script src="js/vendor/jquery.isotope.v3.0.2.js"></script>
-    <script src="js/scripts.js"></script>
+    <script src="js/scripts.js" async></script>
     <script src="js/include.js"></script>
     <script src="js/ajax.js"></script>
     <script>includeHTML();</script>
-    <script>$(function(){event.preventDefault();subscribe();});</script>
-    <script>$(function(){event.preventDefault();register();});</script>
-    <script>$(function(){event.preventDefault();login();});</script>
-    <script>$(function(){event.preventDefault();logout();});</script>
+    <script>$(function(){event.preventDefault();subscribe();register();login();logout();});</script>
 </body>
 </html>

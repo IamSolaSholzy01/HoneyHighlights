@@ -37,12 +37,11 @@ loader();*/
         var $this = $(this),
             st = $this.scrollTop(),
             navbar = $('.honey-site-header'),
-            scrollprogress = $('.scrollprogress');
-        if (st > 150) {
-            if (!navbar.hasClass('scrolled')) {
-                navbar.addClass('scrolled');
+            if (st > 150) {
+                if (!navbar.hasClass('scrolled')) {
+                    navbar.addClass('scrolled');
+                }
             }
-        }
         if (st < 150) {
             if (navbar.hasClass('scrolled')) {
                 navbar.removeClass('scrolled sleep');
