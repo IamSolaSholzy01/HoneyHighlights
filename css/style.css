@@ -659,14 +659,6 @@ img {
     }
 }
 
-.honey-slider-section {
-    position: relative
-}
-
-.honey-slider-section .honey-profile-info .d-flex {
-    height: 100vh
-}
-
 .honey-profile-info {
     position: absolute;
     width: 100%;
@@ -707,12 +699,6 @@ img {
     text-transform: uppercase;
     color: #a08ac8;
     line-height: 1.5em
-}
-
-.honey-profile-inner {
-    padding: 20px;
-    position: relative;
-    z-index: 1
 }
 
 .honey-main-slider .slide-item {
