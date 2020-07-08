@@ -28,6 +28,97 @@
         .honey-site-header.scrolled, .honey-site-header.awake {
             background-color: #fff !important;
         }
+        
+    .honey-contact-section {
+        position: relative;
+        z-index: 1;
+        padding-top: 1px;
+        padding-bottom: 60px
+    }
+
+    .honey-contact-wrap {
+        background-color: #eee;
+        padding: 40px 40px 0 40px
+    }
+
+    .honey-contact-wrap * {
+        font-family: Raleway, sans-serif
+    }
+
+    @media (max-width:767px) {
+        .honey-contact-wrap {
+            padding: 30px 0 0 0
+        }
+    }
+
+    @media (max-width:992px) {
+        .honey-contact-wrap {
+            padding: 30px 0 0 0
+        }
+    }
+
+    .honey-contact-section h3 {
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 1.5em;
+        color: #1b1b1b
+    }
+
+    .honey-contact-section p {
+        font-size: 16px
+    }
+
+    .honey-contact-info ul li {
+        line-height: 1.5em;
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px
+    }
+
+    .honey-contact-info ul li a {
+        color: #888;
+        align-items: center;
+        line-height: 1.5em;
+        display: flex;
+        font-size: 18px
+    }
+
+    .honey-contact-info ul li i {
+        margin-right: 10px;
+        color: #ff69b4;
+        font-size: 20px
+    }
+
+    .honey-contact-info ul li {
+        font-size: 18px
+    }
+
+    .honey-contact-form .form-control {
+        border-radius: 0;
+        height: 45px;
+        font-size: 18px;
+        background-color: transparent;
+        border-width: 0 0 1px;
+        border-style: solid;
+        border-color: #ececec;
+        outline: 0
+    }
+
+    .form-control:focus,
+    .honey-contact-form:focus {
+        border-bottom-width: 2px;
+        border-color: #ff69b4
+    }
+
+    .form-control:focus {
+        border-color: inherit;
+        -webkit-box-shadow: none;
+        box-shadow: none
+    }
+
+    .honey-contact-form .form-control.message {
+        height: 150px
+    }
     </style>
 </head>
 <body>
@@ -73,7 +164,7 @@
             <div class="col-md-8 offset-md-2">
                 <div class="honey-page-content text-center">
                     <h2 style="color: #fff;">Contact</h2>
-                    <p class="excessfont">Please reach out to me with your inquiry!</p>
+                    <p class="excessfont" style="color: #fff; font-family: 'Coming Soon', cursive; font-size: 1.3em; font-weight: 400">Please reach out to me with your inquiry!</p>
                 </div>
             </div>
         </div>

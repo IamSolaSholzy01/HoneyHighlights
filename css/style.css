@@ -729,11 +729,6 @@ img {
     right: 50px
 }
 
-.honey-about-section-home {
-    position: relative;
-    padding: 6vw 0
-}
-
 .honey-about-info h1 {
     font-family: 'Martel Sans', sans-serif;
     color: #fff;
@@ -747,11 +742,6 @@ img {
     font-size: 3vh;
     font-weight: 400;
     color: #fff
-}
-
-.honey-about-section {
-    position: relative;
-    padding: 160px 0 80px 0
 }
 
 @media all and (max-width:900px) {
@@ -953,105 +943,6 @@ img {
     display: none
 }
 
-.fades {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 2s;
-    animation-name: fade;
-    animation-duration: 2s
-}
-
-@-moz-keyframes fade {
-    from {
-        opacity: .4
-    }
-    to {
-        opacity: 1
-    }
-}
-
-@-webkit-keyframes fade {
-    from {
-        opacity: .4
-    }
-    to {
-        opacity: 1
-    }
-}
-
-@-o-keyframes fade {
-    from {
-        opacity: .4
-    }
-    to {
-        opacity: 1
-    }
-}
-
-@keyframes fade {
-    from {
-        opacity: .4
-    }
-    to {
-        opacity: 1
-    }
-}
-
-
-/*
-.fade-out {
-    animation: fadeOut ease 1s;
-    -webkit-animation: fadeOut ease 1s;
-    -moz-animation: fadeOut ease 1s;
-    -o-animation: fadeOut ease 1s;
-    -ms-animation: fadeOut ease 1s
-}
-
-@-webkit-keyframes fadeOut {
-    from {
-        opacity: 1
-    }
-    to {
-        opacity: .4
-    }
-}
-
-@keyframes fadeOut {
-    from {
-        opacity: 1
-    }
-    to {
-        opacity: .4
-    }
-}
-
-@-moz-keyframes fadeOut {
-    from {
-        opacity: 1
-    }
-    to {
-        opacity: .4
-    }
-}
-
-@-o-keyframes fadeOut {
-    from {
-        opacity: 1
-    }
-    to {
-        opacity: .4
-    }
-}
-
-@-ms-keyframes fadeOut {
-    from {
-        opacity: 1
-    }
-    to {
-        opacity: .4
-    }
-}
-*/
-
 .too:after {
     content: "";
     display: block;
@@ -1072,192 +963,16 @@ img {
     font-weight: 400
 }
 
-.excessfont {
-    color: #fff;
-    font-family: 'Coming Soon', cursive;
-    font-size: 1.3em;
-    font-weight: 400
-}
-
-.honey-homepage-services-section {
-    padding: 7vh 0
-}
-
-.honey-services-section {
-    padding: 160px 0 80px 0
-}
-
-@media (max-width:990px) {
-    .honey-services-section {
-        padding: 80px 0 0
-    }
-}
-
-.honey-catalogue-items .col-md-6:nth-child(2) {
-    margin-top: 75px
-}
-
-.catalogue-wrap {
-    padding-bottom: 30px;
-    padding-right: 0;
-    position: relative
-}
-
-.honey-catalogue-wrap:hover img {
-    -ms-transform: scale(.95, .95);
-    -webkit-transform: scale(.95, .95);
-    transform: scale(.95, .95)
-}
-
-.honey-catalogue-wrap h3 {
-    font-size: 24px;
-    line-height: 1.4em;
-    color: #1b1b1b;
-    font-weight: 700
-}
-
-.honey-catalogue-wrap p {
-    font-size: 18px;
-    margin-bottom: 0;
-    line-height: 1.5em;
-    font-weight: 400;
-    color: #494949;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale
-}
-
-.honey-catalogue-content {
-    left: 40px;
-    top: 80px
-}
-
-.honey-catalogue-link {
-    color: #c56765;
-    font-size: 16px;
-    font-weight: 400;
-    position: relative;
-    padding-right: 40px;
-    line-height: 1.5em;
-    display: inline-block;
-    transition: all .3s ease-in-out;
-    padding-left: 80px
-}
-
-.honey-catalogue-link:before {
-    content: '';
-    display: inline-block;
-    width: 80px;
-    height: 2px;
-    background: #c56765;
-    position: absolute;
-    left: 0;
-    bottom: 30px;
-    transition: all .3s ease-in-out
-}
-
-.honey-catalogue-link:before:hover {
-    padding-left: 5px;
-    color: #c56765;
-    transition: all .3s ease-in-out
-}
-
-.honey-catalogue-link i {
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 30px;
-    height: 30px;
-    line-height: 1.5em;
-    font-size: 14px;
-    transition: all .3s ease-in-out
-}
-
-.honey-catalogue-link:hover i {
-    padding-left: 5px;
-    color: #c56765;
-    transition: all .3s ease-in-out
-}
-
-.honey-catalogue-link:hover {
-    color: #c56765
-}
-
 .entry-thumb {
     padding-bottom: 40px
-}
-
-@media all and (max-width:767px) {
-    .honey-catalogue-wrap {
-        padding: 0 0 15px 0
-    }
-}
-
-@media (min-width:768px) {
-    .catalogue-wrap {
-        padding-left: 20px
-    }
-    .catalogue-wrap h3 {
-        font-size: 22px
-    }
-    .honey-catalogue-content {
-        top: 40px
-    }
-    .honey-background-wrap .background-img-item {
-        height: 500px
-    }
-    .honey-page-content h2 {
-        font-size: 24px
-    }
-    .honey-page-content p {
-        margin: 0
-    }
 }
 
 .honey-catalogue-page-section {
     padding: 160px 0 80px 0
 }
 
-.honey-catalogue-catalogue-section {
-    padding-top: 80px
-}
-
-.honey-catalogue-filter {
-    width: 100%
-}
-
-.honey-catalogue-filter li {
-    display: inline-block;
-    line-height: 1.5em;
-    cursor: pointer;
-    font-weight: 600;
-    color: grey
-}
-
-.honey-catalogue-filter li:last-child {
-    margin-right: 0
-}
-
-.honey-catalogue-filter li.active {
-    color: #ff69b4;
-    content: "";
-    left: 0;
-    bottom: -4px;
-    border-bottom: 2px solid;
-    -webkit-transition: .7s cubic-bezier(.17, .67, 0, 1.01);
-    -o-transition: .7s cubic-bezier(.17, .67, 0, 1.01);
-    transition: .7s cubic-bezier(.17, .67, 0, 1.01)
-}
-
-.honey-catalogue-filter li:hover {
-    color: #ff69b4
-}
-
 .honey-blog-items .honey-page-content p {
     text-align: justify
-}
-
-.single-item {
-    padding-bottom: 1vh
 }
 
 .honey-page-section {
@@ -1274,106 +989,6 @@ img {
     font-family: Raleway, sans-serif;
     font-size: 32px;
     margin: 0
-}
-
-.honey-contact-section {
-    position: relative;
-    z-index: 1;
-    padding-top: 1px;
-    padding-bottom: 60px
-}
-
-.honey-contact-wrap {
-    background-color: #eee;
-    padding: 40px 40px 0 40px
-}
-
-.honey-contact-wrap * {
-    font-family: Raleway, sans-serif
-}
-
-@media (max-width:767px) {
-    .honey-contact-wrap {
-        padding: 30px 0 0 0
-    }
-}
-
-@media (max-width:992px) {
-    .honey-contact-wrap {
-        padding: 30px 0 0 0
-    }
-}
-
-.honey-contact-section h3 {
-    font-weight: 600;
-    font-size: 30px;
-    line-height: 1.5em;
-    color: #1b1b1b
-}
-
-.honey-contact-section p {
-    font-size: 16px
-}
-
-.honey-contact-info ul li {
-    line-height: 1.5em;
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px
-}
-
-.honey-contact-info ul li a {
-    color: #888;
-    align-items: center;
-    line-height: 1.5em;
-    display: flex;
-    font-size: 18px
-}
-
-.honey-contact-info ul li i {
-    margin-right: 10px;
-    color: #ff69b4;
-    font-size: 20px
-}
-
-.honey-contact-info ul li {
-    font-size: 18px
-}
-
-.honey-contact-form .form-control {
-    border-radius: 0;
-    height: 45px;
-    font-size: 18px;
-    background-color: transparent;
-    border-width: 0 0 1px;
-    border-style: solid;
-    border-color: #ececec;
-    outline: 0
-}
-
-.form-control:focus,
-.honey-contact-form:focus {
-    border-bottom-width: 2px;
-    border-color: #ff69b4
-}
-
-.form-control:focus {
-    border-color: inherit;
-    -webkit-box-shadow: none;
-    box-shadow: none
-}
-
-.honey-contact-form .form-control.message {
-    height: 150px
-}
-
-#form-messages {
-    display: none
-}
-
-#form-messages.alert-danger,
-#form-messages.alert-success {
-    display: block
 }
 
 .honey-btn2 {

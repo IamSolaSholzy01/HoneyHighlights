@@ -65,7 +65,7 @@
     <!-- About Us -->
     <?php include './php/loginmodal.php';?>
     <input type="hidden" id="google" name="google" value="./php/google.php">
-    <section class="honey-about-section honey-about-inner-page">
+    <section class="honey-about-section honey-about-inner-page" style="position: relative; padding: 160px 0 80px 0">
         <div class="container intel">
             <div class="row honey-about-inner">
                 <!--<div class="col-md-6"> <img class="honey-about-img" src="img/about me.jpeg" alt=""> </div>-->
