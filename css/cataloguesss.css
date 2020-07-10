@@ -315,9 +315,9 @@
     }
     
     .header.section-inner {
-        width: 325px;
         position: relative;
-        z-index: 2
+        z-index: 2;
+        padding: 30px 2px;
     }
     
     .honey-footer-section {
