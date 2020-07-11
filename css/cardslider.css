@@ -1,0 +1,61 @@
+/* CSS Document */
+
+/* equal card height */
+.row-equal > div[class*='col-'] {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.row-equal .card {
+   width: 100%;
+}
+
+/* ensure equal card height inside carousel */
+.carousel-inner>.row-equal.active, 
+.carousel-inner>.row-equal.next, 
+.carousel-inner>.row-equal.prev {
+    display: flex;
+}
+
+/* prevent flicker during transition */
+.carousel-inner>.row-equal.active.left, 
+.carousel-inner>.row-equal.active.right {
+    opacity: 0.5;
+    display: flex;
+}
+
+
+/* control image height */
+.card-img-top-250 {
+    max-height: 250px;
+    overflow:hidden;
+}
+@media (min-width: 768px){
+.col-md-4 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    min-height: 231px;
+    max-height: 231px;
+}
+}
+
+.card{
+    background-color: #FFF;
+}
+.card-header{color:#ff69b4; background-color: #FFF;}
+
+.card-header h3{
+    color: #1C110A;
+    margin: 0;
+}
+
+.card-text{
+    padding: 10px;
+}
+.btn{
+    color: #FFF;
+    background-color: #1C110A;
+    border: none    ;
+}

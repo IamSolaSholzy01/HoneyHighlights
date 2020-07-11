@@ -16,6 +16,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/owl.carousel.css" rel="stylesheet">
     <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/cardslider.css" rel="stylesheet">
     <style>
         .fades {
             -webkit-animation-name: fade;
@@ -112,6 +113,87 @@
             </div>
         </div>
     </section>
+    <!--Services section-->
+    <div class="honey-padding text-center">
+        <h2>Check Out Our Services</h2>
+    </div>
+    <section class="carousel slide" data-ride="carousel" id="postsCarousel">
+        <div class="container p-t-0 m-t-2 carousel-inner" style="padding-left: 30px;padding-right: 0;">
+            <div class="row row-equal carousel-item active m-t-0">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-img-top card-img-top-250">
+                            <img class="img-fluid" src="img/services/face-makeup.jpg" alt="Carousel 1">
+                        </div>
+                        <div class="card-block p-t-2">
+                            <div class="card-header"><h3>Day/Evening makeup</h3></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-img-top card-img-top-250">
+                            <img class="img-fluid" src="img/services/wedding-makeup.jpg" alt="Carousel 1">
+                        </div>
+                        <div class="card-block p-t-2">
+                            <div class="card-header"><h3>Fashion/Bridal makeup</h3></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-img-top card-img-top-250">
+                            <img class="img-fluid" src="img/services/effect-makeup.jpg" alt="Carousel 1">
+                        </div>
+                        <div class="card-block p-t-2">
+                            <div class="card-header"><h3>Photoshoot makeup</h3></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-equal carousel-item m-t-0">
+               <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-img-top card-img-top-250">
+                            <img class="img-fluid" src="img/services/face-makeup.jpg" alt="Carousel 1">
+                        </div>
+                        <div class="card-block p-t-2">
+                            <div class="card-header"><h3>Trainings</h3></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-img-top card-img-top-250">
+                            <img class="img-fluid" src="img/services/children-makeup.jpg" alt="Carousel 1">
+                        </div>
+                        <div class="card-block p-t-2">
+                            <div class="card-header"><h3>Consultancy Services</h3></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-img-top card-img-top-250">
+                            <img class="img-fluid" src="img/blog/post.jpg" alt="Carousel 1">
+                        </div>
+                        <div class="card-block p-t-2">
+                            <div class="card-header"><h3>Makeup products Sales</h3></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </section>    
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-4">
+                <a class="btn btn-outline-secondary prev" href="" title="go back"><i class="fa fa-lg fa-chevron-left"></i></a>
+                <a class="btn btn-outline-secondary next" href="" title="more"><i class="fa fa-lg fa-chevron-right"></i></a>
+            </div>
+        </div>
+    </div>
+    <!--Services end-->
     <section class="honey-blog-row serious-wrapper" style="margin: 5px; padding: 5px;">
         <div class="honey-card honey-col l6 honey-padding popular-posts" style="height: inherit;">
             <div class="honey-container honey-padding">
@@ -182,6 +264,16 @@
     <script src="js\scripts.js" async></script>
     <script src="js\include.js"></script>
     <script src="js\ajax.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script> 
+    <script>
+   (function($){
+	   "use strict";
+	   $('.next').click(function(){ $('.carousel').carousel('next');return false; });
+	   $('.prev').click(function(){ $('.carousel').carousel('prev');return false; });
+   })	
+   (jQuery);    
+    </script>
+
     <script>
         includeHTML();
     </script>
