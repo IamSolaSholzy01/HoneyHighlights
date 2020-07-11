@@ -34,13 +34,11 @@
             <ul>
                 <a href="index.html" class="honey-site-logo"><img src="img/logo-dark.png" alt="honey"></a>
                 <li>
-                    <!-- Menu -->
                     <nav class="honey-site-menu" id="honey-navbar-spy">
                         <div class="honey-site-menu-inner honey-menu-container" id="honey-navbar">
                             <ul class="list-unstyled">
                                 <li><a href="index.html">Home</a></li>
                                 <li class="giddy"><a href="about.php">About Us</a></li>
-                                <!--<li><a href="services.html">Services</a></li>-->
                                 <li><a href="catalogue.html">Catalogue</a></li>
                                 <li><a href="blog.php">Blog</a></li>
                                 <li><a href="contact.php">Contact</a></li>
@@ -51,10 +49,8 @@
                     </nav>
                 </li>
             </ul>
-            <!-- Menu Burger -->
             <div class="col-6 col-md-8 text-right honey-menu-burger-wrap"> <a href="#" class="honey-site-nav-toggle honey-js-honey-site-nav-toggle"><i></i></a> </div>
         </div>
-        
     </header>
     <!-- About Us -->
     <?php include './php/loginmodal.php';?>
@@ -62,8 +58,6 @@
     <section class="honey-about-section honey-about-inner-page" style="position: relative; padding: 160px 0 80px 0">
         <div class="container intel">
             <div class="row honey-about-inner">
-                <!--<div class="col-md-6"> <img class="honey-about-img" src="img/about me.jpeg" alt=""> </div>-->
-
                 <div class="too xs-padding">
                     <div class="honey-about-info also">
                         <h2>About Us</h2>
@@ -147,9 +141,6 @@
     <div class="subscribe" id="subscribe-result"></div>  
     <!-- Footer -->
     <div include-html="footer.html"></div> 
-    <!-- Loader -->
-    <!--<div id="ftco-loader" class="show fullscreen"><img src="img/gifgit.gif" class="circular"/></div>-->
-
     <!-- JS -->
     <script src="js/vendor/jquery-1.12.4.min.js"></script>
     <script src="js/vendor/bootstrap.min.js"></script>
