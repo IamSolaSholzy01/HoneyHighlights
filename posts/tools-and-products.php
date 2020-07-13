@@ -12,6 +12,7 @@
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/style.css" rel="stylesheet">
     <link href="css/blog-styles.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap" rel="stylesheet">
 
     <!--Modal-->
     <link href="../assets/css/bootstrap.css" rel="stylesheet" />
@@ -36,7 +37,6 @@
                             <ul class="list-unstyled honey-menu-container">
                                 <li><a href="../index.html">Home</a></li>
                                 <li><a href="../about.php">About Us</a></li>
-                                <!--<li><a href="services.html">Services</a></li>-->
                                 <li><a href="../catalogue.html">Catalogue</a></li>
                                 <li><a href="../blog.php">Blog</a></li>
                                 <li><a href="../contact.php">Contact</a></li>
@@ -57,7 +57,7 @@
     <input type="hidden" id="google" name="google" value="../php/google.php">
     <section class="honey-page-section">
         <div class="container">
-            <p class="blog-title">5 TOOLS AND 5 PRODUCTS YOU SHOULD HAVE AS A MAKEUP BEGINNER</p>
+            <p class="blog-title" style="font-family: Amiri, serif; font-weight: 700">5 TOOLS AND 5 PRODUCTS YOU SHOULD HAVE AS A MAKEUP BEGINNER</p>
             <div class="col-md-8 offset-md-2">
                 <div class="honey-page-content text-center">
                     <div class="honey-meta-info"> <i class="fa fa-users"></i><span id="post_author"></span> <i class="fa fa-clock-o"></i><span id="post_date"></span> </div>

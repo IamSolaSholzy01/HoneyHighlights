@@ -63,3 +63,5 @@ ALTER TABLE `token_table`
   ALTER TABLE `token_table`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 COMMIT;
+
+INSERT INTO `posts_table` (`post_id`, `post_title`, `created_at`, `author`) VALUES ('2', 'REASONS MAKEUP PRODUCTS DON\'T BLEND', current_timestamp(), 'Oyindamola Ogundeji');

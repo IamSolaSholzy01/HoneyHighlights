@@ -78,11 +78,12 @@
     <div class="honey-col l8 s12">
     <!-- Blog entry -->
     <div class="honey-card-4 honey-margin bg-white">
-        <img src="img\blog\blog-01.jpg" alt="Nature" style="width:100%">
+        <img src="img\blog\blog-01.jpg" alt="Tools" style="width:100%">
         <div class="honey-container">
         <h3><b>TOOLS and PRODUCTS for MAKEUP</b></h3>
         <h5><span style="padding-right: 15px;" class="user"><i class="fa fa-users honey-opacity"></i> O. Ogundeji</span><span class="honey-opacity"><span class="date honey-opacity"><i class="fa fa-clock-o"></i> 04.06.2020</span></span></h5>
         </div>
+        <input type="hidden" value="1" class="hidden-input" id="1">
 
         <div class="honey-container">
         <p>As an individual interested in makeup application, it can be challenging when considering the wide range of tools 
@@ -92,7 +93,7 @@
             <button onclick="window.location.href='posts/tools-and-products.php';" class="honey-button honey-padding-large bg-white honey-border"><b>READ MORE »</b></button>
             </div>
             <div class="honey-col m4 honey-hide-small">
-            <p><span class="honey-padding-large honey-right"><b>Comments  </b> <span class="honey-badge"><span class="commentnum1"></span></span></span></p>
+            <p><span class="honey-padding-large honey-right"><b>Comments  </b> <span class="honey-badge"><span id="commentnum1"></span></span></span></p>
             </div>
         </div>
         </div>
@@ -101,21 +102,23 @@
 
     <!-- Blog entry -->
     <div class="honey-card-4 honey-margin bg-white">
-    <img src="#" alt="Norway" style="width:100%">
+    <img src="#" alt="" style="width:100%">
         <div class="honey-container">
-        <h3><b>BLOG ENTRY</b></h3>
-        <h5>Title description, <span class="honey-opacity">April 2, 2014</span></h5>
+        <h3><b>Reasons Makeup Products Don't Blend</b></h3>
+        <h5><span style="padding-right: 15px;" class="user"><i class="fa fa-users honey-opacity"></i> O. Ogundeji</span><span class="honey-opacity"><span class="date honey-opacity"><i class="fa fa-clock-o"></i> 13.07.2020</span></span></h5>
         </div>
+        <input type="hidden" value="2" class="hidden-input" id="2">
 
         <div class="honey-container">
-        <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed
-            tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        <p>Blending is likely always on your mind when you apply products to your face. However, has it happened that 
+            no matter how hard you try, your products do not seem to blend? What could be the reason?
+        </p>
         <div class="honey-row">
             <div class="honey-col m8 s12">
-            <button class="honey-button honey-padding-large bg-white honey-border"  onclick="window.location.href='#';"><b>READ MORE »</b></button>
+            <button onclick="window.location.href='posts/makeup-not-blend.php';" class="honey-button honey-padding-large bg-white honey-border"><b>READ MORE »</b></button>
             </div>
-            <div class="honey-col m4 honey-hide-small honey-right">
-            <p><span class="honey-padding-large honey-right"><b>Comments  </b> <span class="honey-badge">0</span></span></p>
+            <div class="honey-col m4 honey-hide-small">
+            <p><span class="honey-padding-large honey-right"><b>Comments  </b> <span class="honey-badge"><span id="commentnum2"></span></span></span></p>
             </div>
         </div>
         </div>
@@ -226,42 +229,43 @@
             //Comment form 
             url = 'php/load-comments.php';
             type = 'POST';
-            var value = $('#post_id').val();
-            //console.log("im in again");
-            // Call ajax for pass data to other place
-            $.ajax({
-                type: type,
-                url: url,
-                dataType: 'JSON',
-                data: {post_id: '1'},
-                success: function(response){
-                    if(response.id=="error"){
-                        $('.commentnum1').html("0");
-                        $("#empty").html(response.content);
-                    }else{
-                        //console.log(response);
-                        $("#empty").html("");
-                        var num = 0;
-                        $.each(response, function () {
-                            num++;
-                            var newComment = $("body").find("#honey-comments > li").clone();
-                            newComment.find(".honey-comment-name").append(this.name);
-                            newComment.find(".honey-comment-body").append(this.body);
-                            newComment.find(".honey-reply-icon").addClass(this.comment_id);
-                            newComment.find(".honey-reply-icon").attr('id', this.comment_id);
-                            $(newComment).appendTo("#honey-comments-list");
-                        });
-                        $('.commentnum1').html(num);
-                        $("input:submit").removeAttr("disabled");
+            var array = document.getElementsByClassName('hidden-input');
+            var number = 0;
+            for (const element of array) {
+                number++;
+                var comments;
+                var id = element.id;
+                var type = 'POST';
+                var url = './php/load-comments.php';
+                console.log(id);
+                $.ajax({
+                    type: type,
+                    url: url,
+                    async: false,
+                    dataType: 'JSON',
+                    data: {post_id: id},
+                    success: function(response){
+                        console.log(response.length);
+                        console.log('success');
+                        if(response.id == 'error'){
+                            comments = 0;
+                            console.log(comments);
+                            $('#commentnum'+id).html(comments);
+                        }
+                        else{
+                            console.log(response);
+                            comment = response.length;
+                            comments = comment.toString();
+                            console.log(comments);
+                            $('#commentnum'+id).html(comments);
+                        }
+                    },
+                    error: function(response){
+                        console.log('error');
                     }
-                },
-                error: function(response){
-                    $('.response').text("Big error");// show the response
-                    $('.response').addClass('alert alert-danger');
-                    $("input:submit").removeAttr("disabled");
-                }
-            }); 
-        return false;  
+                });
+            }
+            return false;  
         });
     </script>
 </body>
