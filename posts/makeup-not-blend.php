@@ -122,8 +122,8 @@
                         <div class="honey-share-wrap">
                         <h3>What do you think about this post?</h3>
                             <ul class="honey-reaction-icon">
-                            <i onclick="reaction(this)" class="fa fa-thumbs-o-up"></i><span id="like"></span>
-                            <i onclick="reaction(this)" class="fa fa-thumbs-o-down"></i><span  id="dislike"></span>
+                            <i id="like" onclick="reaction(this)" style="cursor: pointer;" class="fa fa-thumbs-o-up"></i><span id="thumbup"></span>
+                            <i id="dislike" onclick="reaction(this)" style="cursor: pointer;" class="fa fa-thumbs-o-down"></i><span  id="thumbdown"></span>
                             </ul>
                         </div>
                         <!-- Share Wrap -->
@@ -157,7 +157,7 @@
                                     <div class="honey-comment-head" onclick="showreply(this)">
                                         <h6 class="honey-comment-name by-author"><a href="#"></a></h6><i class="fa fa-reply honey-reply-icon" onclick="replyclicked(this.id)"></i></div>
                                     <div class="honey-comment-content">
-                                        <p class="honey-comment-body"></p>
+                                    <p></span><span class="honey-comment-body"></span><span class="honey-comment-time"></p>
                                     </div>
                                     <div id="reply-div">
                                     </div> 
@@ -240,7 +240,7 @@
     <script>$(function(){event.preventDefault();register();});</script>
     <script>$(function(){event.preventDefault();login();});</script>
     <script>$(function(){event.preventDefault();logout();});</script>
-    <script>$(function(){loadData(); });</script>
+    <script>$(function(){loadData(); loadreaction(); });</script>
     <script>$(function(){runn();runner();});</script>
     <script>$(function(){event.preventDefault();postComment();});</script>
 </body>
