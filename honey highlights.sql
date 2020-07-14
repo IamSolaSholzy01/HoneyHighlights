@@ -63,13 +63,3 @@ ALTER TABLE `token_table`
   ALTER TABLE `token_table`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 COMMIT;
-
-INSERT INTO `posts_table` (`post_id`, `post_title`, `created_at`, `author`) VALUES ('1', '5 TOOLS AND 5 PRODUCTS YOU SHOULD HAVE AS A MAKEUP BEGINNER', current_timestamp(), 'Oyindamola Ogundeji');
-
-INSERT INTO `posts_table` (`post_id`, `post_title`, `created_at`, `author`) VALUES ('2', 'REASONS MAKEUP PRODUCTS DON''T BLEND', current_timestamp(), 'Oyindamola Ogundeji');
-
-INSERT INTO `posts_table` (`post_id`, `post_title`, `created_at`, `author`) VALUES ('3', 'IMPORTANCE OF SKIN CARE', current_timestamp(), 'Oyindamola Ogundeji');
-
-INSERT INTO `posts_table` (`post_id`, `post_title`, `created_at`, `author`) VALUES ('4', 'MY EVERYDAY MAKEUP ROUTINE', current_timestamp(), 'Oyindamola Ogundeji');
-
-INSERT INTO `posts_table` (`post_id`, `post_title`, `created_at`, `author`) VALUES ('5', 'STEPPING UP YOUR BROW GAME', current_timestamp(), 'Oyindamola Ogundeji');
