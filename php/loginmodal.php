@@ -9,7 +9,7 @@
                        <h4 class="modal-title">Login with</h4>
                    </div>
                    <div class="modal-body">
-                       <div class="box">
+                       <div class="box"> 
                             <div class="content">
                                 <div class="form loginBox">
                                     <div class="error" id="reply"></div>
