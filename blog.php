@@ -134,7 +134,7 @@
         </div>
         <input type="hidden" value="3" class="hidden-input" id="3">
 
-        <div class="honey-container">
+        <div class="honey-container" style="width: 100%;">
         <p>The power of makeup is undeniable, truly. Yet, proper skin care is also essential for everyone. How can we do this correctly?</p>
         <div class="honey-row">
             <div class="honey-col m8 s12">
@@ -190,7 +190,7 @@
                 <span>O. Ogundeji</span>
             </li>  
             <li class="honey-padding-16" style="cursor:pointer" onclick="window.location.href='posts/skin-care.php';" >
-                <img src="img\blog\blog-01.jpg" alt="Image" class="honey-left honey-margin-right" style="width:50px">
+                <img src="posts\skin_care_files\skin-care.jpg" alt="Image" class="honey-left honey-margin-right" style="width:50px">
                 <span class="honey-large">Importance of Skin Care</span><br>
                 <span>O. Ogundeji</span>
             </li>
