@@ -65,3 +65,4 @@ ALTER TABLE `token_table`
 COMMIT;
 
 INSERT INTO `posts_table` (`post_id`, `post_title`, `created_at`, `author`) VALUES ('2', 'REASONS MAKEUP PRODUCTS DON''T BLEND', current_timestamp(), 'Oyindamola Ogundeji');
+INSERT INTO `reactions_table` (`post_id`, `likes`, `dislikes`) VALUES ('1', '0', '0'), ('2', '0', '0'), ('3', '0', '0'), ('4', '0', '0'), ('5', '0', '0');
