@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="height=device-height, initial-scale=1.0">
     <meta name="google-signin-client_id" content="985530739515-m4s7l3v4k5r7fu8vbfkm6p56ir1pb88d.apps.googleusercontent.com">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Honey Highlights - Blog</title>
@@ -57,7 +56,7 @@
     <input type="hidden" id="google" name="google" value="../php/google.php">
     <section class="honey-page-section">
         <div class="container">
-            <p class="blog-title">MY EVERYDAY MAKEUP ROUTINE</p>
+            <p class="blog-title">STEPPING UP YOUR BROW GAME</p>
             <div class="col-md-8 offset-md-2">
                 <div class="honey-page-content text-center">
                     <div class="honey-meta-info"> <i class="fa fa-users"></i><span id="post_author"></span> <i class="fa fa-clock-o"></i><span id="post_date"></span> </div>
@@ -73,72 +72,21 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="honey-blog-items honey-single-post">
-                        <div class="padder-blog"> <!--<img src="img/blog/post.jpg" alt="Post">--> </div>
-                        <p>Hey there, gorgeous. Glad you could find your way here. The truth is that every day, we seek to appear beautiful 
-                            and elegant. But we are all busy people. Women are also students, bankers, teachers, office workers, managers, 
-                            and anything you can think of, we simply do not have the time for a professional makeup done each day, or even 
-                            the resources. And, it really isn’t necessary to. Instead, we need a simple routine that still achieves the set 
-                            goal for our appearance. However, it can prove to be challenging to establish a fixed makeup routine as our 
-                            circumstances differ each day. Yet, I have found a technique that has been working really well for me. It is 
-                            simple, short and easy to learn and execute. As such, I’ll be sharing my everyday makeup routine with you.
-                        </p>
+                        <div class="entry-thumb"> <img src="brow_game_files/brow-sample.jpg" alt="Post"> </div>
+                        <p>We’ve all had that bad brow day. Was yours in secondary school, when you decided to shave your brows with that small handheld mirror? Or, was it that day at the salon when your stylist shaped them unevenly, and it came off looking weird? Eyebrows are a small part of the face, and yet, they’re very important. You can probably recall that person with bad eyebrows, and it’s like those are the only things you can see on her face. They’re that small part of the face makeup that could make or mar an otherwise wonderful makeup job.</p>
+                        <p>When you check outstanding professional makeup jobs, those ones with seemingly perfect eyebrows, it could gets a little daunting when you try to imagine replicating it yourself. And I’ve got to be honest, it takes precision to accomplish. Yet, it’s not impossible for you. You can do it. You can achieve those great eyebrows we see on TV and Instagram. And it’s not even that hard.</p>
+                        <p>The first thing you need is proper grooming. Just as you must groom your hair properly for it to look good, your eyebrows need to be well groomed. I know there are so many YouTube videos on shaping eyebrows, and I know that doesn’t necessarily make it easier to shape them. In fact, I’d recommend that you find a good makeup artist around you to help you trim them. It’s very affordable, and is safer (you don’t want to hurt yourself mistakenly), and it will save you a lot of stress.</p>
+                        <p>Once they’re nicely shaped, you need to get a brow pencil or brow gel. What’s the difference? You’d use a brow pencil with full brow hairs, as you would only need to lightly fill for more prominence. However, you’d use the brow gel with sparse brow hairs as they work best and can help accentuate the brows natural shape. </p>
+                        <p>What would brows be without highlighting? Once you’re done filling your brows, use a concealer to highlight your brow bone area. This gives your brows more definition. It’s true that some find this process somewhat tedious, but I assure you, that you just need to follow your brow outline. That makes it easier for you to trace out.</p>
+                        <p>After highlighting, you’ll find that it’s not quite there. At this point, you just need to use a blending brush to blend the concealer to your eye area and set it with either a setting powder or a face powder.  </p>>
+                        <p>So that’s it guys. Like I said earlier, once you have them shaped, it’s really easy and you don’t need a bunch of products or tools in order to get good, polished looking brows. And if you want to see a full brow tutorial, watch one here on my YouTube channel below. It’s really helpful and easy to learn.</p>
+                        <p>Link: <a> https://youtu.be/wX5TtjoNBvs</a></p>
+                        <div style="overflow:hidden;position: relative;"><iframe allowfullscreen frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="100%" height="443px" type="text/html" src="https://www.youtube.com/embed/wX5TtjoNBvs?autoplay=0&fs=1&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=3&start=0&end=0"></iframe><div style="position: absolute;bottom: 10px;left: 0;right: 0;margin-left: auto;margin-right: auto;color: #000;text-align: center;"><small style="line-height: 1.8;font-size: 0px;background: #fff;"></small></div><style>.newst{position:relative;text-align:right;height:420px;width:520px;} @media all and (max-width:768px) {iframe {height: 240px;}} #gmap_canvas img{max-width:none!important;background:none!important}</style></div><br />
                         <hr />
-                        <p><img src="daily_makeup_files/moisturizer.jpg" alt=""/> So, the first step I take (after the usual in the morning, 
-                            of course), is <b>moisturizer application</b>. This is important to protect my skin. I move a lot during the 
-                            day, and I’m frequently in the sun. If I didn’t use moisturizer, my skin would become too dry, and from there, 
-                            breakouts, such as acne, could form. Thus, I apply my moisturizer on my face before any other makeup product.
-                        </p>
-                        <hr />
-                        <p><img src="daily_makeup_files/primer.jpg" style="transform: rotate(90deg);" alt=""/>After using the moisturizer, the next thing I do, is to use a 
-                            <b>primer</b> on my face. It’s important that I use a primer because it allows the makeup to sit smoothly on my face, as 
-                            well as to last longer. 
-                        </p>
-                        <hr />
-                        <p><img src="daily_makeup_files/foundations.jpg" alt=""/>At this stage, it is time to use <b>foundation</b>. I apply a very 
-                            thin and even layer of foundation all over my face using either a foundation brush or a beauty sponge (whichever I 
-                            find first 😄).It is critical that I use a foundation that is the same colour with my skin tone.
-                        </p>
-                        <hr />
-                        <p><img src="daily_makeup_files/highlight.jpg" alt=""/>Sincerely I don’t <b>highlight</b> often, but I apply concealer to my 
-                            problem areas like under my eyes (it’s usually darker than the rest of my face) and areas on which I have dark spots due 
-                            to pimples. Unlike foundation, the concealer I use is one to two shades lighter than my skin tone and I use a beauty 
-                            sponge to apply this. Then I use a translucent powder to set my highlighted area using a beauty blender. I normally apply 
-                            this on my T-zone.
-                        </p>
-                        <hr />
-                        <p><img src="daily_makeup_files/brow-define.jpg" alt=""/>For <b>brow definition</b> I go ahead and fill my brows with either a 
-                            brow pencil and highlight them with a concealer using a very precise angled brush, this gives definition to my brows.
-                        </p>
-                        <p>Want a detailed brow tutorial? Check it out below: https://youtu.be/wX5TtjoNBvss</p>
-                        <div style="overflow:hidden;position: relative;">
-                            <iframe allowfullscreen frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="100%" height="443px" type="text/html" src="https://www.youtube.com/embed/wX5TtjoNBvs?autoplay=0&fs=1&iv_load_policy=3&showinfo=1&rel=0&cc_load_policy=3&start=0&end=0"></iframe>
-                            <div style="position: absolute;bottom: 10px;left: 0;right: 0;margin-left: auto;margin-right: auto;color: #000;text-align: center;"><small style="line-height: 1.8;font-size: 0px;background: #fff;"></small></div>
-                            <style>.newst{position:relative;text-align:right;height:420px;width:520px;} @media all and (max-width:768px) {iframe {height: 240px;}} #gmap_canvas img{max-width:none!important;background:none!important}</style>
-                        </div><br />
-                        <hr />
-                        <p><img src="daily_makeup_files/eye-shadow.jpg" alt="">When it comes to <b>eye shadow</b>, I really do not like adding color to my eyes. Particularly 
-                            when there’s no occasion, and even if I wanted to, there really isn’t time. So here is a little trick I use all the time, that works 
-                            wonders! I use my setting powder and apply it to my eye creasethen I use a dark face powder to contour my eyelid.That gives it a little depth. 
-                            Then, to make my eyes pop a little, I use a gel eye liner to line my top lid and also apply some mascara to my lashes.
-                        </p>
-                        <hr />
-                        <p><img src="daily_makeup_files/powder.jpg" style="transform: rotate(90deg);" alt="">Then I finish off the rest of my face with a pressed <b>powder</b> using my powder brush.</p>
-                        <hr />
-                        <p><img src="daily_makeup_files/lip-gloss.jpg" alt="">I use <b>lip gloss</b> because I don’t really like adding colors to my lips as it tends to attract 
-                            too much attention for me.But if you do, please by all means, go ahead. I like to go with gloss, they are life savers. So, the first thing I do is to 
-                            draw my lip outline using a brow pencil.Sometimes, I use the same one that I used to fill my brows, this gives my lips definition and prevents sloppy 
-                            application.Then I use my lip gloss and gently rub my lips together.
-                        </p>
-                        <hr />
-                        <p>And that is it. Finally made it to the end! Once my lips are all done, I set my face with a makeup setting spray and call it a day! Whew! Reading all 
-                            these again made me feel like it takes an hour each morning, but it actually takes little or no time at all. If I have less time in the morning (we 
-                            all wake late sometimes), I adjust my routine by skipping steps 3 and 4. It still looks simple, polished and most importantly beautiful, trust me. 
-                            I really enjoyed sharing my daily routine with you ‘m excited to hear your experiences trying these out and establishing your own routine.
-                        </p>
                         <div class="added-comments">
-                            <p>I did not write this article for the sake of promoting any makeup brand. That is why I did not include any brand name in the products I listed above. 
-                                If you want me to recommend brand products for you, however, or you want to know the ones I personally use let me know in the comment section and I 
-                                would reply as soon as I can. Much love to you guys.
+                            <p>I hope you enjoyed the article? If you have any question or you need further advice on products, feel
+                                free to drop a comment below, or <a href="../contact.php">contact me</a>. Feel free to check out other articles
+                                too.
                             </p>
                         </div>
                         <hr />
@@ -212,7 +160,7 @@
                     <div class="honey-comment-form">
                         <h4>Leave a comment</h4>
                         <form action="../php/comment.php" method="post" id="ajax-form" class="form-horizontal row">
-                          <input type="hidden" id="post_id" name="post_id" value="4">
+                          <input type="hidden" id="post_id" name="post_id" value="5">
                             <div class="col-sm-6">
                                 <div class="form-group">
                                     <input type="text" id="name" name="name" class="form-control" placeholder="Name" required> </div>
