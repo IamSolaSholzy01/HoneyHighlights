@@ -193,6 +193,11 @@
                 <img src="img\blog\blog-01.jpg" alt="Image" class="honey-left honey-margin-right" style="width:50px">
                 <span class="honey-large">Importance of Skin Care</span><br>
                 <span>O. Ogundeji</span>
+            </li>
+            <li class="honey-padding-16" style="cursor:pointer" onclick="window.location.href='posts/brow-game.php';" >
+                <img src="img\blog\blog-01.jpg" alt="Image" class="honey-left honey-margin-right" style="width:50px">
+                <span class="honey-large">Improve Your Brow Game</span><br>
+                <span>O. Ogundeji</span>
             </li>  
         </ul>
     </div>
