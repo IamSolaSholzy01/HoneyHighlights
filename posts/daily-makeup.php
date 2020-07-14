@@ -12,6 +12,7 @@
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/style.min.css" rel="stylesheet">
     <link href="css/blog-styles.min.css" rel="stylesheet">
+
     <!--Modal-->
     <link href="../assets/css/bootstrap.css" rel="stylesheet" />
     <link href="../assets/css/login-register.css" rel="stylesheet" />
@@ -55,7 +56,7 @@
     <input type="hidden" id="google" name="google" value="../php/google.php">
     <section class="honey-page-section">
         <div class="container">
-            <p class="blog-title">REASONS MAKEUP PRODUCTS DON'T BLEND</p>
+            <p class="blog-title">MY EVERYDAY MAKEUP ROUTINE</p>
             <div class="col-md-8 offset-md-2">
                 <div class="honey-page-content text-center">
                     <div class="honey-meta-info"> <i class="fa fa-users"></i><span id="post_author"></span> <i class="fa fa-clock-o"></i><span id="post_date"></span> </div>
@@ -72,51 +73,71 @@
                 <div class="col-md-12">
                     <div class="honey-blog-items honey-single-post">
                         <div class="padder-blog"> <!--<img src="img/blog/post.jpg" alt="Post">--> </div>
-                        <p>Have you heard about blending in makeup? You’ve very likely heard a makeup artist say 
-                            'ensure you blend this or that area properly'. Well, when applying products on your face, 
-                            you want a seamless application. You want an effect that when someone looks at your face, 
-                            they’ll be unable to tell on which area you used a contour or on which area you used a concealer.  
-                            Similarly, when mixing colours on your eye lids or your lips, you need to blend the colours together. 
-                            A failure to blend products well results in a sloppy, unprofessional finish, which is always 
-                            contrary to the look you desire.
-                        </p>
-                        <p>Blending should be, and likely is, the first thing on your mind when you apply products to your 
-                            face. However, has it happened that no matter how hard you try your products do not seem to blend 
-                            to your skin? Depending on your situation, there are three possible reasons for this and these 
-                            reasons are discussed below.
+                        <p>Hey there, gorgeous. Glad you could find your way here. The truth is that every day, we seek to appear beautiful 
+                            and elegant. But we are all busy people. Women are also students, bankers, teachers, office workers, managers, 
+                            and anything you can think of, we simply do not have the time for a professional makeup done each day, or even 
+                            the resources. And, it really isn’t necessary to. Instead, we need a simple routine that still achieves the set 
+                            goal for our appearance. However, it can prove to be challenging to establish a fixed makeup routine as our 
+                            circumstances differ each day. Yet, I have found a technique that has been working really well for me. It is 
+                            simple, short and easy to learn and execute. As such, I’ll be sharing my everyday makeup routine with you.
                         </p>
                         <hr />
-                        <p class="heading-one" style="color: #c56765;">Fake Products</p>
-                        <p>It is possible that you are using fake products, and let me just say that, my dear ladies, it is nearly 
-                            impossible to blend fake products. Why? Well, because they are fake. Fake products will never give you the 
-                            quality and finish that you could get from using the proper products. How then, can you identify and avoid 
-                            fake products? For one, they’re usually ridiculously cheap. Also, especially when considering fake foundations 
-                            and concealers, the first thing to pour out of them is usually water. So, before you purchase a makeup product, 
-                            or choose a makeup brand, do research. Check reviews of users online. Or, you could even ask your makeup artist 
-                            to acquire them for you, as your makeup artist is likely very experienced with these products, and has an eye 
-                            for quality that comes from repeated usage.
+                        <p><img src="daily_makeup_files/moisturizer.jpg" alt=""/> So, the first step I take (after the usual in the morning, 
+                            of course), is <b>moisturizer application</b>. This is important to protect my skin. I move a lot during the 
+                            day, and I’m frequently in the sun. If I didn’t use moisturizer, my skin would become too dry, and from there, 
+                            breakouts, such as acne, could form. Thus, I apply my moisturizer on my face before any other makeup product.
                         </p>
-                        <p class="heading-one" style="color: #c56765;">Wrong Tools</p>
-                        <p>If you’re using the wrong tool for a product, girl, you’re in for a lot of stress. For example, imagine using a 
-                            contour brush to apply concealer. No, no, no, it won’t work! It’s too big for your highlight area, and it will 
-                            not blend. You need to learn how to use your brushes, what technique works best for you. You could even label 
-                            them if you can’t easily tell them apart. Just make sure that you use the right brush. For more information, 
-                            check out this article on <a href="tools-and-products.php">using the right tools and products</a>.</p>
-                        <p class="heading-one" style="color: #c56765;">Different Shades</p>
-                        <p>Foundation, concealers and contour come in different shades, because we all have differing skin colours. If you 
-                            use the wrong shades of products for your skin, no matter how you try, even if you use original products and the 
-                            right tools, they will not blend. That is just the honest truth!To solve this, test your products! before you 
-                            buy them.Most beauty stores provide this opportunity, and if you still find that difficult, ask your makeup artist 
-                            to get it for you; or ask her to tell you your skin shade so you can get them yourself.
+                        <hr />
+                        <p><img src="daily_makeup_files/primer.jpg" style="transform: rotate(90deg);" alt=""/>After using the moisturizer, the next thing I do, is to use a 
+                            <b>primer</b> on my face. It’s important that I use a primer because it allows the makeup to sit smoothly on my face, as 
+                            well as to last longer. 
                         </p>
-                        <p>When it comes to makeup, the importance of blending cannot be overemphasized. I, personally, have multiple blending 
-                            brushes, and its important that you have these tools to help you achieve the blend you’re looking for. It is vital.
+                        <hr />
+                        <p><img src="daily_makeup_files/foundations.jpg" alt=""/>At this stage, it is time to use <b>foundation</b>. I apply a very 
+                            thin and even layer of foundation all over my face using either a foundation brush or a beauty sponge (whichever I 
+                            find first 😄).It is critical that I use a foundation that is the same colour with my skin tone.
+                        </p>
+                        <hr />
+                        <p><img src="daily_makeup_files/highlight.jpg" alt=""/>Sincerely I don’t <b>highlight</b> often, but I apply concealer to my 
+                            problem areas like under my eyes (it’s usually darker than the rest of my face) and areas on which I have dark spots due 
+                            to pimples. Unlike foundation, the concealer I use is one to two shades lighter than my skin tone and I use a beauty 
+                            sponge to apply this. Then I use a translucent powder to set my highlighted area using a beauty blender. I normally apply 
+                            this on my T-zone.
+                        </p>
+                        <hr />
+                        <p><img src="daily_makeup_files/brow-define.jpg" alt=""/>For <b>brow definition</b> I go ahead and fill my brows with either a 
+                            brow pencil and highlight them with a concealer using a very precise angled brush, this gives definition to my brows.
+                        </p>
+                        <p>Want a detailed brow tutorial? Check it out below: https://youtu.be/wX5TtjoNBvss</p>
+                        <div style="overflow:hidden;position: relative;">
+                            <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"width="800" height="443" type="text/html" src="https://www.youtube.com/embed/wX5TtjoNBvs?autoplay=0&fs=1&iv_load_policy=3&showinfo=1&rel=1&cc_load_policy=0&start=0&end=0"></iframe>
+                            <div style="position: absolute;bottom: 10px;left: 0;right: 0;margin-left: auto;margin-right: auto;color: #000;text-align: center;"><small style="line-height: 1.8;font-size: 0px;background: #fff;"> <a href="https://brlogen.com/">brlogen</a> </small></div>
+                            <style>.newst{position:relative;text-align:right;height:420px;width:520px;} #gmap_canvas img{max-width:none!important;background:none!important}</style>
+                        </div><br />
+                        <hr />
+                        <p><img src="daily_makeup_files/eye-shadow.jpg" alt="">When it comes to <b>eye shadow</b>, I really do not like adding color to my eyes. Particularly 
+                            when there’s no occasion, and even if I wanted to, there really isn’t time. So here is a little trick I use all the time, that works 
+                            wonders! I use my setting powder and apply it to my eye creasethen I use a dark face powder to contour my eyelid.That gives it a little depth. 
+                            Then, to make my eyes pop a little, I use a gel eye liner to line my top lid and also apply some mascara to my lashes.
+                        </p>
+                        <hr />
+                        <p><img src="daily_makeup_files/powder.jpg" style="transform: rotate(90deg);" alt="">Then I finish off the rest of my face with a pressed <b>powder</b> using my powder brush.</p>
+                        <hr />
+                        <p><img src="daily_makeup_files/lip-gloss.jpg" alt="">I use <b>lip gloss</b> because I don’t really like adding colors to my lips as it tends to attract 
+                            too much attention for me.But if you do, please by all means, go ahead. I like to go with gloss, they are life savers. So, the first thing I do is to 
+                            draw my lip outline using a brow pencil.Sometimes, I use the same one that I used to fill my brows, this gives my lips definition and prevents sloppy 
+                            application.Then I use my lip gloss and gently rub my lips together.
+                        </p>
+                        <hr />
+                        <p>And that is it. Finally made it to the end! Once my lips are all done, I set my face with a makeup setting spray and call it a day! Whew! Reading all 
+                            these again made me feel like it takes an hour each morning, but it actually takes little or no time at all. If I have less time in the morning (we 
+                            all wake late sometimes), I adjust my routine by skipping steps 3 and 4. It still looks simple, polished and most importantly beautiful, trust me. 
+                            I really enjoyed sharing my daily routine with you ‘m excited to hear your experiences trying these out and establishing your own routine.
                         </p>
                         <div class="added-comments">
-                            <p>I hope you enjoyed the article? If you have any question or you need me to recommend brands for your makeup 
-                                products, please let me know in the comment section below and I will reply as soon as I see your message, or
-                                <a href="../contact.php">contact me</a>. You could also read my other article to get insights on 
-                                <a href="tools-and-products.php">makeup tools and how to use them</a>.
+                            <p>I did not write this article for the sake of promoting any makeup brand. That is why I did not include any brand name in the products I listed above. 
+                                If you want me to recommend brand products for you, however, or you want to know the ones I personally use let me know in the comment section and I 
+                                would reply as soon as I can. Much love to you guys.
                             </p>
                         </div>
                         <hr />
@@ -190,7 +211,7 @@
                     <div class="honey-comment-form">
                         <h4>Leave a comment</h4>
                         <form action="../php/comment.php" method="post" id="ajax-form" class="form-horizontal row">
-                          <input type="hidden" id="post_id" name="post_id" value="2">
+                          <input type="hidden" id="post_id" name="post_id" value="4">
                             <div class="col-sm-6">
                                 <div class="form-group">
                                     <input type="text" id="name" name="name" class="form-control" placeholder="Name" required> </div>

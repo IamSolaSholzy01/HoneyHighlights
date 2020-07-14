@@ -11,6 +11,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/style.min.css" rel="stylesheet">
+    <link href="css/blog-styles.min.css" rel="stylesheet">
 
     <!--Modal-->
     <link href="../assets/css/bootstrap.css" rel="stylesheet" />
@@ -35,7 +36,6 @@
                             <ul class="list-unstyled honey-menu-container">
                                 <li><a href="../index.html">Home</a></li>
                                 <li><a href="../about.php">About Us</a></li>
-                                <!--<li><a href="services.html">Services</a></li>-->
                                 <li><a href="../catalogue.html">Catalogue</a></li>
                                 <li><a href="../blog.php">Blog</a></li>
                                 <li><a href="../contact.php">Contact</a></li>
@@ -56,11 +56,14 @@
     <input type="hidden" id="google" name="google" value="../php/google.php">
     <section class="honey-page-section">
         <div class="container">
+            <p class="blog-title">POST TITLE</p>
             <div class="col-md-8 offset-md-2">
                 <div class="honey-page-content text-center">
-                    <h2>POST TITLE</h2>
                     <div class="honey-meta-info"> <i class="fa fa-users"></i><span id="post_author"></span> <i class="fa fa-clock-o"></i><span id="post_date"></span> </div>
                 </div>
+            </div>
+            <div>
+                <hr/>
             </div>
         </div>
     </section>
@@ -70,6 +73,7 @@
                 <div class="col-md-12">
                     <div class="honey-blog-items honey-single-post">
                         <div class="entry-thumb"> <img src="img/blog/post.jpg" alt="Post"> </div>
+                        <p class="heading-one" style="color: #c56765;">Section Title</p>
                         <p>Fusce non ornare quam. Morbi imperdiet mauris eu nunc feugiat, sed accumsan ex tristique. Praesent tincidunt, purus quis vulputate aliquet, tellus massa viverra nisl, in tempus ipsum libero et nunc. Maecenas nulla velit, vehicula eu arcu et, ultrices dapibus lectus. Maecenas gravida efficitur nunc, faucibus facilisis quam tempus in. Integer rutrum lectus vel nisl laoreet viverra.</p>
                         <p>Pellentesque id lobortis elit, nec venenatis eros. Suspendisse aliquam porttitor libero non molestie. Duis ligula enim, interdum et dui eget, pretium venenatis lectus. Donec posuere iaculis libero vel ultricies. Donec massa arcu, euismod ut justo id, rutrum mattis eros. Morbi at porta lacus, vel sagittis lacus. Proin at lectus imperdiet, interdum neque a, ullamcorper sapien.</p>
                         <p>Sed cursus sem ac augue faucibus bibendum. Nulla eget consequat mi. Maecenas dignissim, erat at mattis bibendum, elit mi mollis nisi, et sagittis dolor eros eget diam. Pellentesque id ipsum a ex porttitor interdum. In at nibh egestas, porttitor quam sed, placerat risus. Pellentesque sollicitudin finibus enim, vel convallis massa porta nec. Proin at risus eget mi imperdiet gravida. Maecenas eget iaculis justo. Aliquam turpis ipsum, finibus varius egestas eget, tempus ac velit. Sed non magna pretium, venenatis nisl quis, vulputate nibh.</p>
@@ -144,7 +148,7 @@
                     <div class="honey-comment-form">
                         <h4>Leave a comment</h4>
                         <form action="../php/comment.php" method="post" id="ajax-form" class="form-horizontal row">
-                          <input type="hidden" id="post_id" name="post_id" value="1">
+                          <input type="hidden" id="post_id" name="post_id" value="post_id">
                             <div class="col-sm-6">
                                 <div class="form-group">
                                     <input type="text" id="name" name="name" class="form-control" placeholder="Name" required> </div>

@@ -12,6 +12,7 @@
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/style.min.css" rel="stylesheet">
     <link href="css/blog-styles.min.css" rel="stylesheet">
+
     <!--Modal-->
     <link href="../assets/css/bootstrap.css" rel="stylesheet" />
     <link href="../assets/css/login-register.css" rel="stylesheet" />
@@ -55,7 +56,7 @@
     <input type="hidden" id="google" name="google" value="../php/google.php">
     <section class="honey-page-section">
         <div class="container">
-            <p class="blog-title">REASONS MAKEUP PRODUCTS DON'T BLEND</p>
+            <p class="blog-title">IMPORTANCE OF SKIN CARE</p>
             <div class="col-md-8 offset-md-2">
                 <div class="honey-page-content text-center">
                     <div class="honey-meta-info"> <i class="fa fa-users"></i><span id="post_author"></span> <i class="fa fa-clock-o"></i><span id="post_date"></span> </div>
@@ -71,52 +72,44 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="honey-blog-items honey-single-post">
-                        <div class="padder-blog"> <!--<img src="img/blog/post.jpg" alt="Post">--> </div>
-                        <p>Have you heard about blending in makeup? You’ve very likely heard a makeup artist say 
-                            'ensure you blend this or that area properly'. Well, when applying products on your face, 
-                            you want a seamless application. You want an effect that when someone looks at your face, 
-                            they’ll be unable to tell on which area you used a contour or on which area you used a concealer.  
-                            Similarly, when mixing colours on your eye lids or your lips, you need to blend the colours together. 
-                            A failure to blend products well results in a sloppy, unprofessional finish, which is always 
-                            contrary to the look you desire.
+                        <div class="entry-thumb"><img src="skin_care_files/skin-care.jpg" alt="skin care"> </div>
+                        <p>The power of makeup is undeniable, and for now I don’t see it being replaced when it comes 
+                            to beauty enhancement. And yet, like an artist performs his art on a quality canvas for it 
+                            to be appreciated, you are also applying these products on a quality surface - <b>your skin</b>. And 
+                            this means, you must protect and take care of your skin, for your physical health, as well as 
+                            to achieve your targeted physical appearance. This means that your makeup up routine shouldn’t 
+                            be just a bath and lotion; your skincare must go beyond that. Even if you use the most expensive 
+                            products, you should establish a reasonable skincare routine, one you’ll use even before you 
+                            use your makeup.
                         </p>
-                        <p>Blending should be, and likely is, the first thing on your mind when you apply products to your 
-                            face. However, has it happened that no matter how hard you try your products do not seem to blend 
-                            to your skin? Depending on your situation, there are three possible reasons for this and these 
-                            reasons are discussed below.
+                        <p>Here are some skincare procedures you <b>must</b> follow before any makeup application.</p>
+                        <hr />
+                        <p class="heading-one" style="color: #c56765;">Cleanse</p>
+                        <p>This is the very first step. Cleansing helps to remove dirt and oil from the face and leaves your 
+                            skin feeling very fresh.Ever experienced that relief that comes from taking a clean bath? Well, your 
+                            skin experiences that each time you cleanse it. Cleansing techniques are also useful when you don’t 
+                            really have access to water, but you need to clean your face. Products like micellar water, or even 
+                            regular face wipes, can be used to achieve this cleansing effect. I recommend taking this step 
+                            <b>always</b> before your makeup, it is that important.
+                        </p>
+                        <p class="heading-one" style="color: #c56765;">Moisturise</p>
+                        <p>After cleansing your skin, moisturizer is the next thing you need to apply. This is a necessity as moisturizer 
+                            performs two important jobs. One, it smoothens your skin which paves way for better application of your 
+                            foundation and concealer. Secondly, it hydrates the skin under your makeup and makes it appear less dull. 
+                        </p>
+                        <p>It is also important to note that applying foundation on dry skin will make it look cakey. Hence, moisturizer 
+                            should be your best friend.
+                        </p>
+                        <p class="heading-one" style="color: #c56765;">Prime</p>
+                        <p>You may wonder - What exactly is a primer? A primer is a product that acts as a base for foundation and other makeup, 
+                            and helps whatever you apply after to go on smoother and stay longer. If you are going to wear your makeup for long 
+                            hours, a primer will help you achieve this, also by using a primer you can get away with less foundation.
                         </p>
                         <hr />
-                        <p class="heading-one" style="color: #c56765;">Fake Products</p>
-                        <p>It is possible that you are using fake products, and let me just say that, my dear ladies, it is nearly 
-                            impossible to blend fake products. Why? Well, because they are fake. Fake products will never give you the 
-                            quality and finish that you could get from using the proper products. How then, can you identify and avoid 
-                            fake products? For one, they’re usually ridiculously cheap. Also, especially when considering fake foundations 
-                            and concealers, the first thing to pour out of them is usually water. So, before you purchase a makeup product, 
-                            or choose a makeup brand, do research. Check reviews of users online. Or, you could even ask your makeup artist 
-                            to acquire them for you, as your makeup artist is likely very experienced with these products, and has an eye 
-                            for quality that comes from repeated usage.
-                        </p>
-                        <p class="heading-one" style="color: #c56765;">Wrong Tools</p>
-                        <p>If you’re using the wrong tool for a product, girl, you’re in for a lot of stress. For example, imagine using a 
-                            contour brush to apply concealer. No, no, no, it won’t work! It’s too big for your highlight area, and it will 
-                            not blend. You need to learn how to use your brushes, what technique works best for you. You could even label 
-                            them if you can’t easily tell them apart. Just make sure that you use the right brush. For more information, 
-                            check out this article on <a href="tools-and-products.php">using the right tools and products</a>.</p>
-                        <p class="heading-one" style="color: #c56765;">Different Shades</p>
-                        <p>Foundation, concealers and contour come in different shades, because we all have differing skin colours. If you 
-                            use the wrong shades of products for your skin, no matter how you try, even if you use original products and the 
-                            right tools, they will not blend. That is just the honest truth!To solve this, test your products! before you 
-                            buy them.Most beauty stores provide this opportunity, and if you still find that difficult, ask your makeup artist 
-                            to get it for you; or ask her to tell you your skin shade so you can get them yourself.
-                        </p>
-                        <p>When it comes to makeup, the importance of blending cannot be overemphasized. I, personally, have multiple blending 
-                            brushes, and its important that you have these tools to help you achieve the blend you’re looking for. It is vital.
-                        </p>
                         <div class="added-comments">
-                            <p>I hope you enjoyed the article? If you have any question or you need me to recommend brands for your makeup 
-                                products, please let me know in the comment section below and I will reply as soon as I see your message, or
-                                <a href="../contact.php">contact me</a>. You could also read my other article to get insights on 
-                                <a href="tools-and-products.php">makeup tools and how to use them</a>.
+                            <p>I hope you enjoyed the article? If you have any question or you need further advice on skin care products, feel
+                                free to drop a comment below, or <a href="../contact.php">contact me</a>. Feel free to check out other articles
+                                too.
                             </p>
                         </div>
                         <hr />
@@ -190,7 +183,7 @@
                     <div class="honey-comment-form">
                         <h4>Leave a comment</h4>
                         <form action="../php/comment.php" method="post" id="ajax-form" class="form-horizontal row">
-                          <input type="hidden" id="post_id" name="post_id" value="2">
+                          <input type="hidden" id="post_id" name="post_id" value="3">
                             <div class="col-sm-6">
                                 <div class="form-group">
                                     <input type="text" id="name" name="name" class="form-control" placeholder="Name" required> </div>
