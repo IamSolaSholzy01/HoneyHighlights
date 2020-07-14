@@ -81,7 +81,7 @@
         <img src="img\blog\blog-01.jpg" alt="Tools" style="width:100%">
         <div class="honey-container">
         <h3><b>TOOLS and PRODUCTS for MAKEUP</b></h3>
-        <h5><span style="padding-right: 15px;" class="user"><i class="fa fa-users honey-opacity"></i> O. Ogundeji</span><span class="honey-opacity"><span class="date honey-opacity"><i class="fa fa-clock-o"></i> 04.06.2020</span></span></h5>
+        <h5><span style="padding-right: 15px;" class="user"><i class="fa fa-user honey-opacity"></i> O. Ogundeji</span><span class="honey-opacity"><span class="date honey-opacity"><i class="fa fa-clock-o"></i> 04.06.2020</span></span></h5>
         </div>
         <input type="hidden" value="1" class="hidden-input" id="1">
 
@@ -105,7 +105,7 @@
     <img src="#" alt="" style="width:100%">
         <div class="honey-container">
         <h3><b>Reasons Makeup Products Don't Blend</b></h3>
-        <h5><span style="padding-right: 15px;" class="user"><i class="fa fa-users honey-opacity"></i> O. Ogundeji</span><span class="honey-opacity"><span class="date honey-opacity"><i class="fa fa-clock-o"></i> 13.07.2020</span></span></h5>
+        <h5><span style="padding-right: 15px;" class="user"><i class="fa fa-user honey-opacity"></i> O. Ogundeji</span><span class="honey-opacity"><span class="date honey-opacity"><i class="fa fa-clock-o"></i> 13.07.2020</span></span></h5>
         </div>
         <input type="hidden" value="2" class="hidden-input" id="2">
 
@@ -130,7 +130,7 @@
     <img src="#" alt="" style="width:100%">
         <div class="honey-container">
         <h3><b>Importance of Skin Care</b></h3>
-        <h5><span style="padding-right: 15px;" class="user"><i class="fa fa-users honey-opacity"></i> O. Ogundeji</span><span class="honey-opacity"><span class="date honey-opacity"><i class="fa fa-clock-o"></i> 14.07.2020</span></span></h5>
+        <h5><span style="padding-right: 15px;" class="user"><i class="fa fa-user honey-opacity"></i> O. Ogundeji</span><span class="honey-opacity"><span class="date honey-opacity"><i class="fa fa-clock-o"></i> 14.07.2020</span></span></h5>
         </div>
         <input type="hidden" value="3" class="hidden-input" id="3">
 
