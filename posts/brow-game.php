@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Honey Highlights - Blog</title>
     <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.png">
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/style.min.css" rel="stylesheet">
@@ -59,7 +58,7 @@
             <p class="blog-title">STEPPING UP YOUR BROW GAME</p>
             <div class="col-md-8 offset-md-2">
                 <div class="honey-page-content text-center">
-                    <div class="honey-meta-info"> <i class="fa fa-users"></i><span id="post_author"></span> <i class="fa fa-clock-o"></i><span id="post_date"></span> </div>
+                    <div class="honey-meta-info"> <i class="fa fa-user"></i><span id="post_author"></span> <i class="fa fa-clock-o"></i><span id="post_date"></span> </div>
                 </div>
             </div>
             <div>
@@ -93,9 +92,9 @@
                         <!--Reactions-->
                         <div class="honey-share-wrap">
                         <h3>What do you think about this post?</h3>
-                            <ul class="honey-reaction-icon">
-                            <i id="like" onclick="reaction(this)" style="cursor: pointer;" class="fa fa-thumbs-o-up"></i><span id="thumbup"></span>
-                            <i id="dislike" onclick="reaction(this)" style="cursor: pointer;" class="fa fa-thumbs-o-down"></i><span  id="thumbdown"></span>
+                        <ul class="honey-reaction-icon">
+                            <i id="like" onclick="reaction(this)" style="cursor: pointer;" class="fa fa-thumbs-up"></i><span id="thumbup"></span>
+                            <i id="dislike" onclick="reaction(this)" style="cursor: pointer;" class="fa fa-thumbs-down"></i><span  id="thumbdown"></span>
                             </ul>
                         </div>
                         <!-- Share Wrap -->
