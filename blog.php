@@ -98,7 +98,7 @@
         </div>
         </div>
     </div>
-    <hr>
+    <hr />
 
     <!-- Blog entry -->
     <div class="honey-card-4 honey-margin bg-white">
@@ -123,6 +123,30 @@
         </div>
         </div>
     </div>
+    <hr />
+
+    <!-- Blog entry -->
+    <div class="honey-card-4 honey-margin bg-white">
+    <img src="#" alt="" style="width:100%">
+        <div class="honey-container">
+        <h3><b>Importance of Skin Care</b></h3>
+        <h5><span style="padding-right: 15px;" class="user"><i class="fa fa-users honey-opacity"></i> O. Ogundeji</span><span class="honey-opacity"><span class="date honey-opacity"><i class="fa fa-clock-o"></i> 14.07.2020</span></span></h5>
+        </div>
+        <input type="hidden" value="3" class="hidden-input" id="3">
+
+        <div class="honey-container">
+        <p>The power of makeup is undeniable, truly. Yet, proper skin care is also essential for everyone. How can we do this correctly?</p>
+        <div class="honey-row">
+            <div class="honey-col m8 s12">
+            <button onclick="window.location.href='posts/skin-care.php';" class="honey-button honey-padding-large bg-white honey-border"><b>READ MORE »</b></button>
+            </div>
+            <div class="honey-col m4 honey-hide-small">
+            <p><span class="honey-padding-large honey-right"><b>Comments  </b> <span class="honey-badge"><span id="commentnum3"></span></span></span></p>
+            </div>
+        </div>
+        </div>
+    </div>
+    <hr />
     <!-- END BLOG ENTRIES -->
     </div>
 
@@ -155,20 +179,20 @@
                 <span class="honey-large">Tools and Products for Makeup</span><br>
                 <span>O. Ogundeji</span>
             </li>
-            <li class="honey-padding-16" style="cursor:pointer" onclick="window.location.href='#';">
-                <img src="#" alt="Image" class="honey-left honey-margin-right" style="width:50px">
-                <span class="honey-large">Blog Entry</span><br>
-                <span>Praes tinci sed</span>
+            <li class="honey-padding-16" style="cursor:pointer" onclick="window.location.href='posts/makeup-not-blend.php';" >
+                <img src="img\blog\blog-01.jpg" alt="Image" class="honey-left honey-margin-right" style="width:50px">
+                <span class="honey-large">Reasons Makeup Don't Blend</span><br>
+                <span>O. Ogundeji</span>
             </li> 
-            <li class="honey-padding-16" style="cursor:pointer" onclick="window.location.href='#';">
-                <img src="#" alt="Image" class="honey-left honey-margin-right" style="width:50px">
-                <span class="honey-large">Dorum</span><br>
-                <span>Ultricies congue</span>
-            </li>   
-            <li class="honey-padding-16 honey-hide-medium honey-hide-small" style="cursor:pointer" onclick="window.location.href='#';">
-                <img src="#" alt="Image" class="honey-left honey-margin-right" style="width:50px">
-                <span class="honey-large">Mingsum</span><br>
-                <span>Lorem ipsum dipsum</span>
+            <li class="honey-padding-16" style="cursor:pointer" onclick="window.location.href='posts/daily-makeup.php';" >
+                <img src="img\blog\blog-01.jpg" alt="Image" class="honey-left honey-margin-right" style="width:50px">
+                <span class="honey-large">Daily Makeup Routine</span><br>
+                <span>O. Ogundeji</span>
+            </li>  
+            <li class="honey-padding-16" style="cursor:pointer" onclick="window.location.href='posts/skin-care.php';" >
+                <img src="img\blog\blog-01.jpg" alt="Image" class="honey-left honey-margin-right" style="width:50px">
+                <span class="honey-large">Importance of Skin Care</span><br>
+                <span>O. Ogundeji</span>
             </li>  
         </ul>
     </div>
