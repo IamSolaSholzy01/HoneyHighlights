@@ -1541,6 +1541,8 @@ span.user {
 }
 
 .honey-comment-box .honey-comment-head img {
+    padding-top: 10px;
+    padding-right: 3px;
     float: right;
 }
 
