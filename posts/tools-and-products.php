@@ -256,7 +256,7 @@
                         <!-- Share Wrap -->
                         <div class="honey-share"><a href="" onclick="share();"><img src="" alt=""></a></div>
                         <div id="fb-root"></div>
-                        <div class="fb-share-button" data-href="https://honeyhighlights.com/posts/blog-template.php" data-layout="box_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fhoneyhighlights.com%2Fposts%2Fblog-template.php&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+                        <div class="fb-share-button" data-href="https://honeyhighlights.com/posts/blog-template.php" data-layout="button_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fhoneyhighlights.com%2Fposts%2Fblog-template.php&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
                         <div class="honey-share-wrap" style="display: none;">
                             <ul class="honey-share-icon">
                                 <li><a href="post.html#"><img src="img/icons/dark_brown/facebook.png" alt=""></a></li>
