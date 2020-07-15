@@ -1,3 +1,3 @@
 <?php
-header("Location: ../catalogue.html");
+header("Location: ../catalogue.min.html");
 ?>
