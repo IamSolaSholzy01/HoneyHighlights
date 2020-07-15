@@ -86,7 +86,7 @@
                             </ul>
                         </div>
                         <!-- Share Wrap -->
-                        <div class="honey-share"><a href="" onclick="share();"><img src="" alt=""></a></div>
+                        <div class="honey-share"><a onclick="share();"><img src="img/icons/dark_brown/upload.png" alt="share">Share post</a></div>
                         <div class="honey-share-wrap" style="display: none;">
                             <ul class="honey-share-icon">
                                 <li><a href="post.html#"><img src="img/icons/dark_brown/facebook.png" alt=""></a></li>
