@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="css/cataloguesss.css">
+    <link href="css/icons.css" rel="stylesheet">
     <!--Modal-->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
     <link href="assets/css/login-register.css" rel="stylesheet" />
@@ -92,9 +93,9 @@
                     <div class="honey-contact-info">
                         <h3>Get in touch</h3><p>Do you have any question, request or complaint? Are you in need of our services wherever you are? Do you want to come to us, or, do you want us to come to you? Whatever you need, please, note that we are always reachable via the media below. We are eagerly expecting your call. 😁😁😊😊</p>
                         <ul>
-                            <li><i class="fa fa-home"></i>Oyinda's house</li>
-                            <li><i class="fa fa-mobile"></i>+234 708 881 0879</li>
-                            <li><i class="fa fa-envelope"></i><a href="mailto:olajumokeoyinda@gmail.com" style="text-decoration: none;">olajumokeoyinda@gmail.com</a></li>
+                            <li><img src="./img/icons/pink/home.png" class="icon sm">Oyinda's house</li>
+                            <li><img src="./img/icons/pink/phone.png" class="icon sm"></i>+234 708 881 0879</li>
+                            <li><img src="./img/icons/pink/envelope.png" class="icon sm"><a href="mailto:olajumokeoyinda@gmail.com" style="text-decoration: none;">olajumokeoyinda@gmail.com</a></li>
                         </ul>
                     </div>
                 </div>
