@@ -13,55 +13,6 @@
     <link href="css/style.min.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" />
     <title>Honey Highlights &#8211; Catalogue</title>
-    <script type="text/javascript">
-        window._wpemojiSettings = {
-            "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/",
-            "ext": ".png",
-            "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/",
-            "svgExt": ".svg",
-            "source": {
-                "concatemoji": "https:\/\/andersnoren.se\/themes\/hitchcock\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.4.2"
-            }
-        };
-        ! function(e, a, t) {
-            var r, n, o, i, p = a.createElement("canvas"),
-                s = p.getContext && p.getContext("2d");
-
-            function c(e, t) {
-                var a = String.fromCharCode;
-                s.clearRect(0, 0, p.width, p.height), s.fillText(a.apply(this, e), 0, 0);
-                var r = p.toDataURL();
-                return s.clearRect(0, 0, p.width, p.height), s.fillText(a.apply(this, t), 0, 0), r === p.toDataURL()
-            }
-
-            function l(e) {
-                if (!s || !s.fillText) return !1;
-                switch (s.textBaseline = "top", s.font = "600 32px Arial", e) {
-                    case "flag":
-                        return !c([127987, 65039, 8205, 9895, 65039], [127987, 65039, 8203, 9895, 65039]) && (!c([55356, 56826, 55356, 56819], [55356, 56826, 8203, 55356, 56819]) && !c([55356, 57332, 56128, 56423, 56128, 56418, 56128, 56421, 56128, 56430, 56128, 56423, 56128, 56447], [55356, 57332, 8203, 56128, 56423, 8203, 56128, 56418, 8203, 56128, 56421, 8203, 56128, 56430, 8203, 56128, 56423, 8203, 56128, 56447]));
-                    case "emoji":
-                        return !c([55357, 56424, 55356, 57342, 8205, 55358, 56605, 8205, 55357, 56424, 55356, 57340], [55357, 56424, 55356, 57342, 8203, 55358, 56605, 8203, 55357, 56424, 55356, 57340])
-                }
-                return !1
-            }
-
-            function d(e) {
-                var t = a.createElement("script");
-                t.src = e, t.defer = t.type = "text/javascript", a.getElementsByTagName("head")[0].appendChild(t)
-            }
-            for (i = Array("flag", "emoji"), t.supports = {
-                    everything: !0,
-                    everythingExceptFlag: !0
-                }, o = 0; o < i.length; o++) t.supports[i[o]] = l(i[o]), t.supports.everything = t.supports.everything && t.supports[i[o]], "flag" !== i[o] && (t.supports.everythingExceptFlag = t.supports.everythingExceptFlag && t.supports[i[o]]);
-            t.supports.everythingExceptFlag = t.supports.everythingExceptFlag && !t.supports.flag, t.DOMReady = !1, t.readyCallback = function() {
-                t.DOMReady = !0
-            }, t.supports.everything || (n = function() {
-                t.readyCallback()
-            }, a.addEventListener ? (a.addEventListener("DOMContentLoaded", n, !1), e.addEventListener("load", n, !1)) : (e.attachEvent("onload", n), a.attachEvent("onreadystatechange", function() {
-                "complete" === a.readyState && t.readyCallback()
-            })), (r = t.source || {}).concatemoji ? d(r.concatemoji) : r.wpemoji && r.twemoji && (d(r.twemoji), d(r.wpemoji)))
-        }(window, document, window._wpemojiSettings);
-    </script>
     <style type="text/css">
         img.wp-smiley,
         img.emoji {
@@ -138,7 +89,6 @@
         .cursor {
             cursor: pointer;
         }
-        /* Next & previous buttons */
         
         .prev,
         .next {
@@ -156,26 +106,15 @@
             user-select: none;
             -webkit-user-select: none;
         }
-        /* Position the "next button" to the right */
         
         .next {
             right: 0;
             border-radius: 3px 0 0 3px;
         }
-        /* On hover, add a black background color with a little bit see-through */
         
         .prev:hover,
         .next:hover {
             background-color: rgba(0, 0, 0, 0.8);
-        }
-        /* Number text (1/3 etc) */
-        
-        .numbertext {
-            color: #f2f2f2;
-            font-size: 12px;
-            padding: 8px 12px;
-            position: absolute;
-            top: 0;
         }
         
         img {
@@ -207,7 +146,6 @@
         }
     </style>
     <link rel='stylesheet' href='css/cataloguesss.css' type='text/css' media='all' />
-    <meta name="generator" content="WordPress 5.4.2" />
 </head>
 
 <body class="home blog">
@@ -436,9 +374,6 @@
                 <img src="img/Portfolio Images/HONEYHIGHLIGHTS-2.jpg" style=" width:100% ">
             </div>
 
-            <a class="prev " onclick="plusSlides(-1) ">&#10094;</a>
-            <a class="next " onclick="plusSlides(1) ">&#10095;</a>
-
         </div>
     </div>
     <script src="js/vendor/jquery-1.12.4.min.js"></script>
@@ -461,13 +396,8 @@
             document.getElementById("myModal").style.display = "none";
             document.getElementById("normal-content").style.display = "block";
         }
-
         var slideIndex = 1;
         showSlides(slideIndex);
-
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
 
         function currentSlide(n) {
             showSlides(slideIndex = n);
@@ -476,19 +406,8 @@
         function showSlides(n) {
             var i;
             var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("demo");
-            var captionText = document.getElementById("caption");
-            if (n > slides.length) {
-                slideIndex = 1
-            }
-            if (n < 1) {
-                slideIndex = slides.length
-            }
             for (i = 0; i < slides.length; i++) {
                 slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
             }
             slides[slideIndex - 1].style.display = "block";
         }

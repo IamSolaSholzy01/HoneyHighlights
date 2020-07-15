@@ -41,7 +41,7 @@
     <header class="honey-site-header">
         <div class="header-container">
             <ul>
-                <a href="index.html" class="honey-site-logo"><img src="img/logo-dark.png" alt="honey"></a>
+                <a href="index.html" class="honey-site-logo"><img src="img/logo-dark.webp" alt="honey"></a>
                 
                 <li>
                     <!-- Menu -->
