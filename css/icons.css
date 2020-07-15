@@ -1,7 +1,18 @@
-.icon{
-    width: 50%;  
+.icon {
+    width: 50%;
 }
-.sm{
+
+.sm {
     width: 20px;
+    margin-right: 5px;
+}
+
+.md {
+    width: 24px;
+    margin-right: 5px;
+}
+
+.lg {
+    width: 36px;
     margin-right: 5px;
 }
