@@ -86,13 +86,15 @@
                             </ul>
                         </div>
                         <!-- Share Wrap -->
-                        <div class="honey-share-wrap">
+                        <div class="honey-share"><a href="" onclick="share();"><img src="" alt=""></a></div>
+                        <div class="honey-share-wrap" style="display: none;">
                             <ul class="honey-share-icon">
-                                <li><a href="post.html#" style="padding:8px 15px"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="post.html#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="post.html#"><i class="fa fa-google"></i></a></li>
-                                <li><a href="post.html#" style="padding: 8px 13px"><i class="fa fa-instagram"></i></a></li>
-                                <li><a href="post.html#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="post.html#"><img src="img/icons/dark_brown/facebook.png" alt=""></a></li>
+                                <li><a href="post.html#"><img src="img/icons/dark_brown/twitter-blue.png" alt=""></a></li>
+                                <li><a href="post.html#"><img src="img/icons/dark_brown/gmail.png" alt=""></a></li>
+                                <li><a href="post.html#"><img src="img/icons/dark_brown/instagram-red.png" alt=""></a></li>
+                                <li><a href="post.html#"><img src="img/icons/dark_brown/linkedin.png" alt=""></a></li>
+                                <li><a href="post.html#"><img src="img/icons/dark_brown/whatsapp.png" alt=""></a></li>
                             </ul>
                         </div>
                     </div>
@@ -193,7 +195,7 @@
     <script src="../js/vendor/jquery.isotope.v3.0.2.js"></script>
     <script src="../js/scripts.js"></script>
     <script src="../js/include.js"></script>
-    <script src="../js/ajax.js"></script>
+    <script src="../js/ajax.min.js"></script>
     <script>includeHTML();</script>
     <script>$(function(){event.preventDefault();subscribe();});</script>
     <script>$(function(){event.preventDefault();register();});</script>

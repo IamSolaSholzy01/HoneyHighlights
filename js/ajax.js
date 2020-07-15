@@ -35,54 +35,54 @@
     }
 
     var contact_request = function() {
-       var subForm = $('#contact-form');
-            subForm.submit(function(e) {
-                url = subForm.attr('action');
-                type = subForm.attr('method');
-                data = {};
-                
-                subForm.find('[name]').each(function() {
-                    var that = $(this),
-                        name = that.attr('name'),
-                        value = that.val();
-                    data[name] = value;
-                });
-    
-                
-                $.ajax({
-                    type: type,
-                    url: url,
-                    dataType: 'JSON',
-                    data: data,
-                    success: function(response) {
-                        console.log(response);
-                        if(response.id=='success'){
-                            $('.contact-result').html(response.content);
-                            $('.contact-result').css('display', 'block');
-                            $('.contact-result').addClass('alert alert-success');
-                            $('.contact-result').css("color", "green");
-                            $('.contact-result').addClass('alert alert-success');
-                            setTimeout(() => {
-                                $('#name').val("");
-                                $('#email').val("");
-                                $('#text').val("");
-                                $('#message').val("");
-                                $('.contact-result').val("");
-                                $('.contact-result').removeClass('alert alert-success');
-                                $('.contact-result').css('display', 'none');
-                            }, 3000);
-                        }else{
-                            $('.contact-result').html(response.content);
-                        }
-                    },
-                    error: function(response) {
-                        console.log(response);
+        var subForm = $('#contact-form');
+        subForm.submit(function(e) {
+            url = subForm.attr('action');
+            type = subForm.attr('method');
+            data = {};
+
+            subForm.find('[name]').each(function() {
+                var that = $(this),
+                    name = that.attr('name'),
+                    value = that.val();
+                data[name] = value;
+            });
+
+
+            $.ajax({
+                type: type,
+                url: url,
+                dataType: 'JSON',
+                data: data,
+                success: function(response) {
+                    console.log(response);
+                    if (response.id == 'success') {
                         $('.contact-result').html(response.content);
                         $('.contact-result').css('display', 'block');
+                        $('.contact-result').addClass('alert alert-success');
+                        $('.contact-result').css("color", "green");
+                        $('.contact-result').addClass('alert alert-success');
+                        setTimeout(() => {
+                            $('#name').val("");
+                            $('#email').val("");
+                            $('#text').val("");
+                            $('#message').val("");
+                            $('.contact-result').val("");
+                            $('.contact-result').removeClass('alert alert-success');
+                            $('.contact-result').css('display', 'none');
+                        }, 3000);
+                    } else {
+                        $('.contact-result').html(response.content);
                     }
-                })
-                return false;
-            });
+                },
+                error: function(response) {
+                    console.log(response);
+                    $('.contact-result').html(response.content);
+                    $('.contact-result').css('display', 'block');
+                }
+            })
+            return false;
+        });
     }
 
     var register = function() {
@@ -585,4 +585,8 @@
             }
         });
         //return false;
+    }
+    var share = function() {
+
+        $('.honey-share-wrap').toggle();
     }

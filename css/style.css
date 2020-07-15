@@ -1447,6 +1447,8 @@ span.user {
     margin-right: 10px
 }
 
+
+/*
 .honey-share-icon li:nth-child(1) a {
     background-color: #3b5998
 }
@@ -1466,16 +1468,15 @@ span.user {
 .honey-share-icon li:nth-child(5) a {
     background-color: #0077b5
 }
+*/
 
 .honey-share-icon li a {
     display: inline-block;
     font-size: 18px;
     color: #fff;
-    padding: 8px 11px;
     border-radius: 50%;
     font-weight: 600;
     line-height: 1.5em;
-    width: 40px
 }
 
 .honey-share-icon li a:hover {
