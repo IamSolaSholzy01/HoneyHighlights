@@ -73,6 +73,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="honey-blog-items honey-single-post">
+                        <div class="card" style="padding: 15px;">
                         <div class="entry-thumb"><img src="skin_care_files/skin-care.jpg" alt="skin care"> </div>
                         <p>The power of makeup is undeniable, and for now I don’t see it being replaced when it comes 
                             to beauty enhancement. And yet, like an artist performs his art on a quality canvas for it 
@@ -113,7 +114,9 @@
                                 too.
                             </p>
                         </div>
+                        </div>
                         <hr />
+                        
                         <div class="col-md-12 blog-col-container">
                         <!--Reactions-->
                         <div class="honey-share-wrap col-md-6 card mb-3 blog-col">
@@ -144,11 +147,11 @@
         </div>
     </section>
     <!-- Comment -->
-    <section class="honey-comment-section">
-    <div class="container">
+    <section class="honey-blog-section" style="padding: 10px; margin: 10px;">
+    <div class="container card">
         <div class="row">
             <div class="col-md-6">
-                <div class="honey-comments-wrapper">
+                <div class="honey-comments-wrapper honey-blog-items">
                     <h4>There are <span class="commentnum"></span> comments</h4>
                     <input id="hidden-id" type="hidden">
                     <ul id="honey-comments" class="honey-comments-list">
@@ -186,11 +189,11 @@
             </div>
             <div class="col-md-6">
                 <!-- Comment Form -->
-                <div class="honey-comments-form-wrapper">
+                <div class="honey-comments-form-wrapper" style="padding-right: 10px;">
                     <div class="honey-comment-form">
                         <h4>Leave a comment</h4>
                         <form action="../php/comment.php" method="post" id="ajax-form" class="form-horizontal row">
-                          <input type="hidden" id="post_id" name="post_id" value="3">
+                          <input type="hidden" id="post_id" name="post_id" value="5">
                             <div class="col-sm-6">
                                 <div class="form-group">
                                     <input type="text" id="name" name="name" class="form-control" placeholder="Name" required> </div>

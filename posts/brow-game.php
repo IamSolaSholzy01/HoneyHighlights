@@ -73,6 +73,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="honey-blog-items honey-single-post">
+                        <div class="card" style="padding: 15px;">
                         <div class="entry-thumb"> <img src="brow_game_files/brow-sample.jpg" alt="Post"> </div>
                         <p>We’ve all had that bad brow day. Was yours in secondary school, when you decided to shave your brows with that small handheld mirror? Or, was it that day at the salon when your stylist shaped them unevenly, and it came off looking weird? Eyebrows are a small part of the face, and yet, they’re very important. You can probably recall that person with bad eyebrows, and it’s like those are the only things you can see on her face. They’re that small part of the face makeup that could make or mar an otherwise wonderful makeup job.</p>
                         <p>When you check outstanding professional makeup jobs, those ones with seemingly perfect eyebrows, it could gets a little daunting when you try to imagine replicating it yourself. And I’ve got to be honest, it takes precision to accomplish. Yet, it’s not impossible for you. You can do it. You can achieve those great eyebrows we see on TV and Instagram. And it’s not even that hard.</p>
@@ -83,6 +84,7 @@
                         <p>So that’s it guys. Like I said earlier, once you have them shaped, it’s really easy and you don’t need a bunch of products or tools in order to get good, polished looking brows. And if you want to see a full brow tutorial, watch one here on my YouTube channel below. It’s really helpful and easy to learn.</p>
                         <p>Link: <a> https://youtu.be/wX5TtjoNBvs</a></p>
                         <div style="overflow:hidden;position: relative;"><iframe allowfullscreen frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="100%" height="443px" type="text/html" src="https://www.youtube.com/embed/wX5TtjoNBvs?autoplay=0&fs=1&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=3&start=0&end=0"></iframe><div style="position: absolute;bottom: 10px;left: 0;right: 0;margin-left: auto;margin-right: auto;color: #000;text-align: center;"><small style="line-height: 1.8;font-size: 0px;background: #fff;"></small></div><style>.newst{position:relative;text-align:right;height:420px;width:520px;} @media all and (max-width:768px) {iframe {height: 240px;}} #gmap_canvas img{max-width:none!important;background:none!important}</style></div><br />
+                        </div>
                         <hr />
                         <div class="added-comments">
                             <p>I hope you enjoyed the article? If you have any question or you need further advice on products, feel
@@ -121,11 +123,11 @@
         </div>
     </section>
     <!-- Comment -->
-    <section class="honey-comment-section">
-    <div class="container">
+    <section class="honey-blog-section" style="padding: 10px; margin: 10px;">
+    <div class="container card">
         <div class="row">
             <div class="col-md-6">
-                <div class="honey-comments-wrapper">
+                <div class="honey-comments-wrapper honey-blog-items">
                     <h4>There are <span class="commentnum"></span> comments</h4>
                     <input id="hidden-id" type="hidden">
                     <ul id="honey-comments" class="honey-comments-list">
@@ -163,7 +165,7 @@
             </div>
             <div class="col-md-6">
                 <!-- Comment Form -->
-                <div class="honey-comments-form-wrapper">
+                <div class="honey-comments-form-wrapper" style="padding-right: 10px;">
                     <div class="honey-comment-form">
                         <h4>Leave a comment</h4>
                         <form action="../php/comment.php" method="post" id="ajax-form" class="form-horizontal row">

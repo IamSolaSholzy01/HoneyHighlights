@@ -76,6 +76,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="honey-blog-items honey-single-post">
+                        <div class="card" style="padding: 15px;">
                         <div class="padder-blog"><!--<img src="img/blog/post.jpg" alt="Post">--></div>
                         <p>Starting to pick interest in makeup? Do you love and appreciate that great and flawless look 
                             you see on celebrities and people when they use makeup? Have you tried learning to do makeup 
@@ -95,7 +96,7 @@
                         </p>
                         <div class="section-heading"><p class="heading-five">TOOLS</p></div>
                         <div><hr/></div>
-                        <div class="container" id="powder-brush">
+                        <div id="powder-brush">
                             <p class="heading-one" style="color: #c56765;">Powder Brush</p>
                             <p><img style="width: 98px; height: 92px; float: left;"
                                 src="Honey%20Highlights%20Blog%20Posts%20(1)_files/powder-brush.jpg" alt="powder brush.jpg" />
@@ -110,7 +111,7 @@
                             </p>
                         </div>
                         <div><hr/></div>
-                        <div class="container" id="foundation-brush">
+                        <div id="foundation-brush">
                             <p class="heading-one" style="color: #c56765;">Foundation Brush/Beauty Sponge</p>
                             <p><img src="Honey%20Highlights%20Blog%20Posts%20(1)_files/beauty-sponge.jpg" alt="foundation brush"
                                 style="width: 100px; height: 100px; float: left; margin-right: 5px;" />
@@ -125,7 +126,7 @@
                             </p>
                         </div>
                         <div><hr/></div>
-                        <div class="container" id="blending-brush">
+                        <div id="blending-brush">
                             <p class="heading-one" style="color: #c56765;">Blending Brush</p>
                             <p><img style="width: 98px; height: 98px; float: left;"
                                 src="Honey%20Highlights%20Blog%20Posts%20(1)_files/blending-brush.jpg" alt="blending brush.jpg" />
@@ -138,7 +139,7 @@
                             <p>In sweeping movement, glide brush across lid to apply eye color.</p>
                         </div>
                         <div><hr/></div>
-                        <div class="container" id="eyebrow-brush">
+                        <div id="eyebrow-brush">
                             <p class="heading-one" style="color: #c56765;">Eyebrow Brush</p>
                             <p><img style="width: 92px; height: 108px; float: left;"
                                 src="Honey%20Highlights%20Blog%20Posts%20(1)_files/eyebrow-brush.jpg" alt="eyebrow brush.jpg" />
@@ -151,7 +152,7 @@
                             <p>Find an easy eyebrow tutorial video here: <a href="https://youtu.be/wX5TtjoNBvs">https://youtu.be/wX5TtjoNBvs</a></p>
                         </div>
                         <div><hr/></div>
-                        <div class="container" id="spoolie">
+                        <div id="spoolie">
                             <p class="heading-one" style="color: #c56765;">Spoolie/Mascara Wand</p>
                             <p><img style="width: 96px; height: 96px; float: left;"
                                 src="Honey%20Highlights%20Blog%20Posts%20(1)_files/spoolie.jpg" alt="spoolie.jpg" />
@@ -161,7 +162,7 @@
                             </p>
                         </div>
                         <div><hr/></div>
-                        <div class="container">
+                        <div>
                             <p>Now that you know these basic tools you might be wondering what kind of products can they be 
                                 used for and which is most important, all these questions will be answered below as I explain 
                                 five products that you should have as a makeup beginner.
@@ -169,7 +170,7 @@
                         </div>
                         <div class="section-heading"><p class="heading-five">PRODUCTS</p></div>
                         <div><hr/></div>
-                        <div class="container" id="foundation">
+                        <div id="foundation">
                             <p class="heading-one" style="color: #c56765;">Foundation</p>
                             <p><img style="width: 124px; height: 62px; float: left; padding-right: 5px;"
                                 src="Honey%20Highlights%20Blog%20Posts%20(1)_files/foundation.jpg" alt="foundation.jpg" />
@@ -180,7 +181,7 @@
                             </p>
                         </div>
                         <div><hr/></div>
-                        <div class="container" id="concealer">
+                        <div id="concealer">
                             <p class="heading-one" style="color: #c56765;">Concealer</p>
                             <p>Concealers could also be known as a color corrector, it is a type of cosmetics used to mask 
                                 dark circles, age spots, large pores and other blemish visible to the skin, it can also be 
@@ -189,7 +190,7 @@
                             </p>
                         </div>
                         <div><hr/></div>
-                        <div class="container" id="powder">
+                        <div id="powder">
                             <p class="heading-one" style="color: #c56765;">A Powder</p>
                             <p><img style="width: 124px; height: 82px; float: left; margin-right: 10px;"
                                 src="Honey%20Highlights%20Blog%20Posts%20(1)_files/powder.jpg" alt="powder.jpg" />
@@ -200,7 +201,7 @@
                             </p>
                         </div>
                         <div><hr/></div>
-                        <div class="container" id="brow-pencil">
+                        <div id="brow-pencil">
                             <p class="heading-one" style="color: #c56765;">A Brow Pencil / Brow Gel</p>
                             <p><img style="width: 124px; height: 83px; float: left; padding-right: 5px;"
                                 src="Honey%20Highlights%20Blog%20Posts%20(1)_files/brow-pencil.jpg" alt="brow-pencil.jpg" />
@@ -210,7 +211,7 @@
                             </p>
                         </div>
                         <div><hr/></div>
-                        <div class="container" id="lipstick">
+                        <div id="lipstick">
                             <p class="heading-one" style="color: #c56765;">A Lipstick / Lip Gloss</p>
                             <p><img style="width: 124px; height: 82px; float: left; padding-right: 5px;"
                                 src="Honey%20Highlights%20Blog%20Posts%20(1)_files/lipstick.jpg" alt="lipstick.jpg" />
@@ -220,7 +221,7 @@
                             </p>
                         </div>
                         <div><hr/></div>
-                        <div class="container">
+                        <div>
                             <p>
                                 These basic tools and products can be found easily in your local market depending on your choice and 
                                 budget, once you have them you are good to go and ready to slay that beautiful look you want any time 
@@ -233,7 +234,9 @@
                             </p>
                             <iframe class="eyebrow-vid" width="560" height="315" src="https://www.youtube.com/embed/bwOgE2rXtno" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
+                        </div>
                         <div><hr/></div>
+                        
                         <div class="col-md-12 blog-col-container">
                         <!--Reactions-->
                         <div class="honey-share-wrap col-md-6 card mb-3 blog-col">
@@ -264,11 +267,11 @@
         </div>
     </section>
     <!-- Comment -->
-    <section class="honey-comment-section">
-    <div class="container">
+    <section class="honey-blog-section" style="padding: 10px; margin: 10px;">
+    <div class="container card">
         <div class="row">
             <div class="col-md-6">
-                <div class="honey-comments-wrapper">
+                <div class="honey-comments-wrapper honey-blog-items">
                     <h4>There are <span class="commentnum"></span> comments</h4>
                     <input id="hidden-id" type="hidden">
                     <ul id="honey-comments" class="honey-comments-list">
@@ -279,7 +282,7 @@
                                     <div class="honey-comment-head" onclick="showreply(this)">
                                         <h6 class="honey-comment-name by-author"></h6><a onclick="replyclicked(this.id);" class="honey-reply-icon"><img src="img/icons/white/reply.png" alt="reply" class="icon sm"></a></div>
                                     <div class="honey-comment-content">
-                                        <p></span><span class="honey-comment-body"></span><span class="honey-comment-time"></p>
+                                    <p></span><span class="honey-comment-body"></span><span class="honey-comment-time"></p>
                                     </div>
                                     <div id="reply-div">
                                     </div> 
@@ -306,12 +309,11 @@
             </div>
             <div class="col-md-6">
                 <!-- Comment Form -->
-                <div class="honey-comments-form-wrapper">
+                <div class="honey-comments-form-wrapper" style="padding-right: 10px;">
                     <div class="honey-comment-form">
                         <h4>Leave a comment</h4>
                         <form action="../php/comment.php" method="post" id="ajax-form" class="form-horizontal row">
-                          <input type="hidden" id="post_id" name="post_id" value="1">
-                          
+                          <input type="hidden" id="post_id" name="post_id" value="5">
                             <div class="col-sm-6">
                                 <div class="form-group">
                                     <input type="text" id="name" name="name" class="form-control" placeholder="Name" required> </div>

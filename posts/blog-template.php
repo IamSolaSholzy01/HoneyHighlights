@@ -73,11 +73,13 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="honey-blog-items honey-single-post">
+                        <div class="card" style="padding: 15px;">
                         <div class="entry-thumb"> <img src="img/blog/post.jpg" alt="Post"> </div>
                         <p class="heading-one" style="color: #c56765;">Section Title</p>
                         <p>Fusce non ornare quam. Morbi imperdiet mauris eu nunc feugiat, sed accumsan ex tristique. Praesent tincidunt, purus quis vulputate aliquet, tellus massa viverra nisl, in tempus ipsum libero et nunc. Maecenas nulla velit, vehicula eu arcu et, ultrices dapibus lectus. Maecenas gravida efficitur nunc, faucibus facilisis quam tempus in. Integer rutrum lectus vel nisl laoreet viverra.</p>
                         <p>Pellentesque id lobortis elit, nec venenatis eros. Suspendisse aliquam porttitor libero non molestie. Duis ligula enim, interdum et dui eget, pretium venenatis lectus. Donec posuere iaculis libero vel ultricies. Donec massa arcu, euismod ut justo id, rutrum mattis eros. Morbi at porta lacus, vel sagittis lacus. Proin at lectus imperdiet, interdum neque a, ullamcorper sapien.</p>
                         <p>Sed cursus sem ac augue faucibus bibendum. Nulla eget consequat mi. Maecenas dignissim, erat at mattis bibendum, elit mi mollis nisi, et sagittis dolor eros eget diam. Pellentesque id ipsum a ex porttitor interdum. In at nibh egestas, porttitor quam sed, placerat risus. Pellentesque sollicitudin finibus enim, vel convallis massa porta nec. Proin at risus eget mi imperdiet gravida. Maecenas eget iaculis justo. Aliquam turpis ipsum, finibus varius egestas eget, tempus ac velit. Sed non magna pretium, venenatis nisl quis, vulputate nibh.</p>
+                        </div>
                         <hr />
                         <div class="col-md-12 blog-col-container">
                         <!--Reactions-->
@@ -109,11 +111,11 @@
         </div>
     </section>
     <!-- Comment -->
-    <section class="honey-comment-section">
-    <div class="container">
+    <section class="honey-blog-section" style="padding: 10px; margin: 10px;">
+    <div class="container card">
         <div class="row">
             <div class="col-md-6">
-                <div class="honey-comments-wrapper">
+                <div class="honey-comments-wrapper honey-blog-items">
                     <h4>There are <span class="commentnum"></span> comments</h4>
                     <input id="hidden-id" type="hidden">
                     <ul id="honey-comments" class="honey-comments-list">
@@ -127,7 +129,7 @@
                                     <p></span><span class="honey-comment-body"></span><span class="honey-comment-time"></p>
                                     </div>
                                     <div id="reply-div">
-                                    </div>  
+                                    </div> 
                                     <div id="reply-input">
                                         <input class="reply-input" type="text" placeholder="reply here" name="reply">
                                         <input type="submit" class ="reply-button" value="Send" onclick="postreply()">
@@ -151,11 +153,11 @@
             </div>
             <div class="col-md-6">
                 <!-- Comment Form -->
-                <div class="honey-comments-form-wrapper">
+                <div class="honey-comments-form-wrapper" style="padding-right: 10px;">
                     <div class="honey-comment-form">
                         <h4>Leave a comment</h4>
                         <form action="../php/comment.php" method="post" id="ajax-form" class="form-horizontal row">
-                          <input type="hidden" id="post_id" name="post_id" value="2">
+                          <input type="hidden" id="post_id" name="post_id" value="5">
                             <div class="col-sm-6">
                                 <div class="form-group">
                                     <input type="text" id="name" name="name" class="form-control" placeholder="Name" required> </div>

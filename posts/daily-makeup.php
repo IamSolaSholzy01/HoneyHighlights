@@ -74,6 +74,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="honey-blog-items honey-single-post">
+                        <div class="card" style="padding: 15px;">
                         <div class="padder-blog"> <!--<img src="img/blog/post.jpg" alt="Post">--> </div>
                         <p>Hey there, gorgeous. Glad you could find your way here. The truth is that every day, we seek to appear beautiful 
                             and elegant. But we are all busy people. Women are also students, bankers, teachers, office workers, managers, 
@@ -142,6 +143,7 @@
                                 would reply as soon as I can. Much love to you guys.
                             </p>
                         </div>
+                        </div>
                         <hr />
                         <div class="col-md-12 blog-col-container">
                         <!--Reactions-->
@@ -173,11 +175,11 @@
         </div>
     </section>
     <!-- Comment -->
-    <section class="honey-comment-section">
-    <div class="container">
+    <section class="honey-blog-section" style="padding: 10px; margin: 10px;">
+    <div class="container card">
         <div class="row">
             <div class="col-md-6">
-                <div class="honey-comments-wrapper">
+                <div class="honey-comments-wrapper honey-blog-items">
                     <h4>There are <span class="commentnum"></span> comments</h4>
                     <input id="hidden-id" type="hidden">
                     <ul id="honey-comments" class="honey-comments-list">
@@ -215,11 +217,11 @@
             </div>
             <div class="col-md-6">
                 <!-- Comment Form -->
-                <div class="honey-comments-form-wrapper">
+                <div class="honey-comments-form-wrapper" style="padding-right: 10px;">
                     <div class="honey-comment-form">
                         <h4>Leave a comment</h4>
                         <form action="../php/comment.php" method="post" id="ajax-form" class="form-horizontal row">
-                          <input type="hidden" id="post_id" name="post_id" value="4">
+                          <input type="hidden" id="post_id" name="post_id" value="5">
                             <div class="col-sm-6">
                                 <div class="form-group">
                                     <input type="text" id="name" name="name" class="form-control" placeholder="Name" required> </div>
