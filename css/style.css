@@ -1526,12 +1526,9 @@ span.user {
     overflow: hidden
 }
 
-.honey-comment-box .honey-comment-head i {
-    padding-top: 15px;
+.honey-comment-box .honey-comment-head img {
     float: right;
-    margin-right: 20px;
-    top: 20px;
-    color: #fff
+    margin-left: 260px;
 }
 
 .honey-comment-box .honey-comment-content {
