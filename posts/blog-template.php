@@ -9,7 +9,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.png">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="../css/bootstrap.min.css" rel="stylesheet">
-    <link href="../css/style.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
     <link href="css/blog-styles.min.css" rel="stylesheet">
     <link href="../css/icons.css" rel="stylesheet">
     <!--Modal-->
@@ -117,12 +117,16 @@
                                 <div class="honey-comment-avatar"></div>
                                 <div class="honey-comment-box">
                                     <div class="honey-comment-head" onclick="showreply(this)">
+<<<<<<< HEAD
                                         <h6 class="honey-comment-name by-author"><a href="#"></a></h6><img src="img/icons/dark_brown/reply.png" alt="" class="honey-reply-icon" onclick="replyclicked(this.id)"></div>
+=======
+                                        <h6 class="honey-comment-name by-author"><a onclick="replyclicked(this.id);" class="honey-reply-icon"><img src="img/icons/white/reply.png" alt="reply" class="icon sm"></a></h6></div>
+>>>>>>> 5e4994f9201620530dafe51afea8793d7a0821d0
                                     <div class="honey-comment-content">
                                     <p></span><span class="honey-comment-body"></span><span class="honey-comment-time"></p>
                                     </div>
                                     <div id="reply-div">
-                                    </div> 
+                                    </div>  
                                     <div id="reply-input">
                                         <input class="reply-input" type="text" placeholder="reply here" name="reply">
                                         <input type="submit" class ="reply-button" value="Send" onclick="postreply()">
@@ -150,7 +154,7 @@
                     <div class="honey-comment-form">
                         <h4>Leave a comment</h4>
                         <form action="../php/comment.php" method="post" id="ajax-form" class="form-horizontal row">
-                          <input type="hidden" id="post_id" name="post_id" value="post_id">
+                          <input type="hidden" id="post_id" name="post_id" value="2">
                             <div class="col-sm-6">
                                 <div class="form-group">
                                     <input type="text" id="name" name="name" class="form-control" placeholder="Name" required> </div>

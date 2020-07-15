@@ -523,8 +523,6 @@
         $('#' + id).closest('.honey-comment-box').find('#reply-input').slideToggle();
     }
     var showreply = function(me) {
-        //console.log("show reply is clicked");
-        //$(me).closest('.honey-comment-box').find('#reply-input').slideToggle();
         $(me).closest('.honey-comment-box').find('#reply-div').slideToggle();
     }
     var reaction = function(me) {
