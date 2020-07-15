@@ -58,7 +58,7 @@
             <p class="blog-title">POST TITLE</p>
             <div class="col-md-8 offset-md-2">
                 <div class="honey-page-content text-center">
-                    <div class="honey-meta-info"> <i class="fa fa-user"></i><span id="post_author"></span> <i class="fa fa-clock-o"></i><span id="post_date"></span> </div>
+                    <div class="honey-meta-info"> <img src="img/icons/dark_brown/user.png" class="icon xsm" alt=""></i><span id="post_author"></span> <img src="img/icons/dark_brown/clock.png" class="icon xsm" alt=""></i><span id="post_date"></span> </div>
                 </div>
             </div>
             <div>
@@ -81,17 +81,17 @@
                         <div class="honey-share-wrap">
                         <h3>What do you think about this post?</h3>
                             <ul class="honey-reaction-icon">
-                            <i id="like" onclick="reaction(this)" style="cursor: pointer;" class="fa fa-thumbs-up"></i><span id="thumbup"></span>
-                            <i id="dislike" onclick="reaction(this)" style="cursor: pointer;" class="fa fa-thumbs-down"></i><span  id="thumbdown"></span>
+                            <a id="like" onclick="reaction(this)" style="cursor: pointer;"><img src="img/icons/dark_brown/thumb-up.png" alt=""></a><span id="thumbup"></span>
+                            <a id="dislike" onclick="reaction(this)" style="cursor: pointer;"><img src="img/icons/dark_brown/thumb-down.png" alt=""></a><span id="thumbdown"></span>
                             </ul>
                         </div>
                         <!-- Share Wrap -->
-                        <div class="honey-share"><a onclick="share();"><img src="img/icons/dark_brown/upload.png" alt="share">Share post</a></div>
-                        <div class="honey-share-wrap" style="display: none;">
+                        <div class="honey-share"><a onclick="share();"><img src="img/icons/dark_brown/share.png" alt="share" class="icon sm">Share post</a></div>
+                        <div class="honey-share-wrap share-icons" style="display: none;">
                             <ul class="honey-share-icon">
                                 <li><a href="post.html#"><img src="img/icons/dark_brown/facebook.png" alt=""></a></li>
                                 <li><a href="post.html#"><img src="img/icons/dark_brown/twitter-blue.png" alt=""></a></li>
-                                <li><a href="post.html#"><img src="img/icons/dark_brown/gmail.png" alt=""></a></li>
+                                <li><a href="post.html#"><img src="img/icons/dark_brown/gmail.png" alt="gmail"></a></li>
                                 <li><a href="post.html#"><img src="img/icons/dark_brown/instagram-red.png" alt=""></a></li>
                                 <li><a href="post.html#"><img src="img/icons/dark_brown/linkedin.png" alt=""></a></li>
                                 <li><a href="post.html#"><img src="img/icons/dark_brown/whatsapp.png" alt=""></a></li>

@@ -1,7 +1,9 @@
 .honey-blog-section a {
     text-decoration: underline !important;
 }
-
+.honey-share a{
+    text-decoration: none;
+}
 p {
     font-family: 'Candara Regular';
     font-size: 18px
