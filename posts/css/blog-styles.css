@@ -2,7 +2,7 @@
     text-decoration: underline !important;
 }
 .honey-share a{
-    text-decoration: none;
+    text-decoration: none !important;
 }
 p {
     font-family: 'Candara Regular';

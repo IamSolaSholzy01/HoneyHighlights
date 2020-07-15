@@ -3,27 +3,25 @@
 }
 .xsm{
     width: 16px;
-    margin-right: 5px;
 }
 
 .sm {
     width: 20px;
-    margin-right: 5px;
 }
 
 .md {
     width: 24px;
-    margin-right: 5px;
 }
 
 .lg {
     width: 36px;
-    margin-right: 5px;
 }
 .honey-share img{
-    width: 20px;
-    margin-right: 5px;
+    width: 20px;   
 }
 .honey-reaction-icon img{
     width: 24px;
+}
+.margin-2{
+    margin-right: 5px;
 }
