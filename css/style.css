@@ -1282,6 +1282,22 @@ img {
     margin-right: 10px !important;
 }
 
+@media all and (max-width: 767px) {
+    .card {
+        margin-right: 0px !important;
+    }
+    .blog-col-container {
+        width: 100%;
+    }
+    .blog-col {
+        width: 100%;
+    }
+    .blog-post-about {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
 .blog-col {
     flex: 1 0;
 }
