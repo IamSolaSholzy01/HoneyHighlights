@@ -27,7 +27,7 @@
     <header class="honey-site-header">
         <div class="header-container">
             <ul>
-                <a href="../index.html" class="honey-site-logo"><img src="../img/logo-dark.png" alt="honey"></a>
+                <a href="../index.html" class="honey-site-logo"><img src="../img/logo-dark.webp" alt="honey"></a>
                 <li>
                     <!-- Menu -->
                     <nav class="honey-site-menu" id="honey-navbar-spy">
@@ -35,7 +35,7 @@
                             <ul class="list-unstyled honey-menu-container">
                                 <li><a href="../index.html">Home</a></li>
                                 <li><a href="../about.php">About Us</a></li>
-                                <li><a href="../catalogue.html">Catalogue</a></li>
+                                <li><a href="../catalogue.min.html">Catalogue</a></li>
                                 <li><a href="../blog.php">Blog</a></li>
                                 <li><a href="../contact.php">Contact</a></li>
                                 <li id="loginLink"><a  data-toggle="modal" href="javascript:void(0)" onclick="openLoginModal();">Log in</a></li>
