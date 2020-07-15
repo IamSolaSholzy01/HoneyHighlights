@@ -123,7 +123,7 @@
         </div>
     </section>
     <!-- Comment -->
-    <section class="honey-blog-section" style="padding: 10px; margin: 10px;">
+    <section class="container">
     <div class="container card">
         <div class="row">
             <div class="col-md-6">
