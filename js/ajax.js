@@ -588,5 +588,5 @@
     }
     var share = function() {
 
-        $('.honey-share-wrap').toggle();
+        $('.share-icons').toggle();
     }
