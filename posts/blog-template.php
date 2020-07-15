@@ -12,6 +12,7 @@
     <link href="../css/style.css" rel="stylesheet">
     <link href="css/blog-styles.min.css" rel="stylesheet">
     <link href="../css/icons.css" rel="stylesheet">
+    <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=5ef90c7f3f043000126ac167&product=inline-share-buttons&cms=website' async='async'></script>
     <!--Modal-->
     <link href="../assets/css/bootstrap.css" rel="stylesheet" />
     <link href="../assets/css/login-register.css" rel="stylesheet" />
@@ -60,7 +61,7 @@
             <p class="blog-title">POST TITLE</p>
             <div class="col-md-8 offset-md-2">
                 <div class="honey-page-content text-center">
-                    <div class="honey-meta-info"> <img src="img/icons/dark_brown/user.png" class="icon xsm" alt=""></i><span id="post_author"></span> <img src="img/icons/dark_brown/clock.png" class="icon xsm" alt=""></i><span id="post_date"></span> </div>
+                    <div class="honey-meta-info"> <img src="img/icons/dark_brown/user.png" class="icon xsm margin-2" alt=""></i><span id="post_author"></span> <img src="img/icons/dark_brown/clock.png" class="icon xsm margin-2" alt=""></i><span id="post_date"></span> </div>
                 </div>
             </div>
             <div>
@@ -94,17 +95,19 @@
                         <div class="col-md-6 card mb-3" include-html="about-author.html"></div>
                         </div>
                         <!-- Share Wrap -->
-                        <div class="fb-share-button" data-href="https://honeyhighlights.com/posts/blog-template.php" data-layout="button_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fhoneyhighlights.com%2Fposts%2Fblog-template.php&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
-                        <div class="honey-share"><a onclick="share();"><img src="img/icons/dark_brown/share.png" alt=""></a></div>
-                        <div class="honey-share-wrap share-icons" style="display: none;">
+                        <!--<div class="fb-share-button" data-href="https://honeyhighlights.com/posts/blog-template.php" data-layout="button_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fhoneyhighlights.com%2Fposts%2Fblog-template.php&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>-->
+                        <div class="honey-share"><a onclick="share();" style="text-decoration: none!important;"><img src="img/icons/dark_brown/share.png" alt="">Share Post</a></div>
+                        <div class="sharethis-inline-share-buttons"></div>
+                    <!--<div class="honey-share-wrap share-icons" style="display: none;">
                             <ul class="honey-share-icon">
                                 <li><a href="post.html#"><img src="img/icons/dark_brown/twitter-blue.png" alt=""></a></li>
                                 <li><a href="post.html#"><img src="img/icons/dark_brown/gmail.png" alt=""></a></li>
                                 <li><a href="post.html#"><img src="img/icons/dark_brown/instagram-red.png" alt=""></a></li>
                                 <li><a href="post.html#"><img src="img/icons/dark_brown/linkedin.png" alt=""></a></li>
-                                <li><a href="post.html#"><img src="img/icons/dark_brown/whatsapp.png" alt=""></a></li>
+                                <li><a href="whatsapp://send?text=https://honeyhighlights.com/posts/blog-template.php" data-action="share/whatsapp/share"><img src="img/icons/dark_brown/whatsapp.png" alt=""></a></li>
                             </ul>
-                        </div>
+                    </div>-->
+                        
                     </div>
                 </div>
             </div>

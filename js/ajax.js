@@ -586,5 +586,5 @@
     }
     var share = function() {
 
-        $('.share-icons').toggle();
+        $('.sharethis-inline-share-buttons').toggle();
     }
