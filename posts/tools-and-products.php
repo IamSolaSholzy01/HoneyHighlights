@@ -234,26 +234,17 @@
                             <iframe class="eyebrow-vid" width="560" height="315" src="https://www.youtube.com/embed/bwOgE2rXtno" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
                         <div><hr/></div>
-                        <!--About Me-->
-                        <div class="card mb-3">
-                            <div class="card-body">
-                            <h3 class="card-title">About The Author</h3>
-                            <p class="card-text">Hi, there! I’m Oyin, a professional, freelance makeup artist living in Lagos. 
-                                I have passion for flawless skincare, beauty and music. I would describe my style of makeup as classy, 
-                                modern and always what suits my clients best.</p>
-                            <p class="card-text">I love meeting new people which is one of the joy my job brings. I have a YouTube channel
-                                which was created so that I could meet and connect with people while teaching them makeup 
-                                routine and techniques.</p>
-                            <p class="card-text">I am looking forward to meeting you and hopefully get in touch with you as time go on.</p>
-                            </div>
-                        </div>
+                        <div class="col-md-12 blog-col-container">
                         <!--Reactions-->
-                        <div class="honey-share-wrap">
+                        <div class="honey-share-wrap col-md-6 card mb-3 blog-col">
                         <h3>What do you think about this post?</h3>
-                        <ul class="honey-reaction-icon">
-                            <i id="like" onclick="reaction(this)" style="cursor: pointer;" class="fa fa-thumbs-up"></i><span id="thumbup"></span>
-                            <i id="dislike" onclick="reaction(this)" style="cursor: pointer;" class="fa fa-thumbs-down"></i><span  id="thumbdown"></span>
+                            <ul class="honey-reaction-icon">
+                            <a id="like" onclick="reaction(this)" style="cursor: pointer;"><img src="img/icons/dark_brown/thumb-up.png" alt=""></a><span id="thumbup"></span>
+                            <a id="dislike" onclick="reaction(this)" style="cursor: pointer;"><img src="img/icons/dark_brown/thumb-down.png" alt=""></a><span id="thumbdown"></span>
                             </ul>
+                        </div>
+                        <!--About Me-->
+                        <div class="col-md-6" include-html="about-author.html"></div>
                         </div>
                         <!-- Share Wrap -->
                         <div class="fb-share-button" data-href="https://honeyhighlights.com/posts/blog-template.php" data-layout="button_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fhoneyhighlights.com%2Fposts%2Fblog-template.php&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>

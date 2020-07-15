@@ -79,13 +79,17 @@
                         <p>Pellentesque id lobortis elit, nec venenatis eros. Suspendisse aliquam porttitor libero non molestie. Duis ligula enim, interdum et dui eget, pretium venenatis lectus. Donec posuere iaculis libero vel ultricies. Donec massa arcu, euismod ut justo id, rutrum mattis eros. Morbi at porta lacus, vel sagittis lacus. Proin at lectus imperdiet, interdum neque a, ullamcorper sapien.</p>
                         <p>Sed cursus sem ac augue faucibus bibendum. Nulla eget consequat mi. Maecenas dignissim, erat at mattis bibendum, elit mi mollis nisi, et sagittis dolor eros eget diam. Pellentesque id ipsum a ex porttitor interdum. In at nibh egestas, porttitor quam sed, placerat risus. Pellentesque sollicitudin finibus enim, vel convallis massa porta nec. Proin at risus eget mi imperdiet gravida. Maecenas eget iaculis justo. Aliquam turpis ipsum, finibus varius egestas eget, tempus ac velit. Sed non magna pretium, venenatis nisl quis, vulputate nibh.</p>
                         <hr />
+                        <div class="col-md-12 blog-col-container">
                         <!--Reactions-->
-                        <div class="honey-share-wrap">
+                        <div class="honey-share-wrap col-md-6 card mb-3 blog-col">
                         <h3>What do you think about this post?</h3>
                             <ul class="honey-reaction-icon">
                             <a id="like" onclick="reaction(this)" style="cursor: pointer;"><img src="img/icons/dark_brown/thumb-up.png" alt=""></a><span id="thumbup"></span>
                             <a id="dislike" onclick="reaction(this)" style="cursor: pointer;"><img src="img/icons/dark_brown/thumb-down.png" alt=""></a><span id="thumbdown"></span>
                             </ul>
+                        </div>
+                        <!--About Me-->
+                        <div class="col-md-6" include-html="about-author.html"></div>
                         </div>
                         <!-- Share Wrap -->
                         <div class="fb-share-button" data-href="https://honeyhighlights.com/posts/blog-template.php" data-layout="button_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fhoneyhighlights.com%2Fposts%2Fblog-template.php&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>

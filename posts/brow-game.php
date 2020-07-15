@@ -91,13 +91,17 @@
                             </p>
                         </div>
                         <hr />
+                        <div class="col-md-12 blog-col-container">
                         <!--Reactions-->
-                        <div class="honey-share-wrap">
+                        <div class="honey-share-wrap col-md-6 card mb-3 blog-col">
                         <h3>What do you think about this post?</h3>
-                        <ul class="honey-reaction-icon">
-                            <i id="like" onclick="reaction(this)" style="cursor: pointer;" class="fa fa-thumbs-up"></i><span id="thumbup"></span>
-                            <i id="dislike" onclick="reaction(this)" style="cursor: pointer;" class="fa fa-thumbs-down"></i><span  id="thumbdown"></span>
+                            <ul class="honey-reaction-icon">
+                            <a id="like" onclick="reaction(this)" style="cursor: pointer;"><img src="img/icons/dark_brown/thumb-up.png" alt=""></a><span id="thumbup"></span>
+                            <a id="dislike" onclick="reaction(this)" style="cursor: pointer;"><img src="img/icons/dark_brown/thumb-down.png" alt=""></a><span id="thumbdown"></span>
                             </ul>
+                        </div>
+                        <!--About Me-->
+                        <div class="col-md-6" include-html="about-author.html"></div>
                         </div>
                         <!-- Share Wrap -->
                         <div class="fb-share-button" data-href="https://honeyhighlights.com/posts/blog-template.php" data-layout="button_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fhoneyhighlights.com%2Fposts%2Fblog-template.php&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>

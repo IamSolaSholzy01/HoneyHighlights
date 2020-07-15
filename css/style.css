@@ -1272,6 +1272,20 @@ img {
     box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 1), 0 8px 40px 0 rgba(0, 0, 0, 1)
 }
 
+.blog-col-container {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.card {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+    margin-right: 10px !important;
+}
+
+.blog-col {
+    flex: 1 0;
+}
+
 .honey-blog-section {
     padding-bottom: 3vh
 }
