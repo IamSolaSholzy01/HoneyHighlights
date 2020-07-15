@@ -63,7 +63,7 @@
             <p class="blog-title" style="font-family: Amiri, serif; font-weight: 700">5 TOOLS AND 5 PRODUCTS YOU SHOULD HAVE AS A MAKEUP BEGINNER</p>
             <div class="col-md-8 offset-md-2">
                 <div class="honey-page-content text-center">
-                    <div class="honey-meta-info"> <i class="fa fa-user"></i><span id="post_author"></span> <i class="fa fa-clock-o"></i><span id="post_date"></span> </div>
+                    <div class="honey-meta-info"> <img src="img/icons/dark_brown/user.png" class="icon xsm" alt=""></i><span id="post_author"></span> <img src="img/icons/dark_brown/clock.png" class="icon xsm" alt=""></i><span id="post_date"></span> </div>
                 </div>
             </div>
             <div class="underline-side">
@@ -286,7 +286,7 @@
                                 <div class="honey-comment-avatar"></div>
                                 <div class="honey-comment-box">
                                     <div class="honey-comment-head" onclick="showreply(this)">
-                                        <h6 class="honey-comment-name by-author"><a href="#"></a></h6><i class="fa fa-reply honey-reply-icon" onclick="replyclicked(this.id)"></i></div>
+                                        <h6 class="honey-comment-name by-author"></h6><a onclick="replyclicked(this.id);" class="honey-reply-icon"><img src="img/icons/white/reply.png" alt="reply" class="icon sm"></a></div>
                                     <div class="honey-comment-content">
                                         <p></span><span class="honey-comment-body"></span><span class="honey-comment-time"></p>
                                     </div>

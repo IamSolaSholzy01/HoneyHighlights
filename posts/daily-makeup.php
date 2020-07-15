@@ -24,6 +24,8 @@
 </head>
 
 <body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v7.0" nonce="PZSr1sZM"></script>
     <!-- Header -->
     <header class="honey-site-header">
         <div class="header-container">
@@ -59,7 +61,7 @@
             <p class="blog-title">MY EVERYDAY MAKEUP ROUTINE</p>
             <div class="col-md-8 offset-md-2">
                 <div class="honey-page-content text-center">
-                    <div class="honey-meta-info"> <i class="fa fa-user"></i><span id="post_author"></span> <i class="fa fa-clock-o"></i><span id="post_date"></span> </div>
+                    <div class="honey-meta-info"> <img src="img/icons/dark_brown/user.png" class="icon xsm" alt=""></i><span id="post_author"></span> <img src="img/icons/dark_brown/clock.png" class="icon xsm" alt=""></i><span id="post_date"></span> </div>
                 </div>
             </div>
             <div>
@@ -150,11 +152,10 @@
                             </ul>
                         </div>
                         <!-- Share Wrap -->
+                        <div class="fb-share-button" data-href="https://honeyhighlights.com/posts/blog-template.php" data-layout="button_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fhoneyhighlights.com%2Fposts%2Fblog-template.php&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
                         <div class="honey-share"><a onclick="share();"><img src="img/icons/dark_brown/share.png" alt=""></a></div>
                         <div class="honey-share-wrap share-icons" style="display: none;">
                             <ul class="honey-share-icon">
-                                <div id="fb-root"></div>
-                        <div class="fb-share-button" data-href="https://honeyhighlights.com/posts/blog-template.php" data-layout="button_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fhoneyhighlights.com%2Fposts%2Fblog-template.php&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
                                 <li><a href="post.html#"><img src="img/icons/dark_brown/twitter-blue.png" alt=""></a></li>
                                 <li><a href="post.html#"><img src="img/icons/dark_brown/gmail.png" alt=""></a></li>
                                 <li><a href="post.html#"><img src="img/icons/dark_brown/instagram-red.png" alt=""></a></li>
@@ -181,7 +182,7 @@
                                 <div class="honey-comment-avatar"></div>
                                 <div class="honey-comment-box">
                                     <div class="honey-comment-head" onclick="showreply(this)">
-                                        <h6 class="honey-comment-name by-author"><a href="#"></a></h6><i class="fa fa-reply honey-reply-icon" onclick="replyclicked(this.id)"></i></div>
+                                        <h6 class="honey-comment-name by-author"></h6><a onclick="replyclicked(this.id);" class="honey-reply-icon"><img src="img/icons/white/reply.png" alt="reply" class="icon sm"></a></div>
                                     <div class="honey-comment-content">
                                     <p></span><span class="honey-comment-body"></span><span class="honey-comment-time"></p>
                                     </div>
