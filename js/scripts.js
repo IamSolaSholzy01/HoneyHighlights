@@ -10,7 +10,7 @@ loader();*/
 
 (function($) {
     "use strict";
-
+    
     $(window).on('load', function() {
         $('body').addClass('loaded');
     });
