@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="css/cataloguesss.css">
     <link href="css/icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap" rel="stylesheet">
     <!--Modal-->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
     <link href="assets/css/login-register.css" rel="stylesheet" />

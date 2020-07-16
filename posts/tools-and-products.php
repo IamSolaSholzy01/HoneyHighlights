@@ -24,7 +24,7 @@
     <script src="../assets/js/login-register.js" type="text/javascript"></script>
     <script src="https://apis.google.com/js/platform.js" async defer></script>
     <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=5ef90c7f3f043000126ac167&product=inline-share-buttons&cms=website' async='async'></script>
-    
+    <style>@media (max-width:682px) {.eyebrow-vid {width: 100%}}</style>
 </head>
 
 <body>
