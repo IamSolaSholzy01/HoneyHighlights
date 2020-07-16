@@ -145,6 +145,6 @@
     <script src="js/include.js"></script>
     <script src="js/ajax.js"></script>
     <script>includeHTML();</script>
-    <script>$(function(){event.preventDefault();subscribe();register();login();logout();});</script>
+    <script>$(function(){event.preventDefault();subscribe();register();login();logout();contact_request();});</script>
 </body>
 </html>

@@ -12,7 +12,7 @@ if($_POST && isset($_POST['name'], $_POST['email'], $_POST['message'])) {
     $request = $_POST['text'];
     $message = $_POST['message'];
 
-    $sql = "INSERT INTO contact_table VALUE ('$name','$email','$message')";
+    $sql = "INSERT INTO contact_table (name, email, message) VALUE ('$name','$email','$message')";
 
     if ($datas->runSimpleQuery($connection, $sql)) {
         $data = array(

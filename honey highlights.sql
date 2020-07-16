@@ -11,6 +11,7 @@ CREATE TABLE subscribe_table(
   email varchar(250)
 );
 CREATE TABLE contact_table(
+  id integer AUTO_INCREMENT PRIMARY KEY,
   name varchar(250),
   email varchar(250),
   message varchar(2500)
