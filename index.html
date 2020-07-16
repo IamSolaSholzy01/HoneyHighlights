@@ -267,8 +267,6 @@
     <script src="js\vendor\jquery-1.12.4.min.js"></script>
     <script src="js\vendor\bootstrap.min.js"></script>
     <script src="js\vendor\owl.carousel.min.js"></script>
-    <script src="js\vendor\imagesloaded.pkgd.min.js" async></script>
-    <script src="js\vendor\jquery.isotope.v3.0.2.js"></script>
     <script src="js\scripts.min.js" async></script>
     <script src="js\include.js"></script>
     <script src="js\ajax.min.js" defer></script>
@@ -314,6 +312,18 @@
             slides[slideIndex - 1].style.display = "block";
             setTimeout(showSlides, 2000);
         }
+    </script>
+    <script>
+        /* *** Main Slider *** */
+        $('.honey-main-slider').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: false,
+            autoplay: true,
+            items: 1,
+            animateIn: "fadeIn",
+            animateOut: "fadeOut"
+        });
     </script>
 </body>
 

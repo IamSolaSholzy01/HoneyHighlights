@@ -19,8 +19,6 @@
     <!--Modal-->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
     <link href="assets/css/login-register.css" rel="stylesheet" />
-    <script src="assets/js/jquery-1.10.2.js" type="text/javascript"></script>
-	<script src="assets/js/bootstrap.js" type="text/javascript"></script>
     <script src="assets/js/login-register.js" type="text/javascript"></script>
     <script src="https://apis.google.com/js/platform.js" async defer></script>
     <style>
@@ -242,9 +240,6 @@
     <!-- JS -->
     <script src="js/vendor/jquery-1.12.4.min.js"></script>
     <script src="js/vendor/bootstrap.min.js"></script>
-    <script src="js/vendor/owl.carousel.min.js" async></script>
-    <script src="js/vendor/imagesloaded.pkgd.min.js" async></script>
-    <script src="js/vendor/jquery.isotope.v3.0.2.js"></script>
     <script src="js/scripts.js" async></script>
     <script src="js/include.js"></script>
     <script src="js/ajax.js"></script>

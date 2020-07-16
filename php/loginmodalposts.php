@@ -9,25 +9,25 @@
                        <h4 class="modal-title">Login with</h4>
                    </div>
                    <div class="modal-body">
-                       <div class="box">
+                       <div class="box"> 
                             <div class="content">
-                               <div class="social">
-                                <div class="g-signin2" data-onsuccess="onSignIn"></div>
-                               </div>
+                                <div class="form loginBox">
+                                    <div class="error" id="reply"></div>
+                                    <form class="logform" method="POST" action="../php/server.php" accept-charset="UTF-8" name="logginginform">
+                                        <input id="loginemail" class="form-control" title="Please put in an existing email address" type="email" value="<?php if(isset($_COOKIE["member_login"])) { echo $_COOKIE["member_login"]; } ?>" placeholder="Email" name="email" required>
+                                        <input id="loginpassword" class="form-control" type="password" title="Please put in a valid password" value="<?php if(isset($_COOKIE["member_password"])) { echo $_COOKIE["member_password"]; } ?>" placeholder="Password" name="password" required>
+                                        <input type="checkbox" name="remember" id="remember" <?php if(isset($_COOKIE["member_login"])) { ?> checked <?php } ?> ><label for="remember-me" style="padding-left: 2px;"> Remember me</label>
+                                        <input class="btn-login" id="loginbtn" type="submit" value="Login">
+                                    </form>
+                                </div>
                                <div class="division">
                                    <div class="line l"></div>
                                      <span>or</span>
                                    <div class="line r"></div>
                                </div>
-                               <div class="form loginBox">
-                                <div class="error" id="reply"></div>
-                                <form class="logform" method="POST" action="../php/server.php" accept-charset="UTF-8" name="logginginform">
-                                    <input id="loginemail" class="form-control" title="Please put in an existing email address" type="email" value="<?php if(isset($_COOKIE["member_login"])) { echo $_COOKIE["member_login"]; } ?>" placeholder="Email" name="email" required>
-                                    <input id="loginpassword" class="form-control" type="password" title="Please put in a valid password" value="<?php if(isset($_COOKIE["member_password"])) { echo $_COOKIE["member_password"]; } ?>" placeholder="Password" name="password" required>
-                                    <input type="checkbox" name="remember" id="remember" <?php if(isset($_COOKIE["member_login"])) { ?> checked <?php } ?> ><label for="remember-me">Remember me</label>
-                                    <input class="btn-login" id="loginbtn" type="submit" value="Login">
-                                </form>
-                            </div>
+                               <div class="social">
+                                   <div class="g-signin2" data-onsuccess="onSignIn" data-width="auto" data-longtitle="true" data-style="text-align: center;"></div>
+                               </div>
                             </div>
                        </div>
                        <div class="box">

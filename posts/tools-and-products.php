@@ -17,8 +17,6 @@
     <!--Modal-->
     <link href="../assets/css/bootstrap.css" rel="stylesheet" />
     <link href="../assets/css/login-register.css" rel="stylesheet" />
-    <script src="../assets/js/jquery-1.10.2.js" type="text/javascript"></script>
-	<script src="../assets/js/bootstrap.js" type="text/javascript"></script>
     <script src="../assets/js/login-register.js" type="text/javascript"></script>
     <script src="https://apis.google.com/js/platform.js" async defer></script>
     <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=5ef90c7f3f043000126ac167&product=inline-share-buttons&cms=website' async='async'></script>
@@ -26,8 +24,6 @@
 </head>
 
 <body>
-<div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v7.0" nonce="PZSr1sZM"></script>
     <!-- Header -->
     <header class="honey-site-header">
         <div class="header-container">
@@ -43,7 +39,7 @@
                                 <li><a href="../catalogue.min.html">Catalogue</a></li>
                                 <li><a href="../blog.php">Blog</a></li>
                                 <li><a href="../contact.php">Contact</a></li>
-                                <li><a  data-toggle="modal" id="loginLink" href="javascript:void(0)" onclick="openLoginModal();">Log in</a></li>
+                                <li id="loginLink"><a data-toggle="modal" href="javascript:void(0)" onclick="openLoginModal();">Log in</a></li>
                                 <li id="logoutLink" style="display: none;"><a href="../php/logout.php" >Log Out</a>
                             </ul>
                         </div>
@@ -356,8 +352,6 @@
     <!-- JS -->
     <script src="../js/vendor/jquery-1.12.4.min.js"></script>
     <script src="../js/vendor/bootstrap.min.js"></script>
-    <script src="../js/vendor/imagesloaded.pkgd.min.js"></script>
-    <script src="../js/vendor/jquery.isotope.v3.0.2.js"></script>
     <script src="../js/scripts.js"></script>
     <script src="../js/include.js"></script>
     <script src="../js/ajax.js"></script>
