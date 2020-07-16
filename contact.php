@@ -94,9 +94,9 @@
                     <div class="honey-contact-info">
                         <h3>Get in touch</h3><p>Do you have any question, request or complaint? Are you in need of our services wherever you are? Do you want to come to us, or, do you want us to come to you? Whatever you need, please, note that we are always reachable via the media below. We are eagerly expecting your call. 😁😁😊😊</p>
                         <ul>
-                            <li><img src="./img/icons/pink/home.png" class="icon sm">Oyinda's house</li>
-                            <li><img src="./img/icons/pink/phone.png" class="icon sm"></i>+234 708 881 0879</li>
-                            <li><img src="./img/icons/pink/envelope.png" class="icon sm"><a href="mailto:olajumokeoyinda@gmail.com" style="text-decoration: none;">olajumokeoyinda@gmail.com</a></li>
+                            <li><img src="./img/icons/pink/home.png" class="icon sm margin-2">Oyinda's house</li>
+                            <li><img src="./img/icons/pink/phone.png" class="icon sm margin-2"></i>+234 708 881 0879</li>
+                            <li><img src="./img/icons/pink/envelope.png" class="icon sm margin-2"><a href="mailto:olajumokeoyinda@gmail.com" style="text-decoration: none;">olajumokeoyinda@gmail.com</a></li>
                         </ul>
                     </div>
                 </div>
