@@ -161,10 +161,12 @@
         //Login form
         var logForm = $(".logform");
         logForm.submit(function(e) {
+            $(".btn-login").addClass("load");
+            $(".load").removeClass("btn-login");
             url = logForm.attr('action');
             type = logForm.attr('method');
             data = {};
-
+            
             logForm.find('[name]').each(function() {
                 var that = $(this),
                     name = that.attr('name'),
@@ -180,36 +182,51 @@
                 data: data,
                 success: function(response) {
                     if (response.id == "error") {
-                        $('#reply').html(response.content); // show the response
-                        $('#reply').css("color", "red");
-                        $('.error').addClass('alert alert-danger');
+                        setTimeout(() => {
+                            $(".load").addClass("btn-login");
+                            $(".btn-login").removeClass("load");
+                            $('#reply').html(response.content); // show the response
+                            $('#reply').css("color", "red");
+                            $('.error').addClass('alert alert-danger');
                         shakeModal();
+                        }, 3000);
+                        
                         setTimeout(() => {
                             $('#loginemail').val("");
                             $('#loginpassword').val("");
-                        }, 3000);
+                        }, 5000);
                     } else if (response.id == "emailerror") {
-                        $('#reply').html(response.content); // show the response
-                        $('#reply').css("color", "red");
-                        $('.error').addClass('alert alert-danger');
+                        setTimeout(() => {
+                            $(".load").addClass("btn-login");
+                            $(".btn-login").removeClass("load");
+                            $('#reply').html(response.content); // show the response
+                            $('#reply').css("color", "red");
+                            $('.error').addClass('alert alert-danger');
                         shakeModal();
+                        }, 3000);
+                        
                         setTimeout(() => {
                             $('#loginemail').val("");
                             $('#loginpassword').val("");
-                        }, 3000);
+                        }, 5000);
                     } else if (response) {
-                        //console.log(response);
-                        sessionStorage.setItem('id', response.id);
-                        sessionStorage.setItem('username', response.username);
-                        sessionStorage.setItem('email', response.email);
-                        sessionStorage.setItem('firstname', response.firstname);
-                        //console.log(sessionStorage.getItem('email'));
+                        setTimeout(()=>{
+                        $(".load").addClass("btn-login");
+                        $(".btn-login").removeClass("load");
                         $('#reply').html("Login Successful"); // show the response
                         $('#reply').css("color", "green");
                         $('.error').removeClass('alert alert-danger');
                         $('.error').addClass('alert alert-success');
                         $('#loginLink').css('display', 'none');
                         $('#logoutLink').css('display', 'block');
+                        }, 3000);
+                        //console.log(response);
+                        sessionStorage.setItem('id', response.id);
+                        sessionStorage.setItem('username', response.username);
+                        sessionStorage.setItem('email', response.email);
+                        sessionStorage.setItem('firstname', response.firstname);
+                        //console.log(sessionStorage.getItem('email'));
+                        
                         setTimeout(() => {
                             $('#loginemail').val("");
                             $('#loginpassword').val("");
@@ -218,7 +235,7 @@
                             $('#loginLink').css('display', 'none');
                             $('#logoutLink').css('display', 'block');
                             closeModal();
-                        }, 3000);
+                        }, 5000);
                     }
                     $("input:submit").removeAttr("disabled");
                 },
@@ -254,6 +271,8 @@
         sessionStorage.setItem('id', profile.getId());
         sessionStorage.setItem('username', profile.getName());
         sessionStorage.setItem('email', profile.getEmail());
+        $(".btn-login").addClass("load");
+        $(".load").removeClass("btn-login");
         $.ajax({
             type: 'POST',
             url: url,
@@ -268,12 +287,16 @@
                     //console.log('success');
                     //console.log(response.name);
                     //console.log(response.email);
-                    $('#reply').html("Login Successful");
-                    $('#reply').css("color", "green");
-                    $('.error').removeClass('alert alert-danger');
-                    $('.error').addClass('alert alert-success');
-                    $('#loginLink').css('display', 'none');
-                    $('#logoutLink').css('display', 'block');
+                    setTimeout(()=>{
+                        $(".load").addClass("btn-login");
+                        $(".btn-login").removeClass("load");
+                        $('#reply').html("Login Successful"); // show the response
+                        $('#reply').css("color", "green");
+                        $('.error').removeClass('alert alert-danger');
+                        $('.error').addClass('alert alert-success');
+                        $('#loginLink').css('display', 'none');
+                        $('#logoutLink').css('display', 'block');
+                        }, 3000);
                     setTimeout(() => {
                         $('#loginemail').val("");
                         $('#loginpassword').val("");
@@ -282,7 +305,7 @@
                         $('#loginLink').css('display', 'none');
                         $('#logoutLink').css('display', 'block');
                         closeModal();
-                    }, 3000);
+                    }, 5000);
                 } else {
                     //console.log('failure');
                 }
@@ -386,6 +409,7 @@
                     $("#empty").html(response.content);
                 } else {
                     //console.log(response);
+                    $("#honey-comments-list").empty();
                     $("#empty").html("");
                     var num = 0;
                     $.each(response, function() {
@@ -449,6 +473,7 @@
                     //console.log('yam');
                 } else {
                     //console.log(response);
+                    $("#reply-div div").empty();
                     $.each(response, function() {
                         var row = this;
                         //console.log(row);
