@@ -12,9 +12,7 @@
     <meta name="google-signin-client_id" content="985530739515-m4s7l3v4k5r7fu8vbfkm6p56ir1pb88d.apps.googleusercontent.com">
     <title>Honey Highlights</title> 
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/owl.carousel.css" rel="stylesheet">
     <link href="css/style.min.css" rel="stylesheet">
@@ -23,7 +21,6 @@
     <!--Modal-->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
     <link href="assets/css/login-register.css" rel="stylesheet" />
-	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
     <script src="assets/js/jquery-1.10.2.js" type="text/javascript"></script>
 	<script src="assets/js/bootstrap.js" type="text/javascript"></script>
     <script src="assets/js/login-register.js" type="text/javascript"></script>
@@ -84,21 +81,21 @@
     <section id="testimonial" class="honey-testimonial-section">
         <div class="container">
             <ul id="testimonial-carousel" class="testimonial-items owl-carousel">
-                <li class="testimonial-item"> <i class="fa fa-quote-left"></i>
+                <li class="testimonial-item"> <img src="img/icons/pink/left-quote.png" style="width: 20px; margin: auto;" alt="">
                     <p> ‎Lipstick is really magical.<br>
                      It holds more than a waxy bit of color - it holds the promise of a brilliant smile,
                       a brilliant day, both literally and figuratively.
                     </p>
                 <h4>Roberta Gately</h4></li>
-                <li class="testimonial-item"> <i class="fa fa-quote-left"></i>
+                <li class="testimonial-item"> <img src="img/icons/pink/left-quote.png" style="width: 20px; margin: auto;" alt="">
                     <p>Makeup is the finishing touch
                         <br>The final accessory.</p>
                 <h4> Marc Jacobs.</h4></li>
-                <li class="testimonial-item"> <i class="fa fa-quote-left"></i>
+                <li class="testimonial-item"> <img src="img/icons/pink/left-quote.png" style="width: 20px; margin: auto;" alt="">
                     <p>“Beauty is power”
                         <br>and Makeup is something that really enhances that; it’s a woman’s secret.</p>
                 <h4>Charlotte Tilbury</h4></li>
-                <li class="testimonial-item"> <i class="fa fa-quote-left"></i>
+                <li class="testimonial-item"> <img src="img/icons/pink/left-quote.png" style="width: 20px; margin: auto;" alt="">
                     <p>Girls have always wanted to be pretty, even in Egyptian times.
                         <br>Cleopatra wore all the eyeliner, you know.</p>
                 <h4>Rita Ora</h4></li>
