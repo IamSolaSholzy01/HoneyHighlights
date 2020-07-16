@@ -1140,26 +1140,12 @@ img {
     .honey-col.l6 {
         width: 100%
     }
+}
+
+@media all and (max-width:1024px) {
     .serious-wrapper {
-        overflow: auto
+        display: block !important;
     }
-}
-
-.serious-wrapper {
-    position: relative;
-    overflow: hidden;
-    display: block;
-    height: 70vh
-}
-
-.popular-posts {
-    float: left;
-    height: inherit
-}
-
-.slideshow-container {
-    float: left;
-    height: inherit
 }
 
 .honey-col.l8,
