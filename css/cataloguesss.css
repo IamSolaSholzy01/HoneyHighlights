@@ -113,7 +113,7 @@
     a:hover {
         text-decoration: none
     }
-    
+    /*
     h1,
     h2,
     h3,
@@ -125,7 +125,7 @@
         font-family: 'Montserrat', 'Helvetica Neue', Helvetica, sans-serif;
         font-weight: 700;
         text-transform: uppercase
-    }
+    }*/
     
     h1 {
         font-size: 3em
@@ -223,7 +223,7 @@
     textarea:focus {
         border-color: #3bc492
     }
-    
+    /*
     .button,
      :root .wp-block-button__link,
      :root .wp-block-file__button,
@@ -247,6 +247,7 @@
         -webkit-appearance: none;
         -moz-appearance: none
     }
+    */
     
      :root .is-style-outline .wp-block-button__link,
      :root .wp-block-button__link.is-style-outline {

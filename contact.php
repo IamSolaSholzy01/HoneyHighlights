@@ -27,7 +27,7 @@
         .honey-site-header.scrolled,.honey-site-header.awake{background-color: #fff !important;}
         .honey-contact-section{position: relative;z-index: 1;padding-top: 1px;padding-bottom: 60px}
         .honey-contact-wrap{background-color: #eee;padding: 40px 40px 0 40px}
-        .honey-contact-wrap *{font-family: Raleway, sans-serif}
+        .honey-contact-wrap *{font-family: 'Raleway', sans-serif}
         @media (max-width:767px) {.honey-contact-wrap {padding: 30px 0 0 0}}
         @media (max-width:992px) {.honey-contact-wrap {padding: 30px 0 0 0}}
         .honey-contact-section h3 {font-weight: 600;font-size: 30px;line-height: 1.5em;color: #1b1b1b}
@@ -46,7 +46,7 @@
     <!-- Header -->
     <header class="honey-site-header"><div class="header-container">
             <ul>
-                <a href="index.html" class="honey-site-logo"><img src="img/logo-dark.webp" alt="honey"></a>
+                <a href="index.html" class="honey-site-logo"><img src="img/logo-dark.png" alt="honey"></a>
                 <li>
                     <!-- Menu -->
                     <nav class="honey-site-menu" id="honey-navbar-spy">
