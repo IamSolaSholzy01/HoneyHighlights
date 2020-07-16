@@ -62,7 +62,7 @@
             <p class="blog-title">STEPPING UP YOUR BROW GAME</p>
             <div class="col-md-8 offset-md-2">
                 <div class="honey-page-content text-center">
-                    <div class="honey-meta-info"> <img src="img/icons/dark_brown/user.png" class="icon  margin-2" alt=""></i><span id="post_author"></span> <img src="img/icons/dark_brown/clock.png" class="icon  margin-2" alt=""></i><span id="post_date"></span> </div>
+                    <div class="honey-meta-info"> <img src="img/icons/dark_brown/user.png" class="icon xsm margin-2" alt=""><span id="post_author"></span> <img src="img/icons/dark_brown/clock.png" class="icon xsm margin-2" alt=""><span id="post_date"></span> </div>
                 </div>
             </div>
             <div>
@@ -103,6 +103,9 @@
                             <a id="like" onclick="reaction(this)" style="cursor: pointer;"><img src="img/icons/dark_brown/thumb-up.png" alt=""></a><span id="thumbup"></span>
                             <a id="dislike" onclick="reaction(this)" style="cursor: pointer;"><img src="img/icons/dark_brown/thumb-down.png" alt=""></a><span id="thumbdown"></span>
                             </ul>
+                        </div>
+                        <!--About Me-->
+                        <div class="col-md-6 card mb-3" include-html="about-author.html"></div>
                         </div>
                         <!-- Share Wrap -->
                         <!--<div class="fb-share-button" data-href="https://honeyhighlights.com/posts/blog-template.php" data-layout="button_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fhoneyhighlights.com%2Fposts%2Fblog-template.php&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>-->

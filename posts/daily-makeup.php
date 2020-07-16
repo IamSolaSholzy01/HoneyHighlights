@@ -63,7 +63,7 @@
             <p class="blog-title">MY EVERYDAY MAKEUP ROUTINE</p>
             <div class="col-md-8 offset-md-2">
                 <div class="honey-page-content text-center">
-                    <div class="honey-meta-info"> <img src="img/icons/dark_brown/user.png" class="icon xsm margin-2" alt=""></i><span id="post_author"></span> <img src="img/icons/dark_brown/clock.png" class="icon  margin-2" alt=""></i><span id="post_date"></span> </div>
+                    <div class="honey-meta-info"> <img src="img/icons/dark_brown/user.png" class="icon xsm margin-2" alt=""></i><span id="post_author"></span> <img src="img/icons/dark_brown/clock.png" class="icon xsm margin-2" alt=""></i><span id="post_date"></span> </div>
                 </div>
             </div>
             <div>
