@@ -109,7 +109,7 @@
                         <p><img src="daily_makeup_files/brow-define.jpg" alt=""/>For <b>brow definition</b> I go ahead and fill my brows with either a 
                             brow pencil and highlight them with a concealer using a very precise angled brush, this gives definition to my brows.
                         </p>
-                        <p>Want a detailed brow tutorial? Check it out below: https://youtu.be/wX5TtjoNBvss</p>
+                        <p>Want a detailed brow tutorial? Check it out below: <a href="https://youtu.be/wX5TtjoNBvss" target="new">https://youtu.be/wX5TtjoNBvss</a></p>
                         <div style="overflow:hidden;position: relative;">
                             <iframe allowfullscreen frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="100%" height="443px" type="text/html" src="https://www.youtube.com/embed/wX5TtjoNBvs?autoplay=0&fs=1&iv_load_policy=3&showinfo=1&rel=0&cc_load_policy=3&start=0&end=0"></iframe>
                             <div style="position: absolute;bottom: 10px;left: 0;right: 0;margin-left: auto;margin-right: auto;color: #000;text-align: center;"><small style="line-height: 1.8;font-size: 0px;background: #fff;"></small></div>
@@ -135,13 +135,15 @@
                             all wake late sometimes), I adjust my routine by skipping steps 3 and 4. It still looks simple, polished and most importantly beautiful, trust me. 
                             I really enjoyed sharing my daily routine with you ‘m excited to hear your experiences trying these out and establishing your own routine.
                         </p>
+                        </div>
+                        <hr />
                         <div class="added-comments">
                             <p>I did not write this article for the sake of promoting any makeup brand. That is why I did not include any brand name in the products I listed above. 
                                 If you want me to recommend brand products for you, however, or you want to know the ones I personally use let me know in the comment section and I 
                                 would reply as soon as I can. Much love to you guys.
                             </p>
                         </div>
-                        </div>
+                        
                         <hr />
                         <div class="col-md-12 blog-col-container">
                         <!--Reactions-->

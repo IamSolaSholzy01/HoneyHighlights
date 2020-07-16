@@ -71,6 +71,7 @@
     <div class="honey-blog-row honey-page-section">
     <!-- Blog entries -->
     <div class="honey-col l8 s12">
+    <div class="set-one">
     <!-- Blog entry -->
     <div class="honey-card-4 honey-margin bg-white">
         <img src="img\blog\blog-01.jpg" alt="Tools" style="width:100%">
@@ -97,7 +98,7 @@
 
     <!-- Blog entry -->
     <div class="honey-card-4 honey-margin bg-white">
-    <img src="#" alt="" style="width:100%">
+    <!--<img src="#" alt="" style="width:100%">-->
         <div class="honey-container">
         <h3><b>Reasons Makeup Products Don't Blend</b></h3>
         <h5><span style="padding-right: 15px;" class="user"><img src="img\icons\dark_brown\user.png" alt="" class="honey-opacity sm"> O. Ogundeji</span><span class="honey-opacity"><span class="date honey-opacity"><img src="img\icons\dark_brown\clock.png" alt="" class="sm"> 13.07.2020</span></span></h5>
@@ -122,7 +123,7 @@
 
     <!-- Blog entry -->
     <div class="honey-card-4 honey-margin bg-white">
-    <img src="#" alt="" style="width:100%">
+    <!--<img src="#" alt="" style="width:100%">-->
         <div class="honey-container">
         <h3><b>Importance of Skin Care</b></h3>
         <h5><span style="padding-right: 15px;" class="user"><img src="img\icons\dark_brown\user.png" alt="" class="honey-opacity sm"> O. Ogundeji</span><span class="honey-opacity"><span class="date honey-opacity"><img src="img\icons\dark_brown\clock.png" alt="" class="sm">  14.07.2020</span></span></h5>
@@ -142,6 +143,54 @@
         </div>
     </div>
     <hr />
+    </div>
+    <div class="set-two">
+        <!-- Blog entry -->
+    <div class="honey-card-4 honey-margin bg-white">
+    <!--<img src="#" alt="" style="width:100%">-->
+        <div class="honey-container">
+        <h3><b>Daily Makeup Routine</b></h3>
+        <h5><span style="padding-right: 15px;" class="user"><img src="img\icons\dark_brown\user.png" alt="" class="honey-opacity sm"> O. Ogundeji</span><span class="honey-opacity"><span class="date honey-opacity"><img src="img\icons\dark_brown\clock.png" alt="" class="sm">  14.07.2020</span></span></h5>
+        </div>
+        <input type="hidden" value="4" class="hidden-input" id="4">
+
+        <div class="honey-container" style="width: 100%;">
+        <p>Beautiful women are often very busy, and as such, do not have the time for an extensive makeup session each day. Is there any way to have makeup minimally each day?</p>
+        <div class="honey-row">
+            <div class="honey-col m8 s12">
+            <button onclick="window.location.href='posts/daily-makeup.php';" class="honey-button honey-padding-large bg-white honey-border"><b>READ MORE »</b></button>
+            </div>
+            <div class="honey-col m4 honey-hide-small">
+            <p><span class="honey-padding-large honey-right"><b>Comments  </b> <span class="honey-badge"><span id="commentnum4"></span></span></span></p>
+            </div>
+        </div>
+        </div>
+    </div>
+    <hr />
+
+    <!-- Blog entry -->
+    <div class="honey-card-4 honey-margin bg-white">
+    <!--<img src="#" alt="" style="width:100%">-->
+        <div class="honey-container">
+        <h3><b>Improve Your Brow Game</b></h3>
+        <h5><span style="padding-right: 15px;" class="user"><img src="img\icons\dark_brown\user.png" alt="" class="honey-opacity sm"> O. Ogundeji</span><span class="honey-opacity"><span class="date honey-opacity"><img src="img\icons\dark_brown\clock.png" alt="" class="sm">  14.07.2020</span></span></h5>
+        </div>
+        <input type="hidden" value="5" class="hidden-input" id="5">
+
+        <div class="honey-container" style="width: 100%;">
+        <p>We’ve all had that bad brow day, at some point in our lives. And achieving good looking brows can seem like a big challenge. How can you have good cheap eyebrow design?</p>
+        <div class="honey-row">
+            <div class="honey-col m8 s12">
+            <button onclick="window.location.href='posts/brow-game.php';" class="honey-button honey-padding-large bg-white honey-border"><b>READ MORE »</b></button>
+            </div>
+            <div class="honey-col m4 honey-hide-small">
+            <p><span class="honey-padding-large honey-right"><b>Comments  </b> <span class="honey-badge"><span id="commentnum5"></span></span></span></p>
+            </div>
+        </div>
+        </div>
+    </div>
+    <hr />
+    </div>
     <!-- END BLOG ENTRIES -->
     </div>
 
