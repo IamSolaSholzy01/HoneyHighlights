@@ -111,7 +111,7 @@
                         </p>
                         <p>Want a detailed brow tutorial? Check it out below: <a href="https://youtu.be/wX5TtjoNBvss" target="new">https://youtu.be/wX5TtjoNBvss</a></p>
                         <div style="overflow:hidden;position: relative;">
-                            <iframe allowfullscreen frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="100%" height="443px" type="text/html" src="https://www.youtube.com/embed/wX5TtjoNBvs?autoplay=0&fs=1&iv_load_policy=3&showinfo=1&rel=0&cc_load_policy=3&start=0&end=0"></iframe>
+                            <iframe allowfullscreen loading="lazy" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="100%" height="443px" type="text/html" src="https://www.youtube.com/embed/wX5TtjoNBvs?autoplay=0&fs=1&iv_load_policy=3&showinfo=1&rel=0&cc_load_policy=3&start=0&end=0"></iframe>
                             <div style="position: absolute;bottom: 10px;left: 0;right: 0;margin-left: auto;margin-right: auto;color: #000;text-align: center;"><small style="line-height: 1.8;font-size: 0px;background: #fff;"></small></div>
                             <style>.newst{position:relative;text-align:right;height:420px;width:520px;} @media all and (max-width:768px) {iframe {height: 240px;}} #gmap_canvas img{max-width:none!important;background:none!important}</style>
                         </div><br />
