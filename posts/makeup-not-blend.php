@@ -72,7 +72,7 @@
                 <div class="col-md-12">
                     <div class="honey-blog-items honey-single-post">
                         <div class="card" style="padding: 15px;">
-                        <div class="padder-blog"> <!--<img src="img/blog/post.jpg" alt="Post">--> </div>
+                        <div class="entry-thumb"><img src="../img/Portfolio Images/ORE2.jpg" alt="Post"></div>
                         <p>Have you heard about blending in makeup? You’ve very likely heard a makeup artist say 
                             'ensure you blend this or that area properly'. Well, when applying products on your face, 
                             you want a seamless application. You want an effect that when someone looks at your face, 
@@ -88,6 +88,7 @@
                         </p>
                         <hr />
                         <p class="heading-one" style="color: #c56765;">Fake Products</p>
+                        <img src="makeup_blend_files/fake products.jpg" alt="">
                         <p>It is possible that you are using fake products, and let me just say that, my dear ladies, it is nearly 
                             impossible to blend fake products. Why? Well, because they are fake. Fake products will never give you the 
                             quality and finish that you could get from using the proper products. How then, can you identify and avoid 
@@ -98,6 +99,7 @@
                             for quality that comes from repeated usage.
                         </p>
                         <p class="heading-one" style="color: #c56765;">Wrong Tools</p>
+                        <img src="makeup_blend_files/wrong tools.jpg" alt="">
                         <p>If you’re using the wrong tool for a product, girl, you’re in for a lot of stress. For example, imagine using a 
                             contour brush to apply concealer. No, no, no, it won’t work! It’s too big for your highlight area, and it will 
                             not blend. You need to learn how to use your brushes, what technique works best for you. You could even label 
@@ -113,6 +115,8 @@
                         <p>When it comes to makeup, the importance of blending cannot be overemphasized. I, personally, have multiple blending 
                             brushes, and its important that you have these tools to help you achieve the blend you’re looking for. It is vital.
                         </p>
+                        </div>
+                        <hr />
                         <div class="added-comments">
                             <p>I hope you enjoyed the article? If you have any question or you need me to recommend brands for your makeup 
                                 products, please let me know in the comment section below and I will reply as soon as I see your message, or
@@ -120,7 +124,7 @@
                                 <a href="tools-and-products.php">makeup tools and how to use them</a>.
                             </p>
                         </div>
-                        </div>
+                        
                         <hr />
                         <div class="col-md-12 blog-col-container">
                         <!--Reactions-->
@@ -200,7 +204,7 @@
                     <div class="honey-comment-form">
                         <h4>Leave a comment</h4>
                         <form action="../php/comment.php" method="post" id="ajax-form" class="form-horizontal row">
-                          <input type="hidden" id="post_id" name="post_id" value="5">
+                          <input type="hidden" id="post_id" name="post_id" value="2">
                             <div class="col-sm-6">
                                 <div class="form-group">
                                     <input type="text" id="name" name="name" class="form-control" placeholder="Name" required> </div>
