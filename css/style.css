@@ -1548,3 +1548,20 @@ span.user {
         padding: 10px
     }
 }
+.load{
+    font-size: 0;background-color: white;
+    border-color: #ff1493;
+    width: 25px;
+    height: 25px;
+    border-style: dotted;
+    border-radius: 50%;
+    border-left-color: transparent;
+    animation: rotate 1.3s ease 0.5s infinite;
+    margin-left: 13px;
+    margin-top: 10px;
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(360deg);
+    }
+}
