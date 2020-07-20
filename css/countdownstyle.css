@@ -33,6 +33,19 @@ body {
     text-align: center;
 }
 
+@media all and (max-width: 560px) {
+    body {
+        width: 100%;
+        padding: 10vh 0;
+        vertical-align: auto;
+        background-size: auto;
+        background-repeat: no-repeat;
+    }
+    img {
+        padding: 10vh;
+    }
+}
+
 #countdown {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 0;
