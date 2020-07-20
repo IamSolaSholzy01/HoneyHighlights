@@ -31,20 +31,31 @@ if($_POST && isset($_POST['email'])) {
         $to = $email;
         $from = 'example@honeyhighlights.com'; 
         $fromName = 'HoneyHighlights'; 
-        $subject = "Subscription";
+        $subject = "Subscription Successful";
         $htmlContent = ' 
     <html> 
     <head> 
         <title>Welcome to Honeyhighlights</title> 
     </head> 
-    <body> 
-        <h1>Thank you for subscribing to our blog</h1> 
+    <body>
+       
+        <h1>Hurray, you have subscribed to our blog</h1> 
         <p>You will be notified first of our updates</p>
         <table cellspacing="0" style="border: 2px dashed #FB4314; width: 100%;"> 
             <tr> 
-                <th>:</th><td><a href="http://www.honeyhighlights.com">www.honeyhighlights.com</a></td> 
+                <th>Visit us now on:</th><td><a href="https://www.honeyhighlights.com.ng">www.honeyhighlights.com.ng</a></td> 
             </tr> 
         </table> 
+        <p>Thank you.</p>
+        <br>
+        <p>HoneyHighlights </p>
+        <br>
+        <br>
+        <p>You can unsubscribe anytime by clicking on the link below</p>
+        <form action="unsubscribe.php" method="POST">
+            <input type="hidden" name="email" value = '."$from".'>
+            <input type="submit" value="Unsubscribe Me">
+        </form>
     </body> 
     </html>';
 
@@ -55,11 +66,11 @@ if($_POST && isset($_POST['email'])) {
     // Additional headers 
     $headers .= 'From: '.$fromName.'<'.$from.'>' . "\r\n"; 
     // Send email 
-    //if(mail($to, $subject, $htmlContent, $headers)){ 
+    if(mail($to, $subject, $htmlContent, $headers)){ 
     //    echo 'Email has sent successfully.'; 
-    //}else{ 
+    }else{ 
     //    echo 'Email sending failed.'; 
-    //}
+    }
 
     } else {
 
