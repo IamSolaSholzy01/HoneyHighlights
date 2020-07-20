@@ -38,21 +38,16 @@ if($_POST && isset($_POST['email'])) {
         <title>Welcome to Honeyhighlights</title> 
     </head> 
     <body>
-       
         <h1>Hurray, you have subscribed to our blog</h1> 
         <p>You will be notified first of our updates</p>
-        <table cellspacing="0" style="border: 2px dashed #FB4314; width: 100%;"> 
-            <tr> 
-                <th>Visit us now on:</th><td><a href="https://www.honeyhighlights.com.ng">www.honeyhighlights.com.ng</a></td> 
-            </tr> 
-        </table> 
+        <p>Visit us now on: <a href="https://www.honeyhighlights.com.ng">www.honeyhighlights.com.ng</a></p>
         <p>Thank you.</p>
         <br>
         <p>HoneyHighlights </p>
         <br>
         <br>
         <p>You can unsubscribe anytime by clicking on the link below</p>
-        <form action="unsubscribe.php" method="POST">
+        <form action="http://www.honeyhighlights.com.ng/test/php/unsubscribe.php" method="POST">
             <input type="hidden" name="email" value = '."$from".'>
             <input type="submit" value="Unsubscribe Me">
         </form>
@@ -78,7 +73,5 @@ if($_POST && isset($_POST['email'])) {
 }
 }
 echo json_encode($data);
-
-
 
 ?>
