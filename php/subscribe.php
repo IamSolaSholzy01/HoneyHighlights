@@ -8,7 +8,7 @@ if($_POST && isset($_POST['email'])) {
 
     $email = $util->clean_input($_POST['email']);
 
-    $sql = "SELECT * from user_table where email = '$email'";
+    $sql = "SELECT * from subscribe_table where email = '$email'";
     $result = $datas->runSimpleQuery($connection, $sql);
     if (mysqli_num_rows($result) > 0) { 
         $data = array(
