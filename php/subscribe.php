@@ -48,7 +48,7 @@ if($_POST && isset($_POST['email'])) {
         <br>
         <p>You can unsubscribe anytime by clicking on the link below</p>
         <form action="http://www.honeyhighlights.com.ng/test/php/unsubscribe.php" method="POST">
-            <input type="hidden" name="email" value = '."$from".'>
+            <input type="hidden" name="email" value = '."$to".'>
             <input type="submit" value="Unsubscribe Me">
         </form>
     </body> 

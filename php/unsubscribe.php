@@ -8,7 +8,7 @@ if($_POST && isset($_POST['email'])) {
 
     $email = $util->clean_input($_POST['email']);
     
-    $sqls = "DELETE from subscribe_table (email) VALUE ('$email')";
+    $sqls = "DELETE from subscribe_table where email = '$email'";
 
     if ($datas->runSimpleQuery($connection, $sqls)) {
         echo('You have unsubscribed from our mailing list');
