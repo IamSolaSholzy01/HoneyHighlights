@@ -47,7 +47,7 @@ CREATE TABLE reactions_table(
 CREATE TABLE subscribe_table(
   id integer AUTO_INCREMENT PRIMARY KEY,
   email VARCHAR(250)
-)
+);
 
 CREATE TABLE `token_table` (
   `id` int(11) NOT NULL,

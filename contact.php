@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="css/cataloguesss.css">
-    <link href="css/icons.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap" rel="stylesheet">
     <!--Modal-->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
@@ -91,7 +90,7 @@
                         <ul>
                             <li><img src="./img/icons/pink/home.png" class="icon sm margin-2">Oyinda's house</li>
                             <li><img src="./img/icons/pink/phone.png" class="icon sm margin-2"></i>+234 708 881 0879</li>
-                            <li><img src="./img/icons/pink/envelope.png" class="icon sm margin-2"><a href="mailto:olajumokeoyinda@gmail.com" style="text-decoration: none;">olajumokeoyinda@gmail.com</a></li>
+                            <li><img src="./img/icons/pink/envelope.png" class="icon sm margin-2"><a href="mailto:contact@honeyhighlights.com.ng" style="text-decoration: none;">contact@honeyhighlights.com.ng</a></li>
                         </ul>
                     </div>
                 </div>

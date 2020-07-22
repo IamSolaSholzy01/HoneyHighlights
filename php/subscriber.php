@@ -1,16 +1,17 @@
 <?php
 session_start();
-require_once('classes.php');
-$datas = new DBControllers();
-$util = new Util();
-$connection = $datas->connectDB();
+$servername = "localhost";
+$db_username = "root";
+$db_password = "";
+$db_name = "honeyhighlights";
 
 if($_POST && isset($_POST['email'])) {
 
-    $email = $util->clean_input($_POST['email']);
+    $email = $_POST['email'];
+    $conn = mysqli_connect($servername, $db_username, $db_password, $db_name);
 
     $sql = "SELECT * from user_table where email = '$email'";
-    $result = $datas->runSimpleQuery($connection, $sql);
+    $result = mysqli_query($conn, $sql);
     if (mysqli_num_rows($result) > 0) { 
         $data = array(
             "id" => "Already existing",
@@ -21,7 +22,7 @@ if($_POST && isset($_POST['email'])) {
 
     $sqls = "INSERT INTO subscribe_table (email) VALUE ('$email')";
 
-    if ($datas->runSimpleQuery($connection, $sqls)) {
+    if (mysqli_query($conn, $sqls)) {
         $data = array(
             "id" => "Successful",
             "content" => "Thank you for subscribing.",

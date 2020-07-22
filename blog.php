@@ -15,7 +15,6 @@
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.min.css" rel="stylesheet">
-    <link href="css/icons.css" rel="stylesheet">
     <!--Modal-->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
     <link href="assets/css/login-register.css" rel="stylesheet" />
@@ -223,12 +222,12 @@
                 <span>O. Ogundeji</span>
             </li>
             <li class="honey-padding-16" style="cursor:pointer" onclick="window.location.href='posts/makeup-not-blend.php';" >
-                <img src="img\blog\blog-01.jpg" alt="Image" class="honey-left honey-margin-right" style="width:50px">
+                <img src="img\Portfolio Images\ORE2.jpg" alt="Image" class="honey-left honey-margin-right" style="width:50px">
                 <span class="honey-large">Reasons Makeup Don't Blend</span><br>
                 <span>O. Ogundeji</span>
             </li> 
             <li class="honey-padding-16" style="cursor:pointer" onclick="window.location.href='posts/daily-makeup.php';" >
-                <img src="img\blog\blog-01.jpg" alt="Image" class="honey-left honey-margin-right" style="width:50px">
+                <img src="posts\daily_makeup_files\lip-gloss.jpg" alt="Image" class="honey-left honey-margin-right" style="width:50px">
                 <span class="honey-large">Daily Makeup Routine</span><br>
                 <span>O. Ogundeji</span>
             </li>  
@@ -238,7 +237,7 @@
                 <span>O. Ogundeji</span>
             </li>
             <li class="honey-padding-16" style="cursor:pointer" onclick="window.location.href='posts/brow-game.php';" >
-                <img src="img\blog\blog-01.jpg" alt="Image" class="honey-left honey-margin-right" style="width:50px">
+                <img src="posts\brow_game_files\brow-sample.jpg" alt="Image" class="honey-left honey-margin-right" style="width:50px">
                 <span class="honey-large">Improve Your Brow Game</span><br>
                 <span>O. Ogundeji</span>
             </li>  

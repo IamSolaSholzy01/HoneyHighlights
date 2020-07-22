@@ -29,10 +29,10 @@
                 error: function(response) {
                     $('#subscribe-result').html(response.email);
                 }
-            })
+            });
             return false;
         });
-    }
+    };
 
     var contact_request = function() {
         var subForm = $('#contact-form');
@@ -80,10 +80,10 @@
                     $('.contact-result').html(response.content);
                     $('.contact-result').css('display', 'block');
                 }
-            })
+            });
             return false;
         });
-    }
+    };
 
     var register = function() {
         //registration form
@@ -141,7 +141,7 @@
                             $('#surname').val("");
                             $('#passwordconfirmation').val("");
                             $('#response').val("");
-                            $('.error').removeClass('alert alert-success')
+                            $('.error').removeClass('alert alert-success');
                             showLoginForm();
                         }, 3000);
                     }
@@ -155,7 +155,7 @@
             });
             return false;
         });
-    }
+    };
 
     var login = function() {
         //Login form
@@ -250,7 +250,7 @@
             });
             return false;
         });
-    }
+    };
 
     function signOut() {
         var auth2 = gapi.auth2.getAuthInstance();
@@ -321,12 +321,12 @@
     }
     var setAsLoggedIn = function() {
         isLoggedIn = true;
-    }
+    };
     var setAsLoggedOut = function() {
         isLoggedIn = false;
         sessionStorage.clear();
         //console.log("Cleared");
-    }
+    };
     var toggleLoginLogout = function() {
 
         var login = document.getElementById('loginLink');
@@ -334,7 +334,7 @@
 
         login.style.display = 'none';
         logout.style.display = 'block';
-    }
+    };
     var logout = function() {
         if (sessionStorage.getItem('email') != null) {
             //console.log(sessionStorage.getItem('email'));
@@ -343,7 +343,7 @@
             $('#loginLink').css('display', 'block');
             $('#logoutLink').css('display', 'none');
         }
-    }
+    };
 
     var postComment = function() {
         //Comment form 
@@ -390,7 +390,7 @@
             });
             return false;
         });
-    }
+    };
     var runn = function() {
         //Comment form 
         url = '../php/load-comments.php';
@@ -456,7 +456,7 @@
             }
         });
         return false;
-    }
+    };
 
     var runner = function() {
         url = '../php/load-reply.php';
@@ -501,7 +501,7 @@
             }
         });
 
-    }
+    };
     var postreply = function() {
         var id = document.getElementById('hidden-id').value;
         var postid = document.getElementById('post_id').value;
@@ -542,14 +542,14 @@
             }
         });
         return false;
-    }
+    };
     var replyclicked = function(id) {
         document.getElementById('hidden-id').value = id;
         $('#' + id).closest('.honey-comment-box').find('#reply-input').slideToggle();
-    }
+    };
     var showreply = function(me) {
         $(me).closest('.honey-comment-box').find('#reply-div').slideToggle();
-    }
+    };
     var reaction = function(me) {
         var id = me.id;
         var postid = document.getElementById('post_id').value;
@@ -584,7 +584,7 @@
             //console.log("thumbs downnn");
         }
         //return false;
-    }
+    };
     var loadreaction = function() {
         var postid = document.getElementById('post_id').value;
         url = '../php/load-reaction.php';
@@ -608,8 +608,8 @@
             }
         });
         //return false;
-    }
+    };
     var share = function() {
 
         $('.sharethis-inline-share-buttons').toggle();
-    }
+    };

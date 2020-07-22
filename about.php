@@ -16,7 +16,6 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/owl.carousel.css" rel="stylesheet">
     <link href="css/style.min.css" rel="stylesheet">
-    <link href="css/icons.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap" rel="stylesheet"> 
     <!--Modal-->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
