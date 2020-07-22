@@ -27,7 +27,7 @@ if($_POST && isset($_POST['name'], $_POST['email'], $_POST['message'])) {
     echo json_encode($data);
 
     // send email to honey highlights and redirect
-    $to = 'example@honeyhighlights.com'; 
+    $to = 'contact@honeyhighlights.com.ng'; 
     $from = $email; 
     $fromName = $name; 
     $subject = "New Request Contact";
@@ -35,7 +35,7 @@ if($_POST && isset($_POST['name'], $_POST['email'], $_POST['message'])) {
     $htmlContent = ' 
     <html> 
     <head> 
-        <title>Welcome to Honeyhighlights</title> 
+        <title>New Request for Honeyhighlights</title> 
     </head> 
     <body> 
         <h1>New Contact Request</h1> 
@@ -54,7 +54,7 @@ if($_POST && isset($_POST['name'], $_POST['email'], $_POST['message'])) {
                 <th>Message:</th><td>'.$message. '</td> 
             </tr>
             <tr> 
-                <th>:</th><td><a href="http://www.honeyhighlights.com">www.honeyhighlights.com</a></td> 
+                <td><a href="http://www.honeyhighlights.com.ng">www.honeyhighlights.com.ng</a></td> 
             </tr> 
         </table> 
     </body> 
