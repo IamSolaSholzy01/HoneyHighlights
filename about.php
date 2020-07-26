@@ -79,24 +79,44 @@
         <div class="container">
             <ul id="testimonial-carousel" class="testimonial-items owl-carousel">
                 <li class="testimonial-item"> <img src="img/icons/pink/left-quote.png" style="width: 20px; margin: auto;" alt="">
-                    <p> ‎Lipstick is really magical.<br>
+                    <p>" ‎Lipstick is really magical.<br>
                      It holds more than a waxy bit of color - it holds the promise of a brilliant smile,
-                      a brilliant day, both literally and figuratively.
+                      a brilliant day, both literally and figuratively."
                     </p>
                 <h4>Roberta Gately</h4></li>
                 <li class="testimonial-item"> <img src="img/icons/pink/left-quote.png" style="width: 20px; margin: auto;" alt="">
-                    <p>Makeup is the finishing touch
-                        <br>The final accessory.</p>
+                    <p>"Makeup is the finishing touch
+                        <br>The final accessory."</p>
                 <h4> Marc Jacobs.</h4></li>
                 <li class="testimonial-item"> <img src="img/icons/pink/left-quote.png" style="width: 20px; margin: auto;" alt="">
                     <p>“Beauty is power”
                         <br>and Makeup is something that really enhances that; it’s a woman’s secret.</p>
                 <h4>Charlotte Tilbury</h4></li>
                 <li class="testimonial-item"> <img src="img/icons/pink/left-quote.png" style="width: 20px; margin: auto;" alt="">
-                    <p>Girls have always wanted to be pretty, even in Egyptian times.
-                        <br>Cleopatra wore all the eyeliner, you know.</p>
+                    <p>"Girls have always wanted to be pretty, even in Egyptian times.
+                        <br>Cleopatra wore all the eyeliner, you know."</p>
                 <h4>Rita Ora</h4></li>
                 
+                <li class="testimonial-item"> <img src="img/icons/pink/left-quote.png" style="width: 20px; margin: auto;" alt="">
+                    <p>“i don't wear makeup for others the same way i don't decorate my house for others.
+                        <br>this is my home & everything i do is for me.” </p>
+                <h4>Amanda Lovelace</h4></li>
+                <li class="testimonial-item"> <img src="img/icons/pink/left-quote.png" style="width: 20px; margin: auto;" alt="">
+                    <p>"Creativity is your best makeup skill
+                        <br>don’t be afraid to experiment.” </p>
+                <h4> Pat McGrath</h4></li>
+                <li class="testimonial-item"> <img src="img/icons/pink/left-quote.png" style="width: 20px; margin: auto;" alt="">
+                    <p>"That’s one of the things I love about makeup.
+                        <br> You can change your whole attitude by just doing your eyeliner or lipstick differently.”  </p>
+                <h4> Beyonce</h4></li>
+                <li class="testimonial-item"> <img src="img/icons/pink/left-quote.png" style="width: 20px; margin: auto;" alt="">
+                    <p>“Have a better relationship with your makeup and 
+                        <br>take the time to learn what your products will do.”</p>
+                <h4> Sam Fine</h4></li>
+                <li class="testimonial-item"> <img src="img/icons/pink/left-quote.png" style="width: 20px; margin: auto;" alt="">
+                    <p> “Happiness is the secret to all beauty. 
+                        <br>There is no beauty that is attractive without happiness.”</p>
+                <h4>Christian Dior</h4></li>
             </ul>
         </div>
     </section>
