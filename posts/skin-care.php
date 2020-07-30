@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -248,3 +251,14 @@
     <script>$(function(){event.preventDefault();postComment();});</script>
 </body>
 </html>
+<?php
+    
+    if(isset($_SESSION["member_id"])){
+        echo '<script type="text/javascript">
+            $("#comment-email").toggle();
+            document.getElementById("comment-email").value = "'.$_SESSION["email"].'";
+            document.getElementById("name").value = "'.$_SESSION["username"].'";
+            $("#name").toggle();
+        </script>';
+    }
+?>

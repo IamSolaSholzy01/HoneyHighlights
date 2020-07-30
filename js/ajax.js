@@ -226,7 +226,8 @@
                         sessionStorage.setItem('email', response.email);
                         sessionStorage.setItem('firstname', response.firstname);
                         //console.log(sessionStorage.getItem('email'));
-                        
+                        $('#name').toggle();
+                        $('#comment-email').toggle();
                         setTimeout(() => {
                             $('#loginemail').val("");
                             $('#loginpassword').val("");
@@ -254,8 +255,9 @@
 
     function signOut() {
         var auth2 = gapi.auth2.getAuthInstance();
+        auth2.disconnect();
         auth2.signOut().then(function() {
-            //console.log('User signed out.');
+            
         });
     }
 
@@ -414,6 +416,7 @@
                     var num = 0;
                     $.each(response, function() {
                         num++;
+                        console.log(this);
                         var newComment = $("body").find("#honey-comments > li").clone();
                         newComment.find(".honey-comment-name").append(this.name);
                         newComment.find(".honey-comment-body").append(this.body);
