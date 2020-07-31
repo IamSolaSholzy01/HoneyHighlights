@@ -1,4 +1,3 @@
-﻿
 <!doctype html>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
@@ -7,18 +6,17 @@
 <html class="no-js" lang="en">
 <!--<![endif]-->
 
-<head>
-    <meta charset="utf-8">
+<head><meta charset="windows-1252">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="google-signin-client_id" content="985530739515-m4s7l3v4k5r7fu8vbfkm6p56ir1pb88d.apps.googleusercontent.com">
+    <meta name="google-signin-client_id" content="383312301221-4n7t419pj73ec0fpbtl0pg0hpvqbcs7q.apps.googleusercontent.com">
+    <meta name="google-signin-client_id" content="383312301221-hbnc4rnt4t2lsg464e0q16qb9g6b8c9n.apps.googleusercontent.com">
     <title>Honey Highlights</title>
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.min.css">
-    <link rel="stylesheet" href="css/cataloguesss.css">
     <link href="https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap" rel="stylesheet">
     <!--Modal-->
-    <link href="assets/css/bootstrap.css" rel="stylesheet" />
     <link href="assets/css/login-register.css" rel="stylesheet" />
     <script src="assets/js/login-register.js" type="text/javascript"></script>
     <script src="https://apis.google.com/js/platform.js" async defer></script>
@@ -39,23 +37,28 @@
         .form-control:focus, .honey-contact-form:focus {border-bottom-width: 2px;border-color: #ff69b4}
         .form-control:focus {border-color: inherit;-webkit-box-shadow: none;box-shadow: none}
         .honey-contact-form .form-control.message {height: 150px}
+        .header-image, .header-image:after{height: 900px;height: 100vh;position: absolute;z-index: 1;right: 0;left: 0}
+        .header-image {background-repeat: no-repeat;background-position: top center;background-size: cover}
+        .header-image:after {content: "";display: block;z-index: 2;top: 0;background: #1d1d1d;background: linear-gradient(to bottom, rgba(29, 29, 29, .2) 0, rgba(29, 29, 29, 1) 100%)}
+        .honey-footer-section {background: 0 0!important;z-index: 1!important}
+        .subscribe {display: none}
     </style>
 </head>
 <body>
     <!-- Header -->
     <header class="honey-site-header"><div class="header-container">
             <ul>
-                <a href="index.html" class="honey-site-logo"><img src="img/logo-dark.png" alt="honey"></a>
+                <a href="/" class="honey-site-logo"><img src="img/logo-dark.png" alt="honey"></a>
                 <li>
                     <!-- Menu -->
                     <nav class="honey-site-menu" id="honey-navbar-spy">
                         <div class="honey-site-menu-inner" id="honey-navbar">
                         <ul class="list-unstyled honey-menu-container">
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="about.php">About Us</a></li>
-                                <li><a href="catalogue.min.html">Catalogue</a></li>
-                                <li ><a href="blog.php">Blog</a></li>
-                                <li class="giddy"><a href="contact.php">Contact</a></li>
+                                <li><a href="/">Home</a></li>
+                                <li><a href="about">About Us</a></li>
+                                <li><a href="catalogue">Catalogue</a></li>
+                                <li ><a href="blog">Blog</a></li>
+                                <li class="giddy"><a href="contact">Contact</a></li>
                                 <li id="loginLink"><a data-toggle="modal" href="javascript:void(0)" onclick="openLoginModal();">Log in</a></li>
                                 <li id="logoutLink" style="display: none;"><a href="php/logout.php">Log Out</a>
                             </ul>
@@ -71,16 +74,16 @@
     <input type="hidden" id="google" name="google" value="./php/google.php">
     <div class="header-image" style="background-image: url('img/about.jpg'); filter: blur(8px); position: fixed; z-index: -1;"></div>
     <section class="honey-page-section">
-        <div class="container honey-margin">
+        <div class="container">
             <div class="col-md-8 offset-md-2">
                 <div class="honey-page-content text-center">
                     <h2 style="color: #fff;">Contact</h2>
-                    <p class="excessfont" style="color: #fff; font-family: 'Coming Soon', cursive; font-size: 1.3em; font-weight: 400">Please reach out to me with your inquiry!</p>
+                    <p style="color: #fff; font-family: 'Coming Soon', cursive; font-size: 1.3em; font-weight: 400">Please reach out to me with your inquiry!</p>
                 </div>
             </div>
         </div>
     </section>
-    <section class="honey-contact-section">
+    <section class="honey-contact-section" style="padding-top: 1.5em;">
         <div id="honey-contactMap"></div>
         <div class="container">
             <div class="row honey-contact-wrap honey-card-extra honey-padding">
@@ -90,7 +93,7 @@
                         <ul>
                             <li><img src="./img/icons/pink/home.png" class="icon sm margin-2">Oyinda's house</li>
                             <li><img src="./img/icons/pink/phone.png" class="icon sm margin-2"></i>+234 708 881 0879</li>
-                            <li><img src="./img/icons/pink/envelope.png" class="icon sm margin-2"><a href="mailto:contact@honeyhighlights.com.ng" style="text-decoration: none;">contact@honeyhighlights.com.ng</a></li>
+                            <li><img src="./img/icons/pink/envelope.png" class="icon sm margin-2"><a href="mailto:contact@honeyhighlights.com.ng" style="text-decoration: underline;">Contact Us</a></li>
                         </ul>
                     </div>
                 </div>
@@ -126,17 +129,8 @@
             </div>
         </div>
     </section>
-    <!-- Subscribe -->
-    <div class="subscribe" id="subscribe-form">
-        <h2>Subscribe to our mailing list now <br>Be the first to know when we give discounts and deals on our services and our latest blog posts</h2>
-        <form class="subscribe-form" action="php/subscribe.php" method="POST" name="subscribersss">
-            <input class="subscribe-input" type="email" name="email" id="subscribe-email" placeholder="Email" required >
-            <button id="subscribe-button" class="honey-btn2" type="submit">Subscribe</button>
-        </form>
-    </div>
-    <div class="subscribe" id="subscribe-result"></div>    
     <!-- Footer -->
-    <div include-html="footer.html"></div> 
+    <div include-html="footer.html"></div>
     <!-- JS -->
     <script src="js/vendor/jquery-1.12.4.min.js"></script>
     <script src="js/vendor/bootstrap.min.js"></script>

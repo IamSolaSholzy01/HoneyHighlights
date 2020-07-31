@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
 <!--[if IE 8]> <html class="no-js lt-ie9" lang=""> <![endif]-->
@@ -9,7 +9,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="google-signin-client_id" content="985530739515-m4s7l3v4k5r7fu8vbfkm6p56ir1pb88d.apps.googleusercontent.com">
+    <meta name="google-signin-client_id" content="383312301221-4n7t419pj73ec0fpbtl0pg0hpvqbcs7q.apps.googleusercontent.com">
+    <meta name="google-signin-client_id" content="383312301221-hbnc4rnt4t2lsg464e0q16qb9g6b8c9n.apps.googleusercontent.com">
     <title>Honey Highlights</title> 
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
@@ -18,7 +19,6 @@
     <link href="css/style.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap" rel="stylesheet"> 
     <!--Modal-->
-    <link href="assets/css/bootstrap.css" rel="stylesheet" />
     <link href="assets/css/login-register.css" rel="stylesheet" />
     <script src="assets/js/login-register.js" type="text/javascript"></script>
     <script src="https://apis.google.com/js/platform.js" async defer></script>
@@ -30,16 +30,16 @@
     <header class="honey-site-header">
         <div class="header-container">
             <ul>
-                <a href="index.html" class="honey-site-logo"><img src="img/logo-dark.png" alt="honey"></a>
+                <a href="/" class="honey-site-logo"><img src="img/logo-dark.png" alt="honey"></a>
                 <li>
                     <nav class="honey-site-menu" id="honey-navbar-spy">
                         <div class="honey-site-menu-inner honey-menu-container" id="honey-navbar">
                             <ul class="list-unstyled">
-                                <li><a href="index.html">Home</a></li>
-                                <li class="giddy"><a href="about.php">About Us</a></li>
-                                <li><a href="catalogue.min.html">Catalogue</a></li>
-                                <li><a href="blog.php">Blog</a></li>
-                                <li><a href="contact.php">Contact</a></li>
+                                <li><a href="/">Home</a></li>
+                                <li class="giddy"><a href="about">About Us</a></li>
+                                <li><a href="catalogue">Catalogue</a></li>
+                                <li><a href="blog">Blog</a></li>
+                                <li><a href="contact">Contact</a></li>
                                 <li id="loginLink"><a  data-toggle="modal" href="javascript:void(0)" onclick="openLoginModal();">Log in</a></li>
                                 <li id="logoutLink" style="display: none;"><a href="php/logout.php" >Log Out</a>
                             </ul>
@@ -79,7 +79,7 @@
         <div class="container">
             <ul id="testimonial-carousel" class="testimonial-items owl-carousel">
                 <li class="testimonial-item"> <img src="img/icons/pink/left-quote.png" style="width: 20px; margin: auto;" alt="">
-                    <p> ‎Lipstick is really magical.<br>
+                    <p>Lipstick is really magical.<br>
                      It holds more than a waxy bit of color - it holds the promise of a brilliant smile,
                       a brilliant day, both literally and figuratively.
                     </p>
@@ -96,7 +96,26 @@
                     <p>Girls have always wanted to be pretty, even in Egyptian times.
                         <br>Cleopatra wore all the eyeliner, you know.</p>
                 <h4>Rita Ora</h4></li>
-                
+                <li class="testimonial-item"> <img src="img/icons/pink/left-quote.png" style="width: 20px; margin: auto;" alt="">
+                    <p>“i don't wear makeup for others the same way i don't decorate my house for others.
+                        <br>this is my home & everything i do is for me.” </p>
+                <h4>Amanda Lovelace</h4></li>
+                <li class="testimonial-item"> <img src="img/icons/pink/left-quote.png" style="width: 20px; margin: auto;" alt="">
+                    <p>"Creativity is your best makeup skill
+                        <br>don’t be afraid to experiment.” </p>
+                <h4> Pat McGrath</h4></li>
+                <li class="testimonial-item"> <img src="img/icons/pink/left-quote.png" style="width: 20px; margin: auto;" alt="">
+                    <p>"That’s one of the things I love about makeup.
+                        <br> You can change your whole attitude by just doing your eyeliner or lipstick differently.”  </p>
+                <h4> Beyonce</h4></li>
+                <li class="testimonial-item"> <img src="img/icons/pink/left-quote.png" style="width: 20px; margin: auto;" alt="">
+                    <p>“Have a better relationship with your makeup and 
+                        <br>take the time to learn what your products will do.”</p>
+                <h4> Sam Fine</h4></li>
+                <li class="testimonial-item"> <img src="img/icons/pink/left-quote.png" style="width: 20px; margin: auto;" alt="">
+                    <p> “Happiness is the secret to all beauty. 
+                        <br>There is no beauty that is attractive without happiness.”</p>
+                <h4>Christian Dior</h4></li>
             </ul>
         </div>
     </section>
@@ -121,18 +140,17 @@
                 </div>
                 <div class="col-md-4 col-sm-4 xs-padding no-margin" style="margin: 0;">
                     <div class="honey-team-content text-center">
-                        <div class="honey-team-thumb"> <img src="img/team/team-01.jpg" alt="" style="border-radius: 50%;"> </div>
-                        <h3>Sonia Ogungbe</h3> <span>Lighting Expert</span> </div>
+                        <div class="honey-team-thumb"> <img src="img/team/team-02.jpg" alt="" style="border-radius: 50%;"> </div>
+                        <h3>Sonia Ogungbe</h3> <span>Lighting</span> </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- Subscribe -->
-    <div class="subscribe" id="subscribe-form">
-        <h2>Subscribe to our mailing list now <br>Be the first to know when we give discounts and deals on our services and our latest blog posts</h2>
-
+    <div class="subscribe bg-smoky-black" id="subscribe-form">
+        <h2><b>Subscribe</b> to our mailing list <b>now</b> <br>Be the <b>first</b> to know about <b>discounts</b> and <b>deals</b> on our services. <br>You'll also know about our latest blog posts.</h2>
         <form class="subscribe-form" action="php/subscribe.php" method="POST" name="subscribersss">
-            <input class="subscribe-input" type="email" name="email" id="email" placeholder="Email" required >
+            <input class="subscribe-input" type="email" name="email" id="email" placeholder="Email" required>
             <button id="subscribe-button" class="honey-btn2" type="submit">Subscribe</button>
         </form>
     </div>

@@ -1,16 +1,19 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-signin-client_id" content="985530739515-m4s7l3v4k5r7fu8vbfkm6p56ir1pb88d.apps.googleusercontent.com">
+    <meta name="google-signin-client_id" content="383312301221-4n7t419pj73ec0fpbtl0pg0hpvqbcs7q.apps.googleusercontent.com">
+    <meta name="google-signin-client_id" content="383312301221-hbnc4rnt4t2lsg464e0q16qb9g6b8c9n.apps.googleusercontent.com">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Honey Highlights - Blog - Step up your brow game</title>
     <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.png">
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/style.min.css" rel="stylesheet">
     <link href="css/blog-styles.min.css" rel="stylesheet">
-    <link href="../css/icons.css" rel="stylesheet">
     <!--Modal-->
     <link href="../assets/css/bootstrap.css" rel="stylesheet" />
     <link href="../assets/css/login-register.css" rel="stylesheet" />
@@ -27,17 +30,17 @@
     <header class="honey-site-header">
         <div class="header-container">
             <ul>
-                <a href="../index.html" class="honey-site-logo"><img src="../img/logo-dark.png" alt="honey"></a>
+                <a href="/" class="honey-site-logo"><img src="../img/logo-dark.png" alt="honey"></a>
                 <li>
                     <!-- Menu -->
                     <nav class="honey-site-menu" id="honey-navbar-spy">
                         <div class="honey-site-menu-inner" id="honey-navbar">
                             <ul class="list-unstyled honey-menu-container">
-                                <li><a href="../index.html">Home</a></li>
-                                <li><a href="../about.php">About Us</a></li>
-                                <li><a href="../catalogue.min.html">Catalogue</a></li>
-                                <li><a href="../blog.php">Blog</a></li>
-                                <li><a href="../contact.php">Contact</a></li>
+                                <li><a href="/">Home</a></li>
+                                <li><a href="/about">About Us</a></li>
+                                <li><a href="/catalogue.min">Catalogue</a></li>
+                                <li><a href="/blog">Blog</a></li>
+                                <li><a href="/contact">Contact</a></li>
                                 <li id="loginLink"><a  data-toggle="modal" href="javascript:void(0)" onclick="openLoginModal();">Log in</a></li>
                                 <li id="logoutLink" style="display: none;"><a href="../php/logout.php">Log Out</a>
                             </ul>
@@ -96,8 +99,8 @@
                         <div class="honey-share-wrap col-md-6 card mb-3 blog-col">
                         <h3>What do you think about this post?</h3>
                             <ul class="honey-reaction-icon">
-                            <a id="like" onclick="reaction(this)" style="cursor: pointer;"><img src="img/icons/dark_brown/thumb-up.png" alt=""></a><span id="thumbup"></span>
-                            <a id="dislike" onclick="reaction(this)" style="cursor: pointer;"><img src="img/icons/dark_brown/thumb-down.png" alt=""></a><span id="thumbdown"></span>
+                            <a id="like" onclick="reaction(this)" style="cursor: pointer;"><img class="md" src="img/icons/dark_brown/thumb-up.png" alt=""></a><span id="thumbup"></span>
+                            <a id="dislike" onclick="reaction(this)" style="cursor: pointer;"><img class="md" src="img/icons/dark_brown/thumb-down.png" alt=""></a><span id="thumbdown"></span>
                             </ul>
                         </div>
                         <!--About Me-->
@@ -105,7 +108,7 @@
                         </div>
                         <!-- Share Wrap -->
                         <!--<div class="fb-share-button" data-href="https://honeyhighlights.com/posts/blog-template.php" data-layout="button_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fhoneyhighlights.com%2Fposts%2Fblog-template.php&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>-->
-                        <div class="honey-share"><a onclick="share();" style="text-decoration: none!important;"><img src="img/icons/dark_brown/share.png" alt="">Share Post</a></div>
+                        <div class="honey-share"><a onclick="share();" style="text-decoration: none!important;"><img class="md" src="img/icons/dark_brown/share.png" alt="">Share Post</a></div>
                         <div class="sharethis-inline-share-buttons"></div>
                     <!--<div class="honey-share-wrap share-icons" style="display: none;">
                             <ul class="honey-share-icon">
@@ -198,12 +201,11 @@
     </section>
     <!-- Subscribe -->
     <div class="subscribe" id="subscribe-form">
-    <h2>Subscribe to our mailing list now <br>Be the first to know when we give discounts and deals on our services and our latest blog posts</h2>
-
-    <form class="subscribe-form" action="php/subscribe.php" method="POST" name="subscribersss">
-        <input class="subscribe-input" type="email" name="email" id="subscribe-email" placeholder="Email" required >
-        <button id="subscribe-button" class="honey-btn2" type="submit">Subscribe</button>
-    </form>
+        <h2><b>Subscribe</b> to our mailing list <b>now</b> <br>Be the <b>first</b> to know about <b>discounts</b> and <b>deals</b> on our services. <br>You'll also know about our latest blog posts.</h2>
+        <form class="subscribe-form" action="../php/subscribe.php" method="POST" name="subscribersss">
+            <input class="subscribe-input" type="email" name="email" id="subscribe-email" placeholder="Email" required >
+            <button id="subscribe-button" class="honey-btn2" type="submit">Subscribe</button>
+        </form>
     </div>
     <div class="subscribe" id="subscribe-result"></div>
     <!-- Footer -->
@@ -224,3 +226,14 @@
     <script>$(function(){event.preventDefault();postComment();});</script>
 </body>
 </html>
+<?php
+    
+    if(isset($_SESSION["member_id"])){
+        echo '<script type="text/javascript">
+            $("#comment-email").toggle();
+            document.getElementById("comment-email").value = "'.$_SESSION["email"].'";
+            document.getElementById("name").value = "'.$_SESSION["username"].'";
+            $("#name").toggle();
+        </script>';
+    }
+?>

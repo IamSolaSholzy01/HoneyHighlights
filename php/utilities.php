@@ -45,15 +45,15 @@ class Util{
         } while ($rnd >= $range);
         return $min + $rnd;
     }
-    public function clearAuthCookie() {
+     public function clearAuthCookie() {
         if (isset($_COOKIE["member_login"])) {
-            setcookie("member_login", "");
+            setcookie("member_login", "", ['secure' => true, 'samesite' => 'Strict']);
         }
         if (isset($_COOKIE["random_password"])) {
-            setcookie("random_password", "");
+            setcookie("random_password", "", ['secure' => true, 'samesite' => 'Strict']);
         }
         if (isset($_COOKIE["random_selector"])) {
-            setcookie("random_selector", "");
+            setcookie("random_selector", "", ['secure' => true, 'samesite' => 'Strict']);
         }
     }
     public function toggleLoginLogout() {

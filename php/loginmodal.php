@@ -20,14 +20,6 @@
                                         <input class="btn-login" id="loginbtn" type="submit" value="Login">
                                     </form>
                                 </div>
-                               <div class="division">
-                                   <div class="line l"></div>
-                                     <span>or</span>
-                                   <div class="line r"></div>
-                               </div>
-                               <div class="social">
-                                   <div class="g-signin2" data-onsuccess="onSignIn" data-width="auto" data-longtitle="true" data-style="text-align: center;"></div>
-                               </div>
                             </div>
                        </div>
                        <div class="box">
@@ -47,6 +39,14 @@
                                    </form>
                                </div>
                            </div>
+                           <div class="division">
+                                   <div class="line l"></div>
+                                     <span>or</span>
+                                   <div class="line r"></div>
+                               </div>
+                               <div class="social">
+                                   <div class="g-signin2" prompt="select_account" data-prompt="select_account" data-onsuccess="onSignIn" data-width="auto" data-longtitle="true" data-style="text-align: center;"></div>
+                               </div>
                        </div>
                    </div>
                    <div class="modal-footer">

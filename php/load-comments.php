@@ -13,7 +13,14 @@ $post_id = $_POST['post_id'];
     if (mysqli_num_rows($result) > 0) {    
         while($row = mysqli_fetch_assoc($result))
         {
-            $data[] = $row;
+            $date = date_create($row["created_at"]);
+            array_push($data, $dat = array(
+                "body" => $row["body"],
+                "created_at" => date_format($date, 'g:ia D jS M Y'),
+                "name" => $row["name"],
+                "comment_id" => $row["comment_id"]
+            )
+        );
         }
     }else {
         $data = array(

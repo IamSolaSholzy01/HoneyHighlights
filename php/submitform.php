@@ -35,12 +35,12 @@ if($_POST && isset($_POST['name'], $_POST['email'], $_POST['message'])) {
     $htmlContent = ' 
     <html> 
     <head> 
-        <title>New Request for Honeyhighlights</title> 
+        <title>Welcome to Honeyhighlights</title> 
     </head> 
     <body> 
         <h1>New Contact Request</h1> 
         <p> You have been sent a new request</p>
-        <table cellspacing="0" style="border: 2px dashed #FB4314; width: 100%;"> 
+        <table cellspacing="0" style="border: 2px dashed #e854a0; width: 100%;"> 
             <tr> 
                 <th>Name:</th><td>'.$fromName.'</td> 
             </tr> 
@@ -68,15 +68,13 @@ if($_POST && isset($_POST['name'], $_POST['email'], $_POST['message'])) {
     // Additional headers 
     $headers .= 'From: '.$fromName.'<'.$from.'>' . "\r\n"; 
     // Send email 
-    //if(mail($to, $subject, $htmlContent, $headers)){ 
+    if(mail($to, $subject, $htmlContent, $headers)){ 
     //    echo 'Email has sent successfully.'; 
-    //}else{ 
+    }else{ 
     //    echo 'Email sending failed.'; 
-    //}
-
+    }
     //header("Location: ../contact.php");
     //exit;
-
 }
 
 ?>

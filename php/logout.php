@@ -24,5 +24,5 @@ $util->clearAuthCookie();
     signOut();
 </script>
 <script>
-     window.location.href = "../index.html";
+     window.location.href = "/";
 </script>

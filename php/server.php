@@ -7,7 +7,6 @@ $datas = new DBControllers();
 $util = new Util();
 require_once "authCookieSessionValidate.php";
 $connection = $datas->connectDB();
-
 try {
 //Create Account
 if($_POST && isset($_POST['firstname'], $_POST['surname'], $_POST['email'], $_POST['password'], $_POST['username'])){
@@ -16,23 +15,18 @@ if($_POST && isset($_POST['firstname'], $_POST['surname'], $_POST['email'], $_PO
     $email = $util->clean_input(mysqli_real_escape_string($connection, $_POST['email']));
     $username = $util->clean_input(mysqli_real_escape_string($connection, $_POST['username']));
     $passkey = $_POST['password'];
-    
     if (!(preg_match("/^.*(?=.{6,})(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).*$/", $passkey)) || (!(strlen($username) >= 4)))
     {
         throw new Exception("Invalid Username and/or Password Format");
     }
 
     else {
-
         $result = $auth->getMemberByUsernameOrEmail($username, $email);
-        
         if ($result===null) {
             //Hashing function
             $hashed_password = $util->hash($passkey);
             $sqls = "INSERT INTO user_table (firstname, surname, email, username, passkey) VALUES ('$firstname','$surname','$email','$username','$hashed_password')";
-            $resolution = mysqli_query($connection, $sqls); 
-            $insert = $auth->insertUser($firstname, $surname, $email, $username, $hashed_password);
-
+            $resolution = mysqli_query($connection, $sqls);
             if ($resolution) {
                 $data = array(
                 "id" => "success",
@@ -90,13 +84,25 @@ elseif ($_POST && isset($_POST['email'], $_POST['password'])){
                 $_SESSION["email"] = $row[0]["email"];
                 // Set Auth Cookies if 'Remember Me' checked
                 if (! empty($_POST["remember"])) {
-                    setcookie("member_login", $email, $cookie_expiration_time);
+                    setcookie("member_login", $email, [
+                        'expires' => $cookie_expiration_time,
+                        'secure' => true,
+                        'samesite' => 'Strict'
+                    ]);
                     
                     $random_password = $util->getToken(16);
-                    setcookie("random_password", $random_password, $cookie_expiration_time);
+                    setcookie("random_password", $random_password,  [
+                        'expires' => $cookie_expiration_time,
+                        'secure' => true,
+                        'samesite' => 'Strict'
+                    ]);
                     
                     $random_selector = $util->getToken(32);
-                    setcookie("random_selector", $random_selector, $cookie_expiration_time);
+                    setcookie("random_selector", $random_selector,  [
+                        'expires' => $cookie_expiration_time,
+                        'secure' => true,
+                        'samesite' => 'Strict'
+                    ]);
                     
                     $random_password_hash = password_hash($random_password, PASSWORD_DEFAULT);
                     $random_selector_hash = password_hash($random_selector, PASSWORD_DEFAULT);

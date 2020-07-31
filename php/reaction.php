@@ -42,7 +42,11 @@ $connection = $datas->connectDB();
 
             }
             $expire=time()+60*60*24*30;
-            setcookie("rateLikeChnage"."_".$post_id, "rateLikeChnage"."_".$post_id, $expire);
+              setcookie("rateLikeChnage"."_".$post_id, "rateLikeChnage"."_".$post_id, [
+                'expires' => $expire,
+                'secure' => true, 
+                'samesite' => 'Strict'
+            ]);
             
         }
     

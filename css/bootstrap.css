@@ -136,6 +136,12 @@ small {
     font-size: 80%;
 }
 
+#createacc,
+#logginuser {
+    color: #428bca;
+    text-decoration: none;
+}
+
 a {
     color: #007bff;
     text-decoration: none;
@@ -3309,9 +3315,12 @@ button.close {
 
 .modal-dialog {
     position: relative;
+    z-index: 1050;
     width: auto;
-    margin: 0.5rem;
-    pointer-events: none;
+    padding: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    pointer-events: auto;
 }
 
 .modal.fade .modal-dialog {
@@ -3320,11 +3329,6 @@ button.close {
     transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
     -webkit-transform: translate(0, -25%);
     transform: translate(0, -25%);
-}
-
-.modal.show .modal-dialog {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
 }
 
 .modal-dialog-centered {
@@ -3352,6 +3356,8 @@ button.close {
     background-clip: padding-box;
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 0.3rem;
+    -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+    box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
     outline: 0;
 }
 
@@ -3397,6 +3403,7 @@ button.close {
 .modal-title {
     margin-bottom: 0;
     line-height: 1.5;
+    padding-right: 35%;
 }
 
 .modal-body {

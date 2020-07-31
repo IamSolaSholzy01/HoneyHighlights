@@ -23,11 +23,14 @@
                 data: data,
                 success: function(response) {
                     $('#subscribe-form').css('display', 'none');
-                    $('#subscribe-result').html(response.content);
+                    $('#subscribe-result').text(response.content);
                     $('#subscribe-result').css('display', 'block');
+                    setTimeout(() => {
+                            $('#subscribe-result').css('display', 'none');
+                        }, 5000);
                 },
                 error: function(response) {
-                    $('#subscribe-result').html(response.email);
+                    $('#subscribe-result').text(response.email);
                 }
             });
             return false;
@@ -55,7 +58,7 @@
                 dataType: 'JSON',
                 data: data,
                 success: function(response) {
-                    console.log(response);
+                    //console.log(response);
                     if (response.id == 'success') {
                         $('.contact-result').html(response.content);
                         $('.contact-result').css('display', 'block');
@@ -76,7 +79,7 @@
                     }
                 },
                 error: function(response) {
-                    console.log(response);
+                    //console.log(response);
                     $('.contact-result').html(response.content);
                     $('.contact-result').css('display', 'block');
                 }
@@ -255,13 +258,17 @@
     function signOut() {
         var auth2 = gapi.auth2.getAuthInstance();
         auth2.signOut().then(function() {
-            //console.log('User signed out.');
+            
         });
     }
 
     function onLoad() {
         gapi.load('auth2', function() {
-            gapi.auth2.init();
+            gapi.auth2.init({
+                prompt: 'select_account'
+            }).then(function(auth2) {
+                //console.log("Sign in");
+            });
         });
     }
 
@@ -318,6 +325,7 @@
         //console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
         //console.log('Name: ' + profile.getName());
         //console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+        googleUser.disconnect();
     }
     var setAsLoggedIn = function() {
         isLoggedIn = true;
@@ -424,6 +432,7 @@
                     });
                     $('.commentnum').html(num);
                     $("input:submit").removeAttr("disabled");
+                    runner();
                 }
             },
             error: function(response) {

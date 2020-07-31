@@ -30,9 +30,9 @@ if($_POST && isset($_POST['email'])) {
 
 
         $to = $email;
-        $from = 'example@honeyhighlights.com'; 
+        $from = 'contact@honeyhighlights.com.ng'; 
         $fromName = 'HoneyHighlights'; 
-        $subject = "Subscription Successful";
+        $subject = "Subscription";
         $htmlContent = ' 
     <html> 
     <head> 
@@ -61,11 +61,21 @@ if($_POST && isset($_POST['email'])) {
  
     // Additional headers 
     $headers .= 'From: '.$fromName.'<'.$from.'>' . "\r\n"; 
-    // Send email 
+    // Send email
     if(mail($to, $subject, $htmlContent, $headers)){ 
-    //    echo 'Email has sent successfully.'; 
+        $notice = '<html> 
+    <head> 
+        <title>Welcome to Honeyhighlights</title> 
+    </head> 
+    <body> 
+        <h1>'.$to.' subscribed to your blog.</h1> 
+    </body> 
+    </html>';
+        $noticeto='contact@honeyhighlights.com.ng';
+        $noticehead='Subscription Notice';
+        mail($noticeto, $noticehead, $notice, $headers);
     }else{ 
-    //    echo 'Email sending failed.'; 
+        //echo 'Email sending failed.'; 
     }
 
     } else {
@@ -74,5 +84,7 @@ if($_POST && isset($_POST['email'])) {
 }
 }
 echo json_encode($data);
+
+
 
 ?>

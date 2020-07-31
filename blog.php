@@ -10,18 +10,18 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="google-signin-client_id" content="985530739515-m4s7l3v4k5r7fu8vbfkm6p56ir1pb88d.apps.googleusercontent.com">
+    <meta name="google-signin-client_id" content="383312301221-4n7t419pj73ec0fpbtl0pg0hpvqbcs7q.apps.googleusercontent.com">
+    <meta name="google-signin-client_id" content="383312301221-hbnc4rnt4t2lsg464e0q16qb9g6b8c9n.apps.googleusercontent.com">
     <title>Honey Highlights</title>
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.min.css" rel="stylesheet">
     <!--Modal-->
-    <link href="assets/css/bootstrap.css" rel="stylesheet" />
     <link href="assets/css/login-register.css" rel="stylesheet" />
     <script src="assets/js/login-register.js" type="text/javascript"></script>
     <script src="https://apis.google.com/js/platform.js" async defer></script>
     <style>
-        b {
+        .honey-page-section b {
             color: black;
         }
         body {
@@ -35,18 +35,18 @@
     <header class="honey-site-header">
         <div class="header-container">
             <ul>
-                <a href="index.html" class="honey-site-logo"><img src="img/logo-dark.png" alt="honey"></a>
+                <a href="/" class="honey-site-logo"><img src="img/logo-dark.png" alt="honey"></a>
                 
                 <li>
                     <!-- Menu -->
                     <nav class="honey-site-menu" id="honey-navbar-spy">
                         <div class="honey-site-menu-inner" id="honey-navbar">
                             <ul class="list-unstyled honey-menu-container">
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="about.php">About Us</a></li>
-                                <li><a href="catalogue.min.html">Catalogue</a></li>
-                                <li class="giddy"><a href="blog.php">Blog</a></li>
-                                <li><a href="contact.php">Contact</a></li>
+                                <li><a href="/">Home</a></li>
+                                <li><a href="about">About Us</a></li>
+                                <li><a href="catalogue">Catalogue</a></li>
+                                <li class="giddy"><a href="blog">Blog</a></li>
+                                <li><a href="contact">Contact</a></li>
                                 <li id="loginLink"><a  data-toggle="modal" href="javascript:void(0)" onclick="openLoginModal();">Log in</a></li>
                                 <li id="logoutLink" style="display: none;"><a href="php/logout.php">Log Out</a>
                             </ul>
@@ -75,7 +75,7 @@
         <img src="img\blog\blog-01.jpg" alt="Tools" style="width:100%">
         <div class="honey-container">
         <h3><b>TOOLS and PRODUCTS for MAKEUP</b></h3>
-        <h5><span style="padding-right: 15px;" class="user"><img src="img\icons\dark_brown\user.png" alt="" class="honey-opacity sm"> O. Ogundeji</span><span class="honey-opacity"><span class="date honey-opacity"><img src="img\icons\dark_brown\clock.png" alt="" class="sm"> 04.06.2020</span></span></h5>
+        <h5><span style="padding-right: 15px;" class="user"><img src="img\icons\dark_brown\user.png" alt="" class="honey-opacity sm"> O. Ogundeji</span><span class="honey-opacity"><span class="date honey-opacity"><img src="img\icons\dark_brown\clock.png" alt="" class="sm"> 20.04.2020</span></span></h5>
         </div>
         <input type="hidden" value="1" class="hidden-input" id="1">
 
@@ -84,7 +84,7 @@
             and products you can apply. How can you know the right tool for your makeup project?</p>
         <div class="honey-row">
             <div class="honey-col m8 s12">
-            <button onclick="window.location.href='posts/tools-and-products.php';" class="honey-button honey-padding-large bg-white honey-border"><b>READ MORE »</b></button>
+            <button onclick="window.location.href='posts/tools-and-products';" class="honey-button honey-padding-large bg-white honey-border"><b>READ MORE »</b></button>
             </div>
             <div class="honey-col m4 honey-hide-small">
             <p><span class="honey-padding-large honey-right"><b>Comments  </b> <span class="honey-badge"><span id="commentnum1"></span></span></span></p>
@@ -99,7 +99,7 @@
     <!--<img src="#" alt="" style="width:100%">-->
         <div class="honey-container">
         <h3><b>Reasons Makeup Products Don't Blend</b></h3>
-        <h5><span style="padding-right: 15px;" class="user"><img src="img\icons\dark_brown\user.png" alt="" class="honey-opacity sm"> O. Ogundeji</span><span class="honey-opacity"><span class="date honey-opacity"><img src="img\icons\dark_brown\clock.png" alt="" class="sm"> 13.07.2020</span></span></h5>
+        <h5><span style="padding-right: 15px;" class="user"><img src="img\icons\dark_brown\user.png" alt="" class="honey-opacity sm"> O. Ogundeji</span><span class="honey-opacity"><span class="date honey-opacity"><img src="img\icons\dark_brown\clock.png" alt="" class="sm"> 02.05.2020</span></span></h5>
         </div>
         <input type="hidden" value="2" class="hidden-input" id="2">
 
@@ -109,7 +109,7 @@
         </p>
         <div class="honey-row">
             <div class="honey-col m8 s12">
-            <button onclick="window.location.href='posts/makeup-not-blend.php';" class="honey-button honey-padding-large bg-white honey-border"><b>READ MORE »</b></button>
+            <button onclick="window.location.href='posts/makeup-not-blend';" class="honey-button honey-padding-large bg-white honey-border"><b>READ MORE »</b></button>
             </div>
             <div class="honey-col m4 honey-hide-small">
             <p><span class="honey-padding-large honey-right"><b>Comments  </b> <span class="honey-badge"><span id="commentnum2"></span></span></span></p>
@@ -124,7 +124,7 @@
     <!--<img src="#" alt="" style="width:100%">-->
         <div class="honey-container">
         <h3><b>Importance of Skin Care</b></h3>
-        <h5><span style="padding-right: 15px;" class="user"><img src="img\icons\dark_brown\user.png" alt="" class="honey-opacity sm"> O. Ogundeji</span><span class="honey-opacity"><span class="date honey-opacity"><img src="img\icons\dark_brown\clock.png" alt="" class="sm">  14.07.2020</span></span></h5>
+        <h5><span style="padding-right: 15px;" class="user"><img src="img\icons\dark_brown\user.png" alt="" class="honey-opacity sm"> O. Ogundeji</span><span class="honey-opacity"><span class="date honey-opacity"><img src="img\icons\dark_brown\clock.png" alt="" class="sm">  24.05.2020</span></span></h5>
         </div>
         <input type="hidden" value="3" class="hidden-input" id="3">
 
@@ -132,7 +132,7 @@
         <p>The power of makeup is undeniable, truly. Yet, proper skin care is also essential for everyone. How can we do this correctly?</p>
         <div class="honey-row">
             <div class="honey-col m8 s12">
-            <button onclick="window.location.href='posts/skin-care.php';" class="honey-button honey-padding-large bg-white honey-border"><b>READ MORE »</b></button>
+            <button onclick="window.location.href='posts/skin-care';" class="honey-button honey-padding-large bg-white honey-border"><b>READ MORE »</b></button>
             </div>
             <div class="honey-col m4 honey-hide-small">
             <p><span class="honey-padding-large honey-right"><b>Comments  </b> <span class="honey-badge"><span id="commentnum3"></span></span></span></p>
@@ -148,7 +148,7 @@
     <!--<img src="#" alt="" style="width:100%">-->
         <div class="honey-container">
         <h3><b>Daily Makeup Routine</b></h3>
-        <h5><span style="padding-right: 15px;" class="user"><img src="img\icons\dark_brown\user.png" alt="" class="honey-opacity sm"> O. Ogundeji</span><span class="honey-opacity"><span class="date honey-opacity"><img src="img\icons\dark_brown\clock.png" alt="" class="sm">  14.07.2020</span></span></h5>
+        <h5><span style="padding-right: 15px;" class="user"><img src="img\icons\dark_brown\user.png" alt="" class="honey-opacity sm"> O. Ogundeji</span><span class="honey-opacity"><span class="date honey-opacity"><img src="img\icons\dark_brown\clock.png" alt="" class="sm">  05.06.2020</span></span></h5>
         </div>
         <input type="hidden" value="4" class="hidden-input" id="4">
 
@@ -156,7 +156,7 @@
         <p>Beautiful women are often very busy, and as such, do not have the time for an extensive makeup session each day. Is there any way to have makeup minimally each day?</p>
         <div class="honey-row">
             <div class="honey-col m8 s12">
-            <button onclick="window.location.href='posts/daily-makeup.php';" class="honey-button honey-padding-large bg-white honey-border"><b>READ MORE »</b></button>
+            <button onclick="window.location.href='posts/daily-makeup';" class="honey-button honey-padding-large bg-white honey-border"><b>READ MORE »</b></button>
             </div>
             <div class="honey-col m4 honey-hide-small">
             <p><span class="honey-padding-large honey-right"><b>Comments  </b> <span class="honey-badge"><span id="commentnum4"></span></span></span></p>
@@ -171,7 +171,7 @@
     <!--<img src="#" alt="" style="width:100%">-->
         <div class="honey-container">
         <h3><b>Improve Your Brow Game</b></h3>
-        <h5><span style="padding-right: 15px;" class="user"><img src="img\icons\dark_brown\user.png" alt="" class="honey-opacity sm"> O. Ogundeji</span><span class="honey-opacity"><span class="date honey-opacity"><img src="img\icons\dark_brown\clock.png" alt="" class="sm">  14.07.2020</span></span></h5>
+        <h5><span style="padding-right: 15px;" class="user"><img src="img\icons\dark_brown\user.png" alt="" class="honey-opacity sm"> O. Ogundeji</span><span class="honey-opacity"><span class="date honey-opacity"><img src="img\icons\dark_brown\clock.png" alt="" class="sm">  20.07.2020</span></span></h5>
         </div>
         <input type="hidden" value="5" class="hidden-input" id="5">
 
@@ -179,7 +179,7 @@
         <p>We’ve all had that bad brow day, at some point in our lives. And achieving good looking brows can seem like a big challenge. How can you have good cheap eyebrow design?</p>
         <div class="honey-row">
             <div class="honey-col m8 s12">
-            <button onclick="window.location.href='posts/brow-game.php';" class="honey-button honey-padding-large bg-white honey-border"><b>READ MORE »</b></button>
+            <button onclick="window.location.href='posts/brow-game';" class="honey-button honey-padding-large bg-white honey-border"><b>READ MORE »</b></button>
             </div>
             <div class="honey-col m4 honey-hide-small">
             <p><span class="honey-padding-large honey-right"><b>Comments  </b> <span class="honey-badge"><span id="commentnum5"></span></span></span></p>
@@ -216,27 +216,27 @@
             <h4>Popular Posts</h4>
         </div>
         <ul class="honey-ul honey-hoverable bg-white">
-            <li class="honey-padding-16" style="cursor:pointer" onclick="window.location.href='posts/tools-and-products.php';" >
+            <li class="honey-padding-16" style="cursor:pointer" onclick="window.location.href='posts/tools-and-products';" >
                 <img src="img\blog\blog-01.jpg" alt="Image" class="honey-left honey-margin-right" style="width:50px">
                 <span class="honey-large">Tools and Products for Makeup</span><br>
                 <span>O. Ogundeji</span>
             </li>
-            <li class="honey-padding-16" style="cursor:pointer" onclick="window.location.href='posts/makeup-not-blend.php';" >
+            <li class="honey-padding-16" style="cursor:pointer" onclick="window.location.href='posts/makeup-not-blend';" >
                 <img src="img\Portfolio Images\ORE2.jpg" alt="Image" class="honey-left honey-margin-right" style="width:50px">
                 <span class="honey-large">Reasons Makeup Don't Blend</span><br>
                 <span>O. Ogundeji</span>
             </li> 
-            <li class="honey-padding-16" style="cursor:pointer" onclick="window.location.href='posts/daily-makeup.php';" >
+            <li class="honey-padding-16" style="cursor:pointer" onclick="window.location.href='posts/daily-makeup';" >
                 <img src="posts\daily_makeup_files\lip-gloss.jpg" alt="Image" class="honey-left honey-margin-right" style="width:50px">
                 <span class="honey-large">Daily Makeup Routine</span><br>
                 <span>O. Ogundeji</span>
             </li>  
-            <li class="honey-padding-16" style="cursor:pointer" onclick="window.location.href='posts/skin-care.php';" >
+            <li class="honey-padding-16" style="cursor:pointer" onclick="window.location.href='posts/skin-care';" >
                 <img src="posts\skin_care_files\skin-care.jpg" alt="Image" class="honey-left honey-margin-right" style="width:50px">
                 <span class="honey-large">Importance of Skin Care</span><br>
                 <span>O. Ogundeji</span>
             </li>
-            <li class="honey-padding-16" style="cursor:pointer" onclick="window.location.href='posts/brow-game.php';" >
+            <li class="honey-padding-16" style="cursor:pointer" onclick="window.location.href='posts/brow-game';" >
                 <img src="posts\brow_game_files\brow-sample.jpg" alt="Image" class="honey-left honey-margin-right" style="width:50px">
                 <span class="honey-large">Improve Your Brow Game</span><br>
                 <span>O. Ogundeji</span>
@@ -267,11 +267,10 @@
     </div><br>
     </div>
     <!-- Subscribe -->
-    <div class="subscribe" id="subscribe-form">
-        <h2>Subscribe to our mailing list now <br>Be the first to know when we give discounts and deals on our services and our latest blog posts</h2>
-
+    <div class="subscribe bg-smoky-black" id="subscribe-form">
+        <h2><b>Subscribe</b> to our mailing list <b>now</b> <br>Be the <b>first</b> to know about <b>discounts</b> and <b>deals</b> on our services. <br>You'll also know about our latest blog posts.</h2>
         <form class="subscribe-form" action="php/subscribe.php" method="POST" name="subscribersss">
-            <input class="subscribe-input" type="email" name="email" id="email" placeholder="Email" required >
+            <input class="subscribe-input" type="email" name="email" id="email" placeholder="Email" required>
             <button id="subscribe-button" class="honey-btn2" type="submit">Subscribe</button>
         </form>
     </div>
@@ -303,7 +302,7 @@
                 var id = element.id;
                 var type = 'POST';
                 var url = './php/load-comments.php';
-                console.log(id);
+                //console.log(id);
                 $.ajax({
                     type: type,
                     url: url,
@@ -311,23 +310,23 @@
                     dataType: 'JSON',
                     data: {post_id: id},
                     success: function(response){
-                        console.log(response.length);
-                        console.log('success');
+                        //console.log(response.length);
+                        //console.log('success');
                         if(response.id == 'error'){
                             comments = 0;
-                            console.log(comments);
+                            //console.log(comments);
                             $('#commentnum'+id).html(comments);
                         }
                         else{
-                            console.log(response);
+                            //console.log(response);
                             comment = response.length;
                             comments = comment.toString();
-                            console.log(comments);
+                            //console.log(comments);
                             $('#commentnum'+id).html(comments);
                         }
                     },
                     error: function(response){
-                        console.log('error');
+                        //console.log('error');
                     }
                 });
             }

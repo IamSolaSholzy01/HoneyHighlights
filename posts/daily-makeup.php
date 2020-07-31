@@ -1,17 +1,20 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="height=device-height, initial-scale=1.0">
-    <meta name="google-signin-client_id" content="985530739515-m4s7l3v4k5r7fu8vbfkm6p56ir1pb88d.apps.googleusercontent.com">
+    <meta name="google-signin-client_id" content="383312301221-4n7t419pj73ec0fpbtl0pg0hpvqbcs7q.apps.googleusercontent.com">
+    <meta name="google-signin-client_id" content="383312301221-hbnc4rnt4t2lsg464e0q16qb9g6b8c9n.apps.googleusercontent.com">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Honey Highlights - Blog - My everyday makeup routine</title>
     <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.png">
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/style.min.css" rel="stylesheet">
     <link href="css/blog-styles.min.css" rel="stylesheet">
-    <link href="../css/icons.css" rel="stylesheet">
     <!--Modal-->
     <link href="../assets/css/bootstrap.css" rel="stylesheet" />
     <link href="../assets/css/login-register.css" rel="stylesheet" />
@@ -28,17 +31,17 @@
     <header class="honey-site-header">
         <div class="header-container">
             <ul>
-                <a href="../index.html" class="honey-site-logo"><img src="../img/logo-dark.png" alt="honey"></a>
+                <a href="/" class="honey-site-logo"><img src="../img/logo-dark.png" alt="honey"></a>
                 <li>
                     <!-- Menu -->
                     <nav class="honey-site-menu" id="honey-navbar-spy">
                         <div class="honey-site-menu-inner" id="honey-navbar">
                             <ul class="list-unstyled honey-menu-container">
-                                <li><a href="../index.html">Home</a></li>
-                                <li><a href="../about.php">About Us</a></li>
-                                <li><a href="../catalogue.min.html">Catalogue</a></li>
-                                <li><a href="../blog.php">Blog</a></li>
-                                <li><a href="../contact.php">Contact</a></li>
+                                <li><a href="/">Home</a></li>
+                                <li><a href="/about">About Us</a></li>
+                                <li><a href="/catalogue">Catalogue</a></li>
+                                <li><a href="/blog">Blog</a></li>
+                                <li><a href="/contact">Contact</a></li>
                                 <li id="loginLink"><a  data-toggle="modal" href="javascript:void(0)" onclick="openLoginModal();">Log in</a></li>
                                 <li id="logoutLink" style="display: none;"><a href="../php/logout.php">Log Out</a>
                             </ul>
@@ -83,23 +86,23 @@
                             simple, short and easy to learn and execute. As such, I’ll be sharing my everyday makeup routine with you.
                         </p>
                         <hr />
-                        <p><img src="daily_makeup_files/moisturizer.jpg" alt=""/> So, the first step I take (after the usual in the morning, 
+                        <p><img src="daily_makeup_files/moisturizer.jpg" alt=""/> So, the <b>first</b> step I take (after the usual in the morning, 
                             of course), is <b>moisturizer application</b>. This is important to protect my skin. I move a lot during the 
                             day, and I’m frequently in the sun. If I didn’t use moisturizer, my skin would become too dry, and from there, 
                             breakouts, such as acne, could form. Thus, I apply my moisturizer on my face before any other makeup product.
                         </p>
                         <hr />
-                        <p><img src="daily_makeup_files/primer.jpg" style="transform: rotate(90deg);" alt=""/>After using the moisturizer, the next thing I do, is to use a 
+                        <p><img src="daily_makeup_files/primer.jpg" style="transform: rotate(90deg);" alt=""/>After using the moisturizer, the <b>next</b> thing I do, is to use a 
                             <b>primer</b> on my face. It’s important that I use a primer because it allows the makeup to sit smoothly on my face, as 
                             well as to last longer. 
                         </p>
                         <hr />
-                        <p><img src="daily_makeup_files/foundations.jpg" alt=""/>At this stage, it is time to use <b>foundation</b>. I apply a very 
+                        <p><img src="daily_makeup_files/foundations.jpg" alt=""/><b>Third</b> in line is for me to use <b>foundation</b>. I apply a very 
                             thin and even layer of foundation all over my face using either a foundation brush or a beauty sponge (whichever I 
                             find first 😄).It is critical that I use a foundation that is the same colour with my skin tone.
                         </p>
                         <hr />
-                        <p><img src="daily_makeup_files/highlight.jpg" alt=""/>Sincerely I don’t <b>highlight</b> often, but I apply concealer to my 
+                        <p><img src="daily_makeup_files/highlight.jpg" alt=""/>Sincerely I don’t <b>highlight</b> often, but, as a <b>fourth</b> step, I apply concealer to my 
                             problem areas like under my eyes (it’s usually darker than the rest of my face) and areas on which I have dark spots due 
                             to pimples. Unlike foundation, the concealer I use is one to two shades lighter than my skin tone and I use a beauty 
                             sponge to apply this. Then I use a translucent powder to set my highlighted area using a beauty blender. I normally apply 
@@ -118,13 +121,13 @@
                         <hr />
                         <p><img src="daily_makeup_files/eye-shadow.jpg" alt="">When it comes to <b>eye shadow</b>, I really do not like adding color to my eyes. Particularly 
                             when there’s no occasion, and even if I wanted to, there really isn’t time. So here is a little trick I use all the time, that works 
-                            wonders! I use my setting powder and apply it to my eye creasethen I use a dark face powder to contour my eyelid.That gives it a little depth. 
+                            wonders! I use my setting powder and apply it to my eye crease. Then, I use a dark face powder to contour my eyelid.That gives it a little depth. 
                             Then, to make my eyes pop a little, I use a gel eye liner to line my top lid and also apply some mascara to my lashes.
                         </p>
                         <hr />
                         <p><img src="daily_makeup_files/powder.jpg" style="transform: rotate(90deg);" alt="">Then I finish off the rest of my face with a pressed <b>powder</b> using my powder brush.</p>
                         <hr />
-                        <p><img src="daily_makeup_files/lip-gloss.jpg" alt="">I use <b>lip gloss</b> because I don’t really like adding colors to my lips as it tends to attract 
+                        <p><img src="daily_makeup_files/lip-gloss.jpg" alt=""><b>Last</b> in line, usually, I use <b>lip gloss</b>, because I don’t really like adding colors to my lips as it tends to attract 
                             too much attention for me.But if you do, please by all means, go ahead. I like to go with gloss, they are life savers. So, the first thing I do is to 
                             draw my lip outline using a brow pencil.Sometimes, I use the same one that I used to fill my brows, this gives my lips definition and prevents sloppy 
                             application.Then I use my lip gloss and gently rub my lips together.
@@ -150,8 +153,8 @@
                         <div class="honey-share-wrap col-md-6 card mb-3 blog-col">
                         <h3>What do you think about this post?</h3>
                             <ul class="honey-reaction-icon">
-                            <a id="like" onclick="reaction(this)" style="cursor: pointer;"><img src="img/icons/dark_brown/thumb-up.png" alt=""></a><span id="thumbup"></span>
-                            <a id="dislike" onclick="reaction(this)" style="cursor: pointer;"><img src="img/icons/dark_brown/thumb-down.png" alt=""></a><span id="thumbdown"></span>
+                            <a id="like" onclick="reaction(this)" style="cursor: pointer;"><img class="md" src="img/icons/dark_brown/thumb-up.png" alt=""></a><span id="thumbup"></span>
+                            <a id="dislike" onclick="reaction(this)" style="cursor: pointer;"><img class="md" src="img/icons/dark_brown/thumb-down.png" alt=""></a><span id="thumbdown"></span>
                             </ul>
                         </div>
                         <!--About Me-->
@@ -159,7 +162,7 @@
                         </div>
                         <!-- Share Wrap -->
                         <!--<div class="fb-share-button" data-href="https://honeyhighlights.com/posts/blog-template.php" data-layout="button_count" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fhoneyhighlights.com%2Fposts%2Fblog-template.php&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>-->
-                        <div class="honey-share"><a onclick="share();" style="text-decoration: none!important;"><img src="img/icons/dark_brown/share.png" alt="">Share Post</a></div>
+                        <div class="honey-share"><a onclick="share();" style="text-decoration: none!important;"><img class="md" src="img/icons/dark_brown/share.png" alt="">Share Post</a></div>
                         <div class="sharethis-inline-share-buttons"></div>
                     <!--<div class="honey-share-wrap share-icons" style="display: none;">
                             <ul class="honey-share-icon">
@@ -252,12 +255,11 @@
     </section>
     <!-- Subscribe -->
     <div class="subscribe" id="subscribe-form">
-    <h2>Subscribe to our mailing list now <br>Be the first to know when we give discounts and deals on our services and our latest blog posts</h2>
-
-    <form class="subscribe-form" action="php/subscribe.php" method="POST" name="subscribersss">
-        <input class="subscribe-input" type="email" name="email" id="subscribe-email" placeholder="Email" required >
-        <button id="subscribe-button" class="honey-btn2" type="submit">Subscribe</button>
-    </form>
+        <h2><b>Subscribe</b> to our mailing list <b>now</b> <br>Be the <b>first</b> to know about <b>discounts</b> and <b>deals</b> on our services. <br>You'll also know about our latest blog posts.</h2>
+        <form class="subscribe-form" action="../php/subscribe.php" method="POST" name="subscribersss">
+            <input class="subscribe-input" type="email" name="email" id="subscribe-email" placeholder="Email" required >
+            <button id="subscribe-button" class="honey-btn2" type="submit">Subscribe</button>
+        </form>
     </div>
     <div class="subscribe" id="subscribe-result"></div>
     <!-- Footer -->
@@ -278,3 +280,14 @@
     <script>$(function(){event.preventDefault();postComment();});</script>
 </body>
 </html>
+<?php
+    
+    if(isset($_SESSION["member_id"])){
+        echo '<script type="text/javascript">
+            $("#comment-email").toggle();
+            document.getElementById("comment-email").value = "'.$_SESSION["email"].'";
+            document.getElementById("name").value = "'.$_SESSION["username"].'";
+            $("#name").toggle();
+        </script>';
+    }
+?>
