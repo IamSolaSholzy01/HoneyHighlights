@@ -16,24 +16,22 @@ var subscribe = function() {
 
         //console.log(data);
 
-            $.ajax({
-                type: type,
-                url: url,
-                dataType: 'JSON',
-                data: data,
-                success: function(response) {
-                    $('#subscribe-form').css('display', 'none');
-                    $('#subscribe-result').text(response.content);
-                    $('#subscribe-result').css('display', 'block');
-                    setTimeout(() => {
-                            $('#subscribe-result').css('display', 'none');
-                        }, 5000);
-                },
-                error: function(response) {
-                    $('#subscribe-result').text(response.email);
-                }
-            });
-            return false;
+        $.ajax({
+            type: type,
+            url: url,
+            dataType: 'JSON',
+            data: data,
+            success: function(response) {
+                $('#subscribe-form').css('display', 'none');
+                $('#subscribe-result').text(response.content);
+                $('#subscribe-result').css('display', 'block');
+                setTimeout(() => {
+                    $('#subscribe-result').css('display', 'none');
+                }, 5000);
+            },
+            error: function(response) {
+                $('#subscribe-result').text(response.email);
+            }
         });
         return false;
     });
@@ -54,34 +52,14 @@ var contact_request = function() {
         });
 
 
-            $.ajax({
-                type: type,
-                url: url,
-                dataType: 'JSON',
-                data: data,
-                success: function(response) {
-                    //console.log(response);
-                    if (response.id == 'success') {
-                        $('.contact-result').html(response.content);
-                        $('.contact-result').css('display', 'block');
-                        $('.contact-result').addClass('alert alert-success');
-                        $('.contact-result').css("color", "green");
-                        $('.contact-result').addClass('alert alert-success');
-                        setTimeout(() => {
-                            $('#name').val("");
-                            $('#email').val("");
-                            $('#text').val("");
-                            $('#message').val("");
-                            $('.contact-result').val("");
-                            $('.contact-result').removeClass('alert alert-success');
-                            $('.contact-result').css('display', 'none');
-                        }, 3000);
-                    } else {
-                        $('.contact-result').html(response.content);
-                    }
-                },
-                error: function(response) {
-                    //console.log(response);
+        $.ajax({
+            type: type,
+            url: url,
+            dataType: 'JSON',
+            data: data,
+            success: function(response) {
+                //console.log(response);
+                if (response.id == 'success') {
                     $('.contact-result').html(response.content);
                     $('.contact-result').css('display', 'block');
                     $('.contact-result').addClass('alert alert-success');
@@ -170,25 +148,13 @@ var register = function() {
                         showLoginForm();
                     }, 3000);
                 }
-            });
-            return false;
-        });
-    };
-
-    function signOut() {
-        var auth2 = gapi.auth2.getAuthInstance();
-        auth2.signOut().then(function() {
-            
-        });
-    }
-
-    function onLoad() {
-        gapi.load('auth2', function() {
-            gapi.auth2.init({
-                prompt: 'select_account'
-            }).then(function(auth2) {
-                //console.log("Sign in");
-            });
+                $("input:submit").removeAttr("disabled");
+            },
+            error: function() {
+                $('#response').text("Serious error"); // show the response
+                shakeModal();
+                $("input:submit").removeAttr("disabled");
+            }
         });
         return false;
     });
@@ -203,7 +169,7 @@ var login = function() {
         url = logForm.attr('action');
         type = logForm.attr('method');
         data = {};
-        
+
         logForm.find('[name]').each(function() {
             var that = $(this),
                 name = that.attr('name'),
@@ -225,9 +191,9 @@ var login = function() {
                         $('#reply').html(response.content); // show the response
                         $('#reply').css("color", "red");
                         $('.error').addClass('alert alert-danger');
-                    shakeModal();
+                        shakeModal();
                     }, 3000);
-                    
+
                     setTimeout(() => {
                         $('#loginemail').val("");
                         $('#loginpassword').val("");
@@ -239,23 +205,23 @@ var login = function() {
                         $('#reply').html(response.content); // show the response
                         $('#reply').css("color", "red");
                         $('.error').addClass('alert alert-danger');
-                    shakeModal();
+                        shakeModal();
                     }, 3000);
-                    
+
                     setTimeout(() => {
                         $('#loginemail').val("");
                         $('#loginpassword').val("");
                     }, 5000);
                 } else if (response) {
-                    setTimeout(()=>{
-                    $(".load").addClass("btn-login");
-                    $(".btn-login").removeClass("load");
-                    $('#reply').html("Login Successful"); // show the response
-                    $('#reply').css("color", "green");
-                    $('.error').removeClass('alert alert-danger');
-                    $('.error').addClass('alert alert-success');
-                    $('#loginLink').css('display', 'none');
-                    $('#logoutLink').css('display', 'block');
+                    setTimeout(() => {
+                        $(".load").addClass("btn-login");
+                        $(".btn-login").removeClass("load");
+                        $('#reply').html("Login Successful"); // show the response
+                        $('#reply').css("color", "green");
+                        $('.error').removeClass('alert alert-danger');
+                        $('.error').addClass('alert alert-success');
+                        $('#loginLink').css('display', 'none');
+                        $('#logoutLink').css('display', 'block');
                     }, 3000);
                     //console.log(response);
                     sessionStorage.setItem('id', response.id);
@@ -263,7 +229,7 @@ var login = function() {
                     sessionStorage.setItem('email', response.email);
                     sessionStorage.setItem('firstname', response.firstname);
                     //console.log(sessionStorage.getItem('email'));
-                    
+
                     setTimeout(() => {
                         $('#loginemail').val("");
                         $('#loginpassword').val("");
@@ -285,21 +251,16 @@ var login = function() {
                 $("input:submit").removeAttr("disabled");
             }
         });
-        ////console.log(sessionStorage.getItem('email'));
-        //console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
-        //console.log('Name: ' + profile.getName());
-        //console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
-        googleUser.disconnect();
-    }
-    var setAsLoggedIn = function() {
-        isLoggedIn = true;
-    };
-    var setAsLoggedOut = function() {
-        isLoggedIn = false;
-        sessionStorage.clear();
-        //console.log("Cleared");
-    };
-    var toggleLoginLogout = function() {
+        return false;
+    });
+};
+
+function signOut() {
+    var auth2 = gapi.auth2.getAuthInstance();
+    auth2.signOut().then(function() {
+
+    });
+}
 
 function onLoad() {
     gapi.load('auth2', function() {
@@ -333,7 +294,7 @@ function onSignIn(googleUser) {
                 //console.log('success');
                 //console.log(response.name);
                 //console.log(response.email);
-                setTimeout(()=>{
+                setTimeout(() => {
                     $(".load").addClass("btn-login");
                     $(".btn-login").removeClass("load");
                     $('#reply').html("Login Successful"); // show the response
@@ -342,7 +303,7 @@ function onSignIn(googleUser) {
                     $('.error').addClass('alert alert-success');
                     $('#loginLink').css('display', 'none');
                     $('#logoutLink').css('display', 'block');
-                    }, 3000);
+                }, 3000);
                 setTimeout(() => {
                     $('#loginemail').val("");
                     $('#loginpassword').val("");
@@ -414,27 +375,18 @@ var postComment = function() {
             dataType: 'JSON',
             data: data,
             success: function(response) {
-                if (response.id == "error") {
-                    $('.commentnum').html("0");
-                    $("#empty").html(response.content);
-                } else {
-                    //console.log(response);
-                    $("#honey-comments-list").empty();
-                    $("#empty").html("");
-                    var num = 0;
-                    $.each(response, function() {
-                        num++;
-                        var newComment = $("body").find("#honey-comments > li").clone();
-                        newComment.find(".honey-comment-name").append(this.name);
-                        newComment.find(".honey-comment-body").append(this.body);
-                        newComment.find(".honey-comment-time").append(this.created_at);
-                        newComment.find(".honey-reply-icon").addClass(this.comment_id);
-                        newComment.find(".honey-reply-icon").attr('id', this.comment_id);
-                        $(newComment).appendTo("#honey-comments-list");
-                    });
-                    $('.commentnum').html(num);
-                    $("input:submit").removeAttr("disabled");
-                    runner();
+                if (response.feedback == "success") {
+                    $('.response').text("Your comment has been sent"); // show the response
+                    $('.response').css("color", "green");
+                    $('.response').addClass('alert alert-success');
+                    setTimeout(() => {
+                        $('#name').val("");
+                        $('#email').val("");
+                        $('#message').val("");
+                        $('.response').text("");
+                        $('.response').removeClass('alert alert-success');
+                        runn();
+                    }, 3000);
                 }
                 $("input:submit").removeAttr("disabled");
             },
@@ -480,6 +432,7 @@ var runn = function() {
                 });
                 $('.commentnum').html(num);
                 $("input:submit").removeAttr("disabled");
+                runner();
             }
         },
         error: function(response) {
