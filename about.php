@@ -81,20 +81,20 @@
                 <li class="testimonial-item"> <img src="img/icons/pink/left-quote.png" style="width: 20px; margin: auto;" alt="">
                     <p>Lipstick is really magical.<br>
                      It holds more than a waxy bit of color - it holds the promise of a brilliant smile,
-                      a brilliant day, both literally and figuratively.
+                      a brilliant day, both literally and figuratively."
                     </p>
                 <h4>Roberta Gately</h4></li>
                 <li class="testimonial-item"> <img src="img/icons/pink/left-quote.png" style="width: 20px; margin: auto;" alt="">
-                    <p>Makeup is the finishing touch
-                        <br>The final accessory.</p>
+                    <p>"Makeup is the finishing touch
+                        <br>The final accessory."</p>
                 <h4> Marc Jacobs.</h4></li>
                 <li class="testimonial-item"> <img src="img/icons/pink/left-quote.png" style="width: 20px; margin: auto;" alt="">
                     <p>“Beauty is power”
                         <br>and Makeup is something that really enhances that; it’s a woman’s secret.</p>
                 <h4>Charlotte Tilbury</h4></li>
                 <li class="testimonial-item"> <img src="img/icons/pink/left-quote.png" style="width: 20px; margin: auto;" alt="">
-                    <p>Girls have always wanted to be pretty, even in Egyptian times.
-                        <br>Cleopatra wore all the eyeliner, you know.</p>
+                    <p>"Girls have always wanted to be pretty, even in Egyptian times.
+                        <br>Cleopatra wore all the eyeliner, you know."</p>
                 <h4>Rita Ora</h4></li>
                 <li class="testimonial-item"> <img src="img/icons/pink/left-quote.png" style="width: 20px; margin: auto;" alt="">
                     <p>“i don't wear makeup for others the same way i don't decorate my house for others.
